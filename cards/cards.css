@@ -1,0 +1,462 @@
+:root {
+
+    /* Cards size is A7 plus bleeds */
+    --width: 74mm;
+    --height: 105mm;
+    --bleed: 2mm;
+
+    /* the card corner radius to display cut
+       the bleed cut is not printed */
+    --card-corner: 3mm;
+
+    /* The horizontal margin for cards text */
+    --text-margin: 4.5mm;
+
+    /* Font definitions */
+    --default-font: "FuturaPT";
+    --title-font: "Mundial";
+
+    /* Color definitions for cards */
+    --blue: #3A88A1;
+    --red: #E92D3C;
+    --green: #479C6A;
+    --yellow: #F7B316;
+    --purple: #2C2852;
+}
+
+/* print page definition */
+@page {
+    size: A3;
+    margin-top: 0mm;
+    margin-right: 0mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+
+}
+
+/* Fonts and their variations */
+@font-face {
+    font-family: "Mundial";
+    src: url("./fonts/MundialBold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Mundial";
+    src: url("./fonts/MundialLight.ttf");
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("./fonts/FuturaPTBook.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("./fonts/FuturaPTBold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("./fonts/FuturaPTBookOblique.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/* Default font and text size */
+body {
+    font-family: var(--default-font);
+    font-size: 9pt;
+    line-height: 1.1em;
+}
+
+/* Pages are defined by sections */
+section {
+    break-before: page;
+}
+
+/* Cards color is defined once at the card level 
+   in the --color variable */
+   .card.blue { --color: var(--blue); }
+   .card.red { --color: var(--red); }
+   .card.green { --color: var(--green); }
+   .card.yellow { --color: var(--yellow); }
+   .card.purple { --color: var(--purple); }
+   
+/* Cards use specified width/height + bleeds */
+.card {
+    width: calc(var(--width) + 2*var(--bleed));
+    height: calc(var(--height) + 2*var(--bleed));
+    position: absolute;
+
+    /* defines an solid color for image color underlay */
+    --underlay: linear-gradient(var(--color), var(--color));
+    /* the overlay is used to draw a solid border at
+       the top of the background illustation. By default it's
+       transparent */
+    --overlay: linear-gradient(transparent, transparent);
+}
+
+
+/* Cards type are defined using classes: 
+   recto/verso for the side of the card
+   situation/reaction/escalade for the type of card */
+
+/* background illustrations for cards */
+
+.verso.situation {
+    /* verso of situations have the map and logo as background */
+    background-image: url(./img/verso.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.escalade {
+    /* for escalades, the illustration has no underlay 
+       the overlay is used to draw a solid border at the top
+       of the illustation */
+
+    --border-size: 1mm; /* the solid border size */
+    --overlay: linear-gradient(var(--color) 0 var(--border-size), transparent var(--border-size) 100%);
+    --underlay: linear-gradient(transparent, transparent);
+}
+
+.recto.situation,
+.recto.reaction,
+.recto .escalade {
+    /* recto of situation and reaction use the same image
+       taking 50% of height from bottom */
+    /* the svg has alfa and let the underlay color appear, the overlay is used to draw a border at the top */
+    background-image: var(--overlay), url(./img/situation.svg), var(--underlay)  ;
+
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: bottom;
+}
+
+
+.verso.reaction,
+.verso.escalade {
+    /* verso of reactions have a 20mm image at the bottom */
+    --bg-size: calc(var(--bleed) + 20mm);
+
+    background-image: var(--overlay), url(./img/reaction.svg), var(--underlay);
+
+    background-repeat: no-repeat;
+    background-size: auto var(--bg-size);
+    background-position: bottom;
+}
+
+
+/* display bleeds on screen 
+   it creates a box of width/height size
+   offset by bleed.
+   Bleeds limit is not printed
+   */
+@media screen,
+pagedjs-ignore {
+
+    .card::after {
+        content: '';
+
+        position: absolute;
+    
+        /* is precisely of card size */
+        width: var(--width);
+        height: var(--height);
+        
+        /* is offset of bleed size */
+        left: var(--bleed);
+        top: var(--bleed);
+
+        /* the actual border */
+        border: 0.1mm solid black;
+        border-radius: var(--card-corner);
+
+        /* the element is in front to be visible 
+           but doesn't intercept mouse events
+           to make inspection of the other parts of the 
+           card easier */
+        z-index: 0; 
+        pointer-events: none;
+    }
+}
+
+/* these properties define the grid for the cards 
+on an A3 page */
+
+.recto .c1 { left: calc(23.9mm - var(--bleed)); }
+.recto .c2 { left: calc(107.6mm - var(--bleed)); }
+.recto .c3 { left: calc(190.1mm - var(--bleed)); }
+
+/* for verso, columns are from right to left */
+.verso .c1 { left: calc(199.1mm - var(--bleed)); }
+.verso .c2 { left: calc(115.4mm - var(--bleed)); }
+.verso .c3 { left: calc(32.9mm - var(--bleed)); }
+
+/* rows are the same on both sides */
+.r1 { top: calc(24mm - var(--bleed)); }
+.r2 { top: calc(140.2mm - var(--bleed)); }
+.r3 { top: calc(255mm - var(--bleed)); }
+
+/* used to style titles */
+h1 {
+    /* use title font */
+    font-family: var(--title-font);
+    font-size: 14pt;
+    font-weight: bold;
+
+    /* stick to the top center */
+    border-radius: 0 0 2mm 2mm;
+    width: 60%;
+
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1mm;
+
+    padding-top: calc(2mm + var(--bleed)); /* larger to continue over bleeds */
+    padding-bottom: 2mm;
+    
+    /* by default text is white on color background */
+    background-color: var(--color);
+    color: white;
+
+    /* text placement */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.escalade h1 {
+    /* for escalades, the text is in color,
+       and only the border is colored */
+    color: var(--color);
+    background-color: white;
+
+    border: 1.2pt solid var(--color);
+    border-top: none;
+}
+
+
+
+.description {
+
+    /* setup margins to limit inner text width,
+       since the card has bleads, they have to be
+       added to actual margins */
+    margin-left: calc(var(--text-margin) + var(--bleed));
+    margin-right: calc(var(--text-margin) + var(--bleed));
+
+    height: 43mm;
+
+    /* Center inner p */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* description paragraphs are centered
+    horizontal and vertically */
+.description p {
+    display: block; /* to be part of the flex */
+    flex-basis: content; /* size based on content */
+
+    text-align: center;
+}
+
+
+/* this are the styles for situation cards' back
+   the dice number is in the data-dice attribute
+   and the display is done using ::before and ::after rules
+*/ 
+
+.verso.situation div[data-dice] {
+    font-family: var(--title-font);
+    font-size: 7.6mm;
+    font-weight: bold;
+    
+    color: white;
+
+    /* the offset of the dice in x/y */
+    --x-pos: calc(4.8mm + var(--bleed));
+    --y-pos: calc(4.8mm + var(--bleed));
+}
+
+
+.verso.situation div[data-dice]::before {
+    content: attr(data-dice);
+
+
+    /* place it bottom left */
+    position: absolute;
+    left: var(--x-pos) ;
+    bottom: var(--y-pos);
+
+}
+
+
+.verso.situation div[data-dice]::after {
+    content: attr(data-dice);
+
+    /* place it top right */
+    position: absolute;
+    right: var(--x-pos);
+    top: var(--y-pos);
+    rotate: 180deg; /* upside down */
+}
+
+.verso.situation div:is([data-dice="6"], [data-dice="9"])::before,
+.verso.situation div:is([data-dice="6"], [data-dice="9"])::after {
+    /* a thick underline for 6 and 9 */
+    text-decoration: underline;
+    text-decoration-thickness: 1mm;
+}
+
+/* the list of consequence for reaction/escalade cards */
+
+.consequences {
+
+    height: 75mm;
+
+    /* horizontal margins to limit text width */
+    margin-left: calc(var(--text-margin) + var(--bleed));
+    margin-right: calc(var(--text-margin) + var(--bleed));
+
+    /* use flex for children */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consequences p {
+    display: block;
+    flex-basis: content;
+    
+    /* put just 1/2 line between p */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    
+    /* left aligned with a minimum line height */
+    text-align: left;
+    line-height: 1em;
+
+    &:last-of-type {
+        /* no margin on the last one */
+        margin-bottom: 0;
+    }
+}
+
+.consequences .dice {
+    font-weight: bold;
+    color: var(--color);
+}
+
+.consequences .escalade {
+    font-weight: bold;
+    color: var(--color);
+}
+
+.positif {
+    font-weight: bold;
+    color: var(--green);
+}
+
+.negatif {
+    font-weight: bold;
+    color: var(--red);
+}
+
+.zero {
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+/* display the card counter box 
+   the counter is actually two consecutive divs
+   containing the two values
+*/
+.count {
+    /* this is the outer div */
+
+    /* total width of the white rounded box */
+    --height: 1.5em;
+    --width: 3.1em;
+    --right-dist: 4.8mm;
+    --bottom-dist: 5mm;
+    --separator-size: 0.8pt;
+
+    /* size and position */
+    position: absolute;
+    height: var(--height);
+    width: var(--width);
+    right: calc(var(--right-dist) + var(--bleed));
+    bottom: calc(var(--bottom-dist) + var(--bleed));
+
+    /* rounded box */
+    background-color: white;
+    border-radius: calc(var(--height) / 2);
+
+    /* font */
+    font-family: var(--title-font);
+    font-weight: bold;
+    color: var(--color);
+
+    /* text is centered in each div */
+    text-align: center;
+    vertical-align: middle;
+
+    /* size divs with flex */
+    display: flex;
+    align-items: center;
+}
+
+.count div {
+    /* defines each div size */
+    display: inline-block;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.count div:first-child {
+    /* half of the border */
+    border-right: calc(var(--separator-size) / 2) solid var(--color);
+}
+
+.count div:last-child {
+    /* other half of the border */
+    border-left: calc(var(--separator-size) / 2) solid var(--color);
+}
+
+/* Cricut calibration marks 
+   the html doc contains 4 divs which have each
+   2 borders sets using the attributes*/
+.mark {
+    position: absolute;
+    width: 25.4mm;
+    height: 25.4mm;
+}
+
+.m-top {
+    top: 14.8mm;
+    border-top: 1.5mm solid black;
+}
+
+.m-left {
+    left: 14.8mm;
+    border-left: 1.5mm solid black;
+}
+
+.m-right {
+    right: 23.8mm;
+    border-right: 1.5mm solid black;
+}
+
+.m-bottom {
+    bottom: 50.8mm;
+    border-bottom: 1.5mm solid black;
+}
