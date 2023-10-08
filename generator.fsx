@@ -630,10 +630,12 @@ let render (cards: Card list) =
                     Html.section [
                         prop.className "recto"
                         prop.children [
+                            // Divs for the cricut cut marks
                             Html.div [ prop.className "mark m-left m-top"]
                             Html.div [ prop.className "mark m-right m-top"]
                             Html.div [ prop.className "mark m-left m-bottom"]
                             Html.div [ prop.className "mark m-right m-bottom"]
+
                             for n,card in List.indexed page do 
                                 match card with
                                 | Situation(_, sit) ->
