@@ -22,6 +22,9 @@
     --green: #479C6A;
     --yellow: #F7B316;
     --purple: #2C2852;
+
+    /* medium font weight for futura */
+    --medium: 500;
 }
 
 /* print page definition */
@@ -55,7 +58,14 @@
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("./fonts/FuturaPTBold.otf");
+    src: url("./fonts/FuturaPTMedium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaPT";
+    src: url("./fonts/FuturaPTBold.ttf");
     font-weight: bold;
     font-style: normal;
 }
@@ -73,6 +83,7 @@ body {
     font-family: var(--default-font);
     font-size: 9pt;
     line-height: 1.1em;
+    font-weight: normal;
 }
 
 /* Pages are defined by sections */
@@ -152,6 +163,43 @@ section {
     background-position: bottom;
 }
 
+.recto.alea {
+    --alpha: 0.8;
+    --white: rgba(255,255,255,var(--alpha));
+
+    background-image: linear-gradient(var(--white),var(--white)), url(./img/map.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: 1px solid green;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        --size: 40mm;
+        width: var(--size);
+        height: var(--size);
+        font-family: var(--title-font);
+        font-weight: bold;
+        font-size: 80pt;
+        line-height: var(--size);
+        vertical-align: middle;
+        text-align: center;
+        background-color: white;
+        border-radius: var(5mm);
+
+        color: black;
+        
+    }
+}
+
+.verso.alea {
+    background-image: url(./img/alea.svg);
+    background-size: cover;
+}
 
 /* display bleeds on screen 
    it creates a box of width/height size
@@ -267,54 +315,13 @@ h1 {
     flex-basis: content; /* size based on content */
 
     text-align: center;
-}
 
+    margin-top: 0;
+    margin-bottom: 0.5em;
 
-/* this are the styles for situation cards' back
-   the dice number is in the data-dice attribute
-   and the display is done using ::before and ::after rules
-*/ 
-
-.verso.situation div[data-dice] {
-    font-family: var(--title-font);
-    font-size: 7.6mm;
-    font-weight: bold;
-    
-    color: white;
-
-    /* the offset of the dice in x/y */
-    --x-pos: calc(4.8mm + var(--bleed));
-    --y-pos: calc(4.8mm + var(--bleed));
-}
-
-
-.verso.situation div[data-dice]::before {
-    content: attr(data-dice);
-
-
-    /* place it bottom left */
-    position: absolute;
-    left: var(--x-pos) ;
-    bottom: var(--y-pos);
-
-}
-
-
-.verso.situation div[data-dice]::after {
-    content: attr(data-dice);
-
-    /* place it top right */
-    position: absolute;
-    right: var(--x-pos);
-    top: var(--y-pos);
-    rotate: 180deg; /* upside down */
-}
-
-.verso.situation div:is([data-dice="6"], [data-dice="9"])::before,
-.verso.situation div:is([data-dice="6"], [data-dice="9"])::after {
-    /* a thick underline for 6 and 9 */
-    text-decoration: underline;
-    text-decoration-thickness: 1mm;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 /* the list of consequence for reaction/escalade cards */
@@ -352,29 +359,18 @@ h1 {
 }
 
 .consequences .dice {
-    font-weight: bold;
+    font-weight: var(--medium); 
     color: var(--color);
 }
 
-.consequences .escalade {
-    font-weight: bold;
-    color: var(--color);
+.consequences .score {
+    font-weight: var(--medium);
 }
 
-.positif {
-    font-weight: bold;
-    color: var(--green);
-}
-
-.negatif {
-    font-weight: bold;
-    color: var(--red);
-}
-
-.zero {
-    font-weight: bold;
-    color: var(--yellow);
-}
+.consequences .escalade { color: var(--color); }
+.positif { color: var(--green); }
+.negatif { color: var(--red); }
+.zero { color: var(--yellow); }
 
 /* display the card counter box 
    the counter is actually two consecutive divs
