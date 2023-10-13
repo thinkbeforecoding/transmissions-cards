@@ -67,7 +67,7 @@ module Lines =
             lines
         else
             { Current = []
-              Lines = lines.Current :: lines.Lines}
+              Lines = (List.rev lines.Current) :: lines.Lines}
     let rec addLines spans (lines: Lines) =
         match spans with
         | [] -> lines
@@ -205,7 +205,11 @@ and parseConsequence (escalades: Map<char, Reaction>) ((description, escaladesMd
         |> List.choose (fun (description,_) ->
             match tryParseLink description with
             | None -> 
-                let title = description |> toText |> textToString
+                let title = description 
+                                |> splitLines
+                                |> List.map toText 
+                                |> List.concat
+                                |> textToString
                 escalades |> Map.tryFindKey (fun _ e -> e.Title = title) 
             | Some link ->
                 escalades |> Map.tryFindKey (fun _ e -> e.Title.Contains (link.Trim())) 
@@ -282,10 +286,14 @@ let parseTitle (spans: MarkdownSpans) =
     |> string
     |> fun s -> s.Trim()
 
+
+let idRx = System.Text.RegularExpressions.Regex(@"^((?<num>\d+)\.\s*)?(?<title>.*)$")
+
 let parseSituations (md : MarkdownDocument) = 
-    let rec loop id ps result =
+    let rec loop ps result =
         match ps with
         | Heading(2, title,_) :: Paragraph(txtSituation,_) :: tail ->
+            
             
             let situation =
                 try
@@ -305,9 +313,18 @@ let parseSituations (md : MarkdownDocument) =
                         |> Map.ofSeq
                     
                     let reactions = List.map (parseReaction escalades) reactionsMd
+                    let tit = parseTitle title 
+                    let m = idRx.Match(tit)
+                    let id = 
+                        if m.Groups["num"].Success then
+                            int m.Groups["num"].Value
+                        else
+                            0
+                    let titleTxt = m.Groups["title"].Value
+
 
                     { Id = id
-                      Title = parseTitle title
+                      Title = titleTxt
                       Color = 
                         let id = id%25
                         if id <= 5 then
@@ -336,15 +353,15 @@ let parseSituations (md : MarkdownDocument) =
                 
             match situation with
             | Some situation ->
-                loop (id+1) tail (situation :: result)
+                loop tail (situation :: result)
             | None ->
-                loop id tail result
+                loop tail result
 
         | [] -> List.rev result
         | head :: tail ->
-            loop id tail result
+            loop tail result
 
-    loop 1 md.Paragraphs []
+    loop md.Paragraphs []
 
 
 let rmdRx = System.Text.RegularExpressions.Regex(@"(\s*)(\*\*|_)( *)")
@@ -383,7 +400,7 @@ let cleanMd (md: string) =
         )
     let md5 =
         normSpaceRx.Replace(md4, (fun m -> m.Groups[1].Value + " "))
-    md5
+    md5.Replace(" \xA0","\xA0")
 
 let parse path =
     let mdText = 
@@ -504,8 +521,10 @@ let check (situations: Situation list) =
 
                     let unusedEscalades = set situation.Escalades.Keys - usedEscaladeKeys
                     if not unusedEscalades.IsEmpty then
-                        let ls = unusedEscalades |> Seq.map string |> String.concat ""
-                        warn $"  escalades {ls} non utilisées"
+                        for e in unusedEscalades do
+                            let escalade = situation.Escalades[e]
+
+                            warn $"  escalades {e} non utilisées \x1b[38;2;128;128;128m/ {textToString  (List.concat escalade.Text)  |> cut 40 }"
                 let result = 
                     if errors.Count = 0 then
                         let score = situationScore situation
@@ -561,6 +580,8 @@ let renderSituationRecto n (situation: Situation) =
 
     Html.div [
         prop.className $"card recto situation { colorProp situation.Color } {pos n}" 
+        if System.IO.File.Exists($"./cards/img/situation{situation.Id}.png") then
+            prop.style [style.custom("--illustration", $"url(img/situation{situation.Id}.png)") ]
         prop.children [
             Html.h1 $"Situation {situation.Id}"
             Html.div [ 
@@ -683,7 +704,7 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
 
 let renderAleaRecto i (n: int) =
     Html.div [
-        prop.className $"card recto alea {pos i}"
+        prop.className $"card recto alea a{n} {pos i}"
         prop.children [
             Html.div n
         ]
@@ -747,7 +768,7 @@ let render (cards: Card list) =
 
 fsi.PrintDepth <- 1
 let champigny = 
-    parse @"C:\dev\transmissions\src\Server\situations.md"
+    parse @"champigny.md"
     |> check
 
 let situations = 
@@ -756,18 +777,27 @@ let situations =
 
 
 let cards =
-    [   //for i in 1 .. 10 do
-        //    Alea i
-        for situation in situations do
+    // [   for i in 1 .. 10 do
+            // Alea i
+    [
+        for i in 1 .. 10 do
+            Alea i
+        
+        for situation in champigny do
+
             Situation( situation)
             for n,reaction in situation.Reactions |> Seq.indexed do
                 Reaction (n, situation, reaction)
             for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
                 Escalade (key, n, situation, escalade)
+        // Alea 10
+        // for i in 1 .. 10 do
+        //     Alea i
     ]
 
 let html =
     render cards 
     |> Render.htmlView
 
-System.IO.File.WriteAllText("./cards/situations.html", html)
+// System.IO.File.WriteAllText("./cards/champigny.html", html)
+// System.IO.File.WriteAllText("./cards/champigny-alea.html", html)

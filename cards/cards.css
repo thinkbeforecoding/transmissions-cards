@@ -25,6 +25,8 @@
 
     /* medium font weight for futura */
     --medium: 500;
+
+    --verso-offset: 0.5mm;
 }
 
 /* print page definition */
@@ -111,6 +113,9 @@ section {
        the top of the background illustation. By default it's
        transparent */
     --overlay: linear-gradient(transparent, transparent);
+
+    --illustration: url(./img/situation.svg);
+
 }
 
 
@@ -143,8 +148,7 @@ section {
     /* recto of situation and reaction use the same image
        taking 50% of height from bottom */
     /* the svg has alfa and let the underlay color appear, the overlay is used to draw a border at the top */
-    background-image: var(--overlay), url(./img/situation.svg), var(--underlay)  ;
-
+    background-image: var(--overlay), var(--illustration), var(--underlay)  ;
     background-repeat: no-repeat;
     background-size: auto 50%;
     background-position: bottom;
@@ -166,34 +170,29 @@ section {
 .recto.alea {
     --alpha: 0.8;
     --white: rgba(255,255,255,var(--alpha));
+    &.a1 { --bg: url(img/a1.svg)  } 
+    &.a2 { --bg: url(img/a2.svg)  } 
+    &.a3 { --bg: url(img/a3.svg)  } 
+    &.a4 { --bg: url(img/a4.svg)  } 
+    &.a5 { --bg: url(img/a5.svg)  } 
+    &.a6 { --bg: url(img/a6.svg)  } 
+    &.a7 { --bg: url(img/a7.svg)  } 
+    &.a8 { --bg: url(img/a8.svg)  } 
+    &.a9 { --bg: url(img/a9.svg)  } 
+    &.a10 { --bg: url(img/a10.svg)  } 
 
-    background-image: linear-gradient(var(--white),var(--white)), url(./img/map.svg);
+    background-image: var(--bg), url(img/map.svg);
     background-repeat: no-repeat;
     background-size: cover;
-
-    border: 1px solid green;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    div {
-        --size: 40mm;
-        width: var(--size);
-        height: var(--size);
-        font-family: var(--title-font);
-        font-weight: bold;
-        font-size: 80pt;
-        line-height: var(--size);
-        vertical-align: middle;
-        text-align: center;
-        background-color: white;
-        border-radius: var(5mm);
 
-        color: black;
-        
-    }
+    div { display: none; }
+
 }
 
 .verso.alea {
@@ -248,9 +247,13 @@ on an A3 page */
 .verso .c3 { left: calc(32.9mm - var(--bleed)); }
 
 /* rows are the same on both sides */
-.r1 { top: calc(24mm - var(--bleed)); }
-.r2 { top: calc(140.2mm - var(--bleed)); }
-.r3 { top: calc(255mm - var(--bleed)); }
+.recto.r1 { top: calc(24mm - var(--bleed)); }
+.recto.r2 { top: calc(140.2mm - var(--bleed)); }
+.recto.r3 { top: calc(255mm - var(--bleed)); }
+
+.verso.r1 { top: calc(24mm + var(--verso-offset) - var(--bleed)); }
+.verso.r2 { top: calc(140.2mm + var(--verso-offset) - var(--bleed)); }
+.verso.r3 { top: calc(255mm + var(--verso-offset) - var(--bleed)); }
 
 /* used to style titles */
 h1 {

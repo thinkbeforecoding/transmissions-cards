@@ -87,7 +87,7 @@ En prenant le bus pour rentrer chez vous, un homme frotte son sexe contre vos fe
 ## Harcèlement au bistrot
 
 Vous passez tous les jours devant un bistrot pour rentrer chez vous. \
-Il n'y a pratiquement que des hommes en terrasse qui vous interpellent de manière régulière lorsque vous passez devant eux. \
+Il 01:31 09/10/2023n'y a pratiquement que des hommes en terrasse qui vous interpellent de manière régulière lorsque vous passez devant eux. \
 L'un d'entre eux, plus âgé, vous dit : _« Qu'est-ce que vous êtes jolie Mademoiselle ! Je peux vous inviter à boire un café ? »_
 
 
