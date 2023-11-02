@@ -1,0 +1,33 @@
+
+.recto.soutien {
+    background-image: url(../img/soutien.svg);
+    background-size: cover;
+}
+
+.verso.soutien {
+    background-image: url(../img/intervention.svg);
+    background-size: cover;
+}
+
+.recto.attention {
+    background-image: url(../img/attention.svg);
+    background-size: cover;
+}
+
+.verso.attention {
+    background-image: url(../img/intervention.svg);
+    background-size: cover;
+}
+
+#page-1 .copy {
+    background-image: -moz-element(#soutien);
+}
+
+#page-3 .copy {
+    background-image: -moz-element(#attention);
+}
+
+
+.verso .copy {
+    background-image: -moz-element(#verso);
+}

@@ -580,10 +580,10 @@ let renderSituationRecto n (situation: Situation) =
 
     Html.div [
         prop.className $"card recto situation { colorProp situation.Color } {pos n}" 
-        if System.IO.File.Exists($"./cards/img/situation{situation.Id}.png") then
-            prop.style [style.custom("--illustration", $"url(img/situation{situation.Id}.png)") ]
+        if System.IO.File.Exists($"./cards/img/illustrations/situation-{situation.Id}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/situation-{situation.Id}.webp)") ]
         prop.children [
-            Html.h1 $"Situation {situation.Id}"
+            Html.h1 $"Contexte {situation.Id}"
             Html.div [ 
                 prop.className "description" 
                 prop.children [
@@ -609,10 +609,16 @@ let renderReactionRecto (n: int) (r: int) key (situation: Situation) (reaction: 
     Html.div [
         let cls = match key with None -> "reaction" | Some _ -> "escalade"
         prop.className $"card recto {cls} {colorProp situation.Color } {pos n}"
+        // match key with
+        // | None ->
+        if System.IO.File.Exists($"./cards/img/illustrations/strategie-{situation.Id}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-{situation.Id}.webp)") ]
+        // | Some _ -> ()
+
         prop.children [
             Html.h1 (
                 match key with 
-                | None -> $"Réaction S{situation.Id}"
+                | None -> $"Stratégie {situation.Id}"
                 | Some c -> $"Escalade {situation.Id} {c}")
             Html.div [
                 prop.className "description"
@@ -652,11 +658,17 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
     Html.div [
         let cls = match key with None -> "reaction" | Some _ -> "escalade"
         prop.className $"card verso {cls} {colorProp situation.Color } {pos n}"
+        // match key with
+        // | None ->
+        if System.IO.File.Exists($"./cards/img/illustrations/ricochets-{situation.Id}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/ricochets-{situation.Id}.webp)") ]
+        // | Some _ -> ()
+
         prop.children [
             Html.h1 (
                 match key with 
-                | None -> $"Réaction S{situation.Id}"
-                | Some c -> $"Escalade {situation.Id} {c}")
+                | None -> $"Ricochet {situation.Id}"
+                | Some c -> $"Ricochet {situation.Id} {c}")
             Html.div [
                 prop.className "consequences"
                 prop.children [
@@ -720,9 +732,10 @@ let render (cards: Card list) =
         Html.head [
             Html.meta [ prop.charset "utf-8" ]
             Html.title [ prop.text "Transmission(s)" ]
+            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
+            Html.link [ prop.href "./stylesheets/cards.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
             Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
-            Html.link [prop.href "./interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
-            Html.link [ prop.href "./cards.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
+            Html.script [ prop.src "./js/anchor.js" ]
         ]
         Html.body [
             
@@ -780,8 +793,8 @@ let cards =
     // [   for i in 1 .. 10 do
             // Alea i
     [
-        for i in 1 .. 10 do
-            Alea i
+        // for i in 1 .. 10 do
+        //     Alea i
         
         for situation in champigny do
 
@@ -799,5 +812,13 @@ let html =
     render cards 
     |> Render.htmlView
 
-// System.IO.File.WriteAllText("./cards/champigny.html", html)
+// System.IO.File.WriteAllText("./cards/situations.html", html)
+System.IO.File.WriteAllText("./cards/champigny.html", html)
 // System.IO.File.WriteAllText("./cards/champigny-alea.html", html)
+
+let alea = [ for i in 1 .. 10 do Alea i ]
+
+let aleahtml =
+    render alea 
+    |> Render.htmlView
+System.IO.File.WriteAllText("./cards/alea.html", aleahtml)

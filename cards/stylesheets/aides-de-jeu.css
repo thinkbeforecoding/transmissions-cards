@@ -1,0 +1,124 @@
+
+.help {
+    --color: var(--yellow);
+    --margin: calc(3mm + var(--bleed));
+}
+
+.help h1 {
+    width: 100%;
+    font-size: 11pt;
+    border-radius: 0;
+    font-weight: bold;
+
+    padding-top: calc(5mm + var(--bleed)); /* larger to continue over bleeds */
+    padding-bottom: 4mm;
+    
+}
+
+.help h2 {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-bottom: 2mm;
+    font-weight: bold;
+    font-family: var(--title-font);
+    color: var(--color);
+    padding-bottom: 1.5mm;
+    border-bottom: 0.6mm solid var(--color);
+}
+.help h3 {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-top: 2mm;
+    margin-bottom: 1mm;
+
+
+    color: var(--blue);
+} 
+
+.help ul {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: calc(2mm + var(--bleed));
+}
+
+.help li {
+    text-align: justify;
+    padding-left: 3mm;
+    hyphens: auto;
+    hyphenate-character: '-';
+
+    strong {
+        font-weight: var(--medium);
+    }
+}
+
+.help .table {
+
+    transform: rotate(90deg);
+    transform-origin: top left;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 20% 40% 40%;
+    position: absolute;
+
+    margin-top: 0mm;
+    margin-left: calc(2mm + var(--bleed));
+    margin-right: calc(2mm + var(--bleed));
+    width: 90mm;
+    height: 65mm;
+
+    left: calc(65mm + var(--bleed));
+
+    font-size: 12pt;
+}
+
+
+.help .table div {
+    /* line-height: 1em; */
+    font-size: 9pt;
+    font-weight: 200;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.help .table .h {
+    font-weight: var(--medium);
+    font-size: 12pt;
+}
+
+.help .table strong {
+    display: block;
+    font-weight: var(--medium);
+    width: 100%;
+    margin-bottom: 0.3em;
+}
+
+.help .table .positif {
+
+    color: var(--green);
+}
+
+.help .table .negatif {
+    color: var(--red);
+}
+
+.help .table .b-t {
+    border-top: 0.4mm solid var(--yellow);
+}
+
+.help .table .b-l {
+    border-left: 0.4mm solid var(--yellow);
+}
+
+.recto .copy {
+    background-image: -moz-element(#recto);
+}
+
+.verso .copy {
+    background-image: -moz-element(#verso);
+}

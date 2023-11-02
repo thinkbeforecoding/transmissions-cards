@@ -18,9 +18,12 @@
 
     /* Color definitions for cards */
     --blue: #3A88A1;
-    --red: #E92D3C;
-    --green: #479C6A;
-    --yellow: #F7B316;
+    --red-rgb: 233, 45, 60;
+    --red: rgb(var(--red-rgb));
+    --green-rgb: 71, 156, 106;
+    --green: rgb(var(--green-rgb));
+    --yellow-rgb: 247, 179, 22; /* #F7B316 */
+    --yellow: rgb(var(--yellow-rgb));
     --purple: #2C2852;
 
     /* medium font weight for futura */
@@ -37,44 +40,51 @@
     margin-bottom: 0mm;
     margin-left: 0mm;
 
+    @top-left {
+        content: "Page " counter(page);
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding-top: 10mm;
+    }
 }
 
 /* Fonts and their variations */
 @font-face {
     font-family: "Mundial";
-    src: url("./fonts/MundialBold.ttf");
+    src: url("../fonts/MundialBold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Mundial";
-    src: url("./fonts/MundialLight.ttf");
+    src: url("../fonts/MundialLight.ttf");
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("./fonts/FuturaPTBook.ttf");
+    src: url("../fonts/FuturaPTBook.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("./fonts/FuturaPTMedium.ttf");
+    src: url("../fonts/FuturaPTMedium.ttf");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("./fonts/FuturaPTBold.ttf");
+    src: url("../fonts/FuturaPTBold.ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("./fonts/FuturaPTBookOblique.ttf");
+    src: url("../fonts/FuturaPTBookOblique.ttf");
     font-weight: normal;
     font-style: italic;
 }
@@ -114,7 +124,7 @@ section {
        transparent */
     --overlay: linear-gradient(transparent, transparent);
 
-    --illustration: url(./img/situation.svg);
+    --illustration: url(../img/situation.svg);
 
 }
 
@@ -127,7 +137,7 @@ section {
 
 .verso.situation {
     /* verso of situations have the map and logo as background */
-    background-image: url(./img/verso.svg);
+    background-image: url(../img/verso.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -159,8 +169,9 @@ section {
 .verso.escalade {
     /* verso of reactions have a 20mm image at the bottom */
     --bg-size: calc(var(--bleed) + 20mm);
+    --illustration: url(../img/reaction.svg);
 
-    background-image: var(--overlay), url(./img/reaction.svg), var(--underlay);
+    background-image: var(--overlay), var(--illustration) , var(--underlay);
 
     background-repeat: no-repeat;
     background-size: auto var(--bg-size);
@@ -196,7 +207,7 @@ section {
 }
 
 .verso.alea {
-    background-image: url(./img/alea.svg);
+    background-image: url(../img/alea.svg);
     background-size: cover;
 }
 
@@ -271,7 +282,7 @@ h1 {
     margin-right: auto;
     margin-bottom: 1mm;
 
-    padding-top: calc(2mm + var(--bleed)); /* larger to continue over bleeds */
+    padding-top: calc(3.5mm + var(--bleed)); /* larger to continue over bleeds */
     padding-bottom: 2mm;
     
     /* by default text is white on color background */
@@ -291,6 +302,10 @@ h1 {
 
     border: 1.2pt solid var(--color);
     border-top: none;
+}
+
+.verso h1 {
+    width: 70%;
 }
 
 
