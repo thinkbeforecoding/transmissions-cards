@@ -611,8 +611,11 @@ let renderReactionRecto (n: int) (r: int) key (situation: Situation) (reaction: 
         prop.className $"card recto {cls} {colorProp situation.Color } {pos n}"
         // match key with
         // | None ->
-        if System.IO.File.Exists($"./cards/img/illustrations/strategie-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-{situation.Id}.webp)") ]
+        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/strategie-e-{situation.Id}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-e-{situation.Id}.webp)") ]
+        // | Some _ -> ()
+        elif System.IO.File.Exists($"./cards/img/illustrations/strategie-{situation.Id}.webp") then
+                prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-{situation.Id}.webp)") ]
         // | Some _ -> ()
 
         prop.children [
@@ -660,7 +663,9 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
         prop.className $"card verso {cls} {colorProp situation.Color } {pos n}"
         // match key with
         // | None ->
-        if System.IO.File.Exists($"./cards/img/illustrations/ricochets-{situation.Id}.webp") then
+        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/ricochets-e-{situation.Id}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/ricochets-e-{situation.Id}.webp)") ]
+        elif System.IO.File.Exists($"./cards/img/illustrations/ricochets-{situation.Id}.webp") then
             prop.style [style.custom("--illustration", $"url(img/illustrations/ricochets-{situation.Id}.webp)") ]
         // | Some _ -> ()
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 922 443" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,23.6221,23.6208)">
+        <rect id="Plan-de-travail1" serif:id="Plan de travail1" x="0" y="0" width="874.015" height="395.553" style="fill:none;"/>
+        <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+            <text x="113.231px" y="49.816px" style="font-family:'Mundial-Regular', 'Mundial';font-size:16px;fill:rgb(72,159,113);">Mer<tspan x="141.688px " y="49.816px ">c</tspan>i</text>
+        </g>
+        <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+            <text x="113.231px" y="68.556px" style="font-family:'Mundial-Bold', 'Mundial';font-weight:700;font-size:16px;fill:rgb(72,159,113);">beaucoup !</text>
+        </g>
+        <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+            <text x="50.195px" y="49.816px" style="font-family:'Mundial-Regular', 'Mundial';font-size:16px;fill:rgb(72,159,113);">Je t<tspan x="76.712px " y="49.816px ">e</tspan></text>
+        </g>
+        <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+            <text x="14.5px" y="68.816px" style="font-family:'Mundial-Bold', 'Mundial';font-weight:700;font-size:16px;fill:rgb(72,159,113);">sou<tspan x="40.5px " y="68.816px ">t</tspan>iens !</text>
+        </g>
+        <g transform="matrix(0,4.16667,4.16667,0,536.234,225.488)">
+            <path d="M-29.343,-29.343L29.343,-29.343" style="fill:none;fill-rule:nonzero;stroke:rgb(72,159,113);stroke-width:1px;"/>
+        </g>
+        <g transform="matrix(4.16667,0,0,4.16667,-25,1240.16)">
+            <path d="M0,-297.638L-15,-297.638M221.764,-297.638L236.764,-297.638M0,0L-15,0M221.764,0L236.764,0M6,-303.638L6,-318.638M6,6L6,21M215.764,-303.638L215.764,-318.638M215.764,6L215.764,21" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.25px;stroke-miterlimit:10;"/>
+        </g>
+        <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+            <clipPath id="_clip1">
+                <rect x="-26.669" y="-26.669" width="263.102" height="350.976" clip-rule="nonzero"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,1,-6,297.638)">
+                    <path d="M0,-297.638L-15,-297.638M221.764,-297.638L236.764,-297.638M0,0L-15,0M221.764,0L236.764,0M6,-303.638L6,-318.638M6,6L6,21M215.764,-303.638L215.764,-318.638M215.764,6L215.764,21" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.25px;stroke-miterlimit:10;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-8.6693,303.307)">
+                    <path d="M0,-308.976L-18,-308.976M227.102,-308.976L245.102,-308.976M0,0L-18,0M227.102,0L245.102,0M3,-311.976L3,-329.976M3,3L3,21M224.102,-311.976L224.102,-329.976M224.102,3L224.102,21" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.25px;stroke-miterlimit:10;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-8.6693,303.307)">
+                    <path d="M0,-308.976L-18,-308.976M227.102,-308.976L245.102,-308.976M0,0L-18,0M227.102,0L245.102,0M3,-311.976L3,-329.976M3,3L3,21M224.102,-311.976L224.102,-329.976M224.102,3L224.102,21" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.25px;stroke-miterlimit:10;"/>
+                </g>
+                <g transform="matrix(0,-1,-1,0,104.882,-18.5001)">
+                    <circle cx="-5" cy="0" r="5" style="fill:none;stroke:white;stroke-width:1.25px;stroke-miterlimit:10;"/>
+                </g>
+                <g transform="matrix(0,1,1,0,110.882,-13.5001)">
+                    <path d="M-6,-6L6,-6" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:1.25px;stroke-miterlimit:10;"/>
+                </g>
+                <g transform="matrix(0,-1,-1,0,104.882,-16.5001)">
+                    <circle cx="-3" cy="0" r="3" style="fill:none;stroke:white;stroke-width:1.25px;stroke-miterlimit:10;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

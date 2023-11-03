@@ -1,7 +1,9 @@
 
 .recto.soutien {
-    background-image: url(../img/soutien.svg);
-    background-size: cover;
+    background-image: url(../img/illustrations/soutien.svg), url(../img/illustrations/soutien.webp);
+    background-size:  contain,cover;
+    background-position: top, bottom;
+    background-repeat: no-repeat;
 }
 
 .verso.soutien {
@@ -10,8 +12,10 @@
 }
 
 .recto.attention {
-    background-image: url(../img/attention.svg);
-    background-size: cover;
+    background-image: url(../img/illustrations/attention.svg), url(../img/illustrations/attention.webp);
+    background-size: contain, cover;
+    background-position: top, bottom;
+    background-repeat: no-repeat;
 }
 
 .verso.attention {
