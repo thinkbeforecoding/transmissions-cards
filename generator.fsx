@@ -27,16 +27,16 @@ type Style =
 
 
 type Situation =
-    { Id: int 
+    { Id: int
       Title: string
       Color: Colors
       Text: (Style * string) list list
-      Reactions: Reaction list 
+      Reactions: Reaction list
       Escalades: Map<char, Reaction> }
 and Reaction =
     { Title: string
       Text: (Style * string) list list
-      Consequences: Consequence list }    
+      Consequences: Consequence list }
 and Consequence =
     { Range: Range
       Title: string
@@ -59,7 +59,7 @@ type Lines =
       Lines: MarkdownSpans list }
 
 module Lines =
-    let empty = { Current = []; Lines = []} 
+    let empty = { Current = []; Lines = []}
     let addSpan span lines =
         { lines with Current = span :: lines.Current }
     let nextLine lines =
@@ -87,16 +87,16 @@ let rec splitSpan (span: MarkdownSpan) =
     | Strong(body, _) ->
         splitList body Lines.empty
         |> List.map (fun l -> Strong(l, None))
-    | x -> [x] 
+    | x -> [x]
 
-        
+
 and splitList spans lines =
     match spans with
     | [] -> Lines.close lines
     | span :: tail ->
         let parts = splitSpan span
         splitList tail (Lines.addLines parts lines)
-            
+
 
 
 
@@ -127,7 +127,7 @@ let textToString (text: (Style * string) list) =
 
 let toText (spans: MarkdownSpans) =
     toText' { FontStyle = Regular; Color = DefaultColor } spans
-    
+
 let tryParseLink (description: MarkdownSpans) =
     match description with
     | IndirectLink(body,_,_,_) :: _ ->
@@ -142,11 +142,11 @@ let escaladeRx = System.Text.RegularExpressions.Regex(@"\(\s*voir\s+Escalade(\s+
 let rec parseEscalade (description, items) : Reaction option =
     match tryParseLink description with
     | Some _ -> None
-    | None -> 
-        let text = 
+    | None ->
+        let text =
             description
             |> splitLines
-            |> List.map toText 
+            |> List.map toText
         let title = textToString (List.concat text)
         let conseqs = List.map (parseConsequence Map.empty) items
         Some
@@ -161,7 +161,7 @@ and extractEscalade ps =
     | Span(description,_) :: _ ->
         description, []
     | _ -> failwith "Invalid escalade format"
-    
+
 
 and extractEscalades ps =
     match ps with
@@ -175,14 +175,14 @@ and extractEscalades ps =
 
 and extractConsequence ps : ConsequenceMd =
     match ps with
-    | Span(description, _) :: tail 
+    | Span(description, _) :: tail
     | Paragraph( description , _) :: tail ->
         description, tail
-    | s :: _ -> failwith $"{ s.GetType().Name }" 
+    | s :: _ -> failwith $"{ s.GetType().Name }"
     | [] -> failwith "Empty consequence"
 
 and parseConsequence (escalades: Map<char, Reaction>) ((description, escaladesMd): ConsequenceMd)  : Consequence =
-    let range= 
+    let range=
         description |> List.tryPick ( function
             | Literal(txt,_) ->
                 let m = rangeRx.Match(txt)
@@ -204,20 +204,20 @@ and parseConsequence (escalades: Map<char, Reaction>) ((description, escaladesMd
         |> extractEscalades
         |> List.choose (fun (description,_) ->
             match tryParseLink description with
-            | None -> 
-                let title = description 
+            | None ->
+                let title = description
                                 |> splitLines
-                                |> List.map toText 
+                                |> List.map toText
                                 |> List.concat
                                 |> textToString
-                escalades |> Map.tryFindKey (fun _ e -> e.Title = title) 
+                escalades |> Map.tryFindKey (fun _ e -> e.Title = title)
             | Some link ->
-                escalades |> Map.tryFindKey (fun _ e -> e.Title.Contains (link.Trim())) 
+                escalades |> Map.tryFindKey (fun _ e -> e.Title.Contains (link.Trim()))
         )
         |> List.sort
 
-    
-    let score = 
+
+    let score =
         let s =
             description |> List.tryPick ( function
                     | Literal(txt,_) ->
@@ -228,17 +228,17 @@ and parseConsequence (escalades: Map<char, Reaction>) ((description, escaladesMd
                             None
                     | _ -> None)
         Score(s, escaladeKeys)
-        
+
 
     let text =
         description
         |> List.map (function
-            | Literal(txt,r) when rangeRx.IsMatch(txt) ||scoreRx.IsMatch(txt) || escaladeRx.IsMatch(txt) -> 
+            | Literal(txt,r) when rangeRx.IsMatch(txt) ||scoreRx.IsMatch(txt) || escaladeRx.IsMatch(txt) ->
                 let txt2 = rangeRx.Replace(txt,"")
                 let txt3 = scoreRx.Replace(txt2,"")
                 Literal(escaladeRx.Replace(txt3,""),r)
             | t -> t
-        ) 
+        )
         |> toText
 
 
@@ -266,7 +266,7 @@ let escaladeId (i: int) =
     char(int 'A' + i)
 
 let parseReaction (escalades: Map<char, Reaction>) (description, items) =
-    let conseqs = List.map (parseConsequence escalades) items 
+    let conseqs = List.map (parseConsequence escalades) items
     let text =
         description
         |> splitLines
@@ -274,7 +274,7 @@ let parseReaction (escalades: Map<char, Reaction>) (description, items) =
     { Title = textToString (List.concat text)
       Text = text
       Consequences = conseqs
-    }            
+    }
 
 let parseTitle (spans: MarkdownSpans) =
     (System.Text.StringBuilder(), spans)
@@ -289,17 +289,17 @@ let parseTitle (spans: MarkdownSpans) =
 
 let idRx = System.Text.RegularExpressions.Regex(@"^((?<num>\d+)\.\s*)?(?<title>.*)$")
 
-let parseSituations (md : MarkdownDocument) = 
+let parseSituations (md : MarkdownDocument) =
     let rec loop ps result =
         match ps with
         | Heading(2, title,_) :: Paragraph(txtSituation,_) :: tail ->
-            
-            
+
+
             let situation =
                 try
                     let reactionsMd, tail = extractReactions tail
 
-                    let escaladesMd = 
+                    let escaladesMd =
                         [ for _,conseqsMd in reactionsMd do
                             for _,escaladesMd in conseqsMd do
                                 yield! extractEscalades escaladesMd ]
@@ -311,11 +311,11 @@ let parseSituations (md : MarkdownDocument) =
 
                         |> Seq.mapi (fun i e -> escaladeId i,e)
                         |> Map.ofSeq
-                    
+
                     let reactions = List.map (parseReaction escalades) reactionsMd
-                    let tit = parseTitle title 
+                    let tit = parseTitle title
                     let m = idRx.Match(tit)
-                    let id = 
+                    let id =
                         if m.Groups["num"].Success then
                             int m.Groups["num"].Value
                         else
@@ -325,14 +325,14 @@ let parseSituations (md : MarkdownDocument) =
 
                     { Id = id
                       Title = titleTxt
-                      Color = 
+                      Color =
                         let id = id%25
                         if id <= 5 then
                             Blue
                         elif id <= 10 then
                             Red
                         elif id < 15 then
-                            Yellow 
+                            Yellow
                         elif id < 20 then
                             Purple
                         else
@@ -346,11 +346,11 @@ let parseSituations (md : MarkdownDocument) =
                       Escalades = escalades
                     } |> Some
                 with
-                | ex -> 
+                | ex ->
                     printfn $"%O{ex}"
                     None
 
-                
+
             match situation with
             | Some situation ->
                 loop tail (situation :: result)
@@ -369,7 +369,7 @@ let punctRx = System.Text.RegularExpressions.Regex(@"(\s*)(\.\.\.|\.|,|\?[!?]?|\
 let quoteRx = System.Text.RegularExpressions.Regex(@"[""“”«]\s*([^""“”»]*)\s*[""“”»]( +)?")
 let normSpaceRx = System.Text.RegularExpressions.Regex(@"(\*|_) +")
 
-let cleanMd (md: string) = 
+let cleanMd (md: string) =
     let md2 =
         rmdRx.Replace(md, (fun m ->
             match m.Groups[2].Value with
@@ -390,7 +390,7 @@ let cleanMd (md: string) =
             | _ -> m.Value )
         )
     let md4 =
-       quoteRx.Replace(md3, (fun m -> 
+       quoteRx.Replace(md3, (fun m ->
 
         if m.Groups[2].Success then
             "_«\xA0" + m.Groups[1].Value + "\xA0»_ "
@@ -403,7 +403,7 @@ let cleanMd (md: string) =
     md5.Replace(" \xA0","\xA0")
 
 let parse path =
-    let mdText = 
+    let mdText =
         File.ReadAllText(path)
         |> cleanMd
 
@@ -419,7 +419,7 @@ let cut len (s: string) =
     if s.Length >= len-1 then
         s.Substring(0,len-1) + "…"
     else
-        s 
+        s
 
 let situationScore situation =
     let scores =
@@ -427,7 +427,7 @@ let situationScore situation =
           for reaction in situation.Reactions do
             for cons in reaction.Consequences do
                     match cons.Score with
-                    | Score(Some(n,_),_) -> 
+                    | Score(Some(n,_),_) ->
                         reactionProba * cons.Range.Probability * decimal n
                     | Score(None,[]) -> 0m
                     | Score(None, es) ->
@@ -474,7 +474,7 @@ let check (situations: Situation list) =
                         for n in multi do
                             warn $"  [{name}] valeur {n} multiple \x1b[38;2;128;128;128m/ { reaction.Title |> cut 40}"
 
-                if situation.Text = [] then 
+                if situation.Text = [] then
                     warn "  texte situation manquant"
                 if situation.Reactions = [] then
                     warn "  reactions manquantes"
@@ -489,12 +489,12 @@ let check (situations: Situation list) =
                             | Score(None, []) ->
                                     warn $"  [reaction {i+1}] score manquant \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
                             | Score(None, _) -> ()
-                            | Score(Some(n,_),_) -> 
+                            | Score(Some(n,_),_) ->
                                 if n > 3 then
                                     warn $"  [reaction {i+1}] score trop grand ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
                                 elif n < -3 then
                                     warn $"  [reaction {i+1}] score trop petit ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
-                                
+
                     for k,escalade in situation.Escalades |> Map.toSeq do
                         if escalade.Text = [] then
                             warn $"  [escalade {k}] texte manquant"
@@ -525,12 +525,12 @@ let check (situations: Situation list) =
                             let escalade = situation.Escalades[e]
 
                             warn $"  escalades {e} non utilisées \x1b[38;2;128;128;128m/ {textToString  (List.concat escalade.Text)  |> cut 40 }"
-                let result = 
+                let result =
                     if errors.Count = 0 then
                         let score = situationScore situation
 
                         Ok score
-                        
+
                     else
                         Error errors
                 situation,   result
@@ -548,7 +548,7 @@ let check (situations: Situation list) =
         | Error errors ->
             printfn "❌ S%d %s \x1b[38;2;128;128;128m(%d réactions / %d escalades / %d cards)\x1b[0m" situation.Id title situation.Reactions.Length situation.Escalades.Count cards
             for error in errors do
-                printfn "%s" error
+                printfn $"%s{error}"
 
     [ for situation,result in checks do
         match result with
@@ -573,19 +573,19 @@ type Card =
 
 let pos n =
     let c = 1+n%3;
-    let r = 1+n/3; 
+    let r = 1+n/3;
     $"c{c} r{r}"
 
 let renderSituationRecto n (situation: Situation) =
 
     Html.div [
-        prop.className $"card recto situation { colorProp situation.Color } {pos n}" 
+        prop.className $"card recto situation { colorProp situation.Color } {pos n}"
         if System.IO.File.Exists($"./cards/img/illustrations/situation-{situation.Id}.webp") then
             prop.style [style.custom("--illustration", $"url(img/illustrations/situation-{situation.Id}.webp)") ]
         prop.children [
-            Html.h1 $"Contexte {situation.Id}"
-            Html.div [ 
-                prop.className "description" 
+            Html.h1 $"Situation {situation.Id}"
+            Html.div [
+                prop.className "description"
                 prop.children [
                     for line in situation.Text do
                         Html.p [
@@ -602,7 +602,7 @@ let renderSituationRecto n (situation: Situation) =
 
 let renderSituationVerso n  =
     Html.div [
-        prop.className $"card verso situation {pos n}" 
+        prop.className $"card verso situation {pos n}"
     ]
 
 let renderReactionRecto (n: int) (r: int) key (situation: Situation) (reaction: Reaction) =
@@ -620,7 +620,7 @@ let renderReactionRecto (n: int) (r: int) key (situation: Situation) (reaction: 
 
         prop.children [
             Html.h1 (
-                match key with 
+                match key with
                 | None -> $"Stratégie {situation.Id}"
                 | Some c -> $"Escalade {situation.Id} {c}")
             Html.div [
@@ -637,7 +637,7 @@ let renderReactionRecto (n: int) (r: int) key (situation: Situation) (reaction: 
                     ]
                 ]
             Html.div [
-                let count = 
+                let count =
                     match key with
                     | None -> situation.Reactions.Length
                     | Some _ ->  situation.Escalades.Count
@@ -647,7 +647,7 @@ let renderReactionRecto (n: int) (r: int) key (situation: Situation) (reaction: 
                     Html.div count
                 ]
             ]
-                
+
             ]
         ]
 let plusEscalade ids =
@@ -671,7 +671,7 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
 
         prop.children [
             Html.h1 (
-                match key with 
+                match key with
                 | None -> $"Ricochet {situation.Id}"
                 | Some c -> $"Ricochet {situation.Id} {c}")
             Html.div [
@@ -679,7 +679,7 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
                 prop.children [
                     for consequence in reaction.Consequences do
                         Html.p [
-                            Html.span [ 
+                            Html.span [
                                 prop.className "dice"
                                 if consequence.Range.Min = consequence.Range.Max then
                                     prop.text $"{consequence.Range.Min} :"
@@ -712,10 +712,10 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
                                     prop.text $" (Escalade %s{list})\n"
                                 ]
                             ]
-                            
+
                         ]
                 ]
-                
+
             ]
         ]
 
@@ -743,7 +743,7 @@ let render (cards: Card list) =
             Html.script [ prop.src "./js/anchor.js" ]
         ]
         Html.body [
-            
+
                 for page in cards |> List.chunkBySize 9 do
                     Html.section [
                         prop.className "recto"
@@ -754,7 +754,7 @@ let render (cards: Card list) =
                             Html.div [ prop.className "mark m-left m-bottom"]
                             Html.div [ prop.className "mark m-right m-bottom"]
 
-                            for n,card in List.indexed page do 
+                            for n,card in List.indexed page do
                                 match card with
                                 | Alea x ->
                                     renderAleaRecto n x
@@ -762,7 +762,7 @@ let render (cards: Card list) =
                                     renderSituationRecto n sit
                                 | Reaction(r,situation, reaction) ->
                                     renderReactionRecto n r None situation reaction
-                                | Escalade(c, r, situation, reaction) -> 
+                                | Escalade(c, r, situation, reaction) ->
                                     renderReactionRecto n r (Some c) situation reaction
                         ]
                     ]
@@ -777,7 +777,7 @@ let render (cards: Card list) =
                                     renderSituationVerso n
                                 | Reaction(_,situation, reaction) ->
                                     renderReactionVerso n None situation reaction
-                                | Escalade(c,_, situation, reaction) -> 
+                                | Escalade(c,_, situation, reaction) ->
                                     renderReactionVerso n (Some c) situation reaction
                         ]
                     ]
@@ -785,11 +785,11 @@ let render (cards: Card list) =
     ]
 
 fsi.PrintDepth <- 1
-let champigny = 
+let champigny =
     parse @"champigny.md"
     |> check
 
-let situations = 
+let situations =
     parse @"situations.md"
     |> check
 
@@ -800,7 +800,7 @@ let cards =
     [
         // for i in 1 .. 10 do
         //     Alea i
-        
+
         for situation in champigny do
 
             Situation( situation)
@@ -814,7 +814,7 @@ let cards =
     ]
 
 let html =
-    render cards 
+    render cards
     |> Render.htmlView
 
 // System.IO.File.WriteAllText("./cards/situations.html", html)
@@ -824,6 +824,40 @@ System.IO.File.WriteAllText("./cards/champigny.html", html)
 let alea = [ for i in 1 .. 10 do Alea i ]
 
 let aleahtml =
-    render alea 
+    render alea
     |> Render.htmlView
 System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
+
+
+
+[
+    for situation in champigny do
+        Situation( situation)
+]
+|> render
+|> Render.htmlView
+|> fun html -> System.IO.File.WriteAllText("./cards/situations-champigny.html", html)
+[ for situation in champigny do
+        if situation.Id = 15 then
+            Situation( situation)
+            for n,reaction in situation.Reactions |> Seq.indexed do
+                Reaction (n, situation, reaction)
+            for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+                Escalade (key, n, situation, escalade)
+]
+|> render
+|> Render.htmlView
+|> fun html -> System.IO.File.WriteAllText("./cards/situation-15.html", html)
+
+
+[ for situation in champigny do
+        if situation.Id = 16 then
+            Situation( situation)
+            for n,reaction in situation.Reactions |> Seq.indexed do
+                Reaction (n, situation, reaction)
+            for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+                Escalade (key, n, situation, escalade)
+]
+|> render
+|> Render.htmlView
+|> fun html -> System.IO.File.WriteAllText("./cards/situation-16.html", html)
