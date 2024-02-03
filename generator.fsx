@@ -1,5 +1,5 @@
-#r "nuget: FSharp.Formatting"
 #r "nuget: Feliz.ViewEngine"
+#r "nuget: FSharp.Formatting"
 open System.IO
 open FSharp.Formatting.Markdown
 
@@ -300,9 +300,15 @@ let parseSituations (md : MarkdownDocument) =
                     let reactionsMd, tail = extractReactions tail
 
                     let escaladesMd =
-                        [ for _,conseqsMd in reactionsMd do
-                            for _,escaladesMd in conseqsMd do
-                                yield! extractEscalades escaladesMd ]
+                        let rec loop reactionsMd =
+                            [ for _,conseqsMd in reactionsMd do
+                                for _,escaladesMd in conseqsMd do
+                                    let escalades = extractEscalades escaladesMd
+                                    yield! escalades
+                                    yield! loop escalades
+
+                            ]
+                        loop reactionsMd
                     let escalades =
                         escaladesMd
                         |> List.choose parseEscalade
@@ -672,8 +678,8 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
         prop.children [
             Html.h1 (
                 match key with
-                | None -> $"Ricochet {situation.Id}"
-                | Some c -> $"Ricochet {situation.Id} {c}")
+                | None -> $"Conséquences {situation.Id}"
+                | Some c -> $"Conséquences {situation.Id} {c}")
             Html.div [
                 prop.className "consequences"
                 prop.children [
@@ -794,6 +800,7 @@ let situations =
     |> check
 
 
+System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let cards =
     // [   for i in 1 .. 10 do
             // Alea i
@@ -801,7 +808,7 @@ let cards =
         // for i in 1 .. 10 do
         //     Alea i
 
-        for situation in champigny do
+        for situation in situations do
 
             Situation( situation)
             for n,reaction in situation.Reactions |> Seq.indexed do
@@ -818,13 +825,13 @@ let html =
     |> Render.htmlView
 
 // System.IO.File.WriteAllText("./cards/situations.html", html)
-System.IO.File.WriteAllText("./cards/champigny.html", html)
+System.IO.File.WriteAllText("./cards/garges.html", html)
 // System.IO.File.WriteAllText("./cards/champigny-alea.html", html)
 
 let alea = [ for i in 1 .. 10 do Alea i ]
 
 let aleahtml =
-    render alea
+    render (alea @ alea @ alea )
     |> Render.htmlView
 System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 
@@ -838,7 +845,7 @@ System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 |> Render.htmlView
 |> fun html -> System.IO.File.WriteAllText("./cards/situations-champigny.html", html)
 [ for situation in champigny do
-        if situation.Id = 15 then
+        if situation.Id = 17 then
             Situation( situation)
             for n,reaction in situation.Reactions |> Seq.indexed do
                 Reaction (n, situation, reaction)
@@ -847,7 +854,7 @@ System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 ]
 |> render
 |> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/situation-15.html", html)
+|> fun html -> System.IO.File.WriteAllText("./cards/situation-17.html", html)
 
 
 [ for situation in champigny do

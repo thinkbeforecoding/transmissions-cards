@@ -1,47 +1,9 @@
 <!-- Copy and paste the converted output. -->
 
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+<!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
-* ALERTS: 1
-
-Conversion time: 7.419 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Sun Oct 08 2023 16:10:22 GMT-0700 (PDT)
-* Source doc: 2023_Transmission(s)_Situations Perso
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 5 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 1.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+* ALERTS: 1 -->
 
 
 ![alt_text](images/image1.png "image_tooltip")
@@ -54,194 +16,212 @@ You have 5 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 # SITUATIONS FÉMININES
 
 
-## Le frotteur du métro
+## 1. Le frotteur du métro
 
-En prenant le bus pour rentrer chez vous, un homme frotte son sexe contre vos fesses.
+En prenant le bus pour rentrer chez toi, un homme frotte son sexe contre tes fesses.
 
 
 
 * ** Je ne fais rien.**
-    * **1 à 2 :** La rame se vide à la station suivante et l’homme reste dans celle-ci mais n’est plus collé à vous. Il semble que vous vous soyez trompée sur ses intentions. Vous vous sentez soulagée mais un peu honteuse. **(0)**
-    * **3 à 6 :** L’homme insiste et commence à vous toucher, vous écourtez votre voyage et sortez à la station suivante pour lui échapper. **(-2)**
-    * **7 à 10 :** Un·e passager·ère se rend compte de la situation et interpelle l’homme qui sort à la station suivante sous les huées. Vous êtes soulagée mais un peu secouée par l’événement. **(+1)**
+    * **1 à 2 :** La rame se vide à la station suivante et l’homme reste dans celle-ci mais n’est plus collé à toi. Il semble que tu te sois trompé·e sur ses intentions. Tu te sens soulagé·e mais un peu honteux·se. **(0)**
+    * **3 à 6 :** L’homme insiste et commence à te toucher, tu écourtes ton voyage et sors à la station suivante pour lui échapper. **(-2)**
+    * **7 à 10 :** Un·e passager·ère se rend compte de la situation et interpelle l’homme qui sort à la station suivante sous les huées. Tu es soulagé·e mais un peu secoué·e par l’événement. **(+1)**
 * **Je change de place dans l'espoir qu'il ne me suive pas.**
-    * **1 à 4 :** Votre stratégie fonctionne, l’homme ne vous suit pas et vous poursuivez le voyage sans encombre. **(+2)**
-    * **5 à 6 :** L’homme vous suit et vient s’asseoir à côté de vous. Il vous touche la cuisse avec sa main et vous sortez à la station suivante pour lui échapper. (-3)
-    * **7 à 10 :** Un·e passager·e se rend compte de la situation et interpelle l’homme qui sort à la station suivante sous les huées. Vous êtes soulagée mais un peu secouée par l’événement. **(+1)**
+    * **1 à 4 :** Ta stratégie fonctionne, l’homme ne te suit pas et tu poursuis le voyage sans encombre. **(+2)**
+    * **5 à 6 :** L’homme te suit et vient s’asseoir à côté de toi. Il te touche la cuisse avec sa main et tu sors à la station suivante pour lui échapper. **(-3)**
+    * **7 à 10 :** Un·e passager·e se rend compte de la situation et interpelle l’homme qui sort à la station suivante sous les huées. Tu es soulagé·e mais un peu secoué·e par l’événement. **(+1)**
 * **Je demande de l’aide à la personne la plus proche de moi.**
-    * **1 à 5 :** La personne vous aide et interpelle l’homme qui sort à la station suivante. Vous êtes soulagée et contente de votre choix. **(+2)**
-    * **6 :** La personne vous aide et interpelle l’homme qui sort à la station suivante honteux. Lorsque vous sortez à la station d’après, la personne qui vous a défendue vous propose de vous accompagner. Vous refusez poliment et elle vous dit : « T’es vraiment ingrate après ce que j’ai fait pour toi. » **(-2)**
-    * **7 à 9 :** La personne me regarde interloquée puis retourne sur son smartphone, je sors à la station suivante pour échapper à mon agresseur. **(-1)**
-    * **10 :** La personne rit et vous dit _« Tu t’es vue ? Tu prends tes rêves pour des réalités là ! »_ Vous sortez à la station suivante complètement bouleversée. **(-3)**
+    * **1 à 5 :** La personne t’aide et interpelle l’homme qui sort à la station suivante. Tu es  soulagé·e et content·e de ton choix. **(+2)**
+    * **6 :** La personne t’aide et interpelle l’homme qui sort à la station suivante honteux. Lorsque tu sors à la station d’après, la personne qui t’a défendu·e te propose de t’accompagner. Tu refuses poliment et elle te dit : « T’es vraiment ingrat·e après ce que j’ai fait pour toi. » **(-2)**
+    * **7 à 9 :** La personne te regarde interloquée puis retourne sur son smartphone. Tu sors à la station suivante pour échapper à ton agresseur. **(-1)**
+    * **10 :** La personne rit et te dit _« Tu t’es vu·e ? Tu prends tes rêves pour des réalités là ! »_ Tu sors à la station suivante complètement bouleversé·e. **(-3)**
 * **Je me retourne, lui prends la main pour la montrer à tout le monde et dit fort : _« C’est à qui la main ? »_**
-    * **1 à 2 :** Il réagit très mal et s’en prend à vous physiquement en vous insultant. Vous êtes contrainte de sortir à la station suivante pour lui échapper. Au moins vous ne vous êtes pas laissé·e faire. **(0)**
-    * **3 à 6 :** L’homme se met à rougir et à balbutier. Les gens autour de lui l’interpellent et il sort en vitesse à la station suivante. Vous l’avez fait déguerpir et êtes fière de vous. **(+3)**
-    * **7 :** Il vous répond calmement : _« Tu prends tes rêves pour des réalités là ! » _et il se décale. Les gens autour de vous semblent appuyer ses propos. Vous préférez vous éloigner… **(-1)**
-    * **8 à 10 :** Les passagèr·es l’interpellent et l’homme sort à la station suivante. Vous êtes soulagée et fière d’avoir réagi. **(+2)**
+    * **1 à 2 :** Il réagit très mal et s’en prend à toi physiquement en t’insultant. Tu es contraint·e de sortir à la station suivante pour lui échapper. Au moins tu ne t'es pas laissé·e faire. **(0)**
+    * **3 à 6 :** L’homme se met à rougir et à balbutier. Les gens autour de lui l’interpellent et il sort en vitesse à la station suivante. Tu l’as fait déguerpir et es fière de toi. **(+3)**
+    * **7 :** Il te répond calmement : _« Tu prends tes rêves pour des réalités là ! » _et il se décale. Les gens autour de toi semblent appuyer ses propos. Tu préfères t’éloigner… **(-1)**
+    * **8 à 10 :** Les passagèr·es l’interpellent et l’homme sort à la station suivante. Tu es soulagé·e et fièr·e d’avoir réagi. **(+2)**
 * **Je me retourne et le gifle.**
-    * **1 à 2 :** Il réagit très mal et s’en prend à vous physiquement en vous insultant. Vous êtes contrainte de sortir à la station suivante pour lui échapper. Au moins vous ne vous êtes pas laissé·e faire. **(-2)**
-    * **3 à 6 :** L’homme se met à rougir et à balbutier. Les gens autour de lui l’interpellent et il sort en vitesse à la station suivante. Vous l’avez fait déguerpir et êtes fière de vous. **(+3)**
-    * **7 à 10 :** Les personnes autour de vous, vous interpellent et commencent à s’en prendre à vous après vous avoir vu le frapper. Vous n’avez pas le temps de vous expliquer et ils vous poussent dehors à la station suivante. Vous êtes passée pour l’agresseur et êtes très en colère. **(-3)**
+    * **1 à 2 :** Il réagit très mal et s’en prend à toi physiquement en t’insultant. Tu es contrainte de sortir à la station suivante pour lui échapper. Au moins tu ne t'es pas laissé·e faire. **(-2)**
+    * **3 à 6 :** L’homme se met à rougir et à balbutier. Les gens autour de lui l’interpellent et il sort en vitesse à la station suivante. Tu l’as fait déguerpir et es fièr·e de toi. **(+3)**
+    * **7 à 10 :** Les personnes autour de toi t’interpellent et commencent à s’en prendre à toi après t’avoir vu le frapper. Tu n’as pas le temps de t’expliquer et ils te poussent dehors à la station suivante. Tu es passé·e pour l’agresseur·euse et es très en colère. **(-3)**
 
 
-## Harcèlement au bistrot
+## 2. Harcèlement au bistrot
 
-Vous passez tous les jours devant un bistrot pour rentrer chez vous. \
-Il 01:31 09/10/2023n'y a pratiquement que des hommes en terrasse qui vous interpellent de manière régulière lorsque vous passez devant eux. \
-L'un d'entre eux, plus âgé, vous dit : _« Qu'est-ce que vous êtes jolie Mademoiselle ! Je peux vous inviter à boire un café ? »_
+Tu passes tous les jours devant un bistrot pour rentrer chez toi. \
+Il n'y a pratiquement que des hommes en terrasse qui t’interpellent de manière régulière lorsque tu passez devant eux. \
+L'un d'entre eux, plus âgé, te dit : _« Qu'est-ce que vous êtes jolie Mademoiselle ! Je peux vous inviter à boire un café ? »_
 
 
 
 * ** Je fais comme si je n'avais pas entendu et je continue mon chemin.**
-    * **1 à 5 :** Il continue de vous interpeller mais ne vous suit pas. Vous êtes passablement énervée mais rassurée. **(+1)**
-    * **6 :** Il vous rattrape, vous retient par le bras et vous dit :_ « Excusez-moi Mademoiselle. Vous voulez venir boire un café avec moi ? »_ Vous n’en avez pas envie, vous refusez fermement et il s’en va. **(-2)**
-    * **7 à 8 :** Les autres hommes en terrasse vous interpellent à leur tour et vous invitent à le rejoindre. Vous êtes mal à l’aise et accélérez le pas. **(-1)**
-    * **9 à 10 :** Vous l’entendez dire, suffisamment fort :_ « Elle se prend pour qui cette sale pute ? » _et les autres hommes en terrasse rient. Vous vous sentez humiliée. **(-3)**
+    * **1 à 5 :** Il continue de t’interpeller mais ne te suit pas. Tu es passablement énervée mais rassurée. **(+1)**
+    * **6 :** Il te rattrape, te retient par le bras et te dit :_ « Excusez-moi Mademoiselle. Vous voulez venir boire un café avec moi ? »_ Tu n’en as pas envie, tu refuses fermement et il s’en va. **(-2)**
+    * **7 à 8 :** Les autres hommes en terrasse t’interpellent à leur tour et t’invitent à le rejoindre. Tu es mal à l’aise et accéléres le pas. **(-1)**
+    * **9 à 10 :** Tu l’entendes dire, suffisamment fort :_ « Elle se prend pour qui cette sale pute ? » _et les autres hommes en terrasse rient. Tu te sens humiliée. **(-3)**
 * **Je trouve une excuse avec humour : _« Désolé, là j'ai pas le temps. Mais la prochaine fois, c’est moi qui vous invite ! »_**
-    * **1 à 3 :** Il continue de vous interpeller mais ne vous suit pas. Vous êtes passablement énervée mais rassurée. **(+1)**
-    * **4 à 7 :** Il rit et vous dit sur le même ton qu’il vous le redemandera demain. **(0)**
-    * **8 :** Il vous rattrape, vous retient par le bras et vous dit : _« C’est aujourd’hui ou jamais, demain je ne suis pas dispo. »_ Vous n’en avez pas envie, vous refusez fermement et partez. **(-1)**
-    * **9 à 10 :** Il vous dit fort : _« C’est moi qui invite les femmes et pas l’inverse. Je t’attends demain. »_ Vous vous sentez mal à l’aise, vous éviterez de passer là demain. **(-2)**
+    * **1 à 3 :** Il continue de t’interpeller mais ne te suit pas. Tu es passablement énervée mais rassurée. **(+1)**
+    * **4 à 7 :** Il rit et te dit sur le même ton qu’il te le redemandera demain. **(0)**
+    * **8 :** Il te rattrape, te retient par le bras et te dit : _« C’est aujourd’hui ou jamais, demain je ne suis pas dispo. »_ Tu n’en as pas envie, tu refuses fermement et pars. **(-1)**
+    * **9 à 10 :** Il te dit fort : _« C’est moi qui invite les femmes et pas l’inverse. Je t’attends demain. »_ Tu te sens mal à l’aise, tu éviteras de passer là demain. **(-2)**
 * **Je lui dis : _« Ah mais quelle bonne idée, à chaque fois que je passe ici je rêve de prendre un café dans un vieux bistrot sinistre avec un parfait inconnu de trente ans de plus que moi et qui n'est pas mon genre ! »_**
-    * **1 à 3 :** Il vous insulte : _« Pour qui tu te prends, poufiasse ? Dégage ! »_ Vous êtes interloquée par tant de violence et partez en accélérant le pas. **(-2)**
-    * **4 à 5 :** Il vous insulte _« Pour qui tu te prends, poufiasse ? Dégage ! »_ Vous lui répondez :_ « Bon bah là c’est sûr que le café c’est foutu. Salut, vieux con. »_ et vous partez. **(0)**
+    * **1 à 3 :** Il t’insulte : _« Pour qui tu te prends, poufiasse ? Dégage ! »_ Tu es interloquée par tant de violence et pars en accélérant le pas. **(-2)**
+    * **4 à 5 :** Il t’insulte _« Pour qui tu te prends, poufiasse ? Dégage ! »_ Tu lui réponds :_ « Bon bah là c’est sûr que le café c’est foutu. Salut, vieux con. »_ et tu pars. **(0)**
     * **6 à 7 :** Il ne trouve rien à répondre et les autres hommes au bar se marrent. **(+3)**
-    * **8 à 10 :** Il ne trouve rien à répondre et vous continuez votre chemin. **(+1)**
+    * **8 à 10 :** Il ne trouve rien à répondre et tu continues ton chemin. **(+1)**
 * **Je réponds : _« Monsieur, à chaque fois que je passe devant ce bar vous m’importunez. Maintenant, laissez-moi tranquille où j’appelle la police et vous vous expliquerez avec eux. »_**
-    * **1 à 3 :** Il vous répond : _« Détends-toi ! Aujourd’hui on peut vraiment plus rien dire. »_ Vous continuez votre chemin sans encombre. **(0)**
-    * **4 à 7 :** Il vous répond : _« Ça va, c’est bon je te laisse tranquille » _et vous continuez votre chemin. **(+3)**
-    * **8 à 9 :** Il vous répond : _« Tu crois que j’ai peur des flics ? On y va ensemble si tu veux. »_ Vous êtes mal à l’aise et partez. **(-1)**
-    * **10 :** Il vous répond : _« C’est une menace ? Viens là pour voir »_ et se lève l’air agressif. Vous accélérez le pas et vous éloignez. **(-2)**
+    * **1 à 3 :** Il te répond : _« Détends-toi ! Aujourd’hui on peut vraiment plus rien dire. »_ Tu continues ton chemin sans encombre. **(0)**
+    * **4 à 7 :** Il te répond : _« Ça va, c’est bon je te laisse tranquille » _et tu continues ton chemin. **(+3)**
+    * **8 à 9 :** Il te répond : _« Tu crois que j’ai peur des flics ? On y va ensemble si tu veux. »_ Tu es mal à l’aise et pars. **(-1)**
+    * **10 :** Il te répond : _« C’est une menace ? Viens là pour voir »_ et se lève l’air agressif. Tu accélères le pas et t’éloignes. **(-2)**
 
 
-## Qui est-ce que tu vas voir ?
+## 3. Qui est-ce que tu vas voir ?
 
-Une amie vous invite chez elle. Lorsque vous arrivez dans son quartier, vous voyez un groupe de personnes de votre âge. L’un d’entre-eux, qui a la réputation d'être violent, vous arrête et vous demande : _« Qui est-ce que tu vas voir ? »_
+Une amie t’invite chez elle. Lorsque tu arrives dans son quartier, tu vois un groupe de personnes de ton âge. L’un d’entre-eux, qui a la réputation d'être violent, t’arrête et te demande : _« Qui est-ce que tu vas voir ? »_
 
 
 
 * **Je continue mon chemin et ne dis rien.**
-    * **1 à 4 : **Il n’insiste pas et vous poursuivez votre route **(+2)**
-    * **5 à 8 :** _« Hé, je te parle. Tu vas où ? Je t’accompagne si tu veux. »_ Vous refusez poliment et vous passez mais vous vous sentez mal à l’aise d’autant plus que vous sentez son regard sur vous. **(-1)**
-    * **9 :** _« Hé, je te parle ! Attends, je t’accompagne ! »_ vous vous sentez mal à l’aise, lui dites : _« Non, c’est bon » _et décidez de rebrousser chemin. **(-2)**
-    * **10 :** _« Hé, je te parle ! Attends, je t’accompagne ! »_ vous vous sentez mal à l’aise mais poursuivez votre chemin. Il vous suit jusqu’à la porte de chez votre amie sans arrêter de vous parler. Heureusement, elle répond tout de suite et vous fermez la porte derrière vous. **(-3)**
-* **Je lui dis que je vais voir une amie en espérant qu'il me laisse tranquille.**
+    * **1 à 4 : **Il n’insiste pas et tu poursuis ta route **(+2)**
+    * **5 à 8 :** _« Hé, je te parle. Tu vas où ? Je t’accompagne si tu veux. »_ Tu refuses poliment et passes mais tu te sens mal à l’aise d’autant plus que tu sens son regard sur toi. **(-1)**
+    * **9 :** _« Hé, je te parle ! Attends, je t’accompagne ! »_ tu te sens mal à l’aise et lui dis : _« Non, c’est bon » _et décides de rebrousser chemin. **(-2)**
+    * **10 :** _« Hé, je te parle ! Attends, je t’accompagne ! »_ tu te sens mal à l’aise mais poursuis ton chemin. Il te suit jusqu’à la porte de chez ton amie sans arrêter de te parler. Heureusement, elle répond tout de suite et tu fermes la porte derrière toi. **(-3)**
+* **Je lui dis que je vais voir un·e ami·e en espérant qu'il me laisse tranquille.**
     * **1 à 2 : **Il n’insiste pas et vous poursuivez votre route **(+2)**
-    * **3 à 4 :** _« Et c’est qui ton amie ? Elle s’appelle comment ? Elle habite où ? Je peux venir ? Tu me files ton numéro ? »_ Vous avez l’impression de passer un interrogatoire et arrivez péniblement jusqu’à la porte de chez elle où vous arrivez enfin à vous en débarrasser. **(-2)**
-    * **5 à 6 :** Il s’approche de vous, se met sur votre chemin et vous barre la route et vous dit : _« Je t’attends là quand tu reviens. »_ Vous vous sentez mal à l’aise et demanderez sûrement à quelqu’un de venir vous chercher au retour. **(-3)**
-    * **7 à 10 :** De loin il vous répond : _« Et elle est aussi jolie que toi ton amie ? Moi, j’aime bien les jolies filles et ici c’est chez moi. »_ Vous êtes désemparée mais décidez de continuer votre chemin en l’ignorant. **(-1)**
+    * **3 à 4 :** _« Et c’est qui ton amie ? Elle s’appelle comment ? Elle habite où ? Je peux venir ? Tu me files ton numéro ? »_ Tu as l’impression de passer un interrogatoire et arrives péniblement jusqu’à la porte de chez elle où tu arrives enfin à t’en débarrasser. **(-2)**
+    * **5 à 6 :** Il s’approche de toi, se met sur ton chemin, te barre la route et te dit : _« Je t’attends là quand tu reviens. »_ Tu te sens mal à l’aise et tu demanderas sûrement à quelqu’un de venir te chercher au retour. **(-3)**
+    * **7 à 10 :** De loin il te répond : _« Et elle est aussi jolie que toi ton amie ? Moi, j’aime bien les jolies filles et ici c’est chez moi. »_ Tu es désemparé·e mais décides de continuer ton chemin en l’ignorant. **(-1)**
 * **Je m'arrête et je lui dis : _« Pourquoi tu me poses cette question ? C'est interdit de venir ici ? »_**
-    * **1 à 3 :** Il vous sent sûre de vous et bafouille un peu : _« Tranquille, je demandais juste »_ et vous laisse passer. Vous entendez ses amis rire de lui derrière vous. **(+3)**
-    * **4 à 7 :** _« Tu te crois où ? C’est pas une meuf qui va faire la loi chez moi. Les meufs comme toi je les baise. »_ Vous vous sentez en danger et vous décidez de partir pour ne pas avoir plus d’ennuis et prenez une autre route pour aller chez votre amie. **(-3)**
-    * **8 à 10 :** Ses amis lui disent : _« Elle est malade, elle ! Tu vas quand même pas te faire boloss par une meuf ? »_ et il s’avance vers vous l’air menaçant : _« Je sais où t’habites, regarde bien quand tu sortiras la prochaine fois. »_ Vous êtes interloquée, vous faites demi-tour et vous rentrez chez vous en espérant qu’ils ne vous ont pas suivie. **(-3)**
+    * **1 à 3 :** Il te sent sûre de toi et bafouille un peu : _« Tranquille, je demandais juste »_ et te laisse passer. Tu entends ses amis rire de lui derrière toi. **(+3)**
+    * **4 à 7 :** _« Tu te crois où ? C’est pas une meuf qui va faire la loi chez moi. Les meufs comme toi je les baise. »_ Tu te sens en danger et tu décides de partir pour ne pas avoir plus d’ennuis. Tu prends une autre route pour aller chez ton amie. **(-3)**
+    * **8 à 10 :** Ses amis lui disent : _« Elle est malade, elle ! Tu vas quand même pas te faire boloss par une meuf ? »_ et il s’avance vers toi l’air menaçant : _« Je sais où t’habites, regarde bien quand tu sortiras la prochaine fois. »_ Tu es interloquée, tu fais demi-tour et tu rentres chez toi en espérant qu’ils ne t’ont pas suivie. **(-3)**
 * **Je lui dis que je vais voir mon copain et continue mon chemin.**
-    * **1 à 3 :** _« Hé, c’est qui ton copain ? »_ vous lui donnez son nom et vous ajoutez : _« Tu le connais pas ? T’inquiète, si jamais tu m’emmerdes lui il te connaîtra ! »_ il arrête de vous suivre et vous continuez votre chemin. **(+1)**
-    * **4 à 5 :** _« Je suis pas jaloux, t’inquiètes ! Tu me donnes ton 06 ? »_ Évidemment, vous refusez et il continue à vous interpeller de loin mais vous continuez votre chemin. C’est lourd ! **(-1)**
-    * **6 à 7 :** _« Mais toi ce qui te faut je le vois c’est un vrai mec, comme moi. »_ Alors là, si même cet argument ne marche plus, vous ne savez vraiment plus quoi faire... Vous continuez votre chemin en l’ignorant mais vous sentez désarmée. **(-2)**
-    * **8 à 10 :** _« Mais toi ce qui te faut je le vois c’est un vrai mec, comme moi. »_ Vous lui répondez du tac au tac avec un grand sourire et sur le même ton : _« Ah mais c’est évident ! Maintenant que tu le dis ! Attends-moi là, je vais voir mon mec, je le quitte et je reviens ! »_ Et vous partez sans attendre sa réponse.** (+2)**
+    * **1 à 3 :** _« Hé, c’est qui ton copain ? »_ tu lui donnes son nom et tu ajoutes : _« Tu le connais pas ? T’inquiète, si jamais tu m’emmerdes lui il te connaîtra ! »_ il arrête de te suivre et tu continues ton chemin. **(+1)**
+    * **4 à 5 :** _« Je suis pas jaloux, t’inquiètes ! Tu me donnes ton 06 ? »_ Évidemment, tu refuses et il continue à t’interpeller de loin mais tu continues ton chemin. C’est lourd ! **(-1)**
+    * **6 à 7 :** _« Mais toi ce qui te faut je le vois c’est un vrai mec, comme moi. »_ Alors là, si même cet argument ne marche plus, tu ne sais vraiment plus quoi faire... Tu continues ton chemin en l’ignorant mais te sens désarmée. **(-2)**
+    * **8 à 10 :** _« Mais toi ce qui te faut je le vois c’est un vrai mec, comme moi. »_ Tu lui réponds du tac au tac avec un grand sourire et sur le même ton : _« Ah mais c’est évident ! Maintenant que tu le dis ! Attends-moi là, je vais voir mon mec, je le quitte et je reviens ! »_ Et tu pars sans attendre sa réponse.** (+2)**
 
 
-## Le bar : préjugés homophobes
+## 4. Le bar : préjugés homophobes
 
-Vous êtes dans bar avec un groupe d’ami·e·s et vous recevez un appel de la part d’une amie homosexuelle qui vous propose de vous rejoindre avec sa  petite amie. Vous prévenez le reste du groupe de leur arrivée prochaine et l’un d’entre eux vous dit : _« Mais attends, tu vas inviter des homos à passer la soirée avec nous ? »_ Que répondez-vous ?
+Tu es dans un bar avec un groupe d’ami·e·s et tu reçois un appel de la part d’une amie homosexuelle qui te propose de vous rejoindre avec sa petite amie. Tu préviens le reste du groupe de leur arrivée prochaine et l’un d’entre eux te dit : _« Mais attends, tu vas inviter des homos à passer la soirée avec nous ? »_ Que répondez-vous ?
 
 
 
 * **D’un air pince sans rire, je réponds : _« Ah, mais oui je suis conne ! Je vais pas inviter des homos boire un verre avec nous. Attend, je vais les rappeler pour leur dire d’aller boire un verre d’homos dans un bar d’homos. »_**
-    * **1 à 3 :** Il vous regarde sans rien dire et prend conscience de l’énormité de sa remarque. La soirée continue en attendant leur arrivée. **(+3)**
-    * **4 à 8 : _« Ça va je rigolais ! On peut vraiment plus rien dire aujourd’hui ! Vous les nanas vous n’avez plus d’humour, vous prenez vraiment tout au premier degré ! »_** Vous sentez que ce n’était pas du tout de l’humour et qu’il essaye de se rattraper en retournant la situation. Mais vous n’insistez pas outre mesure pour ne pas envenimer la situation. **(0)**
+    * **1 à 3 :** Il te regarde sans rien dire et prend conscience de l’énormité de sa remarque. La soirée continue en attendant leur arrivée. **(+3)**
+    * **4 à 8 : _« Ça va je rigolais ! On peut vraiment plus rien dire aujourd’hui ! Vous les nanas vous n’avez plus d’humour, vous prenez vraiment tout au premier degré ! »_** Tu sens que ce n’était pas du tout de l’humour et qu’il essaye de se rattraper en retournant la situation. Mais tu n’insistes pas outre mesure pour ne pas envenimer la situation. **(0)**
     * **9 à 10 :** « Bah, je te le fais pas dire, y’a plus que ça des bars pour homos, elles ont qu’à aller là-bas. Elles ont vraiment plus honte de rien ! » Que faites-vous ? **(voir Escalade $)**
         * Je prends les autres personnes du groupe à partie : _« Et vous, ça vous choque pas d’entendre ça ? Vous trouvez ça normal ? »_
-            * **1 à 5 :** Vos autres amis se désolidarisent de son discours et lui expliquent que vos amies ont tout à fait le droit de venir ici. Il se ferme sur lui-même et ne décroche plus un mot de la soirée mais l’ambiance reste joyeuse. **(+3)**
-            * **6 à 8 :** Un débat houleux s’engage entre vos ami·es, vous vous rendez compte que ce sujet est polémique. Vous êtes déçue de la réaction de certain·e.s d’entre eux·elles. **(-1)**
-            * **9 à 10 :** Contrairement à ce que vous pensiez, vos ami·es lui donnent raison. Vous vous retrouvez isolé·e, surpris·e et déçu·e. Vous préférez partir rejoindre vos amies à un autre endroit. **(-2)**
+            * **1 à 5 :** Tes autres ami·e·s se désolidarisent de son discours et lui expliquent que tes amies ont tout à fait le droit de venir ici. Il se ferme sur lui-même et ne décroche plus un mot de la soirée mais l’ambiance reste joyeuse. **(+3)**
+            * **6 à 8 :** Un débat houleux s’engage entre tes ami·e·s, tu te rends compte que ce sujet est polémique. Tu es déçue de la réaction de certain·e.s d’entre eux·elles. **(-1)**
+            * **9 à 10 :** Contrairement à ce que tu pensais, tes ami·e·s lui donnent raison. Tu te retrouves isolée, surprise et déçue. Tu préfères partir rejoindre tes amies à un autre endroit. **(-2)**
         * _« Ah, mais en fait t’as pas compris. S’il faut que je précise ma pensée, je vais le faire : je me fiche de leur orientation sexuelle et elles vont venir. Donc sois plus ouvert sinon tu peux t’en aller, personne ne te retient. »_
-            * **1 à 3 :** Il vous regarde sans rien dire et prend conscience de l’énormité de sa remarque. La soirée continue en attendant leur arrivée. **(+3)**
-            * **4 à 7 :** Il finit son verre et s’en va sans un mot. Vous êtes soulagée à l’idée de passer la soirée sans ses remarques déplacées. **(+2)**
-            * **8 à 10 :** _« Il est hors de question que je bouge et que des homos viennent à ma table ! T’as qu’à te casser toi ! »_ Pour éviter de passer la soirée en si mauvaise compagnie, vous préférez donner rendez-vous à vos amis dans un autre endroit. **(-2)**
+            * **1 à 3 :** Il te regarde sans rien dire et prend conscience de l’énormité de sa remarque. La soirée continue en attendant leur arrivée. **(+3)**
+            * **4 à 7 :** Il finit son verre et s’en va sans un mot. Tu es soulagée à l’idée de passer la soirée sans ses remarques déplacées. **(+2)**
+            * **8 à 10 :** _« Il est hors de question que je bouge et que des homos viennent à ma table ! T’as qu’à te casser toi ! »_ Pour éviter de passer la soirée en si mauvaise compagnie, tu préfères donner rendez-vous à tes amis dans un autre endroit. **(-2)**
         * _« Si je te l’avais pas dit, tu l’aurais pas su. Alors, que tu le saches ou pas ça change quoi à ta soirée ? »_
-            * **1 à 2 :** _« Ouais mais moi, deux meufs ensemble ça me dégoûte, c’est contre nature. »_ Vous préférez partir en vous excusant auprès du reste du groupe. Mais là, trop c’est trop. **(-2)**
-            * **3 à 5 :** _« Ouais, mais maintenant je le sais et ça me dérange. Je préfère partir. »_ Il s’en va et vous passez le reste de la soirée en compagnie de vos ami·e.s. **(+1)**
-            * **6 à 10 :** Il vous répond : _« Ouais, ça va, c’est bon. »_ Et ne dit plus rien, vous passez le reste de la soirée en compagnie de vos ami·e.s. **(+3)**
+            * **1 à 2 :** _« Ouais mais moi, deux meufs ensemble ça me dégoûte, c’est contre nature. »_ Tu préfères partir en t’excusant auprès du reste du groupe. Mais là, trop c’est trop. **(-2)**
+            * **3 à 5 :** _« Ouais, mais maintenant je le sais et ça me dérange. Je préfère partir. »_ Il s’en va et tu passes le reste de la soirée en compagnie de tes ami·e.s. **(+1)**
+            * **6 à 10 :** Il te répond : _« Ouais, ça va, c’est bon. »_ Et ne dit plus rien, tu passes le reste de la soirée en compagnie de tes ami·e.s. **(+3)**
 * **_« Bah, oui. Je vais inviter des lesbiennes à passer la soirée avec nous ! »_**
-    * **1 à 4 :** Il vous regarde sans rien dire et prend conscience de l’énormité de sa remarque. La soirée continue en attendant leur arrivée. **(+3)**
-    * **5 à 7 :** Il finit son verre et s’en va sans un mot. Vous êtes soulagée à l’idée de passer la soirée sans ses remarques déplacées. **(+2)**
-    * **8 :** _« Il est hors de question que des lesbiennes viennent à ma table ! T’as qu’à te casser toi ! »_ Pour éviter de passer la soirée en si mauvaise compagnie, vous préférez donner rendez-vous à vos amies dans un autre endroit. **(-1)**
-    * **9 à 10 :** _« Trop bien, c’est mon fantasme. En plus, elles n’ont sûrement jamais essayé avec un vrai mec. Je suis sûr que je les ferais changer d’avis. »_ Vous le regardez effaré·e et préférez partir en vous excusant auprès du reste du groupe. **(0)**
+    * **1 à 4 :** Il te regarde sans rien dire et prend conscience de l’énormité de sa remarque. La soirée continue en attendant leur arrivée. **(+3)**
+    * **5 à 7 :** Il finit son verre et s’en va sans un mot. Tu es soulagée à l’idée de passer la soirée sans ses remarques déplacées. **(+2)**
+    * **8 :** _« Il est hors de question que des lesbiennes viennent à ma table ! T’as qu’à te casser toi ! »_ Pour éviter de passer la soirée en si mauvaise compagnie, Tu préfères donner rendez-vous à tes amies dans un autre endroit. **(-1)**
+    * **9 à 10 :** _« Trop bien, c’est mon fantasme. En plus, elles n’ont sûrement jamais essayé avec un vrai mec. Je suis sûr que je les ferais changer d’avis. »_ Tu le regardes effarée et préférez partir en t’excusant auprès du reste du groupe. **(0)**
 * **_« Tu sais, je les connais depuis longtemps c’est des bonnes potes. Elles sont cools, en vrai. Vas-y pour ce soir, on aborde pas les sujets qui fâchent. »_**
-    * **1 à 4 :** Il profite de la soirée pour lancer plusieurs piques homophobes, ce qui agace fortement vos amies. Vous passez une très mauvaise soirée. Vous auriez peut-être dû assumer !  **(-2)**
-    * **5 à 7 : **Il profite de la soirée pour lancer plusieurs piques homophobes, votre amie se sent prise au piège et part subitement avec sa compagne. Vous êtes triste car vous sentez bien qu’elle a passé un très mauvais moment par votre faute. **(-3)**
-    * **8 à 10 :** Il profite de la soirée pour lancer plusieurs piques homophobes. Cela vous agace et pour éviter que vos amies se sentent en difficulté vous décidez de quitter ensemble le groupe. **(-1)**
+    * **1 à 4 :** Il profite de la soirée pour lancer plusieurs piques homophobes, ce qui agace fortement tes amies. Tu passes une très mauvaise soirée. Tu aurais peut-être dû assumer !  **(-2)**
+    * **5 à 7 : **Il profite de la soirée pour lancer plusieurs piques homophobes, ton amie se sent prise au piège et part subitement avec sa compagne. Tu es triste car tu sens bien qu’elle a passé un très mauvais moment par ta faute. **(-3)**
+    * **8 à 10 :** Il profite de la soirée pour lancer plusieurs piques homophobes. Cela t’agace et pour éviter que tes amies se sentent en difficulté, tu décides de quitter ensemble le groupe. **(-1)**
 * **_« Je pense que tu es le seul à qui ça pose un problème ici, on a qu’à demander aux autres tu verras bien. »_**
-    * **1 à 4 :** Plusieurs personnes du groupe se désolidarisent de son discours et lui expliquent que vos amies ont tout à fait le droit de venir ici. Il se ferme sur lui-même et ne décroche plus un mot de la soirée mais l’ambiance reste joyeuse. **(+2)**
-    * **5 à 7 :** Un débat houleux s’engage entre vos ami·e.s, vous vous rendez compte que ce sujet est polémique. Vous êtes déçue de la réaction de certain·e.s d’entre eux·elles. **(0)**
-    * **8 à 9 :** Contrairement à ce que vous pensiez, vos ami·e·s lui donnent raison. Vous vous retrouvez isolée, surpris·e et déçu·e. Vous préférez partir rejoindre vos amies à un autre endroit. (-2)
-    * **10 :** _« Ah mais tu sais moi j’ai pas de problème, au contraire, c’est mon fantasme. En plus, elles n’ont sûrement jamais essayé avec un vrai mec, je suis sûr que je les ferais changer d’avis. »_ Vous le regardez effaré·e et préférez partir. (0)
+    * **1 à 4 :** Plusieurs personnes du groupe se désolidarisent de son discours et lui expliquent que tes amies ont tout à fait le droit de venir ici. Il se ferme sur lui-même et ne décroche plus un mot de la soirée mais l’ambiance reste joyeuse. **(+2)**
+    * **5 à 7 :** Un débat houleux s’engage entre tes ami·e.s, tu te rends compte que ce sujet est polémique. Tu es déçue de la réaction de certain·e.s d’entre eux·elles. **(0)**
+    * **8 à 9 :** Contrairement à ce que tu pensais, tes ami·e·s lui donnent raison. Tu te retrouves isolée, surprise et déçue. Tu préfères partir rejoindre tes amies à un autre endroit. **(-2)**
+    * **10 :** _« Ah mais tu sais moi j’ai pas de problème, au contraire, c’est mon fantasme. En plus, elles n’ont sûrement jamais essayé avec un vrai mec, je suis sûr que je les ferais changer d’avis. »_ Tu le regardes effarée et préfères partir. **(0)**
 
  
 
 
-## Le Parc : représentations et préjugés homophobes 
+## 5. Le Parc : représentations et préjugés homophobes 
 
 Vous donnez rendez-vous à une très bonne amie que vous n’avez pas vue depuis longtemps. Vous l’attendez au parc avec d’autres camarades. Lorsqu’elle arrive de loin, vos ami·e·s vous font remarquer qu’elle a des allures vraiment très masculines. Cheveux courts, chemise à carreaux, jeans larges et Doc Marten’s… Ils commencent à faire de plus en plus de remarques désobligeantes. 
 
 
 
 * **Ils ont raison, elle ressemble de plus en plus à un bonhomme et je me pose des questions. Je vais à sa rencontre et lui dit : _« Mais t’as viré lesbienne ? »_**
-    * **1 à 4 :_ « Et toi t’as viré débile ? T’as déduit ça de quoi ? A mon style ? Tu trouves pas que c’est un peu limité comme raisonnement ? »_** **(voir Escalade $)**
+    * **1 à 5 :_ « Et toi t’as viré débile ? T’as déduit ça de quoi ? A mon style ? Tu trouves pas que c’est un peu limité comme raisonnement ? »_** **(voir Escalade $)**
         * Je m’excuse et la présente à mes ami·e·s.
-            * **1 à 10 :** Vos amis parlent tout bas et ricanent quand vous arrivez avec elle. Vous êtes mal à l’aise et auriez peut-être mieux fait de prendre sa défense immédiatement. **(-2)**
+            * **1 à 10 :** Tes ami·e·s parlent tout bas et ricanent quand tu arrives avec elle. Tu es mal à l’aise et aurais peut-être mieux fait de prendre sa défense immédiatement. **(-2)**
         * Je m’excuse mais pars seule avec elle.
-            * **1 à 10 :** Vous entendez vos ami·e.s siffler et faire des allusions. Vous vous retournez et leur lancez : _« Quoi y a un problème ? »_ et sans attendre leur réponse, vous vous éloignez avec votre amie. **(0)**
+            * **1 à 10 :** Tu entends tes ami·e·s siffler et faire des allusions. Tu te retournes et leur lances : _« Quoi y a un problème ? »_ et sans attendre leur réponse, tu t’éloignes avec ton amie. **(0)**
         * Je lui dis que je préfère la voir à une autre occasion.
-            * **1 à 7 :** _« Ah d’accord, donc t’as honte en fait ? Tu sais quoi ? Y aura pas d’autres occasions, ciao ! »_ Vous vous rendez-compte que ce n’était pas très élégant et que vous venez de perdre une amie. **(-3)**
-            * **8 à 10 :** _« Ah d’accord, okay. Bon bah, à une autre fois alors… »_ Vous la voyez partir l’air triste et sentez que vous l’avez blessée. Vous vous sentez mal à l’aise mais rejoignez néanmoins le groupe. **(-1)**
+            * **1 à 7 :** _« Ah d’accord, donc t’as honte en fait ? Tu sais quoi ? Y aura pas d’autres occasions, ciao ! »_ Tu te rends-compte que ce n’était pas très élégant et que tu viens de perdre une amie. **(-3)**
+            * **8 à 10 :** _« Ah d’accord, okay. Bon bah, à une autre fois alors… »_ Tu la vois partir, l'air triste et sens que tu l'as blessée. Tu te sens mal à l’aise mais rejoins néanmoins le groupe. **(-1)**
         * J’insiste : _« Tu ne te rends pas compte de comment les gens te regardent. Moi je veux juste te rendre service. »_
-            * **1 à 4 :** _« Très bien, rends-moi service et ne me recontacte plus. Je n’ai pas besoin d’ami·e·s qui me disent comment me comporter. »_ Elle s’en va et vous vous rendez compte trop tard que vous ne la reverrez sûrement plus.** (-2)**
-            * **5 à 7 :** _« Mais, j’ai pas besoin que tu me rendes service ! »_ et elle part en direction de vos ami·e.s d’un pas assuré. Vous vous êtes fait avoir et redoutez un peu cette rencontre… **(-3)**
-            * **8 à 10 :** _« Et même si c’était vrai, qu’est-ce-que ça peut te faire ? Je te fais honte devant tes ami·e.s c’est ça ? »_ **(voir Escalade $)**
-                * Vous vous confondez en excuses.
-                    * **1 à 2 :** Elle vous tourne le dos et s’en va sans rien ajouter. **(-2)**
-                    * **3 à 6 :** Elle accepte vos excuses et vous dit : _« Écoute, oublions ça, on se voit plus tard. J’ai pas très envie de passer l’après-midi avec tes potes. »_ **(0)**
-                    * **7 à 10 :** Elle accepte vos excuses et vous dit : _« Écoute, oublions ça, présente-moi tes potes. »_ Vous vous sentez dos au mur et vous regrettez de ne pas l’avoir défendue tout de suite. **(-1)**
+            * **1 à 4 :** _« Très bien, rends-moi service et ne me recontacte plus. Je n’ai pas besoin d’ami·e·s qui me disent comment me comporter. »_ Elle s’en va et tu te rendes compte trop tard que tu ne la reverras sûrement plus.** (-2)**
+            * **5 à 7 :** _« Mais, j’ai pas besoin que tu me rendes service ! »_ et elle part en direction de tes ami·e.s d’un pas assuré. Tu t’es fait avoir et redoutes un peu cette rencontre… **(-3)**
+            * **8 à 10 :**  _« Et même si c’était vrai, qu’est-ce-que ça peut te faire ? Je te fais honte devant tes ami·e.s c’est ça ? »_ **(voir Escalade $)**
+                * Tu te confonds en excuses.
+                    * **1 à 2 :** Elle te tourne le dos et s’en va sans rien ajouter. **(-2)**
+                    * **3 à 6 :** Elle accepte tes excuses et te dit : _« Écoute, oublions ça, on se voit plus tard. J’ai pas très envie de passer l’après-midi avec tes potes. »_ **(0)**
+                    * **7 à 10 :** Elle accepte tes excuses et te dit : _« Écoute, oublions ça, présente-moi tes potes. »_ Tu te sens dos au mur et tu regrettes de ne pas l’avoir défendue tout de suite. **(-1)**
                 * _« Bah si c’est vrai, c’est un peu chaud. J’ai pas envie de m’afficher avec toi. »_
-                    * **1 à 10 :** Elle vous regarde avec un air de dégoût et vous dit : _« Comment j’ai pu me tromper à ce point sur toi ? »_ Vous ne la reverrez plus, c’est sûr. **(-3)**
+                    * **1 à 10 :** Elle te regarde avec un air de dégoût et te dit : _« Comment j’ai pu me tromper à ce point sur toi ? »_ Tu ne la reverras plus, c’est sûr. **(-3)**
                 * _« Ah non, mais moi ça me dérange pas. C’est mes potes, tu comprends… »_
-                    * **1 à 4 :** _« Et, en plus, t’assumes même pas. Peut-être que tu devrais réfléchir à qui sont tes potes ! »_ Elle s’en va sans que vous n’ayez le temps de lui répondre. **(-3)**
-                    * **5 à 7 **: _« Ah d’accord, okay. Bon bah, à une autre fois alors… »_ Vous la voyez partir l’air triste et sentez que vous l’avez blessée. Vous vous sentez mal à l’aise mais rejoignez néanmoins vos ami·e.s. **(-1)**
-                    * **8 à 10 :** _« T’en fais pas, j’ai l’habitude, je gère. »_ Elle a l’air sûre d’elle mais vous redoutez la confrontation. **(-1)**
-        * **6 à 10 : _« Et même si c’était vrai, qu’est-ce-que ça peut te faire ? Je te fais honte devant tes ami·e.s c’est ça ? »_** Que lui répondez-vous ? (voir Escalade $)
-            * [Vous vous confondez en excuses.]
-            * [_« Bah si c’est vrai, c’est un peu chaud. J’ai pas envie de m’afficher avec toi. »_]
-            * [_« Ah non, mais moi ça me dérange pas. C’est mes potes, tu comprends… »_]
-* **Je l’ignore en faisant comme si je ne l’avais pas reconnue.**
-    * **1 à 4 :** Elle vient vous voir directement : _« Hé, comment ça va ? Ça fait vraiment plaisir de te voir ! »_ vos ami·e.s rient franchement et vous vous sentez très mal à l’aise. **(-2)**
-    * **5 à 6 :** Elle vous fusille du regard en passant à côté de vous, elle a compris ce qu’il se passait et a l’air de beaucoup vous en vouloir. **(-1)**
-    * **7 à 10 :** Elle arrive vers vous et vous dit : _« Ça va on se marre bien ? C’est mon style ou mes cheveux qui vous font rire ? Et toi tu cautionnes ça ? »_ Elle part sans même que vous ayez pu répondre quoi que ce soit. **(-3)**
+                    * **1 à 4 :** _« Et, en plus, t’assumes même pas. Peut-être que tu devrais réfléchir à qui sont tes potes ! »_ Elle s’en va sans que tu n'aies le temps de lui répondre. **(-3)**
+                    * **5 à 7 **: _« Ah d’accord, okay. Bon bah, à une autre fois alors… »_ Tu la vois partir l’air triste et sens que tu l'as blessée. Tu te sens mal à l’aise mais rejoins néanmoins tes ami·e.s. **(-1)**
+                    * **8 à 10 :** _« T’en fais pas, j’ai l’habitude, je gère. »_ Elle a l’air sûre d’elle mais tu redoutes la confrontation. **(-1)**
+    * **6 à 10 : _« Et même si c’était vrai, qu’est-ce-que ça peut te faire ? Je te fais honte devant tes ami·e.s c’est ça ? »_** Que lui répondez-vous ?  **(voir Escalade $)**
+        * Tu te confonds en excuses.
+            * **1 à 2 :** Elle te tourne le dos et s’en va sans rien ajouter. **(-2)**
+            * **3 à 6 :** Elle accepte tes excuses et te dit : _« Écoute, oublions ça, on se voit plus tard. J’ai pas très envie de passer l’après-midi avec tes potes. »_ **(0)**
+            * **7 à 10 :** Elle accepte tes excuses et te dit : _« Écoute, oublions ça, présente-moi tes potes. »_ Tu te sens dos au mur et tu regrettes de ne pas l’avoir défendue tout de suite. **(-1)**
+        * _« Bah si c’est vrai, c’est un peu chaud. J’ai pas envie de m’afficher avec toi. »_
+            * **1 à 10 :** Elle te regarde avec un air de dégoût et te dit : _« Comment j’ai pu me tromper à ce point sur toi ? »_ Tu ne la reverras plus, c’est sûr. **(-3)**
+        * _« Ah non, mais moi ça me dérange pas. C’est mes potes, tu comprends… »_
+            * **1 à 4 :** _« Et, en plus, t’assumes même pas. Peut-être que tu devrais réfléchir à qui sont tes potes ! »_ Elle s’en va sans que tu n'aies le temps de lui répondre. **(-3)**
+            * **5 à 7 **: _« Ah d’accord, okay. Bon bah, à une autre fois alors… »_ Tu la vois partir l’air triste et sens que tu l'as blessée. Tu te sens mal à l’aise mais rejoins néanmoins tes ami·e.s. **(-1)**
+            * **8 à 10 :** _« T’en fais pas, j’ai l’habitude, je gère. »_ Elle a l’air sûre d’elle mais tu redoutes la confrontation. **(-1)**
+* **Je l’ignore en faisant comme si je ne l’avais pas reconnue…**
+    * **1 à 4 :** Elle vient te voir directement : _« Hé, comment ça va ? Ça fait vraiment plaisir de te voir ! »_ tes ami·e.s rient franchement et tu te sens très mal à l’aise. **(-2)**
+    * **5 à 6 :** Elle te fusille du regard en passant à côté de toi, elle a compris ce qu’il se passait et a l’air de beaucoup t’en vouloir. **(-1)**
+    * **7 à 10 :** Elle arrive vers toi et te dit : _« Ça va on se marre bien ? C’est mon style ou mes cheveux qui vous font rire ? Et toi tu cautionnes ça ? »_ Elle part sans même que tu aies pu répondre quoi que ce soit. **(-3)**
 * **_« Ça vous pose un problème ? Pourquoi ? »_**
-    * **1 à 5 :** Ils·elles semblent étonné·e·s par votre réaction franche et vous disent : _« Non non, y’a pas de problème c’est bon, tranquille. »_ Votre amie vous rejoint et vous l’accueilliez avec plaisir. **(+3)**
-    * **6 à 10 :** _« Bah, t’as envie de t’afficher avec une gouine, toi ? »_ Que répondez-vous ?
+    * **1 à 5 :** Ils·elles semblent étonné·e·s par ta réaction franche et te disent : _« Non non, y’a pas de problème c’est bon, tranquille. »_ Ton amie te rejoint et tu l’accueilles avec plaisir. **(+3)**
+    * **6 à 8 :** _« Bah, t’as envie de t’afficher avec une gouine, toi ? »_ Que répondez-vous ? **(voir Escalade $)**
+        * **« Ah, parce que vous une femme avec les cheveux courts c’est tout de suite une gouine ? »**
+            * **1 à 5 :** « Pas la peine de le prendre comme ça, t’as vraiment pas d’humour. C’est bon, on rigolait. » Tu sais qu’ils·elles ne sont pas honnêtes et décidez de remettre la discussion à plus tard pour accueillir ton amie. **(+3)**
+            * **6 à 10 :** « Bah ouais, son style ça fait gouine. Si tu veux t’afficher avec elle c’est ton problème mais sans nous. » Tu rejoins donc ton amie, déçue de leur comportement. **(+1)**
+        * **« C’est juste sa façon de s’habiller, ça veut rien dire... »**
+            * **1 à 3 : **Ils·elles te répondent : « Bah regarde la, c’est évident. » Tu comprends qu’ils·elles ne remettront pas en cause leurs préjugés et accueilles ton amie l’air de rien. **(+1)**
+            * **4 à 7 :** « Ouais, t’as peut-être raison. Mais bon, elle a qu’à prendre soin d’elle si elle veut pas de problème. » Tu ne comprends pas bien le lien entre orientation sexuelle et leur notion de l’hygiène ! Mais ils·elles semblent bloqué·e.s dans leurs préjugés pour le moment. Tu accueilles néanmoins ton amie. **(+1)**
+            * **8 à 10 :** Ta réaction crée un débat sur les stéréotypes féminins et tes ami·e.s réalisent que c’est moins évident que ce qu’ils·elles ne pensaient jusqu’alors. Tu espères que ce débat fera évoluer leurs représentations à l’avenir, il se poursuit d’ailleurs à l’arrivée de ton amie. **(+3)**
+    * **9 à 10 :** Ils te disent : « Tu vas pas encore jouer les saint·e·s ? Tu nous gonfles avec tes principes ! Ça n’intéresse personne. » **(voir Escalade $)**
+        * _[Parce-que partir du principe qu’on est lesbienne parce qu’on a les cheveux courts c’est pas un principe peut-être ? »]_
+        * _[« Oui, vous avez raison, c’est pas mon problème. Elle a qu’à se débrouiller toute seule »]_
+        * _[« Si mes principes vous gênent, pas de problèmes. Je me casse. »]_
 * **« Ah, parce que vous une femme avec les cheveux courts, c’est tout de suite une gouine ? »**
-    * **1 à 3 :** Ils prennent conscience de l’énormité de leur remarque et s’excusent. (+3)
-    * **4 à 6 :** _« Pas la peine de le prendre comme ça, t’as vraiment pas d’humour. C’est bon, on rigolait. »_ Vous savez qu’ils·elles ne sont pas honnêtes et décidez de remettre la discussion à plus tard pour accueillir votre amie. **(+1)**
-    * **7 à 10 :** _« Bah ouais, son style ça fait gouine. Si tu veux t’afficher avec elle c’est ton problème mais sans nous. »_ Vous rejoignez donc votre amie, déçue de leur comportement. **(-2)**
-* _« C’est juste sa façon de s’habiller, ça veut rien dire... »_
-    * **1 à 3 :** Ils·elles vous répondent : _« Bah regarde la, c’est évident. »_ Vous comprenez qu’ils·elles ne remettront pas en cause leurs préjugés et accueillez votre amie un peu géné·e. **(-1)**
-    * **4 à 6 :** _« Ouais, t’as peut-être raison. Mais bon, elle a qu’à prendre soin d’elle si elle veut pas de problème. »_ Vous ne comprenez pas bien le lien entre orientation sexuelle et leur notion de l’hygiène !  Mais ils·elles semblent bloqué·e.s dans leurs préjugés pour le moment. Vous accueillez néanmoins votre amie. **(0)**
-    * **7 à 8 :** Votre réaction créée un débat sur les stéréotypes féminins et vos ami·e.s réalisent que c’est moins évident que ce qu’ils·elles pensaient jusqu’alors. Vous espérez que ce débat fera évoluer leurs représentations à l’avenir, il se poursuit d’ailleurs à l’arrivée de votre amie. **(+2)**
-    * **9 à 10 :** Ils vous disent : _« Tu vas pas encore jouer les saint·e·s ? Tu nous gonfles avec tes principes ! Ça n'intéresse personne. »_ **(voir Escalade $)**
+    * **1 à 3 :** Ils prennent conscience de l’énormité de leur remarque et s’excusent. **(+3)**
+    * **4 à 6 :** _« Pas la peine de le prendre comme ça, t’as vraiment pas d’humour. C’est bon, on rigolait. »_ Tu sais qu’ils·elles ne sont pas honnêtes et décides de remettre la discussion à plus tard pour accueillir ton amie. **(+1)**
+    * **7 à 10 :** _« Bah ouais, son style ça fait gouine. Si tu veux t’afficher avec elle c’est ton problème mais sans nous. »_ Tu rejoins donc ton amie, déçu·e de leur comportement. **(-2)**
+* **_« C’est juste sa façon de s’habiller, ça veut rien dire... »_**
+    * **1 à 3 :** Ils·elles te répondent : _« Bah regarde la, c’est évident. »_ Tu comprends qu’ils·elles ne remettront pas en cause leurs préjugés et accueilles ton amie un peu géné·e. **(-1)**
+    * **4 à 6 :** _« Ouais, t’as peut-être raison. Mais bon, elle a qu’à prendre soin d’elle si elle veut pas de problème. »_ Tu ne comprends pas bien le lien entre orientation sexuelle et leur notion de l’hygiène !  Mais ils·elles semblent bloqué·e.s dans leurs préjugés pour le moment. Tu accueilles néanmoins ton amie. **(0)**
+    * **7 à 8 :** Ta réaction crée un débat sur les stéréotypes féminins et tes ami·e.s réalisent que c’est moins évident que ce qu’ils·elles pensaient jusqu’alors. Tu espères que ce débat fera évoluer leurs représentations à l’avenir, il se poursuit d’ailleurs à l’arrivée de ton amie. **(+2)**
+    * **9 à 10 :** Ils te disent : _« Tu vas pas encore jouer les saint·e·s ? Tu nous gonfles avec tes principes ! Ça n'intéresse personne. »_ **(voir Escalade $)**
         * _« Parce-que partir du principe qu’on est lesbienne parce qu’on a les cheveux courts c’est pas un principe peut-être ? »_
-            * **1 à 5 : **Ils·elles partent dans des explications vaseuses qui vous déçoivent et vous les quittez pour rejoindre votre amie. (+1)
+            * **1 à 5 : **Ils·elles partent dans des explications vaseuses qui te déçoivent et tu les quittes pour rejoindre ton amie. (+1)
             * **6 à 10 :** Ils prennent conscience de l’énormité de leur remarque et s’excusent. **(+3)**
         * _« Oui, vous avez raison, c’est pas mon problème. Elle a qu’à se débrouiller toute seule »_
-            * **1 à 3 :** Votre amie vous rejoint mais vous êtes gênée par sa présence et avez hâte de la quitter. **(-1)**
-            * **4 à 7 :** Elle vient vous voir directement : _« Hé, comment ça va ? Ça fait vraiment plaisir de te voir ! »_ vos ami·e.s rient franchement et vous vous sentez très mal à l’aise. **(-2)**
-            * **8 à 10 :** Elle vous fusille du regard en passant à côté de vous, elle a compris ce qu’il se passait et a l’air de beaucoup vous en vouloir. **(-3)**
+            * **1 à 3 :** Ton amie te rejoint mais tu êtes gênée par sa présence et avez hâte de la quitter. **(-1)**
+            * **4 à 7 :** Elle vient te voir directement : _« Hé, comment ça va ? Ça fait vraiment plaisir de te voir ! »_ tes ami·e.s rient franchement et tu te sens très mal à l’aise. **(-2)**
+            * **8 à 10 :** Elle te fusille du regard en passant à côté de toi, elle a compris ce qu’il se passait et a l’air de beaucoup t’en vouloir. **(-3)**
         * _« Si mes principes vous gênent, pas de problèmes. Je me casse. »_
-            * **1 à 3 : **Ils·elles partent dans des explications vaseuses qui vous déçoivent et vous les quittez pour rejoindre votre amie. **(-1)**
+            * **1 à 3 : **Ils·elles partent dans des explications vaseuses qui te déçoivent et tu les quittes pour rejoindre ton amie. **(-1)**
             * **4 à 6 :** Ils prennent conscience de l’énormité de leur remarque et s’excusent. **(+3)**
-            * **7 à 8 :** _« Pas la peine de le prendre comme ça, t’as vraiment pas d’humour. C’est bon, on rigolait. »_ Vous savez qu’ils·elles ne sont pas honnêtes et décidez de remettre la discussion à plus tard pour accueillir votre amie. **(+1)**
-            * **9 à 10 :** _« Bah ouais, son style ça fait gouine. Si tu veux t’afficher avec elle c’est ton problème mais sans nous. »_ Vous rejoignez donc votre amie, déçue de leur comportement. **(-2)**
+            * **7 à 8 :** _« Pas la peine de le prendre comme ça, t’as vraiment pas d’humour. C’est bon, on rigolait. »_ Tu sais qu’ils·elles ne sont pas honnêtes et décides de remettre la discussion à plus tard pour accueillir ton amie. **(+1)**
+            * **9 à 10 :** _« Bah ouais, son style ça fait gouine. Si tu veux t’afficher avec elle c’est ton problème mais sans nous. »_ Tu rejoins donc ton amie, déçue de leur comportement. **(-2)**
 
 
 ## Le Festival la foule – Agression verbale - Victime
@@ -360,68 +340,66 @@ Vous êtes avec des ami·e·s à un festival de musique, la foule est dense. Tro
     * **7 à 10 :** _« Pas besoin de mêler les autres à ça ! Allez viens on y va… »_ Il sait qu’il a tort mais il est trop fier pour vous l’avouer. Vous n’insistez pas néanmoins et le laissez à ses contradictions. **(+1)**
 
 
-## Le Bus : Agression sexuelle
+## 6. Le Bus : Agression sexuelle
 
-En prenant le bus pour rentrer chez vous, vous voyez un homme frotter son sexe aux fesses d’une femme. Celle-ci se retourne et cherche un témoin autour d’elle. Elle croise votre regard.
+En prenant le bus pour rentrer chez toi, tu vois un homme frotter son sexe aux fesses d’une femme. Celle-ci se retourne et cherche un témoin autour d’elle. Elle croise ton regard.
 
 
 
 * **Je la regarde et je fais comme si je n'avais rien vu.**
-    * **1 à 3 :** Vous faites en sorte de ne plus regarder dans sa direction et la fin de votre trajet se déroule sans encombre. **(0)**
-    * **4 à 6 :** Vous faites en sorte de ne plus regarder dans sa direction mais vous l’entendez plusieurs fois dire à l’homme d’arrêter et vous sentez coupable. **(-1)**
-    * **7 à 8 :** Elle crie à l’aide en demandant au chauffeur d’arrêter le bus et vous êtes coincé durant 20 minutes le temps que la situation s’apaise. **(-2)**
-    * **9 à 10 :** Elle sort à l’arrêt suivant et prend les passagers du bus à partie : _« Tout le monde a vu et personne ne réagit, vous êtes vraiment une bande de lâches. »_ et vous fixe du regard. Vous vous sentez mal à l’aise. **(-2)**
+    * **1 à 3 :** Tu fais en sorte de ne plus regarder dans sa direction et la fin de ton trajet se déroule sans encombre. **(0)**
+    * **4 à 6 :** Tu fais en sorte de ne plus regarder dans sa direction mais tu l’entends plusieurs fois dire à l’homme d’arrêter et te sens coupable. **(-1)**
+    * **7 à 8 :** Elle crie à l’aide en demandant au chauffeur d’arrêter le bus et tu es coincé durant 20 minutes le temps que la situation s’apaise. **(-2)**
+    * **9 à 10 :** Elle sort à l’arrêt suivant et prend les passagers du bus à partie : _« Tout le monde a vu et personne ne réagit, vous êtes vraiment une bande de lâches. »_ et te fixe du regard. Tu te sens mal à l’aise. **(-2)**
 * **J’interviens : « J’ai tout vu, arrêtez Monsieur. »**
-    * **1 à 2 :** Il s’en prend à vous : _« Qu’est-ce-que t’as, toi ? J’ai rien fait, qu’est-ce-que tu me veux ? »_ La femme ne réagit pas et vous sortez à l’arrêt suivant pour ne pas envenimer la situation. **(-2)**
-    * **3 à 6 :** Il s’en prend à vous : _« Qu’est-ce-que t’as, toi ? J’ai rien fait, qu’est-ce-que tu me veux ? »_ La femme prend votre défense et explique aux passagers qu’il n’arrêtait pas de se frotter contre elle et l’homme sorte à l’arrêt d’après. Elle vous remercie. **(+2)**
-    * **7 à 9** **:** D’autres personnes vous soutiennent et il est obligé de sortir au prochain arrêt et elle vous remercie. **(+1)**
-    * **10 :** Elle vous dit :_ « C’est mon mec, de quoi tu te mêles ? »_ Honteux, vous sortez à l’arrêt suivant. **(-2)**
+    * **1 à 2 :** Il s’en prend à toi : _« Qu’est-ce-que t’as, toi ? J’ai rien fait, qu’est-ce-que tu me veux ? »_ La femme ne réagit pas et tu sors à l’arrêt suivant pour ne pas envenimer la situation. **(-2)**
+    * **3 à 6 :** Il s’en prend à toi : _« Qu’est-ce-que t’as, toi ? J’ai rien fait, qu’est-ce-que tu me veux ? »_ La femme prend ta défense et explique aux passagers qu’il n’arrêtait pas de se frotter contre elle et l’homme sorte à l’arrêt d’après. Elle te remercie. **(+2)**
+    * **7 à 9** **:** D’autres personnes te soutiennent et il est obligé de sortir au prochain arrêt et elle te remercie. **(+1)**
+    * **10 :** Elle te dit :_ « C’est mon mec, de quoi tu te mêles ? »_ Honteux, tu sors à l’arrêt suivant. **(-2)**
 * **J’interviens : _« J’ai tout vu. Est-ce-que vous avez besoin d’aide, Madame ? »_**
-    * **1 à 5 :** Elle vous dit : « Oui, j’ai besoin d’aide. » L’homme part dans un autre coin du bus. Elle vous remercie. **(+2)**
-    * **6 à 8 :** Elle vous dit : « Oui, j’ai besoin d’aide. » Vous lui proposez votre place de manière à ce qu’elle ne soit plus en contact avec l’homme. **(+2)**
-    * **9 :** Elle vous dit : « Oui, j’ai besoin d’aide. » Vous vous approchez d’elle l’homme réagit violemment envers vous. Le chauffeur arrête le bus à cause de la dispute et 20 minutes se passent avant que la situation se calme et qu’il reparte. La femme vous remercie néanmoins.**(0)**
-    * **10 :** Elle vous dit : _« C’est mon mec, de quoi tu te mêles ? »_ Honteux, vous sortez à l’arrêt suivant. **(-2)**
+    * **1 à 5 :** Elle te dit : « Oui, j’ai besoin d’aide. » L’homme part dans un autre coin du bus. Elle te remercie. **(+2)**
+    * **6 à 8 :** Elle te dit : « Oui, j’ai besoin d’aide. » Tu lui proposes ta place de manière à ce qu’elle ne soit plus en contact avec l’homme. **(+2)**
+    * **9 :** Elle te dit : « Oui, j’ai besoin d’aide. » Tu t’approches d’elle, l’homme réagit violemment envers toi. Le chauffeur arrête le bus à cause de la dispute et 20 minutes se passent avant que la situation se calme et qu’il reparte. La femme te remercie néanmoins.**(0)**
+    * **10 :** Elle te dit : _« C’est mon mec, de quoi tu te mêles ? »_ Honteux, tu sors à l’arrêt suivant. **(-2)**
 * **Je dis tout haut pour alerter les passager·e·s : « Il y a un frotteur dans ce métro, faites attention. »**
-    * **1 à 4 : **Personne ne réagit et l’homme ne semble pas inquiété par votre remarque. **(-1 ET choisis une autre Réaction)**
-    * **4 à 7 : **Personne ne réagit mais l’homme s’arrête et vous jette un regard noir, il a compris que vous l’avez vu. **(+1)**
-    * **7 à 9 : **Les gens vous jettent des regards éberlués comme si vous étiez fou.
-    * **10 : **La femme et l’homme discutent ensemble et cherchent du regard autour d’eux. Vous comprenez que vous avez mal jugé la situation. **(-2)**
-* J’interviens : « Tu cherches aussi, t’as vu ta jupe ? »
-    * **1 à 3 :** Les gens autour de vous prennent sa défense et vous interpellent : « Non mais ça va pas ? Vous êtes cinglé de dire ça ? Elle s’habille comme elle veut. » Vous êtes obligé de sortir au prochain arrêt. **(-2)**
-    * **2 à 3 :** Personne ne réagit, elle vous regarde troublée
-    * et sort à l’arrêt suivant. **(+1)**
-    * **4 à 7 :** Elle se retourne brusquement, vous met une gifle et vous insulte : « Bande de connards ! » Vous voyez son agresseur filer discrètement à l’autre bout du bus. Vous vous sentez humilié et sortez à l’arrêt suivant. **(-2)**
-    * **8 à 9 :** Elle se retourne, vous met une gifle et vous insulte : « Bande de connards ! » L’autre homme prend à partie les autres passagers et dit : « Tu prends tes rêves pour des réalités, pauvre conne. » Personne autour ne
-    * réagit, elle est obligée de sortir à l’arrêt suivant. **(+1)**
-    * **10 :** L’homme vous interpelle : « C’est ma meuf, t’es ouf ou quoi ? Comment tu parles ? Je vais te défoncer. » Vous avez mal jugé la situation et sortez à l’arrêt suivant pour éviter que ça ne dégénère. **(-3)**
+    * **1 à 4 : **Personne ne réagit et l’homme ne semble pas inquiété par ta remarque. **(-1 ET choisis une autre Réaction)**
+    * **5 à 7 : **Personne ne réagit mais l’homme s’arrête et te jette un regard noir, il a compris que tu l’as vu. **(+1)**
+    * **8 à 9 : **Les gens te jettent des regards éberlués comme si tu étais fou. **(-1)**
+    * **10 : **La femme et l’homme discutent ensemble et cherchent du regard autour d’eux. Tu comprends que tu as mal jugé la situation. **(-2)**
+* **J’interviens : « Tu cherches aussi, t’as vu ta jupe ? »**
+    * **1 à 2 :** Les gens autour de toi prennent sa défense et t’interpellent : « Non mais ça va pas ? Vous êtes cinglé de dire ça ? Elle s’habille comme elle veut. » Tu es obligé de sortir au prochain arrêt. **(-2)**
+    * **3 à 4 :** Personne ne réagit, elle te regarde troublée et sort à l’arrêt suivant. **(+1)**
+    * **5 à 7 :** Elle se retourne brusquement, te met une gifle et t’insulte : « Bande de connards ! » Tu vois son agresseur filer discrètement à l’autre bout du bus. Tu te sens humilié et sors à l’arrêt suivant. **(-2)**
+    * **8 à 9 :** Elle se retourne, te met une gifle et t’insulte : « Bande de connards ! » L’autre homme prend à partie les autres passagers et dit : « Tu prends tes rêves pour des réalités, pauvre conne. » Personne autour ne réagit, elle est obligée de sortir à l’arrêt suivant. **(+1)**
+    * **10 :** L’homme t’interpelle : « C’est ma meuf, t’es ouf ou quoi ? Comment tu parles ? Je vais te défoncer. » Tu as mal jugé la situation et sors à l’arrêt suivant pour éviter que ça ne dégénère. **(-3)**
 
 
-## Entrave et charge dans l'espace public – Capacités physiques mises en question en fonction des sexes
+## 7. Entrave et charge dans l'espace public – Capacités physiques mises en question en fonction des sexes
 
-Vous revenez de vacances et vous êtes très chargé avec vos bagages. Une femme vous propose de vous aider à porter des sacs jusqu’au bout de la rue. A peine a-t-elle soulevé les sacs qu’un homme qui avait vu la scène de loin se précipite vers vous et vous propose de les prendre à sa place.
+Tu reviens de vacances et tu es très chargé avec tes bagages. Une femme te propose de t’aider à porter des sacs jusqu’au bout de la rue. A peine a-t-elle soulevé les sacs qu’un homme qui avait vu la scène de loin se précipite vers toi et te propose de les prendre à sa place.
 
 
 
-* **Vous acceptez.**
-    * **1 à 2 :** La femme vous regarde vexée et s’en va en laissant le sac en plan. Au même moment, l’homme reçoit un coup de téléphone et s’excuse en partant. Vous vous retrouvez seul·e avec tous vos bagages. **(-2)**
-    * **3 à 5 :** L’homme approche sa main des bagages que tient la femme. Poliment, elle se dégage et dit : _« Je vous remercie mais je pense en être capable seule ! »_ Vous vous sentez idiot·e d’avoir accepté. **(-2)**
-    * **6 : **La femme remercie l’homme pour son aide. Ca devait être bien lourd… **(+1)**
-    * **7 à 10 :** La femme dit : _« Ok ! »_ et s’en va. L’homme porte vos bagages et vous dit : _« On allait quand même pas laisser une femme faire le travail d’un homme ! »_
+* **J’accepte.**
+    * **1 à 2 :** La femme te regarde vexée et s’en va en laissant le sac en plan. Au même moment, l’homme reçoit un coup de téléphone et s’excuse en partant. Tu te retrouves seul·e avec tous tes bagages. **(-2)**
+    * **3 à 5 :** L’homme approche sa main des bagages que tient la femme. Poliment, elle se dégage et dit : _« Je vous remercie mais je pense en être capable seule ! »_ Tu te sens idiot·e d’avoir accepté. **(-2)**
+    * **6 : **La femme remercie l’homme pour son aide. Ça devait être bien lourd… **(+1)**
+    * **7 à 10 :** La femme dit : _« Ok ! »_ et s’en va. L’homme porte tes bagages et te dit : _« On allait quand même pas laisser une femme faire le travail d’un homme ! »_
         * _« Oui c’est vrai, chacun son boulot ! »_
-            * **1 à 7 :** Il rit, vous aide à porter vos bagages et vous souhaite bonne journée. **(0)**
-            * **8 à 10 :** Il rit, la femme se retourne et vous dit : _« J’imagine que c’est pas votre mère qui portait les courses, alors ? »_ et s’en va. Vous vous sentez bête. **(-2)**
+            * **1 à 7 :** Il rit, t’aide à porter tes bagages et te souhaite une bonne journée. **(0)**
+            * **8 à 10 :** Il rit, la femme se retourne et te dit : _« J’imagine que c’est pas votre mère qui portait les courses, alors ? »_ et s’en va. Tu te sens bête. **(-2)**
         * _« Merci beaucoup mais je préfère me débrouiller tout·e seul·e finalement. J’aime pas ce que vous sous-entendez ! »_
-            * **1 à 10 :** Vous reprenez tous vos sacs de ses mains et continuez avec difficulté à regagner votre entrée. Il vous regarde vous éloigner, interloqué. **(+3)**
+            * **1 à 10 :** Tu reprends tous tes sacs de ses mains et continues avec difficulté à regagner ton entrée. Il te regarde t’éloigner, interloqué. **(+3)**
         * _« Bah pourquoi pas ? Vous avez peur de quoi ? Qu’elles en soient plus capables ? »_
-            * **1 à 10 :** L’homme, tout en portant vos bagages, vous agace par sa vision des choses qu’il développe sur le trajet. Vous passez un mauvais moment et regrettez d’avoir accepté son aide. **(-1)**
-        * Vous ne répondez pas et le laissez parler avant de le quitter poliment.
-            * **1 à 10 :** Bien que son avis ne soit pas le vôtre… sur ce coup-là vous avez été opportuniste ! **(0)**
-* **Vous refusez poliment.**
-    * **1 à 5 :** _« Bah pourquoi ? C’est à moi de le faire ! »_ et l’homme prend vos bagages sans votre autorisation. Vous ne vous êtes pas senti·e écouté·e. **(-2)**
-    * **6 à 10 :** Il s’en va l’air dédaigneux et la femme vous aide à porter vos bagages. **(+3)**
-* **Vous partagez les sacs entre les deux en les remerciant.**
-    * **1 à 2 :** Les deux vous aident à porter vos bagages et s’en vont. **(+3)**
-    * **3 à 10 :** L’homme prend les bagages des mains de la femme et dit : _« C’est quand même lourd, je peux vraiment pas vous laisser porter ça ! »_ Vous vous sentez mal à l’aise pour la femme. **(-2)**
+            * **1 à 10 :** L’homme, tout en portant tes bagages, t’agace par sa vision des choses qu’il développe sur le trajet. Tu passes un mauvais moment et regrettes d’avoir accepté son aide. **(-1)**
+        * Je ne réponds pas et le laisse parler avant de le quitter poliment.
+            * **1 à 10 :** Bien que son avis ne soit pas le tien… sur ce coup-là tu as été opportuniste ! **(0)**
+* **Je refuse poliment.**
+    * **1 à 5 :** _« Bah pourquoi ? C’est à moi de le faire ! »_ et l’homme prend tes bagages sans ton autorisation. Tu ne t’es pas senti·e écouté·e. **(-2)**
+    * **6 à 10 :** Il s’en va l’air dédaigneux et la femme t’aide à porter tes bagages. **(+3)**
+* **Je partage les sacs entre les deux en les remerciant.**
+    * **1 à 2 :** Les deux t’aident à porter tes bagages et s’en vont. **(+3)**
+    * **3 à 10 :** L’homme prend les bagages des mains de la femme et dit : _« C’est quand même lourd, je peux vraiment pas vous laisser porter ça ! »_ Tu te sens mal à l’aise pour la femme. **(-2)**
 
 Vous avez répondu à cette question en tant qu'homme. Est-ce que cette situation vous paraît vraisemblable ?
 
@@ -442,40 +420,40 @@ Imaginons maintenant que c'est une deuxième femme qui vous propose son aide. Es
 •	Vous partagez les sacs entre les deux en la remerciant
 
 
-## Le Parc : L'espace du banc public / Intrusion non consentie 
+## 8. Le Parc : L'espace du banc public / Intrusion non consentie 
 
-Vous êtes en train de lire dans un parc assis·e sur un banc. Quelqu'un s’assoit à côté de vous et entame une conversation que vous n'avez pas envie d'avoir. Il se fait de plus en plus insistant et se rapproche.
+Tu es en train de lire dans un parc assis·e sur un banc. Quelqu'un s’assoit à côté de toi et entame une conversation que tu n'as pas envie d'avoir. Il se fait de plus en plus insistant et se rapproche.
 
 
 
 * **Je ne dis rien et j'attends en me plongeant dans mon livre qu'il se lasse et parte de lui-même.**
-    * **1 à 5 :** Au bout de quelques minutes, il finit par partir et vous êtes soulagé·e. **(+2)**
-    * **6 à 10 :** Bien que vous ne lui portiez aucune attention, il continue de parler sans arrêt. Puis, il se penche ostensiblement sur votre livre et le commente.
+    * **1 à 5 :** Au bout de quelques minutes, il finit par partir et tu es soulagé·e. **(+2)**
+    * **6 à 10 :** Bien que tu ne lui portes aucune attention, il continue de parler sans arrêt. Puis, il se penche ostensiblement sur ton livre et le commente.
         * Je me lève en le fixant avec mépris et je pars sans dire un mot.
-            * **1 à 6 :** Vous partez vous asseoir plus loin et le voyez assis sur le banc l’air penaud. **(-1)**
-            * **7 à 9 :** Vous décidez de partir sur un autre banc, il vous suit de nouveau et vous êtes contraint·e de quitter le parc pour être tranquille. **(-2)**
-            * **10 :** Lorsque vous partez vous asseoir plus loin, il vous dit bien fort pour que tout le monde entende : _« Ça va, pas besoin de me regarder comme ça. Je voulais juste te parler, détends toi. »_ Il vous laisse tranquille mais vous vous sentez mal à l’aise. **(-1)**
-* **Je lui dis : _« Je peux vous aider ? Je vous en prie, faites comme chez vous ! »_**
-    * **1 à 3 :** Il s’en va mais vous répond bien fort pour que tout le monde entende : _« Ça va, pas besoin de me regarder comme ça. Je voulais juste te parler, détends-toi. »_ Il vous laisse tranquille mais vous vous sentez mal à l’aise. **(-1)**
-    * **4 à 8 :** Il vous répond mal à l’aise : _« Ah pardon, je ne pensais pas déranger. »_ et il s’en va. **(+2)**
-    * **9 :** Il vous répond : _« De quel droit tu me parles comme ça ? Je suis pas ton pote. Tu t’es regardé·e ? Tu croyais quoi ? »_ Vous préférez partir plutôt que de risquer l’escalade. **(-3)**
-    * **10 :** Il vous répond : _« Ah, merci, j’osais pas ! »_ vous prend le livre des mains et commence à le feuilleter. Au bout de trente secondes il le repose en vous disant : _« Mais, je l’ai déjà lu ! »_ et s’en va. Vous êtes perplexe ! **(-1)**
+            * **1 à 6 :** Tu pars t’asseoir plus loin et le vos assis sur le banc l’air penaud. **(-1)**
+            * **7 à 9 :** Tu décides de partir sur un autre banc, il te suit de nouveau et tu es contraint·e de quitter le parc pour être tranquille. **(-2)**
+            * **10 :** Lorsque tu pars t’asseoir plus loin, il te dit bien fort pour que tout le monde entende : _« Ça va, pas besoin de me regarder comme ça. Je voulais juste te parler, détends toi. »_ Il te laisse tranquille mais tu te sens mal à l’aise. **(-1)**
+        * **Je lui dis : _« Je peux vous aider ? Je vous en prie, faites comme chez vous ! »_**
+            * **1 à 3 :** Il s’en va mais te répond bien fort pour que tout le monde entende : _« Ça va, pas besoin de me regarder comme ça. Je voulais juste te parler, détends-toi. »_ Il te laisse tranquille mais tu te sens mal à l’aise. **(-1)**
+            * **4 à 8 :** Il te répond mal à l’aise : _« Ah pardon, je ne pensais pas déranger. »_ et il s’en va. **(+2)**
+            * **9 :** Il te répond : _« De quel droit tu me parles comme ça ? Je suis pas ton pote. Tu t’es regardé·e ? Tu croyais quoi ? »_ Tu préfères partir plutôt que de risquer l’escalade. **(-3)**
+            * **10 :** Il te répond : _« Ah, merci, j’osais pas ! »_ te prend le livre des mains et commence à le feuilleter. Au bout de trente secondes il le repose en te disant : _« Mais, je l’ai déjà lu ! »_ et s’en va. Tu es perplexe ! **(-1)**
 * **Je me lève sans rien dire et je m'en vais m’asseoir sur un banc à côté de quelqu’un d’autre.**
-    * **1 à 6 : **Vous partez vous asseoir plus loin et le voyez assis sur le banc l’air penaud. **(-1)**
-    * **7 à 9 :** Il s’en va mais vous dit bien fort pour que tout le monde entende : _« Ça va, détends-toi. Je voulais juste te parler. »_ Il vous laisse tranquille mais vous vous sentez mal à l’aise. **(-1)**
-    * **10 :** Il vous suit sur l’autre banc, vous lui assénez : _« Qu’est-ce que t’as pas compris ? »_ et décidez de partir du parc pour être enfin tranquille. **(-2)**
+    * **1 à 6 : **Tu pars t’asseoir plus loin et le vois assis sur le banc l’air penaud. **(-1)**
+    * **7 à 9 :** Il s’en va mais te dit bien fort pour que tout le monde entende : _« Ça va, détends-toi. Je voulais juste te parler. »_ Il te laisse tranquille mais tu te sens mal à l’aise. **(-1)**
+    * **10 :** Il te suit sur l’autre banc, tu lui assènes : _« Qu’est-ce que t’as pas compris ? »_ et décides de partir du parc pour être enfin tranquille. **(-2)**
 * **Je reste et je le pousse en lui disant de s'en aller et de me laisser tranquille.**
-    * **1 à 3 :** Il s’en va mais vous dit bien fort pour que tout le monde entende : _« Ça va, détends-toi. Je voulais juste te parler. »_ Il vous laisse tranquille mais vous vous sentez mal à l’aise. **(-1)**
-    * **4 à 5 :** Il vous répond : _« Me touche pas, je suis pas ton pote ! Tu t’es regardé·e ? Tu croyais quoi ? »_ Vous préférez partir plutôt que de risquer l’escalade. **(-3)**
-    * **6 à 10 :** Il s’en va après s’être excusé, vous êtes enfin tranquille et reprenez votre lecture en restant vigilant·e. **(0)**
+    * **1 à 3 :** Il s’en va mais te dit bien fort pour que tout le monde entende : _« Ça va, détends-toi. Je voulais juste te parler. »_ Il te laisse tranquille mais tu te sens mal à l’aise. **(-1)**
+    * **4 à 5 :** Il te répond : _« Me touche pas, je suis pas ton pote ! Tu t’es regardé·e ? Tu croyais quoi ? »_ Tu préfères partir plutôt que de risquer l’escalade. **(-3)**
+    * **6 à 10 :** Il s’en va après s’être excusé, tu es enfin tranquille et reprends ta lecture en restant vigilant·e. **(0)**
 * **Soutenant son regard, je lui explique calmement et fermement qu'il me gêne et reprends ma lecture.**
-    * **1 à 5 :** Il s’en va après s’être excusé, vous êtes enfin tranquille et fièr·e de ne pas avoir cédé cet espace. **(+3)**
-    * **6 à 8 :** Il s’en va mais vous dit bien fort pour que tout le monde entende : _« Ça va, détends-toi. Je voulais juste te parler. »_ Il vous laisse tranquille mais vous vous sentez mal à l’aise. **(-1)**
-    * **9 :** Il se tait mais reste sur le banc sans rien faire, vous poursuivez votre lecture mais êtes mal à l’aise. **(0)**
-    * **10 :** Il vous dévisage et vous répond, surpris : _« Oh pardon je vous avais pris pour quelqu’un d’autre ! »_ et s’en va. Vous êtes interloqué.·e mais finalement soulagé·e. **(+2)**
+    * **1 à 5 :** Il s’en va après s’être excusé, tu es enfin tranquille et fièr·e de ne pas avoir cédé cet espace. **(+3)**
+    * **6 à 8 :** Il s’en va mais te dit bien fort pour que tout le monde entende : _« Ça va, détends-toi. Je voulais juste te parler. »_ Il te laisse tranquille mais tu te sens mal à l’aise. **(-1)**
+    * **9 :** Il se tait mais reste sur le banc sans rien faire, tu poursuis ta lecture mais es mal à l’aise. **(0)**
+    * **10 :** Il te dévisage et te répond, surpris : _« Oh pardon je vous avais pris pour quelqu’un d’autre ! »_ et s’en va. Tu es interloqué·e mais finalement soulagé·e. **(+2)**
 
 
-## La bande : colonisation de l'espace public / intimidation / préjugés
+## 9. La bande : colonisation de l'espace public / intimidation / préjugés
 
 Un film que vous avez très envie de voir passe dans un cinéma loin de chez vous. La séance commence dans 15 minutes et vous pressez le pas pour ne pas arriver en retard. A mi-chemin, vous voyez arriver de loin une bande qui parle très fort en se bousculant et s'approche de vous.
 
@@ -554,7 +532,7 @@ Si Oui : Dans ce cas, quelle serait votre réponse ?
 •	Je fais un détour par une autre rue en espérant qu'elles ne me suivent pas
 
 
-## Devant le lycée 
+## 11. Devant le lycée 
 
 Vous êtes en retard et vous vous dépêchez pour arriver à l’heure. Au moment de franchir la porte de l’établissement, l’assistant d’éducation qui s’occupe des entrées ce matin demande à votre amie de retourner chez elle se changer. Elle porte un short et le règlement impose une tenue décente depuis cette année. Votre amie, prise au dépourvu, se tourne vers vous et semble attendre un soutien de votre part.
 
@@ -640,7 +618,7 @@ Vous êtes en retard et vous vous dépêchez pour arriver à l’heure. Au momen
 * **7 à 10 :** _« Pas de problème, si tu crois que ça me fait peur… allons la voir tout de suite. Elle sera ravie que vous lui expliquiez pourquoi vous ne respectez pas le règlement. »_ Cette fois c’est sûr, vous allez arriver en retard, mais vous ne comptez pas vous laisser faire pour autant ! **(+3)**
 
 
-## La Rue : le bruit des pas derrière soi
+## 10. La Rue : le bruit des pas derrière soi
 
 Il est tard. Vous marchez dans une rue longue et déserte à cette heure-ci pour rentrer chez vous. Vous entendez un bruit de pas que vous n'identifiez pas dont l'origine se trouve derrière vous, et qui avance au même rythme que vous.
 
@@ -883,7 +861,7 @@ Vous donnez rendez-vous à un très bon ami que vous n’avez pas vu depuis long
 
 ## Le Bar - Préjugés homophobes - Confrontation
 
-Vous êtes dans bar avec vos amis, Vous recevez un appel de la part d’un ami homosexuel qui vous informe qu’il va vous rejoindre avec son petit ami. Vous prévenez donc le reste du groupe de leur arrivée prochaine et l’un d’entre eux vous dit : _« Mais attends, tu vas inviter des homos à passer la soirée avec nous ? »_
+Vous êtes dans un bar avec vos amis, Vous recevez un appel de la part d’un ami homosexuel qui vous informe qu’il va vous rejoindre avec son petit ami. Vous prévenez donc le reste du groupe de leur arrivée prochaine et l’un d’entre eux vous dit : _« Mais attends, tu vas inviter des homos à passer la soirée avec nous ? »_
 
 
 
@@ -1007,15 +985,13 @@ Si celle-ci est bien celle apportée par la majorité des joueurs·es de l’éq
 
 Ce soir, vous voulez sortir avec des ami·e.s. Vous espérez que vos parents sont d’accord et vous avez prévu de leur demander avant de partir. Vous vous êtes préparé·e et vous avez mis des habits que vous aimez. En leur demandant la permission, vos parents vous répondent plutôt :
 
-1.	« Bonne soirée, amuse-toi bien. »
 
-2.	« Bonne soirée, amuse-toi bien et fait attention quand tu rentres. »
 
-3.	« Bonne soirée, donne-nous l’adresse de là où tu vas. avant de partir. »
-
-4.	« Tu ne vas pas sortir habillé·e comme ça ? Va te changer. »
-
-5.	« Il n’est pas question que tu sortes le soir. »
+* « Bonne soirée, amuse-toi bien. »
+* « Bonne soirée, amuse-toi bien et fait attention quand tu rentres. »
+* « Bonne soirée, donne-nous l’adresse de là où tu vas. avant de partir. »
+* « Tu ne vas pas sortir habillé·e comme ça ? Va te changer. »
+* « Il n’est pas question que tu sortes le soir. »
 
 
 ## Le Parc – Fantasme de la nuit (les parents) 
@@ -1024,66 +1000,59 @@ Ce soir, vous voulez sortir avec des ami·e.s. Vous espérez que vos parents son
 
 Vous êtes au parc avec vos amis et vous passez un très bon moment. Il est 19h30, vos parents ne vous ont autorisé à sortir que jusqu’à 20h00.
 
-1.	Je rentre tout de suite.
 
-2.	J’appelle mes parents pour négocier un délai supplémentaire.
 
-3.	J’appelle mes parents et j’invente une excuse plausible pour rester plus longtemps.
-
-4.	Je reste avec mes amis malgré tout sans prévenir mes parents.
+* Je rentre tout de suite.
+* J’appelle mes parents pour négocier un délai supplémentaire.
+* J’appelle mes parents et j’invente une excuse plausible pour rester plus longtemps.
+* Je reste avec mes amis malgré tout sans prévenir mes parents.
 
 
 ## L'arrêt de bus – Fantasme de la nuit 
 
 C'est la nuit, vous rentrez chez vous. Le prochain bus passe dans 25 minutes et vous êtes à 15 min à pieds de chez vous. La route jusqu'à chez vous est mal éclairée et peu fréquentée.
 
-1.	J'attends le bus.
 
-2.	Je rentre à pieds sans me poser de question.
 
-3.	Je presse le pas et rentre le plus vite possible.
-
-4.	Je trouve un autre moyen de locomotion : Uber, quelqu'un qui vient me chercher...
+* J'attends le bus.
+* Je rentre à pieds sans me poser de question.
+* Je presse le pas et rentre le plus vite possible.
+* Je trouve un autre moyen de locomotion : Uber, quelqu'un qui vient me chercher...
 
 
 ## Le fast-food – Préjugés dans l'espace public :  l'itinéraire inquiétant 
 
 Vous avez rendez-vous avec des amis au fast-food. Pour vous y rendre le chemin le plus court vous fait passer par un endroit qui n'a pas bonne réputation. Vous pouvez choisir un autre itinéraire, mais celui-ci est deux fois plus long et vous risquez de rater la séance
 
-1.	Je prends l'itinéraire le plus court	.
 
-2.	Je fais un détour pour aller chercher un·e ami·e et y aller ensemble.
 
-3.	J'évite de passer par cet endroit et je prends l'autre itinéraire en me pressant.
-
-4.	Je décline l'invitation et décide de rester chez moi.
+* Je prends l'itinéraire le plus court.
+* Je fais un détour pour aller chercher un·e ami·e et y aller ensemble.
+* J'évite de passer par cet endroit et je prends l'autre itinéraire en me pressant.
+* Je décline l'invitation et décide de rester chez moi.
 
 
 ## Quartier hostile – Préjugés dans l'espace public :  l'itinéraire inquiétant
 
 Vous vous apprêtez à traverser un quartier dans lequel vous avez déjà été pris à partie plusieurs fois par un groupe d’individus. Que faites-vous ?
 
-1.	Je ne fais rien de particulier.
 
-2.	Je mets mes écouteurs, ma musique et je fixe le sol pour ne pas croiser leurs regards.
 
-3.	Je marche plus rapidement pour traverser le plus vite possible.
-
-4.	Je fais un grand détour pour éviter de passer par ce quartier.
-
-5.	Je marche avec assurance en espérant que ça les dissuadera de m’approcher.
-
-6.	Je demande à un·e ami·e de faire le trajet avec moi en espérant que ce soit possible pour lui·elle.
+* Je ne fais rien de particulier.
+* Je mets mes écouteurs, ma musique et je fixe le sol pour ne pas croiser leurs regards.
+* Je marche plus rapidement pour traverser le plus vite possible.
+* Je fais un grand détour pour éviter de passer par ce quartier.
+* Je marche avec assurance en espérant que ça les dissuadera de m’approcher.
+* Je demande à un·e ami·e de faire le trajet avec moi en espérant que ce soit possible pour lui·elle.
 
 
 ## Uriner dans la rue - légitimité à occuper l’espace public
 
 Vous êtes avec des ami·es dans la rue le soir et avez très envie d’uriner. Que faites-vous ?
 
-1.	Je me retiens jusqu’à ce que je puisse aller aux toilettes
 
-2.	Je me retourne contre le premier mur et urine.
 
-3.	Je cherche un coin sombre et à l’abri des regards.
-
-4.	Je cherche des toilettes publiques ou un café
+* Je me retiens jusqu’à ce que je puisse aller aux toilettes.
+* Je me retourne contre le premier mur et urine.
+* Je cherche un coin sombre et à l’abri des regards.
+* Je cherche des toilettes publiques ou un café
