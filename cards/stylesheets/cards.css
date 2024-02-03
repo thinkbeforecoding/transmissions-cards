@@ -131,7 +131,7 @@ section {
 
 /* Cards type are defined using classes: 
    recto/verso for the side of the card
-   situation/reaction/escalade for the type of card */
+   situation/strategy/escalade for the type of card */
 
 /* background illustrations for cards */
 
@@ -153,9 +153,9 @@ section {
 }
 
 .recto.situation,
-.recto.reaction,
+.recto.strategy,
 .recto .escalade {
-    /* recto of situation and reaction use the same image
+    /* recto of situation and strategy use the same image
        taking 50% of height from bottom */
     /* the svg has alfa and let the underlay color appear, the overlay is used to draw a border at the top */
     background-image: var(--overlay), var(--illustration), var(--underlay)  ;
@@ -165,11 +165,11 @@ section {
 }
 
 
-.verso.reaction,
+.verso.strategy,
 .verso.escalade {
-    /* verso of reactions have a 20mm image at the bottom */
+    /* verso of strategies have a 20mm image at the bottom */
     --bg-size: calc(var(--bleed) + 20mm);
-    --illustration: url(../img/reaction.svg);
+    --illustration: url(../img/strategy.svg);
 
     background-image: var(--overlay), var(--illustration) , var(--underlay);
 
@@ -342,7 +342,7 @@ h1 {
     }
 }
 
-/* the list of consequence for reaction/escalade cards */
+/* the list of consequence for strategy/escalade cards */
 
 .consequences {
 
