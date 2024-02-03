@@ -7766,7 +7766,7 @@
                     <g transform="matrix(1,0,0,1,-5.71905,0)">
                         <g transform="matrix(200,0,0,200,169.878,212.426)">
                         </g>
-                        <text x="48.882px" y="212.426px" style="font-family:'Mundial-Bold', 'Mundial';font-weight:700;font-size:200px;fill:url(#_Linear2);">6</text>
+                        <text x="48.882px" y="212.426px" style="font-family:'Mundial-Bold', 'Mundial';font-weight:700;font-size:200px;fill:url(#_Linear2);text-decoration-line: underline;text-decoration-thickness: 20pt">6</text>
                     </g>
                 </g>
             </g>
