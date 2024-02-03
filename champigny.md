@@ -1,5 +1,3 @@
-<!-- Copy and paste the converted output. -->
-
 <!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
@@ -591,13 +589,13 @@ Tu es au cinéma avec ta fille âgée de 5 ans assise sur tes genoux pour aller 
 
 * **Je me décale de quelques sièges sur le rang pour ne plus le sentir derrière moi.**
     * **1 à 5 :** L’homme ne te suit pas et tu peux regarder le film tranquillement. Mais tu ne peux pas t’empêcher de te demander pourquoi c’est toi qui a dû bouger. **(0)**
-    * **6 à 7 :** Ta fille râle : _« Moi, je veux pas changer de place ! »_ **(-1 ET choisis une autre Réaction + Escalade)**
+    * **6 à 7 :** Ta fille râle : _« Moi, je veux pas changer de place ! »_ **(-1 ET choisis une autre Stratégie + Escalade)**
         * Je dis bien fort pour qu’on m’entende : _« Mais le Monsieur derrière n’arrête pas d’embêter maman ! »_
             * **1 à 2 :** _« Méchant ! Arrête d’embêter ma maman ! »_ L’homme change de place. Le fait que la remarque vienne d’un enfant l’a désarmé. **(+2)**
             * **3 :** Ta fille le gronde et l’homme réplique agressivement : _« Non mais ça va pas ?! Aussi hystérique que sa mère, celle-là ! Laissez moi tranquille maintenant ! »_ Ta fille pleure, la séance est gâchée : il a eu ce qu’il voulait. **(-3)**
             * **4 à 6 :** L’homme nie et tu n’as pas d’autres choix que de changer de place pour enfin retrouver la paix. Mais tu ne peux pas t’empêcher de te demander pourquoi c’est toi qui a dû bouger. **(-1)**
             * **7 à 8 :** D’autres personnes se retournent et le fixent et l’homme n’ose bouger du reste de la séance. La vigilance collective l’a rendu inoffensif. **(+3)**
-            * **9 à 10 :** D’autres personnes agacées par le bruit que vous faites te disent : _« C’est pas bientôt fini ? On peut regarder le film en silence ?! » _ Malheureusement, ils ne comprendront que quand ça leur arrivera… **(-2 ET choisis une autre Réaction)**
+            * **9 à 10 :** D’autres personnes agacées par le bruit que vous faites te disent : _« C’est pas bientôt fini ? On peut regarder le film en silence ?! » _ Malheureusement, ils ne comprendront que quand ça leur arrivera… **(-2 ET choisis une autre Stratégie)**
         * Je ne lui donne pas le choix.
             * **1 à 2 :** Elle répond par une succession de cris et de hurlements. Tu n'as pas d'autre choix que de quitter le cinéma sous les regards accusateurs des autres spectateur·ice·s. Il t’a gâché ton moment avec ta fille. **(-3)**
             * **3 à 7 :** Elle bougonne mais oublie vite ce petit épisode tant le film la passione. Tu as enfin la paix mais tu ne comprends pas pourquoi c’est toi qui a dû changer de place. **(+2)**
@@ -607,11 +605,11 @@ Tu es au cinéma avec ta fille âgée de 5 ans assise sur tes genoux pour aller 
             * **6 à 7 :** Il ne te touche plus mais ne cesse de t’imposer sa présence en bougeant sur son siège et en marmonnant. Tu restes en vigilance et cela te gâche en partie ce moment avec ta fille. **(-1)**
             * **8 à 10 :** L’homme te regarde les yeux écarquillés : _« Mais vous êtes pas bien, Madame ! Elle est folle celle-là ! » _Faire passer les femmes pour des folles, quelle inventivité ! **(-2)**
         * Je me rassois et m’adresse à tout le monde : _« Méfiez-vous, il y a un pervers dans la salle ! »_
-            * **1 à 3 :** Certain·e·s te prennent à partie : _« Non, mais ça va pas de faire peur aux enfants comme ça ?! » **(-1 ET choisis une autre Réaction))**_
+            * **1 à 3 :** Certain·e·s te prennent à partie : _« Non, mais ça va pas de faire peur aux enfants comme ça ?! » **(-1 ET choisis une autre Stratégie))**_
             * **4 à 5 :** L’homme réagit : _« Non, je ne suis pas un pervers ! » _Il se rend compte qu’il vient de se trahir et quitte la salle discrètement quelques minutes plus tard. **(+2)**
             * **6 à 8 :** Tu entends des murmures dans la salle, les gens semblent en grande vigilance et l’homme ne t’importune plus de la séance. **(+3)**
             * **9 à 10 :** L’homme te tapote sur l’épaule pour te dire :_ « Je suis de tout cœur avec vous, c’est insupportable ces hommes-là. »_ Il se moque clairement de toi… **(-3)**
-    * **8 :** Après quelques minutes, l'homme se décale aussi et recommence. Il a clairement de mauvaises intentions. **(-2 ET choisis une autre Réaction)**
+    * **8 :** Après quelques minutes, l'homme se décale aussi et recommence. Il a clairement de mauvaises intentions. **(-2 ET choisis une autre Stratégie)**
     * **9 à 10 : **L’homme ne te suit pas mais les gens derrière toi font des réflexions sur le fait que tu empêches leurs enfants de voir le film. Mais toi aussi, on t’empêchait de voir le film ! **(0)**
 * **Je prétexte un besoin d’aller aux toilettes et vais avertir le personnel du cinéma.**
     * **1 à 3 :** Le·la responsable de l’accueil du public te propose d’intervenir  à la fin de la séance pour ne pas gêner les spectateur·ice·s. Et ne semble pas voir le problème à ce que tu subisses ça tout le reste de la séance… **(-1)**
@@ -645,7 +643,7 @@ Tu es au cinéma avec ta fille âgée de 5 ans assise sur tes genoux pour aller 
             * **9 à 10 :** Des spectateur·ice·s t’interpellent : _« Chhhht ! C’est pas bientôt fini ?! »_ Tu n’auras pas le dernier mot et en plus tu te retrouves associée à lui. Néanmoins il ne t’importunera plus. **(0)** 
         * Je lui jette un regard noir, et me retourne face à l’écran.
             * **1 à 5 :** Le reste de la séance se déroule sans nouvel incident mais tu te sens obligé·e de rester en vigilance et ça te gâche en partie ce moment. **(+2)**
-            * **6 à 7 :** Il recommence…** (-2 ET choisis une autre Réaction)**
+            * **6 à 7 :** Il recommence…** (-2 ET choisis une autre Stratégie)**
             * **8 à 10 :** Tu entends l’homme dans ton dos se moquer de toi auprès de son fils et faire des gestes en te frôlant. Il cherche à tourner en dérision ton malaise. **(-3)**
 * **Je me retourne et je le gifle.**
     * **1 à 3 :** L’homme reste stupéfait et ne réagit pas. Tout se passe dans le silence, et il attend quelques minutes pour s’éclipser. Il ne recommencera probablement pas de sitôt. **(+3)**
@@ -712,7 +710,7 @@ Tu es sur ton trajet domicile-lycée, les escaliers sont déserts et tu croises 
 
 
 
-* **Je n’ai aucune  réaction tant je suis surprise par son geste.  **
+* **Je n’ai aucune réaction tant je suis surprise par son geste.  **
 * **Je lui attrape la main et lui dit : « Surtout ne te gêne pas ! » **
     * Il me bouscule et je me retrouve à terre. **(-3)**
     * Il me suit. **(-2)**
@@ -734,12 +732,12 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
 * **Je m’excuse et lui dit que je n’en ai plus pour très longtemps.**
     * **1 à 3 :_ « Bon, bon… mais faites vite. Moi je viens pas au restaurant pour voir ça. » _**Elle ne t’importune plus mais ça te paraît dingue de devoir te presser alors que tu es dans ton droit. **(0)**
     * **4 : **Les personnes à sa table te disent : _« Non, vous n’avez pas à vous presser, prenez votre temps. »_ La personne se fait sermonner par ses ami·e·s et ne décroche plus un mot de la soirée. **(+2)**
-    * **5 à 6 :_ « C’est complètement impudique de vous exhiber comme ça, arrêtez tout de suite ! »_** **(-1 ET choisis une autre Réaction)**
+    * **5 à 6 :_ « C’est complètement impudique de vous exhiber comme ça, arrêtez tout de suite ! »_** **(-1 ET choisis une autre Stratégie)**
     * **7 à 9 : **L’un·e de tes ami·e·s te dit : _« Tu sais nous on prend un biberon quand on sort, c’est plus discret. » _Si même tes ami·e·s se permettent de te dire ce que tu dois faire de ton corps… **(-2)**
     * **10 :** D’autres clients interviennent pour te soutenir. Si seulement c’était toujours le cas ! **(+3)**
 * **Je réponds que je suis couverte, que je nourris simplement mon enfant et que ce n’est pas interdit.**
     * **1 à 2 :_ « Bon, bon… faites vite. Moi je viens pas au restaurant pour voir ça. » _**Elle ne t’importune plus mais ça te paraît dingue de devoir te presser alors que tu es dans ton droit. **(0)**
-    * **3 à 5 :_ « Bien sûr que c’est interdit ! C’est de l’exhibition ce que vous faites, c’est écoeurant ! » _**Difficile de garder l’appétit dans ces conditions.**_ _(-1 ET choisis une autre Réaction)**
+    * **3 à 5 :_ « Bien sûr que c’est interdit ! C’est de l’exhibition ce que vous faites, c’est écoeurant ! » _**Difficile de garder l’appétit dans ces conditions.**_ _(-1 ET choisis une autre Stratégie)**
     * **6 à 7 :** L’un·e de tes ami·e·s te dit : _« Tu sais nous on prend un biberon quand on sort, c’est plus discret. » _Si même tes ami·e·s se permettent de te dire ce que tu dois faire de ton corps… **(-2)**
     * **8 à 9 :** Tes ami·e·s te soutiennent et la personne se tait. La soirée se poursuit normalement même si tu sens son regard désapprobateur fixé sur toi. **(+1)**
     * **10 :** Des personnes aux tables voisines prennent ta défense : _« C’est vous qui nous coupez l’appétit avec vos remarques idiotes ! »_ Enfin des gens qui n’ont pas la pudeur mal placée. **(+3)**
@@ -784,7 +782,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
     * **5 :_ « Il_**·_Elle_ _a raison, c’est vraiment pas un endroit pour faire ça ! » _vous assène un·e cliente d’une table voisine. C’est quoi le bon endroit ?... **(-3)**
     * **6 : **Tes ami·e·s prennent ta défense et ceux de la table d’à côté s’en mêlent, les verres volent et une grande foire d’empoigne commence. Tout ça pour un bout de nichon ! **(-2)**
     * **7 :** Des personnes aux tables voisines prennent ta défense : _« C’est vous qui êtes indécent·e avec vos remarques idiotes ! »_ **(+3)**
-    * **8 à 10 :** Tout le monde détourne les yeux et regarde son assiette. Tu te sens bien seule… **(-1 ET choisis une autre Réaction)**
+    * **8 à 10 :** Tout le monde détourne les yeux et regarde son assiette. Tu te sens bien seule… **(-1 ET choisis une autre Stratégie)**
 * **Faisant la sourde oreille, je l’ignore complètement.**
     * **1 à 3 :_ « Je parle français ?! Vous dérangez tout le monde avec votre sein à l’air ! »_**
         * _« Mais, je suis en train de nourrir mon enfant là, pas de tourner une sextape ! »_
@@ -846,10 +844,10 @@ Tu as 10 ans et un ouvrier qui est déjà venu plusieurs fois vient faire des tr
             * **3 à 7 :** Il ne t’importune plus durant le reste du chantier, tu as bien fait de lui dire d’arrêter. **(+3)**
             * **8 à 10 :** Il ne fait plus rien durant quelques jours puis recommence à avoir des gestes déplacés à plusieurs reprises. C’est difficile de savoir quand des excuses sont sincères. Est-ce qu’en parler aurait été plus efficace ? **(-3)**
         * [J’en parle tout de même à mes parents lorsqu’ils rentrent.]
-    * **7 à 8 :_ « Si on en parle à tes parents, je leur dirais que tu es un·e menteur·s·e. Qui est-ce que tu penses qu’ils vont croire ? » _**Tu sens bien qu’il pourrait avoir raison… **(-2 ET  choisis une autre Réaction)**
+    * **7 à 8 :_ « Si on en parle à tes parents, je leur dirais que tu es un·e menteur·s·e. Qui est-ce que tu penses qu’ils vont croire ? » _**Tu sens bien qu’il pourrait avoir raison… **(-2 ET  choisis une autre Stratégie)**
     * **9 à 10 :** _« Si tu en parles, tu vas avoir de gros problèmes ! » _Etant un enfant, ses menaces t'impressionnent et tu ne te sens plus en capacité de réagir. **(-3)**
 * **Je quitte la pièce et frappe chez mes voisins pour leur dire ce qu’il s’est passé.**
-    * **1 à 4 :** Personne ne répond. Tu es obligé·e de retourner dans l’appartement. **(-1 ET choisis une autre Réaction)**
+    * **1 à 4 :** Personne ne répond. Tu es obligé·e de retourner dans l’appartement. **(-1 ET choisis une autre Stratégie)**
     * **5 à 7 :** Les voisins appellent tes parents et te proposent de rester chez eux le temps qu’ils rentrent. Tu te sens soutenu·e et espère que tes parents ne laisseront pas passer ça. **(+2)**
     * **8 :** Ils te disent que ce n’est pas bien de mentir pour faire son intéressant·e. Tu as l’impression qu’aucun adulte ne t’accordera du crédit et te sens très seul·e. **(-3)**
     * **9 :** Ils t’accueillent et lorsque tes parents reviennent ils leurs font vertement remarquer que c’est honteux de te laisser seul·e avec un homme. Au retour à la maison, tes parents gardent le silence mais l’ambiance est lourde. **(0)**
@@ -869,7 +867,7 @@ Tu as 10 ans et un ouvrier qui est déjà venu plusieurs fois vient faire des tr
         * [J’en parle tout de même à mes parents lorsqu’ils rentrent.]
     * **4 à 6 :** Il s’excuse et ne t’importune plus jusqu’à la fin des travaux. **(+3)**
     * **7 à 8 :** _« Si tu en parles, tu vas avoir de gros problèmes ! » _Etant un enfant, ses menaces t'impressionnent et tu ne te sens plus en capacité de réagir. **(-3)**
-    * **9 à 10 : _« Pourquoi tu pleures comme ça ? Tiens, voilà 2€ pour t’acheter des bonbons. » _**Il essaye clairement d’acheter ton silence… **(0 OU choisis une autre Réaction)**
+    * **9 à 10 : _« Pourquoi tu pleures comme ça ? Tiens, voilà 2€ pour t’acheter des bonbons. » _**Il essaye clairement d’acheter ton silence… **(0 OU choisis une autre Stratégie)**
 
 
 ## 20. Les pissotières [S : 1 / R : 4 / E : 1 = 6 ]
@@ -881,33 +879,33 @@ Tu as 12 ans, tu joues avec des ami·e·s au Parc du Tremblay et tu te rends aux
 * **Je crie.**
     * **1 à 4 :** L’homme prend peur et part rapidement. Tu as bien fait de réagir. **(+3)**
     * **5 à 6 :** Quelqu’un arrive : _« Qu’est-ce qui se passe ici ?! » _et fait fuir l’homme. Ton appel à l’aide a été entendu. **(+2)**
-    * **7 : **L’homme te hurle dessus : _« Attention à toi si tu ne te tais pas tout de suite ! Il n’y a que toi et moi ici. » _Il essaye clairement de t’intimider._ **(-2 ET choisis une autre Réaction)**_
-    * **8 :_ « Mais ça va pas bien ? Pourquoi tu cries comme ça ?! Je ne fais rien de mal ! » _**Bientôt ça va être de ta faute ? **(0 ET choisis une autre Réaction + Escalade)** 
+    * **7 : **L’homme te hurle dessus : _« Attention à toi si tu ne te tais pas tout de suite ! Il n’y a que toi et moi ici. » _Il essaye clairement de t’intimider._ **(-2 ET choisis une autre Stratégie)**_
+    * **8 :_ « Mais ça va pas bien ? Pourquoi tu cries comme ça ?! Je ne fais rien de mal ! » _**Bientôt ça va être de ta faute ? **(0 ET choisis une autre Stratégie + Escalade)** 
         * Je sors mon téléphone pour le filmer.
             * **1 à 4 :** L’homme prend peur et part rapidement. Il espérait certainement que te mettre mal à l’aise t'empêcherait de réagir. **(+2)**
             * **5 à 6 :** L’homme** **te supplie de supprimer la vidéo : _« Allez, je recommencerai plus, je te le promets. » _C’est peut-être de la mauvaise foi mais la peur a changé de camp._ **(+3)**_
             * **7 à 8 : **Il te prend en photo à son tour et te dit : _« Si tu la postes, moi aussi j’ai de quoi te retrouver maintenant »_ et s’en va. Ses menaces restent longtemps dans ton esprit.** (-2)**
             * **9 à 10 :** L’homme saisit ton téléphone et le casse en te hurlant dessus et tu pars en courant. Dans une situation pareille, la fuite est la seule option raisonnable. **(-3)**
-    * **9 à 10 :_ « Je suis désolé, je peux pas m’en empêcher ! » _**Le fameux coup de la maladie pour se justifier…_ **(-1 ET choisis une autre Réaction + Escalade)**_
+    * **9 à 10 :_ « Je suis désolé, je peux pas m’en empêcher ! » _**Le fameux coup de la maladie pour se justifier…_ **(-1 ET choisis une autre Stratégie + Escalade)**_
         * [Je sors mon téléphone pour le filmer.]
 * **Je regarde ailleurs et ne lui accorde plus d’attention.**
     * **1 à 2 :** Quelqu’un rentre dans les toilettes et l’homme s’arrête net. Tu as eu de la chance. **(0)**
     * **3 à 6 :** L’homme se lasse et part de lui-même. Le priver d’attention a fonctionné. **(+2)**
     * **7 à 9 : **L’homme continue et le temps te paraît très long. On ne t’a ni parlé ni touché et pourtant c’est une agression. **(-2)**
-    * **10 :** L’homme s’adresse à toi : _« Tu ne veux pas regarder ? » _Tu comprends que ce qu’il cherche avant tout c’est d’exercer du pouvoir sur toi. **(-3 ET choisis une autre Réaction)**
+    * **10 :** L’homme s’adresse à toi : _« Tu ne veux pas regarder ? » _Tu comprends que ce qu’il cherche avant tout c’est d’exercer du pouvoir sur toi. **(-3 ET choisis une autre Stratégie)**
 * **_« Ça va pas, gros porc ?! »_**
     * **1 à 4 :** L’homme prend peur et part rapidement. Il espérait certainement que te mettre mal à l’aise t'empêcherait de réagir. **(+3)**
-    * **5 à 6 :_ « Mais pourquoi tu me parles comme ça ?! Je ne fais rien de mal, tu devrais déjà le savoir à ton âge. » _**Il essaye d’installer le doute en toi. **(0 ET choisis une autre Réaction + Escalade)** 
+    * **5 à 6 :_ « Mais pourquoi tu me parles comme ça ?! Je ne fais rien de mal, tu devrais déjà le savoir à ton âge. » _**Il essaye d’installer le doute en toi. **(0 ET choisis une autre Stratégie + Escalade)** 
         * [Je sors mon téléphone pour le filmer.]
-    * **7 à 8 :_ « Je suis désolé, je peux pas m’en empêcher ! » _**Le fameux coup de la maladie pour se justifier…_ **(0 ET choisis une autre Réaction + Escalade)**_
+    * **7 à 8 :_ « Je suis désolé, je peux pas m’en empêcher ! » _**Le fameux coup de la maladie pour se justifier…_ **(0 ET choisis une autre Stratégie + Escalade)**_
         * [Je sors mon téléphone pour le filmer.]
-    * **9 :_ « Ça va pas de parler comme ça à un adulte ?! Tu vas voir petit con ! » _**C’est bien justement parce que tu es un enfant qu’il s’est permis ça…_ **(-2 ET choisis une autre Réaction)**_
-    * **10 :_ « Si ça va très bien, ça te plaît ? » _**Cet homme semble tirer son plaisir de te voir en difficulté. **(-3 ET choisis un autre Réaction)**
+    * **9 :_ « Ça va pas de parler comme ça à un adulte ?! Tu vas voir petit con ! » _**C’est bien justement parce que tu es un enfant qu’il s’est permis ça…_ **(-2 ET choisis une autre Stratégie)**_
+    * **10 :_ « Si ça va très bien, ça te plaît ? » _**Cet homme semble tirer son plaisir de te voir en difficulté. **(-3 ET choisis un autre Stratégie)**
 * **_« Je vais appeler la police ! »_**
     * **1 à 4 :** L’homme prend peur et part rapidement. Il espérait certainement que te mettre mal à l’aise t'empêcherait de réagir. **(+2)**
-    * **5 à 6 :_ « Mais pourquoi la police ? J’ai le droit de faire ça. » _**Tu as presque l’impression qu’il y croit lui-même. Il cherche clairement à te déstabiliser. **(0 ET choisis une autre Réaction + Escalade)** 
+    * **5 à 6 :_ « Mais pourquoi la police ? J’ai le droit de faire ça. » _**Tu as presque l’impression qu’il y croit lui-même. Il cherche clairement à te déstabiliser. **(0 ET choisis une autre Stratégie + Escalade)** 
         * [Je sors mon téléphone pour le filmer.]
-    * **7 : _« Vas-y appelle les, le temps qu’ils arrivent, je serai déjà loin. » _**Malgré ta tentative, il ne semble pas intimidé. Ce n’est sûrement pas la première fois qu’il agresse quelqu’un. **(-1 ET choisis une autre Réaction + Escalade)**
+    * **7 : _« Vas-y appelle les, le temps qu’ils arrivent, je serai déjà loin. » _**Malgré ta tentative, il ne semble pas intimidé. Ce n’est sûrement pas la première fois qu’il agresse quelqu’un. **(-1 ET choisis une autre Stratégie + Escalade)**
         * [Je sors mon téléphone pour le filmer.]
     * **8 : **L’homme continue et le temps te paraît très long. On ne t’a ni parlé ni touché et pourtant c’est une agression. **(-2)**
     * **9 à 10 : _« S’il te plaît ne fait pas ça, je ne recommencerai plus. Je te le promets ! » _**C’est peut-être de la mauvaise foi mais la peur a changé de camp._ **(+3)**_
@@ -938,7 +936,7 @@ Tu as 12 ans, tu joues avec des ami·e·s au Parc du Tremblay et tu te rends aux
     * Tes ami·e·s prennent ça à la rigolade : _« Ah, mais t’es pédé en fait. Avoue, ça t’as plu ! »_ ** **
         * _« C’est quoi le rapport ?! »_
         * tes ami·e·s continuent sans t’écouter : _« Ah okay, donc c’est comme ça que vous me soutenez ? »_
-    * L’homme te barre la route :_ « Où tu vas comme ça ? » **(-1 ET choisis une autre Réaction + Escalade)**_
+    * L’homme te barre la route :_ « Où tu vas comme ça ? » **(-1 ET choisis une autre Stratégie + Escalade)**_
         * [Je sors mon téléphone pour le filmer.]
 
 

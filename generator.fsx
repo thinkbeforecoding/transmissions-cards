@@ -179,7 +179,7 @@ and extractConsequence ps : ConsequenceMd =
     | Paragraph( description , _) :: tail ->
         description, tail
     | s :: _ -> failwith $"{ s.GetType().Name }"
-    | [] -> failwith "Empty consequence"
+    | [] -> failwith "Empty consequences"
 
 and parseConsequence (escalades: Map<char, Reaction>) ((description, escaladesMd): ConsequenceMd)  : Consequence =
     let range=
@@ -254,7 +254,7 @@ let extractReaction ps : ReactionMd =
         description, List.map extractConsequence items
     | [ Span(description,_) ] ->
         description, []
-    | _ -> failwith $"Format de réaction invalide:\n%A{ps}"
+    | _ -> failwith $"Format de stratégie invalide:\n%A{ps}"
 
 let extractReactions ps : ReactionMd list * MarkdownParagraphs =
     match ps with
@@ -483,23 +483,23 @@ let check (situations: Situation list) =
                 if situation.Text = [] then
                     warn "  texte situation manquant"
                 if situation.Reactions = [] then
-                    warn "  reactions manquantes"
+                    warn "  stratégies manquantes"
                 else
                     for i,reaction in situation.Reactions |> Seq.indexed do
                         if reaction.Text = [] then
-                            warn $"  [reaction {i+1}] texte manquant"
-                        checkRanges $"reaction {i+1}" reaction
+                            warn $"  [stratégies {i+1}] texte manquant"
+                        checkRanges $"stratégie {i+1}" reaction
 
                         for cons in reaction.Consequences do
                             match cons.Score with
                             | Score(None, []) ->
-                                    warn $"  [reaction {i+1}] score manquant \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
+                                    warn $"  [stratégie {i+1}] score manquant \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
                             | Score(None, _) -> ()
                             | Score(Some(n,_),_) ->
                                 if n > 3 then
-                                    warn $"  [reaction {i+1}] score trop grand ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
+                                    warn $"  [stratégie {i+1}] score trop grand ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
                                 elif n < -3 then
-                                    warn $"  [reaction {i+1}] score trop petit ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
+                                    warn $"  [stratégie {i+1}] score trop petit ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
 
                     for k,escalade in situation.Escalades |> Map.toSeq do
                         if escalade.Text = [] then
@@ -550,9 +550,9 @@ let check (situations: Situation list) =
         let title = cut 40 situation.Title
         match result with
         | Ok score ->
-            printfn "✅ S%d %s \x1b[38;2;128;128;128m(%d réactions / %d escalades / %d cards) \x1b[32m(score %.2f)\x1b[0m" situation.Id title situation.Reactions.Length situation.Escalades.Count cards score
+            printfn "✅ S%d %s \x1b[38;2;128;128;128m(%d stratégies / %d escalades / %d cards) \x1b[32m(score %.2f)\x1b[0m" situation.Id title situation.Reactions.Length situation.Escalades.Count cards score
         | Error errors ->
-            printfn "❌ S%d %s \x1b[38;2;128;128;128m(%d réactions / %d escalades / %d cards)\x1b[0m" situation.Id title situation.Reactions.Length situation.Escalades.Count cards
+            printfn "❌ S%d %s \x1b[38;2;128;128;128m(%d stratégies / %d escalades / %d cards)\x1b[0m" situation.Id title situation.Reactions.Length situation.Escalades.Count cards
             for error in errors do
                 printfn $"%s{error}"
 
@@ -669,10 +669,10 @@ let renderReactionVerso n key (situation: Situation) (reaction: Reaction) =
         prop.className $"card verso {cls} {colorProp situation.Color } {pos n}"
         // match key with
         // | None ->
-        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/ricochets-e-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/ricochets-e-{situation.Id}.webp)") ]
-        elif System.IO.File.Exists($"./cards/img/illustrations/ricochets-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/ricochets-{situation.Id}.webp)") ]
+        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/consequences-e-{situation.Id}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-e-{situation.Id}.webp)") ]
+        elif System.IO.File.Exists($"./cards/img/illustrations/consequences-{situation.Id}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-{situation.Id}.webp)") ]
         // | Some _ -> ()
 
         prop.children [
@@ -808,7 +808,7 @@ let cards =
         // for i in 1 .. 10 do
         //     Alea i
 
-        for situation in situations do
+        for situation in champigny do
 
             Situation( situation)
             for n,reaction in situation.Reactions |> Seq.indexed do
@@ -825,7 +825,7 @@ let html =
     |> Render.htmlView
 
 // System.IO.File.WriteAllText("./cards/situations.html", html)
-System.IO.File.WriteAllText("./cards/garges.html", html)
+System.IO.File.WriteAllText("./cards/champigny.html", html)
 // System.IO.File.WriteAllText("./cards/champigny-alea.html", html)
 
 let alea = [ for i in 1 .. 10 do Alea i ]
