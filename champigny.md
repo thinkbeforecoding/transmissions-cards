@@ -1,3 +1,5 @@
+<!-- Copy and paste the converted output. -->
+
 <!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
@@ -100,7 +102,7 @@ Il est 17h30 en plein été, tu rentres des cours et tu prends le bus 208b. Tu a
  
 
 
-## Le frère indifférent
+## X. Le frère indifférent
 
 Dans la cour de l’école, au moment de la récré, tu vois une fille pousser, sans faire exprès, une autre fille. Celle-ci tombe sur une plaque d'égout et est salement amochée. En pleurs, elle te demande d’aller chercher son frère en train de jouer au foot. Ce dernier t’ignore et continue de jouer avec ses amis.
 
@@ -113,7 +115,7 @@ Dans la cour de l’école, au moment de la récré, tu vois une fille pousser, 
 * je prends le ballon pour interrompre la partie et le forcer à me suivre.
 
 
-## L’ami qui se fait frapper
+## X. L’ami qui se fait frapper
 
 Dans la rue, tu vois ton·ta meilleur·e ami·e coincé par un groupe de jeunes qui finit par partir. Après l’avoir rejoint·e, il·elle te confie se faire harceler par ces garçons de la cité voisine depuis un moment.
 
@@ -212,7 +214,7 @@ Il est midi, tu sors acheter du pain à la boulangerie la plus proche de chez to
     * **9 à 10 :** La personne arrive pour te soutenir et l’homme finit par s'excuser, honteux. **(+3)**
 
 
-## L’ex violent réflechir au vice-versa
+## X. L’ex violent réflechir au vice-versa
 
 C'est ton anniversaire et ta copine est sortie pour te faire une surprise. Deux heures plus tard, elle revient en pleurant avec un bleu sur la joue. Elle te dit qu’elle vient de croiser son ex dans la rue qui vient de lui faire ça. “”
 
@@ -370,16 +372,59 @@ En vacances avec tes parents, tu te balades dans la rue. Depuis quelque temps, t
  
 
 
-## Les voitures garées
+## 22. Les voitures garées
 
-Il est 18 h. C'est l'hiver, il fait sombre. Tu marches plus vite. Les endroits par lesquels tu passes sont mal éclairés. Des voitures sont garées en face du trottoir. Il te semble apercevoir un mouvement derrière l'une d'elles. Tu entends un bruit de moteur derrière toi. Un camion vient se garer. Juste à côté de l'endroit où tu passes alors qu'il y a de la place partout autour.
+Tu rentres chez toi un soir d’hiver et les endroits par lesquels tu passes sont mal éclairés. Des voitures sont garées sur le trottoir d’en face et il te semble apercevoir un mouvement derrière l'une d'elles. \
+Soudain, tu entends un bruit de moteur derrière toi : c’est une camionnette qui vient se garer juste devant toi alors qu'il y a de la place partout autour.
 
 
 
-* **Je marche plus lentement et je continue ma route.**
-* **Je marche plus vite.**
-* **Je cours.**
+* **Je m’arrête pour observer ce qu’il se passe.**
+    * **1 à 2 :** Les minutes passent, le moteur est coupé, personne ne sort et pas un bruit dans la rue. **(-1 et choisis une autre Stratégie)**
+    * **3 à 6 :** Une personne sort de la camionnette et rentre dans la maison la plus proche. Tu as eu peur pour rien et tu as perdu du temps ! **(0)**
+    * **7 à 9 :** Des personnes sortent de la camionnette et se dirigent vers toi. **(Escalade)**
+        * Je rebrousse chemin.
+            * **1 à 6 :** Tu perds 20 minutes à faire un détour et bien évidemment il ne se passe rien… Quel mal tu te donnes juste pour rentrer chez toi !  **(-2)**
+            * **7 à 9 :** Tu as l’impression qu’elles te suivent un long moment et finissent par prendre une autre rue. Tu as beau savoir qu’il n’y avait aucun danger, tu restes un peu secoué·e. **(-3)**
+            * **10 :** Elles te rattrapent et… te demandent un renseignement. Tu as eu très peur mais tu es désormais rassuré·e et reprend ton chemin normalement.** (+1)**
+        * J’appelle un·e ami·e en visio pour ne plus me sentir seul.
+            * **1 à 3 :** Ton ami·e te répond et tu te sens immédiatement rassuré·e en entendant sa voix. Tu rentres sans même y penser. **(+2)**
+            * **4 à 8 :** Ton ami·e ne répond pas, tu te sens terriblement seul·e… Tu lèves la tête au moment où elles te dépassent et… poursuivent leur chemin sans même te regarder. **(-1)**
+            * **9 à 10 :** Ton ami·e te répond et se moque du fait que tu te fais des films. Tu te sens jugé·e et un peu ridicule… **(-2)**
+        * Je leur dis : _« Bonsoir. »_
+            * **1 à 7 :** Elles te répondent _« Bonsoir »_ et te dépassent. Tu poursuis ton chemin sans encombre et tu te sens rassuré·e d'avoir pris l’initiative. **(+2)**
+            * **8 :** Elles te répondent d’un air suspicieux _« Y’a un problème ? » _Tu réalises alors que ça fait 10 minutes que tu regardes leur camionnette sans bouger et que ça peut paraître louche… **(-3)**
+            * **9 à 10 :** Elles te répondent « Bonsoir, tu habites ici ? » et t’assaillent de questions ce qui te rend mal à l’aise avant de finir par partir. **(-2)**
+        * Je crie de surprise.
+            * **1 à 3 :** Elles se retournent affolées en disant _« Qu’est-ce-qu’il se passe ?! »_ C’est toi qui as fini par leur faire peur… **(-1)**
+            * **4 à 5 :** Elles sursautent et te prennent à partie : _« Ça va pas de crier comme ça ? T’as un problème ?! »_ Là, t’as de bonnes raisons de t’en faire… **(-3)**
+            * **6 à 10 :** Elles te dépassent en commentant ce qu’il vient de se passer _« Y’a vraiment des gens perturbés… » _A leur place tu aurais sûrement pensé la même chose…_ **(0)**_
+    * **10 :** La camionnette redémarre après un temps qui te paraît très long. Personne n’en est sorti, ni entré. Plus de peur que de mal mais tu n’arrives pas à t’empêcher de t’en faire tout un film… **(-2)**
+* **Je presse le pas.**
+    * Un enfant sort de la camionnette et tu entends son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(0)**
+    * Au moment où tu dépasses la camionnette, la porte s’ouvre et te tamponne. La personne te dit : « _Vous m’avez fait peur ! Vous pouvez pas faire attention ?_ » Tu te sens bête… **(-2)**
+    * Après avoir dépassé la camionnette, tu entends des portes claquer et des bruits de pas derrière toi. **(Escalade)**
+        * **[**J’appelle un·e ami·e en visio pour ne plus me sentir seul.]
+        * Je m’arrête pour les laisser passer.
+            * **1 à 2 :** Les personnes s’arrêtent, te regardent et te disent : _« Bonsoir »_. Tu es soulagé·e mais tu te rends compte que ta peur était vraiment absurde… **(0)**
+            * **3 à 7 :** Les personnes te dépassent sans même te regarder. Quel mal tu te donnes juste parce que tu partages la rue avec d’autres ! **(-1)**
+            * **8 à 9 :** Arrivées à ta hauteur, elles s’arrêtent aussi et engagent la discussion alors que tu as juste envie de rentrer chez toi… Tu rentres tard et saoulé·e. **(-3)**
+            * **10 : **Une personne te tape sur l’épaule et te dit : _« Salut ! »_ Il s’agit d’une vieille connaissance que tu as plaisir à voir. Tu es vraiment rassuré mais quand même : tout ça pour ça ! **(+2)**
+        * J’allume mon téléphone en mode Selfie pour surveiller ce qu’il se passe derrière-moi.
+* **Je cours à toute vitesse.**
 * **Je ne change rien, c'est mon imagination.**
+* **Je change de trottoir.**
+    * Après avoir dépassé la camionnette, tu entends des portes claquer et des bruits de pas derrière toi. **(Escalade)**
+            * **[**J’appelle un·e ami·e en visio pour ne plus me sentir seul.]
+            * Je m’arrête pour les laisser passer.
+                * **1 à 2 :** Les personnes s’arrêtent, te regardent et te disent : _« Bonsoir »_. Tu es soulagé·e mais tu te rends compte que ta peur était vraiment absurde… **(0)**
+                * **3 à 7 :** Les personnes te dépassent sans même te regarder. Quel mal tu te donnes juste parce que tu partages la rue avec d’autres ! **(-1)**
+                * **8 à 9 :** Arrivées à ta hauteur, elles s’arrêtent aussi et engagent la discussion alors que tu as juste envie de rentrer chez toi… Tu rentres tard et saoulé·e. **(-3)**
+                * **10 : **Une personne te tape sur l’épaule et te dit : _« Salut ! »_ Il s’agit d’une vieille connaissance que tu as plaisir à voir. Tu es vraiment rassuré mais quand même : tout ça pour ça ! **(+2)**
+                * J’allume mon téléphone en mode Selfie pour surveiller ce qu’il se passe derrière-moi.
+    * Rien ne se passe. Tu sais que c’est ridicule mais ça t’a rassuré. 
+    * Un enfant sort de la camionnette et tu entends son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(0)**
+    * 
 
  
 
@@ -433,7 +478,7 @@ Tu es avec deux de tes amis. Et vous rentrez dans un centre commercial. Un vigil
 
 **Situation [A FUSIONNER]**
 
-Tu t’apprêtes à rentrer dans un grand magasin : on t’a demandé de faire les courses. Une dame devant  ne veut pas te laisser rentrer dans le magasin parce que tu es noir. 
+Tu t’apprêtes à rentrer dans un grand magasin : on t’a demandé de faire les courses. Une dame devant ne veut pas te laisser rentrer dans le magasin parce que tu es noir. 
 
 
 
@@ -494,7 +539,7 @@ Tu croises dans la rue un de tes voisins, la quarantaine, qui a l’habitude de 
 # THÉÂTRE GÉRARD PHILIPPE
 
 
-## **Commissariat**
+## X. **Commissariat**
 
 Au commissariat de Champigny. Tu accompagnes ton fils adoptif de 10 ans pour déclarer une perte de téléphone portable. Vous passez ensemble devant un premier gendarme, plutôt jeune, qui affirme :_ « On ne te l'a pas volé ! »_ Il demande à votre fils d'attendre sa cheffe. Lorsqu'elle arrive, elle lui fait passer un interrogatoire.
 
@@ -549,7 +594,7 @@ Une gare RER souterraine, déserte, qui vous semble sinistre. La rame qui vous m
  
 
 
-## La voiture qui ralentit [A MELANGER AVEC CELLE DE LA MERE]
+## X. La voiture qui ralentit [A MELANGER AVEC CELLE DE LA MERE]
 
 Tu es sur une route passante, pas loin de chez toi. Les voitures roulent à bonne vitesse. C’est pourquoi le rythme anormalement lent d’une voiture t’interpelle. Tu tournes la tête en direction du véhicule et tu vois le chauffeur à ta hauteur t’adresser des gestes obscènes. 
 
@@ -651,9 +696,9 @@ Tu es au cinéma avec ta fille âgée de 5 ans assise sur tes genoux pour aller 
     * **9 à 10 :** L’homme t’insulte vigoureusement et les enfants dans la salle se mettent à pleurer. Les spectateur·ice·s demandent à vous faire sortir tous les deux de la salle : on te met dans le même panier que lui ! **(-2)**
 
 
-## **Le type sort son engin.** 
+## X. **Le type sort son engin.** 
 
-RER. Vers 15h. Les voyageurs sont rares. Vous vous installez à l’étage inférieur d’un wagon à 2 étages. Un seul autre voyageur, endormi. Vous lisez. Sur la plate-forme entre les 2 étages, vous remarquez un homme qui vous regarde tout en se grattant l’entre-jambes. Il finit par descendre et s’asseoit non loin de vous. Tranquillement il sort son sex (e et se masturbe. 
+RER. Vers 15h. Les voyageurs sont rares. Vous vous installez à l’étage inférieur d’un wagon à 2 étages. Un seul autre voyageur, endormi. Vous lisez. Sur la plate-forme entre les 2 étages, vous remarquez un homme qui vous regarde tout en se grattant l’entre-jambes. Il finit par descendre et s’asseoit non loin de vous. Tranquillement il sort son sexe et se masturbe. 
 
 
 
@@ -677,7 +722,7 @@ RER. Vers 15h. Les voyageurs sont rares. Vous vous installez à l’étage infé
  
 
 
-## Un inconnu dans la rue
+## X. Un inconnu dans la rue
 
 C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un peu plus loin, tu vois un amas d’encombrants qu’un homme âgé observe. Arrivé à sa hauteur et il te dit : «  Bonjour ! » Tu ne crois pas le connaître mais tu lui réponds poliment. Il n’a rien d’agressif mais continue de te parler et te propose de t’accompagner. Tu ne sais pas comment t’en défaire.
 
@@ -702,7 +747,7 @@ Tu es en voiture à un carrefour embouteillé et tu gênes un camion qui veut to
     * Il obtempère : _« Pouvez-vous reculer, Madame ? »_
 
 
-## Attouchements dans le métro**<span style="text-decoration:underline;"> </span>**
+## X. Attouchements dans le métro**<span style="text-decoration:underline;"> </span>**
 
 Cela se passe dans le métro, un jour de semaine.
 
@@ -940,7 +985,7 @@ Tu as 12 ans, tu joues avec des ami·e·s au Parc du Tremblay et tu te rends aux
         * [Je sors mon téléphone pour le filmer.]
 
 
-## Le frotteur 
+## X. Le frotteur 
 
 Retour au domicile, après la journée de travail. Problème technique sur la ligne du RER et les voitures sont bondées. Je rentre dans le RER. Au début, il y a de la place. Au fur et à mesure on se retrouve collés. Un individu derrière moi en profite pour se frotter contre moi. Impossible de changer d'endroit. Je subis en essayant de bouger de quelques centimètres: Je sais que si je me plains je vais être accusé de prendre mes désirs pour la réalité. J'ai envie de crier.
 
@@ -951,19 +996,88 @@ Retour au domicile, après la journée de travail. Problème technique sur la li
 *  Elle se prend pour qui?
 
 
-## Le frère en mobylette
+## X. Le frère en mobylette
 
 Sur la passerelle qui surplombe la ligne de chemin de fer, tu vois deux jeunes filles de 14 ans discuter. Soudain, un jeune homme arrive en mobylette avec sa mère assise derrière lui et se gare. Il monte les marches en courant, agrippe sa sœur, la, met violemment sur la moto et dit à sa mère de rentrer à pied.
 
-
-## Les bords de Marne
-
-C'est l'hiver, il est entre 7h30 et 8h du matin et tu passes par le bord de Marne pour aller prendre le RER. Il n'y a pas de lumière et tu aperçois un homme assez costaud seul debout devant un banc. Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe entre ses mains et te dit : _« Tu viens m’aider ? »_. J'ai eu très peur. Je n'ai pas répondu. Je suis parti aussi vite que j'ai pu. 
+(L'agrippe violemment pour l’emmener sur la moto)
 
 
+## 21. Les bords de Marne [S : 1 / R : 6 / E : 6 = 13]
 
-* **Tu cours le plus vite possible sans te retourner.**
-    * Il ne te suit pas mais tu as eu très peur. Tu ne te sens plus en mesure de passer par les bords de Marne quand il fait nuit.
+C'est l’hiver tôt le matin et tu passes par le bord de Marne pour aller prendre le RER. Il n'y a pas de lumière et tu aperçois un homme assez costaud, seul, debout devant un banc. \
+Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe entre ses mains et te dit : _« Tu viens m’aider ? »_.
+
+
+
+* **Je cours le plus vite possible sans me retourner.**
+    * **1 à 3 :** Essoufflé·e tu t'arrêtes au bout d’un moment qui t’a semblé interminable. Est-ce que tu te sentiras capable de repasser par les quais dorénavant ? **(-1)**
+    * **4 à 7 :** Tu te rends rapidement compte qu’il ne te suit pas. Tu te sens rassuré·e d’avoir eu un bon réflexe. **(+1)**
+    * **8 à 9 :** De loin il te lance : _« A demain, même heure, même endroit ! »_ Il a décidé de s’approprier cet espace pour un moment. **(-2)**  
+    * **10 :** Tu entends un cri derrière toi : lancé dans un mouvement pour te poursuivre, il avait oublié que son pantalon était resté sur ses chevilles et s’est ramassé... **(+2)**
+* **Je poursuis mon chemin en l’ignorant.**
+    * **1 à 5 :** Il ne fait rien de plus. Le priver d’attention a suffit à t’en débarrasser. **(+1)**
+    * **6 :** Tu entends ses pas s’éloigner : le priver d’attention a payé. **(+2)**
+    * **7 à 8 :** Il te suit et ne te lâche pas, tu as affaire à un prédateur. **(-2 ET choisis une autre Stratégie + Escalade)**
+        * **[Je le repousse loin de moi.]**
+    * **9 :** Il t’envoie : _« C'est ça, casse-toi, avec ta sale gueule ! »_ Tu l’as déstabilisé alors il cherche ostensiblement à te rabaisser en t’insultant. Une stratégie tellement classique…  **(-1)**
+    * **10 :** Quand tu t'éloignes, il te lance: _« A la prochaine ! »_ Il essaye clairement de d’intimider. **(-2)**
+* **Je crie.**
+    * **1 à 3 :** Il prend peur et s'enfuit. Tu t’en es débarrassé·e pour de bon ! **(+2)**
+    * **4 à 5 :** _« Chut chut chut ! Je ne vais rien te faire. »_ Il semble impressionné mais tu ne t’en es pas débarrassé·e **(+1 ET choisis une autre Stratégie + Escalade)**
+        * **[Je le repousse loin de moi.]**
+    * **6 à 7 :** Personne ne répond sauf lui : _« Dégage espèce de taré·e ! »_ Tu l’as déstabilisé alors il cherche ostensiblement à te rabaisser en te faisant croire que c’est toi qui a un problème. Une stratégie tellement classique…  **(-1)**
+    * **8 : **Silence… _« Je crois bien qu’on est que tous les deux. »_  Là, pas de doute, tu as affaire à un prédateur. **(-2 ET choisis une autre Stratégie + Escalade)**
+        * **Je le repousse loin de moi.**
+            * **1 à 3 : **Il se débat et s’échappe. Tu lui as fait peur. Il ne risque pas de recommencer de sitôt. **(+2)**
+            * **4 à 5 :** Il glisse et tombe dans la Marne. Il remonte un peu plus loin sur le quai et part trempé. **(+3)**
+            * **6 à 7 :** Il se défend, te rend ton coup et s’en va en lançant _« Espèce de cinglé·e_._ »_ Tu es arrivé·e à le faire partir mais à quel prix… **(-2)**
+            * **8 à 10 :** Du haut des berges, tu entends quelqu’un : _« Arrêtez de vous en prendre à lui, je vais appeler la police. »_ Tu passes pour l’agresseur·se… **(-3)**
+    * **9 à 10 :** Du dessus des berges, une voix répond : _« Qu’est ce qu’il se passe ici ? J’appelle immédiatement la police ! »_ L’homme déguerpit fissa. Heureusement que tu as réagi et qu’il existe encore des gens solidaires **(+3)**
+* **Je lui signifie calmement que ce n’est pas un endroit pour se masturber et que je vais porter plainte.**
+    * **1 à 2 :** Il s’en va sans un mot. Tu n’as pas perdu ton sang froid. Ramener de la normalité dans cette situation l’a désarçonné. **(+2)**
+    * **3 à 5 :** _« J’y peux rien, c’est pas de ma faute ! »_ et il s’en va. Encore le coup de la maladie pour se justifier : un grand classique ! **(+1)**
+    * **6 :** _« Mais c’est pas non plus un endroit pour se balader tout·e seule »_ Tu n’as pas perdu ton sang froid et pourtant il essaie clairement de t’intimider. **(-2 ET choisis une autre Stratégie + Escalade)**
+        * **[Je le repousse loin de moi.]**
+    * **7 à 9 :** Il ne répond pas et continue ostensiblement. Calme et raison ne semblent pas en venir à bout. **(-1 ET choisis une autre Stratégie)**
+    * **10 :** Il bégaie : _« Euh, pardon. »_ Il ne s'attendait pas à ce que tu réagisses de manière aussi rationnelle, tu as retourné la situation. **(+3)**
+* **Je sors mon portable.**
+    * **1 à 3 :** Il se rhabille rapidement et part sans rien dire. Il a sûrement eu peur que tu le filmes pour avoir une preuve de son délit. (1 an de prison et 15 000 € d’amende) **(+2)**
+    * **4 à 5 : **Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. C’est dommage pour ton téléphone mais tu as eu raison d’agir pour le faire partir. **(-2)**
+    * **_6 à 7 : « S’il te plaît ne me filme pas, je te promets que je recommencerai plus ! » _(Escalade)**
+        * Je continue de le filmer : _« Je garde la vidéo au chaud et si jamais je te revoi_s_ faire ça, je la montrerai à la police ! »_
+            * **1 à 5 :** Il s’en va en te disant : _« C’est la dernière fois, je te promets ! » **(+2)**_
+            * **6 à 7 :** Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. C’est dommage pour ton téléphone mais tu as eu raison d’agir pour le faire partir. **(-2)**
+            * **8 à 10 :** Il part en te lançant :_ « Comme si la police allait faire quelque chose ! » _En te faisant douter de la police, tu sens qu’il essaye de t’isoler… **(-1)**
+        * Je continue de le filmer : _« Trop tard, tu t’expliqueras avec la police : je les appelle. »  _
+            * **1 à 3 _: « Ne fais pas ça, je t’en supplie ! » _**Le confronter à la loi lui a fait prendre conscience de son délit. Quoi que tu fasses, il est peu probable qu’il recommence. **(+3)**
+            * **4 à 5 :** Il te pousse à terre et jette ton téléphone dans la Marne pour t’empêcher de les appeler. **(-3)**
+            * **6 à 7 :** Il part tranquillement en te lançant :_ « Comme si la police allait faire quelque chose ! » _En te faisant douter de la police, tu sens qu’il essaye de t’isoler… **(-1)**
+            * **8 à 10 :** Il fuit sans demander son reste : la perspective de se retrouver derrière les barreaux l’a fait déguerpir. **(+2)**
+        * J’arrête de le filmer et je pars.
+            * **1 à 3 :** Tu l’entends vaguement te dire _« Merci »_ mais tu ne peux pas t’assurer qu’il ne recommencera pas.** (+1)**
+            * **4 à 6 :** _« J’y peux rien, c’est pas de ma faute ! »_ Tu sens qu’il n’a pas compris qu’aucune excuse ne justifie une agression ! **(0)**
+            * **7 à 8 :** _« Juste un conseil :  c‘est pas un endroit pour se balader tout·e seule… »_ Tu l’as poussé dans ses retranchements, alors il essaie de t’intimider. **(-2)**
+            * **_9 à 10 : « Bah voilà, c’est bien ! »_** En inversant la culpabilité il t’a complètement manipulé·e. Il est probable qu’il recommence... **(-3)** 
+    * **_8 à 9 : « Arrête de me filmer sinon je porte plainte ! » _(Escalade)**
+        * [Je continue de le filmer : _« Trop tard, tu t’expliqueras avec la police : je les appelle. »_]_ _
+        * Je pars pour ne pas envenimer la situation.
+            * **1 à 4 :** Arrivé·e au bout du quai, tu te retournes et vois qu’il est toujours là. Il n’a pas cédé l’espace et a réussi à renverser la culpabilité.** (-2)**
+            * **5 à 8 :** Lorsque tu pars, il te lance : _« Tu sais, j’y peux rien. C’est pas de ma faute ! »_ En plus de te faire passer pour l’agresseur, il tente de t’émouvoir ! **(0)**
+            * **9 à 10 :** _« Tu vois que tu peux être raisonnable ! »_ Il a complètement renversé la culpabilité, alors que c’était toi la victime. **(-3)** 
+        * _« Pas de problème, si tu veux on y va ensemble. »_
+            * **1 à 3 :** Il déguerpit en se rendant compte qu’il n’a pas réussi à t’impressionner. **(+2)**
+            * **4 à 5 :** Il te pousse à terre et jette ton téléphone dans la Marne avant de s’enfuir : _« Maintenant tu n’as plus de preuves ! » _ **(-3)**
+            * **6 à 8 :_ « Non, c’est bon. Je m’excuse… »_** Il part l’air penaud et tu as la ferme impression qu’il ne recommencera pas de si tôt. **(+3)**
+            * **9 à 10 :_ « Ah, parce que tu m’as cru·e en plus ? Vas-y si ça te chante, ils feront rien pour juste ça. »_ **Il essaye clairement de minimiser son geste et de vous dissuader mais il a l’air si sûr de lui… **(-2)**
+    * **10 :** Il ne semble pas perturbé et continue à se masturber en te regardant. Tu as clairement affaire à quelqu’un de dangereux, fuis. **(-3)**
+* **J'éclate de rire en le regardant.**
+    * **1 à 3 :** Il se rhabille rapidement et prend ses jambes à son cou. **(+2)**
+    * **4 :** Il ne semble pas perturbé et continue à se masturber en te regardant. Tu as clairement affaire à quelqu’un de dangereux, fuis. **(-3)**
+    * **5 à 6 :** Il bégaie : _« Euh, pardon. »_ Il ne s'attendait pas à ce que tu réagisses de cette manière, tu as retourné la situation. **(+3)**
+    * **_7 à 9 : « Chhhhhuuut ! Je ne vais rien te faire, arrête s’il te plaît. »_** Il semble impressionné mais tu ne t’en es pas débarrassé·e. **(+1 ET choisis une autre Stratégie + Escalade)**
+        * **[Je le repousse loin de moi.]**
+    * **_10 : « Pourquoi tu ris ? J’y peux rien, c’est pas de ma faute ! »_** et il s’en va. Encore le coup de la maladie pour se justifier : un grand classique ! **(+1)**
 
 Les lieux où on ne va pas? \
  Le Bois l'Abbé. Dans le centre de Champigny, il y a un petit endroit derrière l'église. Mais je refuse de m'interdire d'y aller. Mais je vois bien que je reste toujours dans les mêmes endroits. \
@@ -1114,8 +1228,7 @@ Tu sors du métro à Chatelet-Les-Halles vers 18h30 et tu portes une jupe courte
 * **Je lui retourne le doigt.**
 
 
-##  \
-L’exhibitionniste
+## L’exhibitionniste
 
 Quand j'étais étudiante, je devais prendre le train Toulon - Nice par semaine. J'étais souvent abordée gaiement par des jeunes militaires qui montaient toujours à la même gare. Pour être tranquille je choisissais un compartiment où il n'y avait personne. Il n'y avait qu'un seul homme. Je me plonge dans ma lecture un moment, je lève soudain les yeux :  je vois devant moi le mec le sexe sorti et en train de se masturber. Je n'ai rien pu faire d'autre que fuir... Trop surprise !
 
