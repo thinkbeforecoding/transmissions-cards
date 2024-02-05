@@ -40,11 +40,8 @@
     margin-bottom: 0mm;
     margin-left: 0mm;
 
-    @top-left {
+    @top-center {
         content: "Page " counter(page);
-        position: absolute;
-        width: 100%;
-        text-align: center;
         padding-top: 10mm;
     }
 }

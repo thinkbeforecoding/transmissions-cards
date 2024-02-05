@@ -136,7 +136,7 @@ let tryParseLink (description: MarkdownSpans) =
     | _ -> None
 
 let rangeRx = System.Text.RegularExpressions.Regex(@"^\s*(\d+)(\s+à\s+(\d+))?\s*:\s*")
-let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]?\d)([^)+]*)(\s*\+ Escalade\s*)?\)\s*")
+let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]\d|0)([^)+]*)(\s*\+ Escalade\s*)?\)\s*")
 let escaladeRx = System.Text.RegularExpressions.Regex(@"\(\s*voir\s+Escalade(\s+\$)?\s*\)")
 
 let rec parseEscalade (description, items) : Strategy option =
@@ -454,7 +454,7 @@ let situationScore situation =
 let check (situations: Situation list) =
     let checks =
         [
-            for situation in situations do
+            for situation in situations |> Seq.sortBy (fun s -> s.Id) do
                 let errors = ResizeArray()
                 let warn (s:string) =
                     errors.Add("\x1b[33m" + s + "\x1b[0m")
@@ -688,9 +688,9 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
                             Html.span [
                                 prop.className "dice"
                                 if consequence.Range.Min = consequence.Range.Max then
-                                    prop.text $"{consequence.Range.Min} :"
+                                    prop.text $"{consequence.Range.Min}\xA0:"
                                 else
-                                    prop.text $"{consequence.Range.Min} à {consequence.Range.Max} :"
+                                    prop.text $"{consequence.Range.Min} à {consequence.Range.Max}\xA0:"
                             ]
                             Html.text " "
                             for style, text in consequence.Text do
@@ -698,7 +698,6 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
                                 | Regular -> Html.span text
                                 | Italic -> Html.em text
                                 | Bold -> Html.strong text
-                            Html.text " "
 
                             Html.span [
                                 match consequence.Score with
@@ -802,36 +801,24 @@ let situations =
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let cards =
-    // [   for i in 1 .. 10 do
-            // Alea i
-    [
-        // for i in 1 .. 10 do
-        //     Alea i
-
-        for situation in champigny do
-
-            Situation( situation)
-            for n,strategy in situation.Strategies |> Seq.indexed do
-                Strategy (n, situation, strategy)
-            for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
-                Escalade (key, n, situation, escalade)
-        // Alea 10
-        // for i in 1 .. 10 do
-        //     Alea i
+    [ for situation in champigny do
+        Situation( situation)
+        for n,strategy in situation.Strategies |> Seq.indexed do
+            Strategy (n, situation, strategy)
+        for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+            Escalade (key, n, situation, escalade)
     ]
 
 let html =
     render cards
     |> Render.htmlView
 
-// System.IO.File.WriteAllText("./cards/situations.html", html)
 System.IO.File.WriteAllText("./cards/champigny.html", html)
-// System.IO.File.WriteAllText("./cards/champigny-alea.html", html)
 
 let alea = [ for i in 1 .. 10 do Alea i ]
 
 let aleahtml =
-    render (alea @ alea @ alea )
+    render (alea  )
     |> Render.htmlView
 System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 
