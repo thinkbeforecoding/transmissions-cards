@@ -136,7 +136,7 @@ let tryParseLink (description: MarkdownSpans) =
     | _ -> None
 
 let rangeRx = System.Text.RegularExpressions.Regex(@"^\s*(\d+)(\s+à\s+(\d+))?\s*:\s*")
-let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]\d|0)([^)+]*)(\s*\+ Escalade\s*)?\)\s*")
+let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]\d|0)\s*([^)+]*)(\+ Escalade)?\s*\)\s*")
 let escaladeRx = System.Text.RegularExpressions.Regex(@"\(\s*voir\s+Escalade(\s+\$)?\s*\)")
 
 let rec parseEscalade (description, items) : Strategy option =
@@ -228,7 +228,7 @@ and parseConsequence (escalades: Map<char, Strategy>) ((description, escaladesMd
                     | Literal(txt,_) ->
                         let m = scoreRx.Match(txt)
                         if m.Success then
-                            Some (int m.Groups[1].Value, m.Groups[2].Value)
+                            Some (int m.Groups[1].Value, m.Groups[2].Value.Trim())
                         else
                             None
                     | _ -> None)
@@ -509,11 +509,18 @@ let check (situations: Situation list) =
                                 for k in es do
                                     if not (Map.containsKey k situation.Escalades) then
                                         warn $"  [stratégie {i+1}] escalade non trouvée {k} \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
-                            | Score(Some(n,_),es) ->
+                            | Score(Some(n,txt),es) ->
                                 if n > 3 then
                                     warn $"  [stratégie {i+1}] score trop grand ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
                                 elif n < -3 then
                                     warn $"  [stratégie {i+1}] score trop petit ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
+
+                                match txt with
+                                | ""
+                                | "ET choisis une autre Stratégie"
+                                | "OU choisis une autre Stratégie" -> ()
+                                | _ -> warn $"  [stratégie {i+1}] text score inconnu ({txt}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
+
                                 for k in es do
                                     if not (Map.containsKey k situation.Escalades) then
                                         warn $"  [stratégie {i+1}] escalade non trouvée {k} \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"

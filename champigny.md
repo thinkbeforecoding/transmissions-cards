@@ -7,7 +7,7 @@ You have some errors, warnings, or alerts. If you are using reckless mode, turn 
 * WARNINGs: 0
 * ALERTS: 1
 
-Conversion time: 8.038 seconds.
+Conversion time: 5.339 seconds.
 
 
 Using this Markdown file:
@@ -20,7 +20,7 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β35
-* Mon Feb 05 2024 09:38:03 GMT-0800 (PST)
+* Mon Feb 05 2024 09:56:20 GMT-0800 (PST)
 * Source doc: 202307_Transmission(s)_Situations Champigny-sur-Marne
 * This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
 
@@ -418,7 +418,7 @@ Soudain, tu entends un bruit de moteur derrière toi : c’est une camionnette q
 
 
 * **Je m’arrête pour observer ce qu’il se passe.**
-    * **1 à 2 :** Les minutes passent, le moteur est coupé, personne ne sort et pas un bruit dans la rue. **(-1 et choisis une autre Stratégie)**
+    * **1 à 2 :** Les minutes passent, le moteur est coupé, personne ne sort et pas un bruit dans la rue. **(-1 ET choisis une autre Stratégie)**
     * **3 à 6 :** Une personne sort de la camionnette et rentre dans la maison la plus proche. Tu as eu peur pour rien et tu as perdu du temps ! **(0)**
     * **7 à 9 :** Des personnes sortent de la camionnette et se dirigent vers toi. **(Escalade)**
         * Je rebrousse chemin.
@@ -949,7 +949,7 @@ Tu as 10 ans et un ouvrier qui est déjà venu plusieurs fois vient faire des tr
             * **3 à 7 :** Il ne t’importune plus durant le reste du chantier, tu as bien fait de lui dire d’arrêter. **(+3)**
             * **8 à 10 :** Il ne fait plus rien durant quelques jours puis recommence à avoir des gestes déplacés à plusieurs reprises. C’est difficile de savoir quand des excuses sont sincères. Est-ce qu’en parler aurait été plus efficace ? **(-3)**
         * [J’en parle tout de même à mes parents lorsqu’ils rentrent.]
-    * **7 à 8 :_ « Si on en parle à tes parents, je leur dirais que tu es un·e menteur·s·e. Qui est-ce que tu penses qu’ils vont croire ? » _**Tu sens bien qu’il pourrait avoir raison… **(-2 ET  choisis une autre Stratégie)**
+    * **7 à 8 :_ « Si on en parle à tes parents, je leur dirais que tu es un·e menteur·s·e. Qui est-ce que tu penses qu’ils vont croire ? » _**Tu sens bien qu’il pourrait avoir raison… **(-2 ET choisis une autre Stratégie)**
     * **9 à 10 :** _« Si tu en parles, tu vas avoir de gros problèmes ! » _Etant un enfant, ses menaces t'impressionnent et tu ne te sens plus en capacité de réagir. **(-3)**
 * **Je quitte la pièce et frappe chez mes voisins pour leur dire ce qu’il s’est passé.**
     * **1 à 4 :** Personne ne répond. Tu es obligé·e de retourner dans l’appartement. **(-1 ET choisis une autre Stratégie)**
@@ -1005,7 +1005,7 @@ Tu as 12 ans, tu joues avec des ami·e·s au Parc du Tremblay et tu te rends aux
     * **6 à 7 :_ « Je suis désolé, je peux pas m’en empêcher ! » _**Le fameux coup de la maladie pour se justifier…_ **(0 ET choisis une autre Stratégie + Escalade)**_
         * [Je sors mon téléphone pour le filmer.]
     * **8 à 9 :_ « Ça va pas de parler comme ça à un adulte ?! Tu vas voir petit con ! » _**C’est bien justement parce que tu es un enfant qu’il s’est permis ça…_ **(-2 ET choisis une autre Stratégie)**_
-    * **10 :_ « Si ça va très bien, ça te plaît ? » _**Cet homme semble tirer son plaisir de te voir en difficulté. **(-3 ET choisis un autre Stratégie)**
+    * **10 :_ « Si ça va très bien, ça te plaît ? » _**Cet homme semble tirer son plaisir de te voir en difficulté. **(-3 ET choisis une autre Stratégie)**
 * **_« Je vais appeler la police ! »_**
     * **1 à 4 :** L’homme prend peur et part rapidement. Il espérait certainement que te mettre mal à l’aise t'empêcherait de réagir. **(+2)**
     * **5 à 6 :_ « Mais pourquoi la police ? J’ai le droit de faire ça. » _**Tu as presque l’impression qu’il y croit lui-même. Il cherche clairement à te déstabiliser. **(-1 ET choisis une autre Stratégie + Escalade)** 
