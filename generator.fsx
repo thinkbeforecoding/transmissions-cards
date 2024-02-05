@@ -202,7 +202,7 @@ and parseConsequence (escalades: Map<char, Strategy>) ((description, escaladesMd
     let escaladeKeys =
         escaladesMd
         |> extractEscalades
-        |> List.choose (fun (description,_) ->
+        |> List.mapi (fun i (description,_) ->
             match tryParseLink description with
             | None ->
                 let title = description
@@ -210,9 +210,14 @@ and parseConsequence (escalades: Map<char, Strategy>) ((description, escaladesMd
                                 |> List.map toText
                                 |> List.concat
                                 |> textToString
-                escalades |> Map.tryFindKey (fun _ e -> e.Title = title)
+                match escalades |> Map.tryFindKey (fun _ e -> e.Title = title) with
+                | Some k -> k
+                | None -> char (int '1' + i)
             | Some link ->
-                escalades |> Map.tryFindKey (fun _ e -> e.Title.Contains (link.Trim()))
+                match escalades |> Map.tryFindKey (fun _ e -> e.Title.Contains (link.Trim())) with
+                | Some k -> k
+                | None -> char (int '1' + i)
+                
         )
         |> List.sort
 
@@ -427,28 +432,34 @@ let cut len (s: string) =
     else
         s
 
-let situationScore situation =
-    let scores =
-        [ let strategyProba = 1m / decimal situation.Strategies.Length
-          for strategy in situation.Strategies do
-            for cons in strategy.Consequences do
-                    match cons.Score with
-                    | Score(Some(n,_),_) ->
-                        strategyProba * cons.Range.Probability * decimal n
-                    | Score(None,[]) -> 0m
-                    | Score(None, es) ->
-                        let escaladeStrategyProba = 1m / decimal es.Length
-                        for k in es do
-                            let strategy = situation.Escalades[k]
-                            for c in strategy.Consequences do
-                                for j in c.Range.Min .. c.Range.Max do
-                                    match c.Score with
-                                    | Score(Some(n,_),_) ->
-                                       strategyProba * cons.Range.Probability *
-                                        escaladeStrategyProba * c.Range.Probability * decimal n
-                                    | _ -> 0m
-        ]
-    scores |> List.sum
+let rec strategyScore  (escalades: Map<char,Strategy>) (strategies: Strategy list) (strategy: Strategy) = 
+    [ for cons in strategy.Consequences do
+            match cons.Score with
+            | Score(Some(n,l),es) when l.Contains "Stratégie" -> 
+                let newSituations =  List.filter (fun s -> s <> strategy) strategies @ [ for e in es -> escalades[e] ]
+                cons.Range.Probability * ( decimal n + situationScore escalades newSituations )
+            | Score(Some(n,_),_) ->
+                cons.Range.Probability * decimal n
+            | Score(None,[]) ->
+                0m
+            | Score(None, es) ->
+                cons.Range.Probability * situationScore escalades [ for e in es -> escalades[e] ]
+    ]
+    |> List.sum
+
+and situationScore (escalades: Map<char,Strategy>) (strategies: Strategy list) : decimal =
+    [ for strategy in strategies do
+            strategyScore escalades strategies strategy
+    ]
+    |> List.average 
+
+let score (situation: Situation) =
+    try
+        situationScore situation.Escalades situation.Strategies
+    with
+    | ex ->
+        printfn $"❌ Erreur calcul score situation S{situation.Id} {situation.Title}"
+        0m
 
 
 let check (situations: Situation list) =
@@ -494,13 +505,18 @@ let check (situations: Situation list) =
                             match cons.Score with
                             | Score(None, []) ->
                                     warn $"  [stratégie {i+1}] score manquant \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
-                            | Score(None, _) -> ()
-                            | Score(Some(n,_),_) ->
+                            | Score(None, es) -> 
+                                for k in es do
+                                    if not (Map.containsKey k situation.Escalades) then
+                                        warn $"  [stratégie {i+1}] escalade non trouvée {k} \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
+                            | Score(Some(n,_),es) ->
                                 if n > 3 then
                                     warn $"  [stratégie {i+1}] score trop grand ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
                                 elif n < -3 then
                                     warn $"  [stratégie {i+1}] score trop petit ({n}) \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
-
+                                for k in es do
+                                    if not (Map.containsKey k situation.Escalades) then
+                                        warn $"  [stratégie {i+1}] escalade non trouvée {k} \x1b[38;2;128;128;128m/ {textToString  cons.Text |> cut 40 }"
                     for k,escalade in situation.Escalades |> Map.toSeq do
                         if escalade.Text = [] then
                             warn $"  [escalade {k}] texte manquant"
@@ -533,9 +549,7 @@ let check (situations: Situation list) =
                             warn $"  escalades {e} non utilisées \x1b[38;2;128;128;128m/ {textToString  (List.concat escalade.Text)  |> cut 40 }"
                 let result =
                     if errors.Count = 0 then
-                        let score = situationScore situation
-
-                        Ok score
+                        Ok (score situation)
 
                     else
                         Error errors
@@ -822,36 +836,3 @@ let aleahtml =
     |> Render.htmlView
 System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 
-
-
-[
-    for situation in champigny do
-        Situation( situation)
-]
-|> render
-|> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/situations-champigny.html", html)
-[ for situation in champigny do
-        if situation.Id = 17 then
-            Situation( situation)
-            for n,strategy in situation.Strategies |> Seq.indexed do
-                Strategy (n, situation, strategy)
-            for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
-                Escalade (key, n, situation, escalade)
-]
-|> render
-|> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/situation-17.html", html)
-
-
-[ for situation in champigny do
-        if situation.Id = 16 then
-            Situation( situation)
-            for n,strategy in situation.Strategies |> Seq.indexed do
-                Strategy (n, situation, strategy)
-            for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
-                Escalade (key, n, situation, escalade)
-]
-|> render
-|> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/situation-16.html", html)

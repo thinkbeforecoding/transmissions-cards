@@ -1,9 +1,47 @@
 <!-- Copy and paste the converted output. -->
 
-<!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+<!-----
+
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
-* ALERTS: 1 -->
+* ALERTS: 1
+
+Conversion time: 8.038 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β35
+* Mon Feb 05 2024 09:38:03 GMT-0800 (PST)
+* Source doc: 202307_Transmission(s)_Situations Champigny-sur-Marne
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+
+WARNING:
+You have 5 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
+
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 1.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image1.png "image_tooltip")
@@ -372,7 +410,7 @@ En vacances avec tes parents, tu te balades dans la rue. Depuis quelque temps, t
  
 
 
-## 22. Les voitures garées
+## 22. Les voitures garées [S : 1 / R : 5 / E : 8 = 14]
 
 Tu rentres chez toi un soir d’hiver et les endroits par lesquels tu passes sont mal éclairés. Des voitures sont garées sur le trottoir d’en face et il te semble apercevoir un mouvement derrière l'une d'elles. \
 Soudain, tu entends un bruit de moteur derrière toi : c’est une camionnette qui vient se garer juste devant toi alors qu'il y a de la place partout autour.
@@ -389,7 +427,7 @@ Soudain, tu entends un bruit de moteur derrière toi : c’est une camionnette q
             * **10 :** Elles te rattrapent et… te demandent un renseignement. Tu as eu très peur mais tu es désormais rassuré·e et reprend ton chemin normalement.** (+1)**
         * J’appelle un·e ami·e en visio pour ne plus me sentir seul.
             * **1 à 3 :** Ton ami·e te répond et tu te sens immédiatement rassuré·e en entendant sa voix. Tu rentres sans même y penser. **(+2)**
-            * **4 à 8 :** Ton ami·e ne répond pas, tu te sens terriblement seul·e… Tu lèves la tête au moment où elles te dépassent et… poursuivent leur chemin sans même te regarder. **(-1)**
+            * **4 à 8 :** Ton ami·e ne répond pas, tu te sens terriblement seul·e… Tu lèves la tête au moment où les personnes te dépassent et… poursuivent leur chemin sans même te regarder. **(-1)**
             * **9 à 10 :** Ton ami·e te répond et se moque du fait que tu te fais des films. Tu te sens jugé·e et un peu ridicule… **(-2)**
         * Je leur dis : _« Bonsoir. »_
             * **1 à 7 :** Elles te répondent _« Bonsoir »_ et te dépassent. Tu poursuis ton chemin sans encombre et tu te sens rassuré·e d'avoir pris l’initiative. **(+2)**
@@ -401,30 +439,56 @@ Soudain, tu entends un bruit de moteur derrière toi : c’est une camionnette q
             * **6 à 10 :** Elles te dépassent en commentant ce qu’il vient de se passer _« Y’a vraiment des gens perturbés… » _A leur place tu aurais sûrement pensé la même chose…_ **(0)**_
     * **10 :** La camionnette redémarre après un temps qui te paraît très long. Personne n’en est sorti, ni entré. Plus de peur que de mal mais tu n’arrives pas à t’empêcher de t’en faire tout un film… **(-2)**
 * **Je presse le pas.**
-    * Un enfant sort de la camionnette et tu entends son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(0)**
-    * Au moment où tu dépasses la camionnette, la porte s’ouvre et te tamponne. La personne te dit : « _Vous m’avez fait peur ! Vous pouvez pas faire attention ?_ » Tu te sens bête… **(-2)**
-    * Après avoir dépassé la camionnette, tu entends des portes claquer et des bruits de pas derrière toi. **(Escalade)**
+    * **1 à 3 :** Un enfant sort de la camionnette et tu entends son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(+1)**
+    * **4 à 5 : **Au moment où tu dépasses la camionnette, la porte s’ouvre et te tamponne. La personne te dit : « _Vous m’avez fait peur ! Vous pouvez pas faire attention ?_ » Tu te sens bête… **(-1)**
+    * **6 :** La camionnette redémarre aussitôt. Plus de peur que de mal mais tu n’arrives pas à t’empêcher de t’en faire tout un film… **(-2)**
+    * **7 à 10 : **Après avoir dépassé la camionnette, tu entends des portes claquer et des bruits de pas derrière toi. **(Escalade)**
         * **[**J’appelle un·e ami·e en visio pour ne plus me sentir seul.]
-        * Je m’arrête pour les laisser passer.
-            * **1 à 2 :** Les personnes s’arrêtent, te regardent et te disent : _« Bonsoir »_. Tu es soulagé·e mais tu te rends compte que ta peur était vraiment absurde… **(0)**
-            * **3 à 7 :** Les personnes te dépassent sans même te regarder. Quel mal tu te donnes juste parce que tu partages la rue avec d’autres ! **(-1)**
-            * **8 à 9 :** Arrivées à ta hauteur, elles s’arrêtent aussi et engagent la discussion alors que tu as juste envie de rentrer chez toi… Tu rentres tard et saoulé·e. **(-3)**
-            * **10 : **Une personne te tape sur l’épaule et te dit : _« Salut ! »_ Il s’agit d’une vieille connaissance que tu as plaisir à voir. Tu es vraiment rassuré mais quand même : tout ça pour ça ! **(+2)**
+        * Je m’arrête pour laisser les personnes passer.
+            * **1 à 2 :** Elles te regardent et te disent : _« Bonsoir »_. Tu es soulagé·e mais tu te rends compte que ta peur était vraiment absurde… **(0)**
+            * **3 à 7 :** Elles te dépassent sans même te regarder. Quel mal tu te donnes juste parce que tu partages la rue avec d’autres ! **(-1)**
+            * **8 à 9 :** Arrivées à ta hauteur, elles s’arrêtent aussi et engagent la discussion alors que tu as juste envie de rentrer chez toi… Tu rentres tard et saoulé·e. **(-2)**
+            * **10 : **L’une d’elles te tape sur l’épaule et te dit : _« Salut ! »_ Il s’agit d’une vieille connaissance que tu as plaisir à voir. Tu es vraiment rassuré mais quand même : tout ça pour ça ! **(+2)**
         * J’allume mon téléphone en mode Selfie pour surveiller ce qu’il se passe derrière-moi.
+            * **1 à 3 : **L’écran n’affiche qu’une bouillie de pixels noirs. La technologie ne résout pas les angoisses, tu n’es en rien rassuré·e... **(-3)**
+            * **4 à 6 :** Les personnes te dépassent sans même te regarder. Quel mal tu te donnes juste parce que tu partages la rue avec d’autres ! **(-1)**
+            * **7 : **Arrivées à ta hauteur, les personnes te regardent bizarrement. Tu as probablement surréagi… **(-2)**
+            * **8 à 9 :** L’éclairage de la rue te permet de les voir dans ton écran bifurquer vers la première maison. C’était peut être un peu excessif, mais ça t’a rassuré·e. **(+1)**
+            * **10 : **Tu les vois faire des grimaces dans ton écran. Elles n’ont clairement pas de mauvaises intentions mais se fichent ostensiblement de ta réaction**. (0)**
 * **Je cours à toute vitesse.**
+    * **1 à 3  : **Au moment où tu dépasses la camionnette, la porte s’ouvre et te tamponne. La personne te dit : « _Vous m’avez fait peur ! Vous pouvez pas faire attention ?_ » Tu te sens bête… **(0)**
+    * **4 à 6 :** Essoufflé·e et en nage, tu finis par ralentir un peu plus loin. C’était peut-être pas la peine, mais au moins tu te sens en sécurité.** (+1)**
+    * **7 :** « Hey toi ! » Tu entends des pas rapides derrière toi ! Panique totale ! En te voyant partir en courant, les personnes ont peut-être pensé que tu avais quelque chose à te reprocher mais tu ne le sauras jamais…** (-2)**
+    * **8 :** … Et c’est la chute ! Les personnes viennent te porter aussitôt secours. En plus d’avoir eu peur pour rien, tu t’es fait très mal et tu te sens encore plus fragile. **(-3)**
+    * **9 à 10 :** Aussitôt, la camionnette redémarre et te croise. Plus de peur que de mal mais tu n’arrives pas à t’empêcher de t’en faire tout un film… **(-1)**
 * **Je ne change rien, c'est mon imagination.**
-* **Je change de trottoir.**
-    * Après avoir dépassé la camionnette, tu entends des portes claquer et des bruits de pas derrière toi. **(Escalade)**
+    * **1 à 2  : **Un enfant sort de la camionnette et tu entends de loin son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(+1)**
+    * **3 à 4 :** La camionnette redémarre aussitôt et te croise au ralenti. Plus de peur que de mal mais tu n’arrives pas à t’empêcher de t’en faire tout un film… **(-1)**
+    * **5 à 7 :** Après avoir dépassé la camionnette, tu entends des portes claquer et des bruits de pas derrière toi. **(Escalade)**
             * **[**J’appelle un·e ami·e en visio pour ne plus me sentir seul.]
-            * Je m’arrête pour les laisser passer.
-                * **1 à 2 :** Les personnes s’arrêtent, te regardent et te disent : _« Bonsoir »_. Tu es soulagé·e mais tu te rends compte que ta peur était vraiment absurde… **(0)**
-                * **3 à 7 :** Les personnes te dépassent sans même te regarder. Quel mal tu te donnes juste parce que tu partages la rue avec d’autres ! **(-1)**
-                * **8 à 9 :** Arrivées à ta hauteur, elles s’arrêtent aussi et engagent la discussion alors que tu as juste envie de rentrer chez toi… Tu rentres tard et saoulé·e. **(-3)**
-                * **10 : **Une personne te tape sur l’épaule et te dit : _« Salut ! »_ Il s’agit d’une vieille connaissance que tu as plaisir à voir. Tu es vraiment rassuré mais quand même : tout ça pour ça ! **(+2)**
-                * J’allume mon téléphone en mode Selfie pour surveiller ce qu’il se passe derrière-moi.
-    * Rien ne se passe. Tu sais que c’est ridicule mais ça t’a rassuré. 
-    * Un enfant sort de la camionnette et tu entends son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(0)**
-    * 
+            * [Je m’arrête pour laisser les personnes passer.]
+            * [J’allume mon téléphone en mode Selfie pour surveiller ce qu’il se passe derrière-moi.]
+            * [Je me retourne.]
+            * [Je leur dis : _« Bonsoir. »_]
+            * Je cours à toute vitesse.
+                * ** 1 à 6 :** Essoufflé·e et en nage, tu finis par ralentir un peu plus loin. C’était peut-être pas la peine, mais au moins tu te sens en sécurité.** (+1)**
+                * **7 à 8 :** _«  Hey toi ! »_ Tu entends des pas rapides derrière toi ! Panique totale ! En te voyant partir en courant, les personnes ont peut-être pensé que tu avais quelque chose à te reprocher mais tu ne le sauras jamais…** (-2)**
+                * **9 à 10 :** … Et c’est la chute ! Les personnes viennent te porter aussitôt secours. En plus d’avoir eu peur pour rien, tu t’es fait très mal et tu te sens encore plus fragile. **(-3)**
+    * **8  : **Au moment où tu dépasses la camionnette, la porte s’ouvre et te tamponne. La personne te dit : « _Vous m’avez fait peur ! Vous pouvez pas faire attention ?_ » Tu te sens bête… **(0)**
+    * **9 à 10 :** La porte s’ouvre devant toi. Des personnes rentrent chez elles tranquillement. Comme toi !** (+3)**
+* **Je change de trottoir.**
+    * **1 à 4 : **Après avoir dépassé la camionnette, tu entends des portes claquer et des bruits de pas derrière toi. **(Escalade)**
+            * [J’appelle un·e ami·e en visio pour ne plus me sentir seul.]
+            * [Je m’arrête pour laisser les personnes passer.]
+            * [J’allume mon téléphone en mode Selfie pour surveiller ce qu’il se passe derrière-moi.]
+            * Je me retourne.
+                * **1 à 7 :** Il s’agit de personnes qui ont l'air totalement inoffensives. Tu es rassuré·e et tu continues ton chemin. **(+2)**
+                * **8 :** Les personnes sursautent et s'arrêtent. Tu leur a fait peur !  **(+1)**
+                * **9 :** Ce sont deux personnes à l’air très inquiétant, ça ne te rassure pas du tout.  Il ne t’est rien arrivé mais ta peur a été plus forte. **(-3)**
+                * **10 : **Les personnes te regardent te disent : _« Bonsoir »_. Tu reprends ta route rassuré·e et tu te rends compte que tu t’es inquiété·e sans raison. **(0)**
+    * **5 à 6 :** Un enfant sort de la camionnette et tu entends de loin son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(+1)**
+    * **7 :** La camionnette redémarre aussitôt et te croise au ralenti. Plus de peur que de mal mais tu n’arrives pas à t’empêcher de t’en faire tout un film… **(-2)**
+    * **8 à 10 :** Les bruits de pas s’éloignent sur le trottoir d’en face. Tu continues ton chemin sans encombre. Tu sais bien que c’est ridicule mais tu ne peux pas t’empêcher de rester vigilant·e. **(0)**
 
  
 
@@ -559,39 +623,35 @@ En effet, l’article 15-3 du code de procédure pénale dispose que _« Les off
 * **«_ Imaginez que ça arrive à votre enfant, comment réagiriez-vous ?  »_** 
 
 
-## **Le wagon ** 
+## 23. **Le wagon **[S : 1 / R : 4 = 5]
 
-Tu as 60 ans passés et une fracture de l'humérus. Pas de bol, ta ligne est fermée pour travaux. Tu vas devoir prendre un autre trajet. Tu rejoins difficilement le RER à quai. Il part dans 10 minutes. Tu montes dans une rame vide et t'assois. Un jeune couple arrive et demande s'ils sont dans le bon train. Tu acquiesces soulagée de ne pas être seule. Ils sortent alors du wagon, remontant en tête de train. 
-
-Une gare RER souterraine, déserte, qui vous semble sinistre. La rame qui vous mènera chez vous part dans 10 minutes. Vous montez dans un wagon vide. Attendez le départ, mal à l'aise. Un jeune couple monte. Vous êtes contente. Soulagée. Ils vont voyager avec vous. Mais non! Ils traversent le wagon, remontant en tête de train.
+Tu es à la retraite et une fracture récente t’handicape dans tes déplacements. Tu es à la gare RER de Champigny qui, à cette heure-ci, est déserte. Le train est à quai et part dans 10 minutes. Tu montes dans un wagon, il est vide. Tu t'assois et attends le départ lorsqu’un jeune couple monte. Leur présence te rassure mais ils traversent aussitôt le wagon pour remonter en tête de train.
 
 
 
-* **Je change de wagon.**
-    * Je cours en pensant quand même avoir le temps... Et les portes se referment sur moi... Je suis réduite à attendre le prochain train…
-    * Ce nouveau wagon est bien plus rempli et cela te rassure. L'arrêt suivant, tout le monde sort. C'est bien ta veine. Tu ne vas quand même pas faire tout le train. Tant pis, tu restes. 
-    * Me voilà plus à mon aise dans un wagon bien rempli. Ouf. J'ai bien fait. Il y a même un groupe de joyeux lurons. L'un d'eux me remarque de loin et s'approche une canette à la main. 
+* **Je change de wagon pour ne plus être seul·e.**
+    * **1 à 2 :** Les portes du wagon se referment devant toi et le prochain train est annoncé dans 20 minutes. Tu as agi sous l’effet de la peur et tu as perdu du temps ! **(-3)**
+    * **3 à 5 :** Ce nouveau wagon est bien plus rempli et tu te sens rassuré·e. A l'arrêt suivant : tout le monde sort. C’est bien ta veine… **(-1 ET choisis une autre Stratégie)**
+    * **6 :** Deux personnes t’ont vu sortir puis remonter et te dévisagent en chuchotant. A l’arrêt suivant, ils descendent pour changer de wagon. C’est à croire que tu leur a transmis ta peur… **(0)**
+    * **7 à 8 :** Ce nouveau wagon est bien plus rempli et tu te sens plus à l’aise pour finir ton trajet. **(+2)**
+    * **9 à 10 :** Il y a plus de monde et tu te sens rassuré·e mais ce wagon est particulièrement bruyant : une personne parle fort au téléphone, un bébé pleure… Est-ce-que tu n’étais pas mieux seul·e ? **(+1)**
 * **Je reste dans le wagon.**
-    * Le wagon se remplit à la prochaine station. Tout va bien, j’ai eu peur pour rien.
-    * Le wagon reste vide jusqu'au bout. Ce n'était finalement pas si désagréable.
-    * Quelques arrêts plus loin, un homme rentre. Et nous restons seuls tous les 2. Jusqu'au bout. Je suis resté sur mes gardes.
-    * Quelques arrêts plus loin, une femme rentre. Et nous resterons seuls toutes les 2 jusqu'au bout. Tout va bien.
-* **Je sors et cherche un taxi.**
-    * J'arrive sans encombre. J'ai bien fait même si j'en ai eu pour 25€.
-    * Le taxi a conduit comme un fou. J'ai eu peur. Et ça m'a coûté cher.
-    * Ça m'a coûté bien cher, j'aurais dû prendre le RER. 
-* **Je les suis.**
-    * Ils me regardent bizarrement. Je me sens gênée. 
-    * Ils ne font pas attention à moi. J'arrive à destination sans encombre. 
-    * Me voilà plus à mon aise dans un wagon bien rempli. Ouf, j'ai bien fait. L'arrêt suivant, tout le monde sort. C'est bien ma veine. Je ne vais quand même pas faire tout le train. Tant pis, je reste.  
-    * Ils sont encore dans le wagon quand je sors, j'ai bien fait de changer.
-* **Je sors au premier arrêt et j'attends le prochain train avec un wagon un peu plus rempli.**
-    * Le train est aussi vide... 
-    * Le train est bien plus rempli. Je choisis mon wagon. Me voilà plus à mon aise dans un wagon bien rempli. Ouf. J'ai bien fait.
-    * Le train est finalement annulé, je peste en attendant 20 minutes de plus…
-    * Celui qui entre en garde n'est pas celui que je dois prendre. Les rares voyageurs s’engouffrent dans la rame. Je me retrouve tout.e seul.e sur le quai... 
-
- 
+    * **1 à 3 :** Arrivé à la station suivante, de nombreuses personnes montent et, soulagé·e, tu te dis que tu t’es inquiété·e pour rien.** (+2)**
+    * **4 :** Au bout de quelques minutes, une personne descend de l’étage et sursaute en te voyant. Il y a vraiment des gens qui s’en font pour pas grand chose… **(0)**
+    * **5 à 6 :** Le wagon reste vide et tu arrives à destination sans que rien ne se soit passé. Tu as compris que tu n’avais pas de raison de t’en faire et te sentira plus à l’aise à l’avenir. **(+3)**
+    * **7 à 8 :** A l’arrêt suivant, une personne qui te semble inquiétante monte. Elle s'assoit près de toi et tu sens qu’elle te regarde. C’est très désagréable et tu es soulagé·e lorsque tu arrives enfin. **(-2)**
+    * **9 à 10 :** Après le départ du train, tu entends des bruits à l’étage. Tu te rends compte que tu n’es pas seul·e et pourtant tu es encore plus mal à l’aise… **(-1)**
+* **Je sors pour prendre un taxi ou un VTC.**
+    * **1 à 3 :** Au moment où tu sors, un taxi passe : quelle chance ! Mais ça t’aura quand même coûté cher. Est-ce-que ça en valait la peine juste par peur d’être seul·e ? **(+2)**
+    * **4 à 7 :** Tu poireautes quinze minutes devant la gare sans parvenir à trouver un chauffeur. Tu es obligé·e de retourner prendre un RER, tu rentres dans le wagon : personne… **(-2 ET choisis une autre Stratégie)**
+    * **8 à 9 : **Tu attends 20 min avant de trouver un véhicule. Le conducteur est très impoli, conduit dangereusement et te met mal à l’aise en faisant des allusions déplacées. Tu te sens piégé·e et tu aurais été bien dans le wagon ! **(-3)**
+    * **10 :** Au moment où tu sors de la gare, une voiture te klaxonne : c’est ton voisin qui passait par là. Te voyant en difficulté, il te propose de te raccompagner. Là, c’est le moment de jouer au Loto ! **(+3)**
+* **J’appelle un·e ami·e pour me sentir moins seul·e durant le trajet**
+    * **1 à 2 :** Ton ami·e répond, vous avez des tas de choses à vous raconter et tu as complètement oublié ta peur grâce à cette diversion. **(+2)**
+    * **3 à 4 :** Personne ne te répond et tu n’as plus de réseau. Arrivé à l’arrêt suivant, personne ne monte… **(0 ET choisis une autre Stratégie)**
+    * **5 à 6 :** Ton ami·e te répond mais l’appel coupe : plus de réseau... En levant la tête, tu es surpris·e en voyant qu’une personne s’est installée à côté de toi. Dire que tu avais oublié d’avoir peur jusque là… **(+1)**
+    * **7 à 8 :** Pas de réseau… Au bout de quelques minutes, une personne descend de l’étage supérieur et vous sursautez tous·tes les deux. **(-1)**
+    * **9 à 10 :** En pleine conversation, tu es surprise de voir une personne descendre de l’étage. Elle te prend à partie en te rappelant que tu n’es pas tout·e seul·e ici et que tu parles fort… **(-2)**
 
 
 ## X. La voiture qui ralentit [A MELANGER AVEC CELLE DE LA MERE]
@@ -628,7 +688,7 @@ Tu es sur une route passante, pas loin de chez toi. Les voitures roulent à bonn
 
 ## 17. Au cinéma [S : 1 / R : 5 / E : 7 = 13]
 
-Tu es au cinéma avec ta fille âgée de 5 ans assise sur tes genoux pour aller voir les Bisounours. Tu sens sa main douce qui caresse ta nuque et tes cheveux. Soudain, tu t’aperçois que ses mains sont en fait sur son ventre. Tu te retournes alors brusquement : c'est la main d'un homme, assis derrière toi, qui te caressait.
+Tu es au cinéma Studio 66 avec ta fille âgée de 5 ans assise sur tes genoux pour aller voir les Bisounours. Tu sens sa main douce qui caresse ta nuque et tes cheveux. Soudain, tu t’aperçois que ses mains sont en fait sur son ventre. Tu te retournes alors brusquement : c'est la main d'un homme, assis derrière toi, qui te caressait.
 
 
 
@@ -661,7 +721,7 @@ Tu es au cinéma avec ta fille âgée de 5 ans assise sur tes genoux pour aller 
     * **4 à 5 :** Ta fille râle, elle ne veut pas venir avec toi. Mais tu ne peux pas la laisser seule… **(voir Escalade)**
         * [Je dis bien fort pour qu’on m’entende : _« Mais le Monsieur derrière n’arrête pas d’embêter maman ! »]_
         * [Je me rassois et m’adresse à tout le monde : _« Méfiez-vous, il y a un pervers dans la salle ! »]_
-        * [Je me rassoie, me retourne et dit à l’homme : _« Je t’ai à l'œil ! »_]
+        * [Je me rassoie, me retourne et dis à l’homme : _« Je t’ai à l'œil ! »_]
     * **6 à 8 :** Un·e agent·e de sécurité te raccompagne dans la salle et demande à l’homme de ne plus t’importuner. Celui-ci joue l’étonné mais ne t’importune plus. La peur a changé de camp. **(+3)**
     * **9 :** Dans un soupir, ils te répondent : _« C’est délicat pour nous d’intervenir en pleine séance, vous comprenez ? Vous pouvez pas juste changer de place ? » _Mais pourquoi ce serait à toi de bouger ? Tu l’as payée comme lui ta place ! **(-2)**
     * **10 :** Il·Elle te répond : _« Ecoutez, dans ce cas, je vous rembourse. C’est plus simple. » _Mais… ce n’est pas du tout ce que tu lui as demandé ! De quel droit il·elle choisit pour toi ? **(-3)**
@@ -922,8 +982,8 @@ Tu as 12 ans, tu joues avec des ami·e·s au Parc du Tremblay et tu te rends aux
 
 
 * **Je crie.**
-    * **1 à 4 :** L’homme prend peur et part rapidement. Tu as bien fait de réagir. **(+3)**
-    * **5 à 6 :** Quelqu’un arrive : _« Qu’est-ce qui se passe ici ?! » _et fait fuir l’homme. Ton appel à l’aide a été entendu. **(+2)**
+    * **1 à 4 :** L’homme prend peur et part rapidement. Tu as bien fait de réagir. **(+2)**
+    * **5 à 6 :** Quelqu’un arrive : _« Qu’est-ce qui se passe ici ?! » _et fait fuir l’homme. Ton appel à l’aide a été entendu. **(+1)**
     * **7 : **L’homme te hurle dessus : _« Attention à toi si tu ne te tais pas tout de suite ! Il n’y a que toi et moi ici. » _Il essaye clairement de t’intimider._ **(-2 ET choisis une autre Stratégie)**_
     * **8 :_ « Mais ça va pas bien ? Pourquoi tu cries comme ça ?! Je ne fais rien de mal ! » _**Bientôt ça va être de ta faute ? **(0 ET choisis une autre Stratégie + Escalade)** 
         * Je sors mon téléphone pour le filmer.
@@ -939,21 +999,21 @@ Tu as 12 ans, tu joues avec des ami·e·s au Parc du Tremblay et tu te rends aux
     * **7 à 9 : **L’homme continue et le temps te paraît très long. On ne t’a ni parlé ni touché et pourtant c’est une agression. **(-2)**
     * **10 :** L’homme s’adresse à toi : _« Tu ne veux pas regarder ? » _Tu comprends que ce qu’il cherche avant tout c’est d’exercer du pouvoir sur toi. **(-3 ET choisis une autre Stratégie)**
 * **_« Ça va pas, gros porc ?! »_**
-    * **1 à 4 :** L’homme prend peur et part rapidement. Il espérait certainement que te mettre mal à l’aise t'empêcherait de réagir. **(+3)**
-    * **5 à 6 :_ « Mais pourquoi tu me parles comme ça ?! Je ne fais rien de mal, tu devrais déjà le savoir à ton âge. » _**Il essaye d’installer le doute en toi. **(0 ET choisis une autre Stratégie + Escalade)** 
+    * **1 à 3 :** L’homme prend peur et part rapidement. Il espérait certainement que te mettre mal à l’aise t'empêcherait de réagir. **(+2)**
+    * **4 à 5 :_ « Mais pourquoi tu me parles comme ça ?! Je ne fais rien de mal, tu devrais déjà le savoir à ton âge. » _**Il essaye d’installer le doute en toi. **(-1 ET choisis une autre Stratégie + Escalade)** 
         * [Je sors mon téléphone pour le filmer.]
-    * **7 à 8 :_ « Je suis désolé, je peux pas m’en empêcher ! » _**Le fameux coup de la maladie pour se justifier…_ **(0 ET choisis une autre Stratégie + Escalade)**_
+    * **6 à 7 :_ « Je suis désolé, je peux pas m’en empêcher ! » _**Le fameux coup de la maladie pour se justifier…_ **(0 ET choisis une autre Stratégie + Escalade)**_
         * [Je sors mon téléphone pour le filmer.]
-    * **9 :_ « Ça va pas de parler comme ça à un adulte ?! Tu vas voir petit con ! » _**C’est bien justement parce que tu es un enfant qu’il s’est permis ça…_ **(-2 ET choisis une autre Stratégie)**_
+    * **8 à 9 :_ « Ça va pas de parler comme ça à un adulte ?! Tu vas voir petit con ! » _**C’est bien justement parce que tu es un enfant qu’il s’est permis ça…_ **(-2 ET choisis une autre Stratégie)**_
     * **10 :_ « Si ça va très bien, ça te plaît ? » _**Cet homme semble tirer son plaisir de te voir en difficulté. **(-3 ET choisis un autre Stratégie)**
 * **_« Je vais appeler la police ! »_**
     * **1 à 4 :** L’homme prend peur et part rapidement. Il espérait certainement que te mettre mal à l’aise t'empêcherait de réagir. **(+2)**
-    * **5 à 6 :_ « Mais pourquoi la police ? J’ai le droit de faire ça. » _**Tu as presque l’impression qu’il y croit lui-même. Il cherche clairement à te déstabiliser. **(0 ET choisis une autre Stratégie + Escalade)** 
+    * **5 à 6 :_ « Mais pourquoi la police ? J’ai le droit de faire ça. » _**Tu as presque l’impression qu’il y croit lui-même. Il cherche clairement à te déstabiliser. **(-1 ET choisis une autre Stratégie + Escalade)** 
         * [Je sors mon téléphone pour le filmer.]
-    * **7 : _« Vas-y appelle les, le temps qu’ils arrivent, je serai déjà loin. » _**Malgré ta tentative, il ne semble pas intimidé. Ce n’est sûrement pas la première fois qu’il agresse quelqu’un. **(-1 ET choisis une autre Stratégie + Escalade)**
+    * **7 à 8 : _« Vas-y appelle les, le temps qu’ils arrivent, je serai déjà loin. » _**Malgré ta tentative, il ne semble pas intimidé. Ce n’est sûrement pas la première fois qu’il agresse quelqu’un. **(-2 ET choisis une autre Stratégie + Escalade)**
         * [Je sors mon téléphone pour le filmer.]
-    * **8 : **L’homme continue et le temps te paraît très long. On ne t’a ni parlé ni touché et pourtant c’est une agression. **(-2)**
-    * **9 à 10 : _« S’il te plaît ne fait pas ça, je ne recommencerai plus. Je te le promets ! » _**C’est peut-être de la mauvaise foi mais la peur a changé de camp._ **(+3)**_
+    * **9 : **L’homme continue et le temps te paraît très long. On ne t’a ni parlé ni touché et pourtant c’est une agression. **(-3)**
+    * **10 : _« S’il te plaît ne fait pas ça, je ne recommencerai plus. Je te le promets ! » _**C’est peut-être de la mauvaise foi mais la peur a changé de camp._ **(+3)**_
 
 
 ## Après l’agression : la réaction d’autrui
@@ -1014,46 +1074,46 @@ Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe ent
     * **1 à 3 :** Essoufflé·e tu t'arrêtes au bout d’un moment qui t’a semblé interminable. Est-ce que tu te sentiras capable de repasser par les quais dorénavant ? **(-1)**
     * **4 à 7 :** Tu te rends rapidement compte qu’il ne te suit pas. Tu te sens rassuré·e d’avoir eu un bon réflexe. **(+1)**
     * **8 à 9 :** De loin il te lance : _« A demain, même heure, même endroit ! »_ Il a décidé de s’approprier cet espace pour un moment. **(-2)**  
-    * **10 :** Tu entends un cri derrière toi : lancé dans un mouvement pour te poursuivre, il avait oublié que son pantalon était resté sur ses chevilles et s’est ramassé... **(+2)**
+    * **10 :** Tu entends un cri derrière toi : lancé dans un mouvement pour te poursuivre, il a oublié que son pantalon était baissé et s’est ramassé... **(+2)**
 * **Je poursuis mon chemin en l’ignorant.**
-    * **1 à 5 :** Il ne fait rien de plus. Le priver d’attention a suffit à t’en débarrasser. **(+1)**
-    * **6 :** Tu entends ses pas s’éloigner : le priver d’attention a payé. **(+2)**
-    * **7 à 8 :** Il te suit et ne te lâche pas, tu as affaire à un prédateur. **(-2 ET choisis une autre Stratégie + Escalade)**
+    * **1 à 4 :** Il ne fait rien de plus. Le priver d’attention a suffit à t’en débarrasser. **(+1)**
+    * **5 :** Tu entends ses pas s’éloigner : le priver d’attention a payé. **(+2)**
+    * **6 à 7 :** Il te suit et ne te lâche pas, tu as affaire à un prédateur. **(-2 ET choisis une autre Stratégie + Escalade)**
         * **[Je le repousse loin de moi.]**
-    * **9 :** Il t’envoie : _« C'est ça, casse-toi, avec ta sale gueule ! »_ Tu l’as déstabilisé alors il cherche ostensiblement à te rabaisser en t’insultant. Une stratégie tellement classique…  **(-1)**
-    * **10 :** Quand tu t'éloignes, il te lance: _« A la prochaine ! »_ Il essaye clairement de d’intimider. **(-2)**
+    * **8 à 9 :** Il t’envoie : _« C'est ça, casse-toi, avec ta sale gueule ! »_ Tu l’as déstabilisé alors il cherche ostensiblement à te rabaisser en t’insultant. Une stratégie tellement classique…  **(-1)**
+    * **10 :** Quand tu t'éloignes, il te lance: _« A demain ! »_ Il essaye clairement de d’intimider. **(-2)**
 * **Je crie.**
     * **1 à 3 :** Il prend peur et s'enfuit. Tu t’en es débarrassé·e pour de bon ! **(+2)**
     * **4 à 5 :** _« Chut chut chut ! Je ne vais rien te faire. »_ Il semble impressionné mais tu ne t’en es pas débarrassé·e **(+1 ET choisis une autre Stratégie + Escalade)**
         * **[Je le repousse loin de moi.]**
-    * **6 à 7 :** Personne ne répond sauf lui : _« Dégage espèce de taré·e ! »_ Tu l’as déstabilisé alors il cherche ostensiblement à te rabaisser en te faisant croire que c’est toi qui a un problème. Une stratégie tellement classique…  **(-1)**
-    * **8 : **Silence… _« Je crois bien qu’on est que tous les deux. »_  Là, pas de doute, tu as affaire à un prédateur. **(-2 ET choisis une autre Stratégie + Escalade)**
+    * **6 à 8 :** Personne ne répond sauf lui : _« Dégage espèce de taré·e ! »_ Tu l’as déstabilisé alors il cherche ostensiblement à te rabaisser en te faisant croire que c’est toi qui a un problème. Une stratégie tellement classique…  **(-1)**
+    * **9 : **Silence… _« Je crois bien qu’on est que tous les deux. »_  Là, pas de doute, tu as affaire à un prédateur. **(-2 ET choisis une autre Stratégie + Escalade)**
         * **Je le repousse loin de moi.**
             * **1 à 3 : **Il se débat et s’échappe. Tu lui as fait peur. Il ne risque pas de recommencer de sitôt. **(+2)**
             * **4 à 5 :** Il glisse et tombe dans la Marne. Il remonte un peu plus loin sur le quai et part trempé. **(+3)**
             * **6 à 7 :** Il se défend, te rend ton coup et s’en va en lançant _« Espèce de cinglé·e_._ »_ Tu es arrivé·e à le faire partir mais à quel prix… **(-2)**
             * **8 à 10 :** Du haut des berges, tu entends quelqu’un : _« Arrêtez de vous en prendre à lui, je vais appeler la police. »_ Tu passes pour l’agresseur·se… **(-3)**
-    * **9 à 10 :** Du dessus des berges, une voix répond : _« Qu’est ce qu’il se passe ici ? J’appelle immédiatement la police ! »_ L’homme déguerpit fissa. Heureusement que tu as réagi et qu’il existe encore des gens solidaires **(+3)**
+    * **10 :** Du dessus des berges, une voix répond : _« Qu’est ce qu’il se passe ici ? J’appelle immédiatement la police ! »_ L’homme déguerpit fissa. Heureusement que tu as réagi et qu’il existe encore des gens solidaires **(+3)**
 * **Je lui signifie calmement que ce n’est pas un endroit pour se masturber et que je vais porter plainte.**
     * **1 à 2 :** Il s’en va sans un mot. Tu n’as pas perdu ton sang froid. Ramener de la normalité dans cette situation l’a désarçonné. **(+2)**
     * **3 à 5 :** _« J’y peux rien, c’est pas de ma faute ! »_ et il s’en va. Encore le coup de la maladie pour se justifier : un grand classique ! **(+1)**
-    * **6 :** _« Mais c’est pas non plus un endroit pour se balader tout·e seule »_ Tu n’as pas perdu ton sang froid et pourtant il essaie clairement de t’intimider. **(-2 ET choisis une autre Stratégie + Escalade)**
+    * **6 à 7 :** _« Mais c’est pas non plus un endroit pour se balader tout·e seule. »_ Tu n’as pas perdu ton sang froid et pourtant il essaie clairement de t’intimider. **(-2 ET choisis une autre Stratégie + Escalade)**
         * **[Je le repousse loin de moi.]**
-    * **7 à 9 :** Il ne répond pas et continue ostensiblement. Calme et raison ne semblent pas en venir à bout. **(-1 ET choisis une autre Stratégie)**
+    * **8 à 9 :** Il ne répond pas et continue ostensiblement. Calme et raison ne semblent pas en venir à bout. **(-1 ET choisis une autre Stratégie)**
     * **10 :** Il bégaie : _« Euh, pardon. »_ Il ne s'attendait pas à ce que tu réagisses de manière aussi rationnelle, tu as retourné la situation. **(+3)**
 * **Je sors mon portable.**
     * **1 à 3 :** Il se rhabille rapidement et part sans rien dire. Il a sûrement eu peur que tu le filmes pour avoir une preuve de son délit. (1 an de prison et 15 000 € d’amende) **(+2)**
-    * **4 à 5 : **Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. C’est dommage pour ton téléphone mais tu as eu raison d’agir pour le faire partir. **(-2)**
+    * **4 à 5 : **Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. C’est dommage pour ton téléphone mais agir a permis de le faire partir.. **(-2)**
     * **_6 à 7 : « S’il te plaît ne me filme pas, je te promets que je recommencerai plus ! » _(Escalade)**
         * Je continue de le filmer : _« Je garde la vidéo au chaud et si jamais je te revoi_s_ faire ça, je la montrerai à la police ! »_
             * **1 à 5 :** Il s’en va en te disant : _« C’est la dernière fois, je te promets ! » **(+2)**_
-            * **6 à 7 :** Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. C’est dommage pour ton téléphone mais tu as eu raison d’agir pour le faire partir. **(-2)**
+            * **6 à 7 :** Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. C’est dommage pour ton téléphone mais agir a permis de le faire partir. **(-2)**
             * **8 à 10 :** Il part en te lançant :_ « Comme si la police allait faire quelque chose ! » _En te faisant douter de la police, tu sens qu’il essaye de t’isoler… **(-1)**
         * Je continue de le filmer : _« Trop tard, tu t’expliqueras avec la police : je les appelle. »  _
-            * **1 à 3 _: « Ne fais pas ça, je t’en supplie ! » _**Le confronter à la loi lui a fait prendre conscience de son délit. Quoi que tu fasses, il est peu probable qu’il recommence. **(+3)**
-            * **4 à 5 :** Il te pousse à terre et jette ton téléphone dans la Marne pour t’empêcher de les appeler. **(-3)**
-            * **6 à 7 :** Il part tranquillement en te lançant :_ « Comme si la police allait faire quelque chose ! » _En te faisant douter de la police, tu sens qu’il essaye de t’isoler… **(-1)**
-            * **8 à 10 :** Il fuit sans demander son reste : la perspective de se retrouver derrière les barreaux l’a fait déguerpir. **(+2)**
+            * **1 à 2 _: « Ne fais pas ça, je t’en supplie ! » _**Le confronter à la loi lui a fait prendre conscience de son délit. Quoi que tu fasses, il est peu probable qu’il recommence. **(+3)**
+            * **3 à 4 :** Il te pousse à terre et jette ton téléphone dans la Marne pour t’empêcher de les appeler. **(-3)**
+            * **5 à 6 :** Il part tranquillement en te lançant :_ « Comme si la police allait faire quelque chose ! » _En te faisant douter de la police, tu sens qu’il essaye de t’isoler… **(-2)**
+            * **7 à 10 :** Il fuit sans demander son reste : la perspective de se retrouver derrière les barreaux l’a fait déguerpir. **(+2)**
         * J’arrête de le filmer et je pars.
             * **1 à 3 :** Tu l’entends vaguement te dire _« Merci »_ mais tu ne peux pas t’assurer qu’il ne recommencera pas.** (+1)**
             * **4 à 6 :** _« J’y peux rien, c’est pas de ma faute ! »_ Tu sens qu’il n’a pas compris qu’aucune excuse ne justifie une agression ! **(0)**
@@ -1066,26 +1126,30 @@ Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe ent
             * **5 à 8 :** Lorsque tu pars, il te lance : _« Tu sais, j’y peux rien. C’est pas de ma faute ! »_ En plus de te faire passer pour l’agresseur, il tente de t’émouvoir ! **(0)**
             * **9 à 10 :** _« Tu vois que tu peux être raisonnable ! »_ Il a complètement renversé la culpabilité, alors que c’était toi la victime. **(-3)** 
         * _« Pas de problème, si tu veux on y va ensemble. »_
-            * **1 à 3 :** Il déguerpit en se rendant compte qu’il n’a pas réussi à t’impressionner. **(+2)**
-            * **4 à 5 :** Il te pousse à terre et jette ton téléphone dans la Marne avant de s’enfuir : _« Maintenant tu n’as plus de preuves ! » _ **(-3)**
-            * **6 à 8 :_ « Non, c’est bon. Je m’excuse… »_** Il part l’air penaud et tu as la ferme impression qu’il ne recommencera pas de si tôt. **(+3)**
+            * **1 à 4 :** Il déguerpit en se rendant compte qu’il n’a pas réussi à t’impressionner. **(+2)**
+            * **5 à 6 :** Il te pousse à terre et jette ton téléphone dans la Marne avant de s’enfuir : _« Maintenant tu n’as plus de preuves ! » _ **(-3)**
+            * **7 à 8 :_ « Non, c’est bon. Je m’excuse… »_** Il part l’air penaud et tu as la ferme impression qu’il ne recommencera pas de si tôt. **(+3)**
             * **9 à 10 :_ « Ah, parce que tu m’as cru·e en plus ? Vas-y si ça te chante, ils feront rien pour juste ça. »_ **Il essaye clairement de minimiser son geste et de vous dissuader mais il a l’air si sûr de lui… **(-2)**
     * **10 :** Il ne semble pas perturbé et continue à se masturber en te regardant. Tu as clairement affaire à quelqu’un de dangereux, fuis. **(-3)**
 * **J'éclate de rire en le regardant.**
     * **1 à 3 :** Il se rhabille rapidement et prend ses jambes à son cou. **(+2)**
     * **4 :** Il ne semble pas perturbé et continue à se masturber en te regardant. Tu as clairement affaire à quelqu’un de dangereux, fuis. **(-3)**
-    * **5 à 6 :** Il bégaie : _« Euh, pardon. »_ Il ne s'attendait pas à ce que tu réagisses de cette manière, tu as retourné la situation. **(+3)**
-    * **_7 à 9 : « Chhhhhuuut ! Je ne vais rien te faire, arrête s’il te plaît. »_** Il semble impressionné mais tu ne t’en es pas débarrassé·e. **(+1 ET choisis une autre Stratégie + Escalade)**
+    * **5 :** Il bégaie : _« Euh, pardon. »_ Il ne s'attendait pas à ce que tu réagisses de cette manière, tu as retourné la situation. **(+3)**
+    * **6 à 8 :** _« Chhhhhuuut ! Je ne vais rien te faire, arrête s’il te plaît. »_ Il semble impressionné mais tu ne t’en es pas débarrassé·e. **(0 ET choisis une autre Stratégie + Escalade)**
         * **[Je le repousse loin de moi.]**
-    * **_10 : « Pourquoi tu ris ? J’y peux rien, c’est pas de ma faute ! »_** et il s’en va. Encore le coup de la maladie pour se justifier : un grand classique ! **(+1)**
+    * **9 à 10 :** _« Pourquoi tu ris ? J’y peux rien, c’est pas de ma faute ! »_ et il s’en va. Encore le coup de la maladie pour se justifier : un grand classique ! **(+1)**
 
-Les lieux où on ne va pas? \
- Le Bois l'Abbé. Dans le centre de Champigny, il y a un petit endroit derrière l'église. Mais je refuse de m'interdire d'y aller. Mais je vois bien que je reste toujours dans les mêmes endroits. \
- Il y a un petit passage au-dessus du chemin de fer: une femme y a été tué il y a 10 ans. Le soir en rentrant, c'est le tour de la passerelle. Ça n'était pas éclairé. Une maison abandonnée. No man's land. Je n'y vais jamais. \
- Le petit pont. \
- Au Boullereaux, rue de la Mezy. Un lieu retiré, près des voies de chemin de fer de la SNCF. \
- Ce que j'éviterai, les endroits comme le petit tunnel, avenue de verdun, le soir... Par contre le Bois l'Abbé moi je rentre tard à pied le soir car j'y ai cours de gym et j'ai jamais eu peur. C'est l'idée qu'on en a, qu'on s'en fait... \
- Au Bois l'Abbé. Vers le RER. Les cités jardin. Blanche. La grande tour.
+
+# Les lieux où on ne va pas?
+
+
+
+* Le Bois l'Abbé. Dans le centre de Champigny, il y a un petit endroit derrière l'église. Mais je refuse de m'interdire d'y aller. Mais je vois bien que je reste toujours dans les mêmes endroits.
+* Il y a un petit passage au-dessus du chemin de fer: une femme y a été tué il y a 10 ans. Le soir en rentrant, c'est le tour de la passerelle. Ça n'était pas éclairé. Une maison abandonnée. No man's land. Je n'y vais jamais.
+* Le petit pont.
+* Au Boullereaux, rue de la Mezy. Un lieu retiré, près des voies de chemin de fer de la SNCF.
+* Ce que j'éviterai, les endroits comme le petit tunnel, avenue de verdun, le soir... Par contre le Bois l'Abbé moi je rentre tard à pied le soir car j'y ai cours de gym et j'ai jamais eu peur. C'est l'idée qu'on en a, qu'on s'en fait…
+* Au Bois l'Abbé. Vers le RER. Les cités jardin. Blanche. La grande tour.
 
  
 
