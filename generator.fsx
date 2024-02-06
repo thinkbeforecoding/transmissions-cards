@@ -683,6 +683,11 @@ let plusEscalade ids =
     | _ ->
         let list = ids |> List.map string |> String.concat ""
         $" + Escalade %s{list}"
+let scoreText txt =
+    if txt = "" then
+        txt
+    else
+         " " + txt
 
 let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
     Html.div [
@@ -724,13 +729,13 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
                                 match consequence.Score with
                                 | Score (Some(score,txt),ids) when score > 0 ->
                                     prop.className "score positif"
-                                    prop.text $" (+%d{score}%s{txt}%s{plusEscalade ids})\n"
+                                    prop.text $" (+%d{score}%s{scoreText txt}%s{plusEscalade ids})\n"
                                 | Score(Some(score,txt), ids) when score < 0 ->
                                     prop.className "score negatif"
-                                    prop.text $" (-%d{-score}%s{txt}%s{plusEscalade ids})\n"
+                                    prop.text $" (-%d{-score}%s{scoreText txt}%s{plusEscalade ids})\n"
                                 | Score (Some(_,txt), ids) ->
                                     prop.className "score zero"
-                                    prop.text $" (0%s{txt}%s{plusEscalade ids})\n"
+                                    prop.text $" (0%s{scoreText txt}%s{plusEscalade ids})\n"
                                 | Score(None, ids) ->
                                     prop.className "score escalade"
                                     let list = ids |> List.map string |> String.concat ""
