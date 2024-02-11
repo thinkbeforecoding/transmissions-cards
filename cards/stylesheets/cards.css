@@ -155,6 +155,8 @@ section {
     /* recto of situation and strategy use the same image
        taking 50% of height from bottom */
     /* the svg has alfa and let the underlay color appear, the overlay is used to draw a border at the top */
+    font-size: 12pt;
+
     background-image: var(--overlay), var(--illustration), var(--underlay)  ;
     background-repeat: no-repeat;
     background-size: auto 50%;
@@ -162,11 +164,14 @@ section {
 }
 
 
+
 .verso.strategy,
 .verso.escalade {
     /* verso of strategies have a 20mm image at the bottom */
     --bg-size: calc(var(--bleed) + 20mm);
     --illustration: url(../img/strategy.svg);
+
+    font-size: 9pt;
 
     background-image: var(--overlay), var(--illustration) , var(--underlay);
 
