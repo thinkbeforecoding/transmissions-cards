@@ -1,47 +1,9 @@
 <!-- Copy and paste the converted output. -->
 
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+<!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
-* ALERTS: 1
-
-Conversion time: 9.232 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β35
-* Tue Feb 06 2024 07:16:49 GMT-0800 (PST)
-* Source doc: 202307_Transmission(s)_Situations Champigny-sur-Marne
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
-
-WARNING:
-You have 5 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 1.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+* ALERTS: 1 -->
 
 
 ![alt_text](images/image1.png "image_tooltip")
@@ -153,7 +115,7 @@ Dans la cour de l’école, au moment de la récré, tu vois une fille pousser, 
 * je prends le ballon pour interrompre la partie et le forcer à me suivre.
 
 
-## X. L’ami qui se fait frapper
+## A FAIRE. L’ami qui se fait frapper
 
 Dans la rue, tu vois ton·ta meilleur·e ami·e coincé par un groupe de jeunes qui finit par partir. Après l’avoir rejoint·e, il·elle te confie se faire harceler par ces garçons de la cité voisine depuis un moment.
 
@@ -507,7 +469,7 @@ Il est 18 h. C'est l'hiver, il fait sombre. Tu arrives devant chez toi. L'entré
  
 
 
-## Le magasin de chaussures
+## A FAIRE. Le magasin de chaussures
 
 Tu flânes dans un magasin de chaussures. Tu fais ta vie tranquille, tu regardes les modèles et te balade. Le rayon est étroit donc tu frôles un homme tatoué. Tu t’excuses, mais il profère des propos racistes envers toi et s’essuie le corps avec dégoût. Une seule autre personne, présente dans le rayon, a été témoin de la scène.
 
@@ -654,7 +616,7 @@ Tu es à la retraite et une fracture récente t’handicape dans tes déplacemen
     * **9 à 10 :** En pleine conversation, tu es surprise de voir une personne descendre de l’étage. Elle te prend à partie en te rappelant que tu n’es pas tout·e seul·e ici et que tu parles fort… **(-2)**
 
 
-## X. La voiture qui ralentit [A MELANGER AVEC CELLE DE LA MERE]
+## A FAIRE. La voiture qui ralentit [A MELANGER AVEC CELLE DE LA MERE]
 
 Tu es sur une route passante, pas loin de chez toi. Les voitures roulent à bonne vitesse. C’est pourquoi le rythme anormalement lent d’une voiture t’interpelle. Tu tournes la tête en direction du véhicule et tu vois le chauffeur à ta hauteur t’adresser des gestes obscènes. 
 
@@ -782,7 +744,7 @@ RER. Vers 15h. Les voyageurs sont rares. Vous vous installez à l’étage infé
  
 
 
-## 24. Un inconnu dans la rue [S : 1 / R : 6 / E : 8 = 15]
+## 24. Un inconnu dans la rue [S : 1 / R : 7 / E : 9 = 17]
 
 C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un peu plus loin, tu vois un amas d’encombrants qu’un homme bien plus âgé que toi observe. Arrivé à sa hauteur et il t’accoste : _« Bonjour ! »_ Tu ne crois pas le connaître mais tu lui réponds poliment. Il n’a rien d’agressif mais continue de te parler et insiste pour t’accompagner.
 
@@ -791,34 +753,34 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
 * **Je l’ignore et pars sans un mot.**
     * **1 : **Il n’insiste pas et retourne à ses occupations. Tu es soulagé·e d’avoir pu t’en débarrasser aussi rapidement, c’est rare ! **(+3)**
     * **2 à 4 :_ « Tu te prends pour qui ?! »_**, il commence à t’insulter mais ne te suit pas. Il a l’air outré par le fait qu’il ne t’intéresse pas, comme si tu lui devais quelque chose ! **(-2)**
-    * **5 à 6 :** Il commence à te suivre et à t'invectiver de façon véhémente. **(Escalade)**
+    * **5 à 6 :** Il commence à te suivre et à t’injurier. **(Escalade)**
         * J’essaye de rejoindre des rues plus passantes pour ne pas être seul·e avec lui.
-            * **1 à 4 :** Tu parviens rapidement rapidement à trouver une rue plus peuplée. La pression du groupe le fait fuir. Tu es un peu remué·e mais soulagé·e. **(+1)**
+            * **1 à 4 :** Tu parviens rapidement à trouver une rue plus peuplée. La pression du groupe le fait fuir. Tu es un peu remué·e mais soulagé·e. **(+1)**
             * **5 à 7 :** Toutes les rues sont désertes et l’agression se poursuit pendant un temps qui te paraît très long jusqu’à ce qu’il finisse par te lâcher. **(-3)**
             * **8 à 10 :** Une personne sortant d’un immeuble s’approche en te demandant si tout va bien. La présence d’un témoin fait fuir ton agresseur. **(+2)**
         * Je me retourne et lui dis : _« Laissez-moi tranquille ou j’appelle la police, Monsieur. »_
             * **1 à 3 :** Évoquer la police a suffit à le faire fuir mais il a fallu que tu en arrives à la menace pour marcher tranquillement dans la rue ! **(+2)**
-            * **4 à 5 :** Il redouble d’insultes et s’en va. Tu as subi  une réelle agression et tu en ressors très choqué·e. **(-3)**
+            * **4 à 5 :** Il devient très virulent et finit par s’en aller. Tu as subi  une réelle agression et tu en ressors choqué·e. **(-3)**
             * **6 à 8 :_ « C’est bon, pas la peine de s’énerver. Je voulais juste faire votre connaissance ! » _**Il essaye de retourner la situation alors que c’est lui l’agresseur mais tu as réussi à t’en débarrasser. **(+1)**
-            * **9 à 10 :_ « Tu crois que la police va se déplacer pour ça ?! » _**et s’en va._ _Ce n’était de toute façon pas pour ça que tu le menaçais mais pour lui rappeler qu’il commet un délit  (l’injure publique est passible de 12 000 € d’amende). **(0)**
+            * **9 à 10 :_ « Tu crois que la police va se déplacer pour ça ?! » _**et s’en va._ _Ce n’était de toute façon pas pour ça que tu le menaçais mais pour lui rappeler que tu as le droit d’être tranquille dans l’espace public. **(0)**
         * Je pars en courant pour le semer.
-            * **1 à 6 :** Il ne te poursuit pas mais tu l’entends continuer de t’insulter jusqu’à ce qu’il soit loin. Tu te sens secoué·e mais hors de danger. **(+1)**
+            * **1 à 6 :** Il ne te poursuit pas mais tu l’entends t’invectiver jusqu’à ce qu’il soit loin. Tu te sens secoué·e mais hors de danger. **(+1)**
             * **7 à 8 :** Il se lance à ta poursuite sur une centaine de mètres avant de s’arrêter. C’était un agresseur violent et tu as eu très peur. **(-3)**
             * **9 à 10 :** Il se lance à ta poursuite mais tu entends un cri derrière-toi : il vient de trébucher. Ça lui servira de leçon. **(+2)**
         * Je continue mon chemin en le filmant ostensiblement avec mon téléphone.
             * **1 à 2 :** Il s’arrête net et rebrousse chemin. Il a eu peur que tu obtiennes une preuve de l’agression et ça l’a désarmé immédiatement. **(+3)**
             * **3 à 4 :** Il continue de t’insulter mais avec cette preuve tu pourras porter plainte pour injure publique (12 000€ d’amende). **(-1)**
-            * **5 à 6 :** Au moment où tu t'apprêtes à filmer, il met un coup dans téléphone pour l’envoyer au loin puis s’en va en continuant à t’insulter. L'agression verbale s’est transformée en agression physique. **(-3)**
-            * **7 à 8 :** Il te demande de supprimer la vidéo en s’excusant. Avec cette preuve, c’est toi qui est désormais en position de force. **(+ :2) **
-            * **9 à 10 :** Il continue de te suivre en changeant subitement de comportement : _« Pourquoi est- ce que vous me filmez ? Je vous demande d’arrêter immédiatement ! »._Il nie mais tant que tu le filmes il ne fera rien ! **(+1)**
-    * **7 à 8 : _« Vous pourriez être poli·e quand même, je vous ai rien dit de désagréable ! » _**C’est fou car tu ne lui dois rien et pourtant il voudrait te culpabiliser. **(0)**
+            * **5 à 6 :** Au moment où tu t'apprêtes à filmer, il met un coup dans téléphone pour l’envoyer au loin. L'agression verbale s’est transformée en agression physique. **(-3)**
+            * **7 à 8 :** Il te demande de supprimer la vidéo en s’excusant. Avec cette preuve, c’est toi qui est désormais en position de force. **(+2) **
+            * **9 à 10 :** Il continue à te suivre en changeant subitement de comportement : _« Pourquoi est- ce que vous me filmez ? Je vous demande d’arrêter immédiatement ! ». _Il nie mais tant que tu le filmes il ne fera rien ! **(+1)**
+    * **7 à 8 : _« Vous pourriez être poli·e quand même, je ne vous ai rien dit de désagréable ! » _**C’est fou car tu ne lui dois rien et pourtant il voudrait te culpabiliser. **(0)**
     * **9 à 10 :** Il te suit et continue à te parler comme si de rien n’était. Tu as l’impression que ton consentement n’a aucune valeur à ses yeux. **(-1 ET choisis une autre Stratégie)**
 * **Je rentre dans son jeu en lui faisant des réponses courtes et très vagues pour qu’il se lasse.**
-    * **1 à 2 :** Au bout de quelques minutes, il comprend que tu n’es pas du tout intéressé·e et lâche l’affaire soudainement. Tout ce temps perdu juste pour être tranquille… **(+2)**
+    * **1 à 2 :** Il comprend que tu n’es pas du tout intéressé·e et lâche l’affaire soudainement. Tout ce temps perdu juste pour être tranquille… **(+2)**
     * **3 à 5 :** Il n’a pas l’air de comprendre ton désintérêt ou fait comme si… **(-1 ET choisis une autre Stratégie)**
     * **6 à 7 :** «_ C’est pas très poli de me répondre comme ça. Je pourrais être votre père ! _» et s’en va. Il a bien compris ta stratégie et a voulu renverser la culpabilité. Mais il a quand même réussi à être paternaliste ! **(0)**
-    * **8 à 9 :** Après avoir insisté un moment, il part subitement en te lançant un dernier mot blessant. Il se permet de te rabaisser après t’avoir fait perdre ton temps, quel forceur ! **(-2)**
-    * **10 :** La conversation s’éternise et il te pose des questions qui te mettent très mal à l’aise. Malgré ta vigilance, tu te sens obligé·e de lui répondre et lorsqu’il part, tu as l’impression d’avoir été piégé. Refuser une conversation dont on n’a pas envie, c’est légitime. **(-3)**
+    * **8 à 9 :** Après avoir insisté un moment, il part subitement en te lançant un dernier mot blessant. Il se permet de te rabaisser en plus de t’avoir fait perdre ton temps, quel forceur ! **(-2)**
+    * **10 :** La conversation s’éternise et il te pose des questions qui te mettent très mal à l’aise. Malgré ta vigilance, tu te sens piégé·e et pourtant refuser une conversation dont on n’a pas envie, c’est légitime. **(-3)**
 * **Je lui dis calmement et fermement que je n’ai pas envie qu’il m’accompagne.**
     * **1 à 3 :_ « Oh pardon, je voulais pas vous importuner »_** et s’en va. Avoir été clair·e et déterminé·e t’as évité de perdre du temps. **(+3)**
     * **4 à 5 :** Il commence à te suivre et à t'invectiver de façon véhémente. **(Escalade)**
@@ -834,18 +796,23 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
     * **3 à 4 :** «_ Ah, mais dites tout de suite que je vous embête ! _» et s’en va. Oui, il t’embête et en plus il a l’air de te le reprocher ! **(0)**
     * **5 à 6 :** « _Oh pardon, je voulais pas vous mettre en retard, mon petit ! _» et retourne à ses occupations. Créer de l’urgence t’as donné une bonne raison de le tenir à distance mais il est quand même parvenu à se montrer paternaliste.** (+1)**
     * **7 à 10 :_ « Dans ce cas, je peux peut-être prendre votre numéro pour qu’on se revoie plus tard ? »_** **(Escalade)**
-        * Je lui propose plutôt de prendre le sien pour qu’il me laisse tranquille.
-            * Il te le donne : « _Je sais bien que vous m’appellerez jamais de toutes façons, mais_ »  
-            * « _D’accord mais appelez moi maintenant pour que j’ai aussi le vôtre !_ »
-            * Il te donne son numéro et te laisse enfin tranquille.
-        * Je lui dis que je n’ai pas envie de lui donner quoi que ce soit, merci beaucoup, au revoir !
+        * Je lui propose de prendre son numéro pour qu’il me laisse tranquille.
+            * **1 à 3 :** Il te le donne : « _Je sais bien que vous m’appellerez jamais de toutes façons, mais…_ »  Bien vu ! Tu t’en es débarrassé mais il t’en aura fallu des compromis… **(+2)**
+            * **4 à 7 :** « _D’accord, mais appelez moi maintenant pour que j’ai aussi le vôtre !_ » Il est dans l’intimidation et profite de tout ce que tu lui concèdes. Refuse et esquive le plus vite possible. **(-2)**
+            * **8 à 10 :** Il te donne son numéro et te laisse enfin tranquille. Que de ressources il t’aura fallu mobiliser pour traverser une simple rue ! **(0)**
+        * Je lui dis que je n’ai pas envie de lui donner quoi que ce soit. Merci beaucoup, au revoir !
+            * **1 à 3 :** Il a enfin compris et part sans un mot. Ouf, enfin débarassé·e. **(+3)**
+            * **4 à 5 :** Il te suit et continue à insister pour avoir ton numéro : il tente de t’avoir à l’usure. **(-1 ET choisis une autre Escalade)**
+            * **6 à 7 : _« Tu te prends pour qui ?! »_** il t’invective jusqu’à ce que tu sois loin. Il se permet de te rabaisser après t’avoir fait perdre ton temps. Tu as bien fait de ne rien céder même si c’est désagréable. **(-2)**
+            * **8 à 10 :_ « De quel droit vous me parlez comme ça ? J’ai été poli moi, avec vous ! »_** et il s’en va. Attends, il essaye de te faire passer pour le·la méchant·e alors que c’est lui qui t’importune ? **(0)**
         * J’invente un numéro ou lui donne le numéro “anti-relous” : 07 80 99 37 34.
-        * Je le regarde, je souffle et je m'en vais sans lui répondre.
-            * « _C’est pas la peine de le prendre comme ça, on peut plus rien dire aujourd’hui je vous demandais juste votre numéro…_» 
-            * _« Vous êtes bien mal élevé·e ! »_
+            * **1 à 3:** Il est tout content et toi aussi. Bravo pour ton aplomb ! **(+3)**
+            * **4 à 6 :_ « Super, je t’appelle tout de suite pour que tu aies aussi mon numéro. »_** Ce type en est sûrement pas à sa première agression et en plus il commence à te tutoyer. Prétexte que tu n’as plus de batterie si ça t’arrive… **(-2)**
+            * **7 à 8 :** Il te le fait répéter plusieurs fois avant de s’en aller : il est sourd ou il t’a grillé·e? Difficile à dire mais tu es enfin tranquille. **(+1)**
+            * **9 à 10 :** Il te remercie mais continue à te suivre. Lui concéder une information n’a pas suffi à lui faire lâcher prise, ce qu’il veut avant tout c’est occuper ton espace. **(-3)**
 * **_« Ah bah oui, avec plaisir ! Je me disais justement que j’avais très envie de me faire accompagner par un vieux débris sorti des poubelles. »_**
-    * **1 à 3 :_ « De quel droit vous me parlez comme ça ? J’ai été poli moi, avec vous ! »_**  et il s’en va. Attends, il essaye de te faire passer pour le·la méchant·e alors que c’est lui qui t’importune ? **(0)**
-    * **4 à 5 :** Il le prend très mal et continue de te suivre en se montrant agressif.. **(Escalade)**
+    * **1 à 3 :_ « De quel droit vous me parlez comme ça ? J’ai été poli moi, avec vous ! »_** et il s’en va. Attends, il essaye de te faire passer pour le·la méchant·e alors que c’est lui qui t’importune ? **(0)**
+    * **4 à 5 :** Il le prend très mal et continue de te suivre en se montrant agressif… **(Escalade)**
         * [J’essaye de rejoindre des rues plus passantes pour ne pas être seul·e avec lui.]
         * [Je me retourne et lui dis : _« Laissez-moi tranquille ou j’appelle la police, Monsieur. »]_
         * [Je pars en courant pour le semer.]
@@ -853,16 +820,37 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
     * **6 :_ « Eh bien, vous seriez très surpris·e de savoir les trésors qu’on peut trouver dans les poubelles ! » _**Il est un peu lourd mais il a de l’humour et semble avoir compris le message. **(+3)**
     * **7 à 8 :** Il tourne brusquement les talons et s’en va sans dire un mot. **(+1)**
     * **9 à 10 :** _« J’admets que le cadre n’est pas idyllique mais si vous me donnez votre numéro de téléphone, je vous en propose un autre qui sera sûrement plus à votre goût. »_ **(Escalade)**
-        * [Je lui propose plutôt de prendre le sien pour qu’il me laisse tranquille.]
-        * [Je lui dis que je n’ai pas envie de lui donner quoi que ce soit, merci beaucoup, au revoir !]
+        * [Je lui propose de prendre son numéro pour qu’il me laisse tranquille.]
+        * [Je lui dis que je n’ai pas envie de lui donner quoi que ce soit. Merci beaucoup, au revoir !]
         * [J’invente un numéro ou lui donne le numéro “anti-relous” : 07 80 99 37 34.]
-        * [Je le regarde, je souffle et je m'en vais sans lui répondre.]
+        * [Je me retourne et lui dis : _« Laissez-moi tranquille ou j’appelle la police, Monsieur. »_]
 * **Je sors mon téléphone et fais semblant d’avoir un appel en partant.**
-    * _« Ah, vous pouvez plus vous passer du téléphone maintenant ! Comment voulez-vous rencontrer des gens comme ça aujourd’hui ? »_ il te suit un peu en te faisant des sermons sur le fait que c’était mieux avant. Quel boomer…
-    * Il marche à côté de toi en chuchotant : _« Je peux peut-être vous laisser mon téléphone pour qu’on se revoit quand vous serez plus disponible ? »_
-    * Il se désintéresse de toi, ta diversion a fonctionné.
-    * _« Mais dites-donc c’est pas poli ! J’étais en train de vous parler, moi. »_
-    * Il continue à te parler comme si tu n’en avais rien à faire que tu sois au téléphone (Escalade) 
+    * **1 à 2 :_ « Ah, vous pouvez plus vous passer du téléphone maintenant ! Comment voulez-vous rencontrer des gens comme ça aujourd’hui ? »_** Il te suit en te faisant des sermons sur le fait que c’était mieux avant. Ce boomer qui te gâche ta journée… **(-2)**
+    * **3 à 4 :** Il marche à côté de toi en chuchotant : _« Je peux peut-être vous laisser mon téléphone pour qu’on se revoit quand vous serez plus disponible ? Ou je prends le vôtre… » **(Escalade)**_
+        * [Je lui propose de prendre son numéro pour qu’il me laisse tranquille.]
+        * [Je lui dis que je n’ai pas envie de lui donner quoi que ce soit. Merci beaucoup, au revoir !]
+        * [J’invente un numéro ou lui donne le numéro “anti-relous” : 07 80 99 37 34.]
+    * **5 à 6 :** _« Oh pardon, je voulais pas vous importuner ! »_ Ta diversion a fonctionné. **(+3)**
+    * **7 à 8 :** _« Mais dites-donc c’est pas poli ! J’étais en train de vous parler, moi. » _Il essaye de renverser la culpabilité, ça n’a rien de très original mais il te laisse tranquille. **(+1)**
+    * **9 à 10 :** Il continue à te parler comme si tu n’en avais rien à faire que tu sois au téléphone. **(-1 ET choisis une autre Stratégie)**
+* **_« Qu’est-ce que vous me voulez, Monsieur ? »_**
+    * **1 à 3 :_ « Aujourd’hui, on ne peut plus adresser la parole à quelqu’un dans la rue sans se faire engueuler ! » _**Le problème c’est qu’il insiste ! Il y a une grande différence entre discuter avec quelqu’un et lui imposer sa présence, Monsieur... **(-1)**
+    * **4 :** Il tourne brusquement les talons et s’en va sans dire un mot. Ça montre bien que son envie n’était pas de discuter… **(+1)**
+    * **5 à 6 :_ « Oh pardon, je voulais pas vous importuner, passez une bonne journée »_** et s’en va.. Tu ne sais toujours pas ce qu’il te voulait, mais probablement un peu papoter. **(+3)**
+    * **7 à 9 :_ « Vous me plaisez beaucoup. J’aimerais vraiment vous connaître un peu  plus. Je vous offre un café ? » _**Et voilà…_ **(Escalade)**_
+        * « _Non. _» et tu t’en vas.
+            * **1 à 2 :** Il te suit et continue à te parler comme si de rien n’était . Tu as l’impression que ton consentement n’a aucune valeur à ses yeux. **(-2)**
+            * **3 à 5 :** Ta franchise le laisse sans voix et il s’en va. Être clair·e et déterminé·e t’as permis de t’en défaire. **(+3)**
+            * **6 à 8 :_ « Tu te prends pour qui ?! »_** il t’invective jusqu’à ce que tu sois loin. En fait, tu n’as rien le droit de lui refuser… Tu as bien fait de partir. **(-2)**
+            * **9 à 10 : _« Ça va, c’est bon, j’ai compris, pas la peine de le prendre comme ça… »_** Le pauvre chouchou essaye de passer pour la victime mais au moins il t’a foutu la paix. **(+1)** 
+        * [Je me retourne et lui dis : _« Laissez-moi tranquille ou j’appelle la police, Monsieur. »]_
+        * [Je lui propose de prendre son numéro pour qu’il me laisse tranquille.]
+        * _« Désolé·e, j’ai pas le temps mais la prochaine fois c’est moi qui vous invite ! »_
+            * **1 à 3 :** Il te regarde partir l’air interdit. Ton assurance l’a désarmé ! **(+3)**
+            * **4 à 6 :** Il continue de te suivre en te faisant des avances. C’est clairement un agresseur qui ignore tous les refus que tu lui signifies. Ne reste pas seul·e avec lui. **(-3)**
+            * **7 à 8 :_ « D’accord ! Je vous donne mon numéro alors ! » _**et te laisse enfin partir. Même si toi tu n’as rien donné, son comportement t’as paru très intrusif… **(-1)**
+            * **9 à 10 :_ « Ce serait un grand plaisir si, par hasard, j’ai la chance de vous revoir ! »_** Il semble avoir compris le message, l’humour a payé. **(+1)**
+    * **10 :** « _Non, je ne vous voulais rien de particulier… Bon, ben euh… _» Et il part  l’air penaud. Tu sais que tu n’as pas à t’imposer une présence dont tu n'as pas envie, mais tu ressens un peu d’empathie pour lui. **(0)**
 
 
 ##  **[A FUSIONNER] Ma petite dame **
@@ -1411,3 +1399,5 @@ Réaction.
 
 
 ## Pickpocket
+
+J’étais dans un bus le matin. Une dame fait une remarque raciste à une autre dame. Je suis la seule autre blanche du bus et j’ai peur d’être mise dans le même panier que cette dame raciste.

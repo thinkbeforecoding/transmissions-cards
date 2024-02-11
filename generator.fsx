@@ -435,19 +435,21 @@ let cut len (s: string) =
 let rec strategyScore  (escalades: Map<char,Strategy>) (strategies: Strategy list) (strategy: Strategy) = 
     [ for cons in strategy.Consequences do
             match cons.Score with
-            | Score(Some(n,l),es) when l.Contains "Stratégie" -> 
-                let newSituations =  List.filter (fun s -> s <> strategy) strategies @ [ for e in es -> escalades[e] ]
-                cons.Range.Probability * ( decimal n + situationScore escalades newSituations )
-            | Score(Some(n,_),_) ->
+            | Score(Some(n,""),[]) ->
                 cons.Range.Probability * decimal n
-            | Score(None,[]) ->
-                0m
+            | Score(Some(n,l),es) -> 
+                let newSituations =  (List.filter (fun s -> s <> strategy) strategies) @ [ for e in es -> escalades[e] ]
+                cons.Range.Probability * ( decimal n + situationScore escalades newSituations )
             | Score(None, es) ->
-                cons.Range.Probability * situationScore escalades [ for e in es -> escalades[e] ]
+                cons.Range.Probability * situationScore  escalades [ for e in es -> escalades[e] ]
+            | _ -> failwith "No score"
     ]
     |> List.sum
 
 and situationScore (escalades: Map<char,Strategy>) (strategies: Strategy list) : decimal =
+    if List.isEmpty strategies then
+        failwith "❌ Plus de stratégies"
+    
     [ for strategy in strategies do
             strategyScore escalades strategies strategy
     ]
@@ -824,6 +826,12 @@ let situations =
     parse @"situations.md"
     |> check
 
+let pissotieres = champigny |> List.find (fun s -> s.Id = 20)
+for s in pissotieres.Strategies do
+    printfn "%s" s.Title
+    for c in s.Consequences do
+        printfn "    %A" c.Score
+score pissotieres
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let cards =
