@@ -826,13 +826,6 @@ let situations =
     parse @"situations.md"
     |> check
 
-let pissotieres = champigny |> List.find (fun s -> s.Id = 20)
-for s in pissotieres.Strategies do
-    printfn "%s" s.Title
-    for c in s.Consequences do
-        printfn "    %A" c.Score
-score pissotieres
-
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let cards =
     [ for situation in champigny do

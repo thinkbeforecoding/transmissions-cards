@@ -448,6 +448,34 @@ h1 {
     border-left: calc(var(--separator-size) / 2) solid var(--color);
 }
 
+.norm {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.norm.verso {
+    background-image: url(../img/normes.svg);
+}
+
+.norm.handicap.recto {
+    background-image: url(../img/handicap.svg);
+}
+
+.norm.genre.recto {
+    background-image: url(../img/genre.svg);
+}
+
+.norm.classe-sociale.recto {
+    background-image: url(../img/classe-sociale.svg);
+}
+
+.norm.orientation.recto {
+    background-image: url(../img/orientation.svg);
+}
+
+.norm.couleur.recto {
+    background-image: url(../img/couleur.svg);
+}
 /* Cricut calibration marks 
    the html doc contains 4 divs which have each
    2 borders sets using the attributes*/
