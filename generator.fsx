@@ -103,7 +103,13 @@ and splitList spans lines =
 
 let splitLines spans = splitList spans Lines.empty
 
+let (|EndsWith|_|) (str: string) (input: string) = 
+    if input.EndsWith(str) then
+        Some(input.Substring(0,input.Length-str.Length))
+    else
+        None
 
+    
 
 let rec toText' style (spans: MarkdownSpans) =
     match spans with
@@ -605,6 +611,74 @@ let pos n =
     let r = 1+n/3;
     $"c{c} r{r}"
 
+let inclusiveRx = System.Text.RegularExpressions.Regex(@"\w+·\w+(·\w+)?")
+let inclspan (prefix: string) (fem: string) (masc: string) =
+    [
+        Html.span [
+            prop.className "inclusive"
+            prop.children [
+                if prefix.Length > 0 then
+                    Html.text prefix
+                Html.span [
+                    prop.className "supsub"
+                    prop.children [
+                        Html.sup fem
+                        Html.sub (if masc <> "" then masc else "\xA0")
+                    ]
+                ] 
+            ]
+        ]
+    ]
+let rec inclusive' (text: string) pos (matches: System.Text.RegularExpressions.Match list) =
+    [
+        match matches with
+        | [] -> 
+            let remaining = text.Substring(pos)
+            if remaining <> "" then
+                Html.text remaining
+        | m :: tail -> 
+            if m.Index > pos then
+                Html.text (text.Substring(pos, m.Index - pos))
+            match m.Value with
+            | EndsWith "·e" prefix ->  
+                yield! inclspan prefix "e" ""
+            | EndsWith "·e·s" prefix ->  
+                yield! inclspan prefix "es" "s"
+            | EndsWith "x·se" prefix ->
+                yield! inclspan prefix "se" "x"
+            | EndsWith "eur·ice" prefix ->
+                yield! inclspan prefix "rice" "eur"
+            | EndsWith "eur·ice·s" prefix ->
+                yield! inclspan prefix "rices" "eurs"
+            | EndsWith "r·se" prefix->
+                yield! inclspan prefix "se" "r"
+            | EndsWith "le·a" _
+            | EndsWith "le·la" _ ->
+                yield! inclspan "l" "a" "e"
+            | EndsWith "Le·la" _ -> 
+                yield! inclspan "L" "a" "e"
+            | EndsWith "ton·ta" _ -> 
+                yield! inclspan "t" "a" "on"
+            | EndsWith "s·tes" prefix ->
+                yield! inclspan prefix "tes" "s"
+            | EndsWith "seul·e" _ ->
+                yield! inclspan "seul" "e" "" 
+            | EndsWith "il·elle" _ ->
+                yield! inclspan "" "elle" "il"
+            | EndsWith "Il·Elle" _ 
+            | EndsWith "Il·elle" _ ->
+                yield! inclspan "" "Elle" "Il"
+            | _ ->
+                printfn $"❌ {m.Value}"
+                Html.text m.Value
+            yield! inclusive' text (m.Index + m.Length) tail
+            
+    ]
+
+let inclusive (text: string) =
+    let matches = inclusiveRx.Matches(text) |> Seq.toList
+    inclusive' text 0 matches
+
 let renderSituationRecto n (situation: Situation) =
 
     Html.div [
@@ -620,9 +694,9 @@ let renderSituationRecto n (situation: Situation) =
                         Html.p [
                             for style, text in line do
                                 match style.FontStyle with
-                                | Regular -> Html.text text
-                                | Italic -> Html.em text
-                                | Bold -> Html.strong text
+                                | Regular -> yield! (inclusive text)
+                                | Italic -> Html.em (inclusive text)
+                                | Bold -> Html.strong (inclusive text)
                             ]
                         ]
             ]
@@ -659,9 +733,9 @@ let renderStrategyRecto (n: int) (r: int) key (situation: Situation) (strategy: 
                         Html.p [
                             for style, text in line do
                                 match style.FontStyle with
-                                | Regular -> Html.text text
-                                | Italic -> Html.em text
-                                | Bold -> Html.strong text
+                                | Regular -> yield! (inclusive text)
+                                | Italic -> Html.em (inclusive text)
+                                | Bold -> Html.strong (inclusive text)
                             ]
                     ]
                 ]
@@ -690,6 +764,7 @@ let scoreText txt =
         txt
     else
          " " + txt
+
 
 let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
     Html.div [
@@ -723,9 +798,9 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
                             Html.text " "
                             for style, text in consequence.Text do
                                 match style.FontStyle with
-                                | Regular -> Html.span text
-                                | Italic -> Html.em text
-                                | Bold -> Html.strong text
+                                | Regular -> Html.span (inclusive text)
+                                | Italic -> Html.em (inclusive text)
+                                | Bold -> Html.strong (inclusive text)
 
                             Html.span [
                                 match consequence.Score with

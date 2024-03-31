@@ -33,7 +33,7 @@ C'est la rentrée et tu es assis à côté d'un élève. Chaque jour, tu constat
 
 ## 14. La vieille dame raciste [S : 1 / R : 5 / E : 6 = 12]
 
-Il est 17h30 en plein été, tu rentres des cours et tu prends le bus 208b. Tu aperçois une vieille dame chargée de courses. Arrivé à son arrêt, tu décides de l'aider à descendre en soulevant ses paquets. Elle te dit alors : _« Touche pas à mes courses avec tes mains sales de noir·e. » _
+Il est 17h30 en plein été, tu rentres des cours et tu prends le bus 208b. Tu aperçois une vieille dame chargée de courses. Arrivé·e à son arrêt, tu décides de l'aider à descendre en soulevant ses paquets. Elle te dit alors : _« Touche pas à mes courses avec tes mains sales de noir·e. » _
 
 
 
@@ -117,7 +117,7 @@ Dans la cour de l’école, au moment de la récré, tu vois une fille pousser, 
 
 ## A FAIRE. L’ami qui se fait frapper
 
-Dans la rue, tu vois ton·ta meilleur·e ami·e coincé par un groupe de jeunes qui finit par partir. Après l’avoir rejoint·e, il·elle te confie se faire harceler par ces garçons de la cité voisine depuis un moment.
+Dans la rue, tu vois ton·ta meilleur·e ami·e coincé par un groupe de jeunes qui finit par partir. Après l’avoir rejoint·e, il·elle te confie se faire harceler par ces garçons de la cité voisine depuis un moment. => Homosexualité présumée ?
 
 
 
@@ -746,7 +746,7 @@ RER. Vers 15h. Les voyageurs sont rares. Vous vous installez à l’étage infé
 
 ## 24. Un inconnu dans la rue [S : 1 / R : 7 / E : 9 = 17]
 
-C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un peu plus loin, tu vois un amas d’encombrants qu’un homme bien plus âgé que toi observe. Arrivé à sa hauteur et il t’accoste : _« Bonjour ! »_ Tu ne crois pas le connaître mais tu lui réponds poliment. Il n’a rien d’agressif mais continue de te parler et insiste pour t’accompagner.
+C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un peu plus loin, tu vois un amas d’encombrants qu’un homme bien plus âgé que toi observe. Arrivé à sa hauteur, il t’accoste : _« Bonjour ! »_ Tu ne crois pas le connaître mais tu lui réponds poliment. Il n’a rien d’agressif mais continue de te parler et insiste pour t’accompagner.
 
 
 
@@ -968,6 +968,37 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
 * **« Bah oui, j’en ai un dans les bras d’enfant ! Il a pas l’air choqué, si ? »   **
 
 
+## Les parkings sont sinistres
+
+Il est possible de restituer la voiture de location après la fermeture de l'agence en la garant sur un parking. Vous choisissez cette option afin de profiter au maximum de votre dernier jour de vacances.
+
+Vous voici donc, vers 23 heures, gravissant le colimaçon pour atteindre le dernier étage du parking désert. A votre arrivée, vous voyez un homme qui essaie d'ouvrir une puis une autre portière de voiture puis d'autres encore. Vous pensez immédiatement à un vol de voiture.
+
+Quand vous sortez de la vôtre, l'homme se dirige vers vous.
+
+- "Je travaille à l'agence de location et vérifie que les portières des véhicules sont bien fermées. Les gens oublient souvent", vous dit-il.
+
+Pourquoi cet homme vient-il se justifier ? Persuadé(e.s) que vous êtes en face d'un voleur vous n'êtes guère à l'aise et vous dirigez vivement vers l'ascenseur. L'homme vous suit et l'attend avec vous. Est-il seul ? Des complices attendent-ils en bas ?
+
+1. La trouille au ventre, vous feignez de l'ignorer
+
+® L'homme monte dans l'ascenseur avec vous. Descente tendue avec ce type bizarre. A l'arrivée, il s'en va tranquillement.
+
+® Dans l'ascenseur, l'homme vous demande de lui remettre clefs et papiers. Ca vous évitera de passer à l'agence (cascade)
+
+2. Vous décidez avant que l'ascenseur n'arrive de prendre les escaliers. De toutes façons, il faut descendre et au moins vous ne serez pas coincé (e.s) dans la cabine
+
+® Après un nombre incalculable de marches, vous arrivez éreinté(e.s. Le hall est vide. Vous sortez rapidement du bâtiment. Personne non plus dans la rue. Ouf !
+
+® Au sortir de l'escalier, l'homme est là accompagné d'un autre. Ils vous demandent de leur remettre les clefs et papiers du véhicule (cascade)
+
+3. Vous décidez avant que l'ascenseur n'arrive de repartir dans votre voiture et quittez rapidement ce parking sinistre. Avec les clefs et papiers, vous mettrez un mot dans la boite aux lettres de l'agence indiquant où vous avez garé l'auto.
+
+® L'homme ne vous a pas suivis. Ouf
+
+® L'homme ne vous a pas suivi mais impossible de trouver une place dans le quartier. Vous êtes contraint(e.s) de garer la voiture à 20 minutes à pied de l'agence.
+
+
 # MAISON DES ARTS PLASTIQUES
 
 
@@ -1005,7 +1036,7 @@ Tu as 10 ans et un ouvrier qui est déjà venu plusieurs fois vient faire des tr
             * **3 à 7 :** Il ne t’importune plus durant le reste du chantier, tu as bien fait de lui dire d’arrêter. **(+3)**
             * **8 à 10 :** Il ne fait plus rien durant quelques jours puis recommence à avoir des gestes déplacés à plusieurs reprises. C’est difficile de savoir quand des excuses sont sincères. Est-ce qu’en parler aurait été plus efficace ? **(-3)**
         * [J’en parle tout de même à mes parents lorsqu’ils rentrent.]
-    * **7 à 8 :_ « Si on en parle à tes parents, je leur dirais que tu es un·e menteur·s·e. Qui est-ce que tu penses qu’ils vont croire ? » _**Tu sens bien qu’il pourrait avoir raison… **(-2 ET choisis une autre Stratégie)**
+    * **7 à 8 :_ « Si on en parle à tes parents, je leur dirais que tu es un·e menteur·se. Qui est-ce que tu penses qu’ils vont croire ? » _**Tu sens bien qu’il pourrait avoir raison… **(-2 ET choisis une autre Stratégie)**
     * **9 à 10 :** _« Si tu en parles, tu vas avoir de gros problèmes ! » _Etant un enfant, ses menaces t'impressionnent et tu ne te sens plus en capacité de réagir. **(-3)**
 * **Je quitte la pièce et frappe chez mes voisins pour leur dire ce qu’il s’est passé.**
     * **1 à 4 :** Personne ne répond. Tu es obligé·e de retourner dans l’appartement. **(-1 ET choisis une autre Stratégie)**
