@@ -29,7 +29,7 @@
     /* medium font weight for futura */
     --medium: 500;
 
-    --verso-offset: 0.5mm;
+    --verso-offset: 0mm /*0.5mm*/;
 }
 
 /* print page definition */
@@ -155,7 +155,8 @@ section {
     /* recto of situation and strategy use the same image
        taking 50% of height from bottom */
     /* the svg has alfa and let the underlay color appear, the overlay is used to draw a border at the top */
-    font-size: 12pt;
+    font-size: 11.5pt;
+    line-height: 14pt;
 
     background-image: var(--overlay), var(--illustration), var(--underlay)  ;
     background-repeat: no-repeat;
@@ -476,6 +477,10 @@ h1 {
 .norm.couleur.recto {
     background-image: url(../img/couleur.svg);
 }
+
+.norm.non-discriminee.recto {
+    background-image: url(../img/non-discriminee.svg);
+}
 /* Cricut calibration marks 
    the html doc contains 4 divs which have each
    2 borders sets using the attributes*/
@@ -503,4 +508,29 @@ h1 {
 .m-bottom {
     bottom: 50.8mm;
     border-bottom: 1.5mm solid black;
+}
+
+.supsub {
+    display: inline-block;
+    margin-left: 0.07em;
+}
+
+.supsub sup,
+.supsub sub {
+    position: relative;
+    display: block;
+    font-size: .7em;
+    line-height: 0.5;
+    text-align: left;
+}
+
+.supsub sub {
+    top: .3em;
+}
+
+.inclf {
+    color: var(--blue);
+}
+.inclm {
+    color: var(--yellow);
 }

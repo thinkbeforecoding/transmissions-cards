@@ -1,3 +1,4 @@
 global.json
 *.pdf
 .vs/
+.fake
