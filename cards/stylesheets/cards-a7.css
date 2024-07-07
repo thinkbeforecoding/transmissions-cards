@@ -34,16 +34,12 @@
 
 /* print page definition */
 @page {
-    size: A3;
+    /* size: A6; */
+    size: 74mm 105mm;
     margin-top: 0mm;
     margin-right: 0mm;
     margin-bottom: 0mm;
     margin-left: 0mm;
-
-    @top-center {
-        content: "Page " counter(page);
-        padding-top: 10mm;
-    }
 }
 
 /* Fonts and their variations */
@@ -113,6 +109,8 @@ section {
     width: calc(var(--width) + 2*var(--bleed));
     height: calc(var(--height) + 2*var(--bleed));
     position: absolute;
+    top: calc( -1 *  var(--bleed));
+    left: calc( -1 *  var(--bleed));
 
     /* defines an solid color for image color underlay */
     --underlay: linear-gradient(var(--color), var(--color));
@@ -155,8 +153,8 @@ section {
     /* recto of situation and strategy use the same image
        taking 50% of height from bottom */
     /* the svg has alfa and let the underlay color appear, the overlay is used to draw a border at the top */
-    font-size: 11.1pt;
-    line-height: 12.7pt;
+    font-size: 11pt;
+    line-height: 12pt;
 
     background-image: var(--overlay), var(--illustration), var(--underlay)  ;
     background-repeat: no-repeat;
@@ -214,60 +212,6 @@ section {
     background-size: cover;
 }
 
-/* display bleeds on screen 
-   it creates a box of width/height size
-   offset by bleed.
-   Bleeds limit is not printed
-   */
-@media screen,
-pagedjs-ignore {
-
-    .card::after {
-        content: '';
-
-        position: absolute;
-    
-        /* is precisely of card size */
-        width: var(--width);
-        height: var(--height);
-        
-        /* is offset of bleed size */
-        left: var(--bleed);
-        top: var(--bleed);
-
-        /* the actual border */
-        border: 0.1mm solid black;
-        border-radius: var(--card-corner);
-
-        /* the element is in front to be visible 
-           but doesn't intercept mouse events
-           to make inspection of the other parts of the 
-           card easier */
-        z-index: 0; 
-        pointer-events: none;
-    }
-}
-
-/* these properties define the grid for the cards 
-on an A3 page */
-
-.recto .c1 { left: calc(23.9mm - var(--bleed)); }
-.recto .c2 { left: calc(107.6mm - var(--bleed)); }
-.recto .c3 { left: calc(190.1mm - var(--bleed)); }
-
-/* for verso, columns are from right to left */
-.verso .c1 { left: calc(199.1mm - var(--bleed)); }
-.verso .c2 { left: calc(115.4mm - var(--bleed)); }
-.verso .c3 { left: calc(32.9mm - var(--bleed)); }
-
-/* rows are the same on both sides */
-.recto.r1 { top: calc(24mm - var(--bleed)); }
-.recto.r2 { top: calc(140.2mm - var(--bleed)); }
-.recto.r3 { top: calc(255mm - var(--bleed)); }
-
-.verso.r1 { top: calc(24mm + var(--verso-offset) - var(--bleed)); }
-.verso.r2 { top: calc(140.2mm + var(--verso-offset) - var(--bleed)); }
-.verso.r3 { top: calc(255mm + var(--verso-offset) - var(--bleed)); }
 
 /* used to style titles */
 h1 {
@@ -480,34 +424,6 @@ h1 {
 
 .norm.non-discriminee.recto {
     background-image: url(../img/non-discriminee.svg);
-}
-/* Cricut calibration marks 
-   the html doc contains 4 divs which have each
-   2 borders sets using the attributes*/
-.mark {
-    position: absolute;
-    width: 25.4mm;
-    height: 25.4mm;
-}
-
-.m-top {
-    top: 14.8mm;
-    border-top: 1.5mm solid black;
-}
-
-.m-left {
-    left: 14.8mm;
-    border-left: 1.5mm solid black;
-}
-
-.m-right {
-    right: 23.8mm;
-    border-right: 1.5mm solid black;
-}
-
-.m-bottom {
-    bottom: 50.8mm;
-    border-bottom: 1.5mm solid black;
 }
 
 .inclusive {

@@ -1,4 +1,4 @@
-#r "nuget: Feliz.ViewEngine"
+
 #r "nuget: FSharp.Formatting"
 open System
 open System.IO
@@ -24,6 +24,8 @@ type FontStyle =
 type Style =
     { FontStyle: FontStyle
       Color: TextColor}
+
+
 
 type Situation =
     { Id: int
@@ -97,6 +99,9 @@ and splitList spans lines =
         splitList tail (Lines.addLines parts lines)
 
 
+
+
+
 let splitLines spans = splitList spans Lines.empty
 
 let (|EndsWith|_|) (str: string) (input: string) = 
@@ -106,6 +111,7 @@ let (|EndsWith|_|) (str: string) (input: string) =
         None
 
     
+
 let rec toText' style (spans: MarkdownSpans) =
     match spans with
     | [] -> []
@@ -137,7 +143,7 @@ let tryParseLink (description: MarkdownSpans) =
     | _ -> None
 
 let rangeRx = System.Text.RegularExpressions.Regex(@"^\s*(\d+)(\s+à\s+(\d+))?\s*:\s*")
-let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]\d|J\d|S\d|0)\s*([^)+]*)(\+ Escalade)?\s*\)\s*")
+let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]\d|0)\s*([^)+]*)(\+ Escalade)?\s*\)\s*")
 let escaladeRx = System.Text.RegularExpressions.Regex(@"\(\s*voir\s+Escalade(\s+\$)?\s*\)")
 
 let rec parseEscalade (description, items) : Strategy option =
@@ -229,15 +235,7 @@ and parseConsequence (escalades: Map<char, Strategy>) ((description, escaladesMd
                     | Literal(txt,_) ->
                         let m = scoreRx.Match(txt)
                         if m.Success then
-                            let value = m.Groups[1].Value
-                            if value.StartsWith('J') then
-                                let s = Int32.Parse(value.AsSpan(1))
-                                Some(s, m.Groups[2].Value.Trim())
-                            elif value.StartsWith('S') then
-                                let s = Int32.Parse(value.AsSpan(1))
-                                Some(-s, m.Groups[2].Value.Trim())
-                            else
-                                Some (int m.Groups[1].Value, m.Groups[2].Value.Trim())
+                            Some (int m.Groups[1].Value, m.Groups[2].Value.Trim())
                         else
                             None
                     | _ -> None)
@@ -385,7 +383,7 @@ let parseSituations (md : MarkdownDocument) =
 
 
 let rmdRx = System.Text.RegularExpressions.Regex(@"(\s*)(\*\*|_)( *)")
-let punctRx = System.Text.RegularExpressions.Regex(@"(\s*)(\.\.\.|…|\.|,|\?[!?]?|\![!?]?|;|:|')( *)")
+let punctRx = System.Text.RegularExpressions.Regex(@"(\s*)(\.\.\.|\.|,|\?[!?]?|\![!?]?|;|:|')( *)")
 let quoteRx = System.Text.RegularExpressions.Regex(@"[""“”«]\s*([^""“”»]*)\s*[""“”»]( +)?")
 let normSpaceRx = System.Text.RegularExpressions.Regex(@"(\*|_) +")
 
@@ -406,7 +404,6 @@ let cleanMd (md: string) =
             | ":" -> " : "
             | "'" -> "’"
             | "..." -> "… "
-            | "…" -> "… "
             | s when s.StartsWith("?") || s.StartsWith("!") -> $"\xA0{s} "
             | _ -> m.Value )
         )
@@ -452,7 +449,7 @@ let rec strategyScore  (escalades: Map<char,Strategy>) (strategies: Strategy lis
                 cons.Range.Probability * ( decimal n + situationScore escalades newSituations )
             | Score(None, es) ->
                 cons.Range.Probability * situationScore  escalades [ for e in es -> escalades[e] ]
-            | _ -> failwith "No score"
+            // | _ -> failwith "No score"
     ]
     |> List.sum
 
@@ -472,12 +469,6 @@ let score (situation: Situation) =
     | ex ->
         printfn $"❌ Erreur calcul score situation S{situation.Id} {situation.Title}"
         0m
-
-let checkStrategyScores (situation: Situation) =
-    for strategy in situation.Strategies do
-        let score = strategyScore situation.Escalades situation.Strategies strategy
-        if abs score > 1.5m then
-            printfn $"\x1b[33  ⚡Score déséquilibré { strategy.Title |> cut 40}\x1b[0m"
 
 
 let check (situations: Situation list) =
@@ -601,458 +592,456 @@ let check (situations: Situation list) =
         | Error _ -> ()
     ]
 
-open Feliz.ViewEngine
-
-let colorProp = function
-    | Blue -> "blue"
-    | Red -> "red"
-    | Green -> "green"
-    | Yellow -> "yellow"
-    | Purple -> "purple"
-
-type Card =
-| Alea of int
-| Situation of  Situation
-| Strategy of situationNumber:int * Situation * Strategy
-| Escalade of char * situationNumber:int * Situation * Strategy
-
-let pos n =
-    let c = 1+n%3;
-    let r = 1+n/3;
-    $"c{c} r{r}"
-
-let inclusiveRx = System.Text.RegularExpressions.Regex(@"\w+·\w+(·\w+)?")
-let inclspan (prefix: string) (fem: string) (masc: string) =
-    [
-        Html.span [
-            prop.className "inclusive"
-            prop.children [
-                if prefix.Length > 0 then
-                    Html.text prefix
-                Html.span [
-                    prop.className "supsub"
-                    prop.children [
-                        Html.sup fem
-                        Html.sub (if masc <> "" then masc else "\xA0")
-                    ]
-                ] 
-            ]
-        ]
-    ]
-let rec inclusive' (text: string) pos (matches: System.Text.RegularExpressions.Match list) =
-    [
-        match matches with
-        | [] -> 
-            let remaining = text.Substring(pos)
-            if remaining <> "" then
-                Html.text remaining
-        | m :: tail -> 
-            if m.Index > pos then
-                Html.text (text.Substring(pos, m.Index - pos))
-            match m.Value with
-            | EndsWith "·e" prefix ->  
-                yield! inclspan prefix "e" ""
-            | EndsWith "·e·s" prefix ->  
-                yield! inclspan prefix "es" "s"
-            | EndsWith "x·se" prefix ->
-                yield! inclspan prefix "se" "x"
-            | EndsWith "eur·ice" prefix ->
-                yield! inclspan prefix "rice" "eur"
-            | EndsWith "eur·ice·s" prefix ->
-                yield! inclspan prefix "rices" "eurs"
-            | EndsWith "r·se" prefix->
-                yield! inclspan prefix "se" "r"
-            | EndsWith "le·a" _
-            | EndsWith "le·la" _ ->
-                yield! inclspan "l" "a" "e"
-            | EndsWith "Le·la" _ -> 
-                yield! inclspan "L" "a" "e"
-            | EndsWith "ton·ta" _ -> 
-                yield! inclspan "t" "a" "on"
-            | EndsWith "s·tes" prefix ->
-                yield! inclspan prefix "tes" "s"
-            | EndsWith "seul·e" _ ->
-                yield! inclspan "seul" "e" "" 
-            | EndsWith "il·elle" _ ->
-                yield! inclspan "" "elle" "il"
-            | EndsWith "Il·Elle" _ 
-            | EndsWith "Il·elle" _ ->
-                yield! inclspan "" "Elle" "Il"
-            | _ ->
-                printfn $"❌ {m.Value}"
-                Html.text m.Value
-            yield! inclusive' text (m.Index + m.Length) tail
-            
-    ]
-
-let inclusive (text: string) =
-    let matches = inclusiveRx.Matches(text) |> Seq.toList
-    inclusive' text 0 matches
-
-let renderSituationRecto n (situation: Situation) =
-
-    Html.div [
-        prop.className $"card recto situation { colorProp situation.Color } {pos n}"
-        if System.IO.File.Exists($"./cards/img/illustrations/situation-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/situation-{situation.Id}.webp)") ]
-        prop.children [
-            Html.h1 $"Situation {situation.Id}"
-            Html.div [
-                prop.className "description"
-                prop.children [
-                    for line in situation.Text do
-                        Html.p [
-                            for style, text in line do
-                                match style.FontStyle with
-                                | Regular -> yield! (inclusive text)
-                                | Italic -> Html.em (inclusive text)
-                                | Bold -> Html.strong (inclusive text)
-                            ]
-                        ]
-            ]
-        ]
-    ]
-
-let renderSituationVerso n  =
-    Html.div [
-        prop.className $"card verso situation {pos n}"
-    ]
-
-let renderStrategyRecto (n: int) (r: int) key (situation: Situation) (strategy: Strategy) =
-    Html.div [
-        let cls = match key with None -> "strategy" | Some _ -> "escalade"
-        prop.className $"card recto {cls} {colorProp situation.Color } {pos n}"
-        // match key with
-        // | None ->
-        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/strategie-e-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-e-{situation.Id}.webp)") ]
-        // | Some _ -> ()
-        elif System.IO.File.Exists($"./cards/img/illustrations/strategie-{situation.Id}.webp") then
-                prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-{situation.Id}.webp)") ]
-        // | Some _ -> ()
-
-        prop.children [
-            Html.h1 (
-                match key with
-                | None -> $"Stratégie {situation.Id}"
-                | Some c -> $"Escalade {situation.Id} {c}")
-            Html.div [
-                prop.className "description"
-                prop.children [
-                    for line in strategy.Text do
-                        Html.p [
-                            for style, text in line do
-                                match style.FontStyle with
-                                | Regular -> yield! (inclusive text)
-                                | Italic -> Html.em (inclusive text)
-                                | Bold -> Html.strong (inclusive text)
-                            ]
-                    ]
-                ]
-            Html.div [
-                let count =
-                    match key with
-                    | None -> situation.Strategies.Length
-                    | Some _ ->  situation.Escalades.Count
-                prop.className "count"
-                prop.children [
-                    Html.div (r+1)
-                    Html.div count
-                ]
-            ]
-
-            ]
-        ]
-let plusEscalade ids =
-    match ids with
-    | [] -> ""
-    | _ ->
-        let list = ids |> List.map string |> String.concat ""
-        $" + Escalade %s{list}"
-let scoreText txt =
-    if txt = "" then
-        txt
-    else
-         " " + txt
-
-
-let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
-    Html.div [
-        let cls = match key with None -> "strategy" | Some _ -> "escalade"
-        prop.className $"card verso {cls} {colorProp situation.Color } {pos n}"
-        // match key with
-        // | None ->
-        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/consequences-e-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-e-{situation.Id}.webp)") ]
-        elif System.IO.File.Exists($"./cards/img/illustrations/consequences-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-{situation.Id}.webp)") ]
-        // | Some _ -> ()
-
-        prop.children [
-            Html.h1 (
-                match key with
-                | None -> $"Conséquences {situation.Id}"
-                | Some c -> $"Conséquences {situation.Id} {c}")
-            Html.div [
-                prop.className "consequences"
-                prop.children [
-                    for consequence in strategy.Consequences do
-                        Html.p [
-                            Html.span [
-                                prop.className "dice"
-                                if consequence.Range.Min = consequence.Range.Max then
-                                    prop.text $"{consequence.Range.Min}\xA0:"
-                                else
-                                    prop.text $"{consequence.Range.Min} à {consequence.Range.Max}\xA0:"
-                            ]
-                            Html.text " "
-                            for style, text in consequence.Text do
-                                match style.FontStyle with
-                                | Regular -> Html.span (inclusive text)
-                                | Italic -> Html.em (inclusive text)
-                                | Bold -> Html.strong (inclusive text)
-
-                            Html.span [
-                                match consequence.Score with
-                                | Score (Some(score,txt),ids) when score > 0 ->
-                                    prop.className "score player"
-                                    prop.text $" (J%d{score}%s{scoreText txt}%s{plusEscalade ids})\n"
-                                | Score(Some(score,txt), ids) when score < 0 ->
-                                    prop.className "score system"
-                                    prop.text $" (S%d{-score}%s{scoreText txt}%s{plusEscalade ids})\n"
-                                | Score (Some(_,txt), ids) ->
-                                    prop.className "score zero"
-                                    prop.text $" (0%s{scoreText txt}%s{plusEscalade ids})\n"
-                                | Score(None, ids) ->
-                                    prop.className "score escalade"
-                                    let list = ids |> List.map string |> String.concat ""
-
-                                    prop.text $" (Escalade %s{list})\n"
-                                ]
-                            ]
-
-                        ]
-                ]
-
-            ]
-        ]
-
-let renderAleaRecto i (n: int) =
-    Html.div [
-        prop.className $"card recto alea a{n} {pos i}"
-        prop.children [
-            Html.div n
-        ]
-    ]
-
-let renderAleaVerso i  =
-    Html.div [
-        prop.className $"card verso alea {pos i}"
-    ]
-
-let render (cards: Card list) =
-    Html.html [
-        Html.head [
-            Html.meta [ prop.charset "utf-8" ]
-            Html.title [ prop.text "Transmission(s)" ]
-            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
-            Html.link [ prop.href "./stylesheets/cards.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
-            Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
-            Html.script [ prop.src "./js/anchor.js" ]
-        ]
-        Html.body [
-
-                for page in cards |> List.chunkBySize 9 do
-                    Html.section [
-                        prop.className "recto"
-                        prop.children [
-                            // Divs for the cricut cut marks
-                            Html.div [ prop.className "mark m-left m-top"]
-                            Html.div [ prop.className "mark m-right m-top"]
-                            Html.div [ prop.className "mark m-left m-bottom"]
-                            Html.div [ prop.className "mark m-right m-bottom"]
-
-                            for n,card in List.indexed page do
-                                match card with
-                                | Alea x ->
-                                    renderAleaRecto n x
-                                | Situation sit ->
-                                    renderSituationRecto n sit
-                                | Strategy(r,situation, strategy) ->
-                                    renderStrategyRecto n r None situation strategy
-                                | Escalade(c, r, situation, strategy) ->
-                                    renderStrategyRecto n r (Some c) situation strategy
-                        ]
-                    ]
-                    Html.section [
-                        prop.className "verso"
-                        prop.children [
-                            for n,card in List.indexed page do
-                                match card with
-                                | Alea _ ->
-                                    renderAleaVerso n
-                                | Situation _ ->
-                                    renderSituationVerso n
-                                | Strategy(_,situation, strategy) ->
-                                    renderStrategyVerso n None situation strategy
-                                | Escalade(c,_, situation, strategy) ->
-                                    renderStrategyVerso n (Some c) situation strategy
-                        ]
-                    ]
-        ]
-    ]
-
-let renderA7 (cards: Card list) =
-    Html.html [
-        Html.head [
-            Html.meta [ prop.charset "utf-8" ]
-            Html.title [ prop.text "Transmission(s)" ]
-            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
-            Html.link [ prop.href "./stylesheets/cards-a7.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
-            Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
-        ]
-        Html.body [
-                for card in cards  do
-                    Html.section [
-                        prop.className "recto"
-                        prop.children [
-                            // Divs for the cricut cut marks
-
-                            match card with
-                            | Alea x ->
-                                renderAleaRecto 0 x
-                            | Situation sit ->
-                                renderSituationRecto 0 sit
-                            | Strategy(r,situation, strategy) ->
-                                renderStrategyRecto 0 r None situation strategy
-                            | Escalade(c, r, situation, strategy) ->
-                                renderStrategyRecto 0 r (Some c) situation strategy
-                        ]
-                    ]
-                    Html.section [
-                        prop.className "verso"
-                        prop.children [
-                                match card with
-                                | Alea _ ->
-                                    renderAleaVerso 0
-                                | Situation _ ->
-                                    renderSituationVerso 0
-                                | Strategy(_,situation, strategy) ->
-                                    renderStrategyVerso 0 None situation strategy
-                                | Escalade(c,_, situation, strategy) ->
-                                    renderStrategyVerso 0 (Some c) situation strategy
-                        ]
-                    ]
-        ]
-    ]
-let renderA7recto (cards: Card list) =
-    Html.html [
-        Html.head [
-            Html.meta [ prop.charset "utf-8" ]
-            Html.title [ prop.text "Transmission(s)" ]
-            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
-            Html.link [ prop.href "./stylesheets/cards-a7.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
-            Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
-        ]
-        Html.body [
-                for card in cards  do
-                    Html.section [
-                        prop.className "recto"
-                        prop.children [
-                            // Divs for the cricut cut marks
-
-                            match card with
-                            | Alea x ->
-                                renderAleaRecto 0 x
-                            | Situation sit ->
-                                renderSituationRecto 0 sit
-                            | Strategy(r,situation, strategy) ->
-                                renderStrategyRecto 0 r None situation strategy
-                            | Escalade(c, r, situation, strategy) ->
-                                renderStrategyRecto 0 r (Some c) situation strategy
-                        ]
-                    ]
-                    match card with 
-                    | Situation _ -> ()
-                    | _ -> 
-                        Html.section [
-                            prop.className "verso"
-                            prop.children [
-                                    match card with
-                                    | Alea _ ->
-                                        renderAleaVerso 0
-                                    | Situation _ ->
-                                        renderSituationVerso 0
-                                    | Strategy(_,situation, strategy) ->
-                                        renderStrategyVerso 0 None situation strategy
-                                    | Escalade(c,_, situation, strategy) ->
-                                        renderStrategyVerso 0 (Some c) situation strategy
-                            ]
-                        ]
-        ]
-    ]
-
 fsi.PrintDepth <- 1
 let champigny =
     parse @"champigny.md"
     |> check
 
-let situations =
-    parse @"situations.md"
-    |> check
+type PlayerId = PlayerId of int
+type InterventionCard = Green | Red
+type WitnessIntervention = 
+    | Support
+    | BeCareful of Strategy
+type Interventions =
+    { Red: int
+      Green: int }
+type Player =
+    { Id: int
+      Confidence: int
+      Interventions: Interventions
+    }
+type Table =
+    { Players: Player[]
+      Current: int}
+type Game = 
+    {  Table: Table
+       Turn: int
+       System: int
+       InterventionDrawPile: InterventionCard list
+       InterventionDiscardPile: InterventionCard list
+       Situations: Situation list }
 
-System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
-let cards =
-    [ for situation in champigny do
-        Situation( situation)
-        for n,strategy in situation.Strategies |> Seq.indexed do
-            Strategy (n, situation, strategy)
-        for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
-            Escalade (key, n, situation, escalade)
+type InterventionResponse =
+    | ThankYou of Player * WitnessIntervention 
+    | MindYourOwnBusiness of Player * WitnessIntervention 
+
+
+type Step =
+    { Strategy: Strategy
+      OriginalStrategy: Strategy
+      Response: InterventionResponse option
+      Alea: int }
+
+module Interventions =
+    let draw (interventions, cards) =
+        match cards with
+        | Green :: tail ->
+            { interventions with Green = interventions.Green+1 }, tail
+        | Red :: tail ->
+            { interventions with Red = interventions.Red+1 }, tail
+        | [] -> failwith "Not enough cards"
+
+    let take card interventions =
+        match card with
+        | Green -> { interventions with Green = interventions.Green + 1}
+        | Red -> { interventions with Red = interventions.Red + 1}
+
+    let discard card interventions =
+        match card with
+        | Green -> { interventions with Green = interventions.Green - 1}
+        | Red -> { interventions with Red = interventions.Red - 1}
+
+
+    let setup cards =
+        ({ Green = 0; Red = 0}, cards)
+        |> draw
+        |> draw
+        |> draw
+
+module Player =
+    let setup id cards =
+        let interventions, cards = Interventions.setup cards
+        { Id = id
+          Confidence = 3
+          Interventions = interventions
+        }, cards
+
+module Table =
+    let empty = { Players = Array.empty; Current = 0}
+    let addPlayer player table =
+        { table with Players = table.Players |> Array.insertAt table.Players.Length player }
+
+    let next (table: Table) =
+        { table with Current = (table.Current + 1) % table.Players.Length }
+
+    let current (table: Table) =
+        table.Players[table.Current]
+
+    let observer (table: Table) =
+        table.Players[(table.Current+1) % table.Players.Length]
+
+    let witnesses (table: Table) =
+        let current = current table
+        let observer = observer table
+        table.Players
+        |> Seq.filter (fun p -> p <> current && p <> observer)
+        |> Seq.toList
+
+    let updatePlayer id f table =
+        { table with 
+            Players = table.Players |> Array.map (fun p -> if p.Id = id then f p else p) }
+
+
+
+
+module Range =
+    let contains x (r: Range) =
+        x >= r.Min && x <= r.Max
+
+module Game =
+    let addPlayer game =
+        let player, drawPile  = Player.setup game.Table.Players.Length game.InterventionDrawPile
+        { game with
+            Table =  Table.addPlayer player game.Table
+            InterventionDrawPile = drawPile }
+    
+    let rec addPlayers n game  =
+        if n = 0 then
+            game
+        else
+            addPlayers (n-1) (addPlayer game)
+
+    let shuffle game =
+        { game with InterventionDrawPile = game.InterventionDrawPile |> List.sortBy (fun _ -> Random.Shared.Next() )
+                    Situations = game.Situations |> List.sortBy (fun _ -> Random.Shared.Next() )}
+
+    
+    let empty situations =
+        { Table = Table.empty
+          Turn = 1
+          System = 0
+          InterventionDrawPile = [ for _ in 1 ..14 do
+                                        Green
+                                        Red ]
+          InterventionDiscardPile = []
+                                        
+          Situations = situations }
+
+    type WitnessStrategy = Strategy list -> Player -> (Player * WitnessIntervention) option
+    type ResponseStrategy = Player -> Player -> Game -> InterventionCard
+    type EndStrategy = Game -> bool
+
+    type GameStrategies =
+        { WitnessStrategy: WitnessStrategy
+          ResponseStrategy: ResponseStrategy
+          EndStrategy: EndStrategy
+           }
+
+    let witnessStrategy playPercent otherStrategies (witness: Player) =
+        if Random.Shared.Next(0,100) < playPercent then
+            let choice =
+                match witness.Interventions with
+                | { Red = 0} -> Green
+                | { Green = 0} -> Red
+                | _ -> 
+                    if Random.Shared.Next(2) = 0 then
+                        Green
+                    else
+                        Red
+            match choice with
+            | Green -> Some (witness,Support)
+            | Red ->
+
+                let chosen = Random.Shared.Next(List.length otherStrategies)
+                if chosen >= List.length otherStrategies then
+                    // there is no other strategies to chose from
+                    None
+                else
+                    Some (witness, BeCareful (otherStrategies[chosen]))
+        else
+            None
+
+    let responseStrategy (witness: Player) (player: Player) (game: Game) =
+        [ for _ in 1 .. player.Interventions.Green do
+            Green
+          for _ in 1 .. player.Interventions.Red do
+            Red
+        ]
+        |> List.sortBy (fun _ -> Random.Shared.Next())
+        |> List.head
+
+    let responseStrategy2 proba (witness: Player) (player: Player) (game: Game) =
+        if player.Interventions.Green = 0 then
+            Red
+        elif player.Interventions.Red = 0 then
+            Green
+        else
+            if Random.Shared.Next(0,100) <= proba then
+                Green
+            else
+                Red
+
+    let responseStrategy3 probaAccept probaAccept2 systemBlock (witness: Player) (player: Player) (game: Game) =
+        if player.Interventions.Green = 0 then
+            Red
+        elif player.Interventions.Red = 0 then
+            Green
+        else
+            let p =
+                if game.System >= systemBlock then
+                    probaAccept2
+                else
+                    probaAccept
+
+            if Random.Shared.Next(0,100) <= p then
+                Green
+            else
+                Red
+
+    type InterventionState =
+        | NoIntervention of  witnesses: Player list
+        | Intervened of  InterventionResponse
+
+    let rec playSituation' (gameStrategies: GameStrategies) (situation: Situation) player (interventionState: InterventionState) (strategies: Strategy list) score steps game =
+
+        let chosenIndex = Random.Shared.Next(strategies.Length)
+        let originalyChosen = strategies[chosenIndex]
+
+        let chosen, interventionState =
+            match interventionState with
+            | NoIntervention witnesses ->
+
+                let otherStrategies = strategies |> List.filter (fun s -> s <> originalyChosen)
+
+                let intervention =
+                    witnesses
+                    |> List.choose (fun w ->
+                        try
+                            gameStrategies.WitnessStrategy otherStrategies w
+                        with
+                        | ex -> raise (Exception($"No strategy left in situation {situation.Id} {situation.Title}"))
+                            )
+                    |> List.sortBy (fun _ -> Random.Shared.Next())
+                    |> List.tryHead
+                
+                let proposed, witness =
+                    match intervention with
+                    | None -> None, None
+                    | Some (witness,Support) -> None, Some ({ witness with Player.Interventions.Green = witness.Interventions.Green - 1 }, Support)
+                    | Some (witness, BeCareful strategy ) -> Some strategy, Some ({ witness with Player.Interventions.Red = witness.Interventions.Red - 1}, BeCareful strategy)
+
+
+                let response =
+                    match witness with
+                    | None -> None
+                    | Some (w,_) -> Some (
+                            try
+                                gameStrategies.ResponseStrategy w player game
+                            with
+                            | ex -> raise (Exception($"Error at situation {situation.Id} {situation.Title}",ex))
+                                )
+
+                let chosen =
+                    match proposed, response with
+                    | Some p, Some Green -> p
+                    | _ -> originalyChosen
+                chosen, 
+                    match response, witness with
+                    | Some Green, Some (w, i) -> Intervened (ThankYou(w,i))
+                    | Some Red, Some (w, i) -> Intervened (MindYourOwnBusiness(w,i))
+                    | None, _ -> interventionState
+                    | _ -> failwith "Unknown case"
+            | Intervened _ -> 
+                originalyChosen, interventionState
+
+        let alea = Random.Shared.Next(10) + 1
+
+        let consequence = chosen.Consequences |> List.find (fun c -> Range.contains alea c.Range)
+
+        let step = { Strategy = chosen
+                     OriginalStrategy = originalyChosen
+                     Response = match interventionState with
+                                | NoIntervention _ -> None
+                                | Intervened r -> Some r
+        
+                  ; Alea = alea}
+
+        match consequence.Score with
+        | Score (Some (n, ""), []) -> score + n, interventionState, List.rev (step::steps)
+        | Score (Some (n, "ET choisis une autre Stratégie"), escalades)
+        | Score (Some (n, "OU choisis une autre Stratégie"), escalades)
+        | Score (Some (n, "ET choisis une autre Escalade"), escalades) ->
+            playSituation' gameStrategies situation player interventionState (List.filter (fun s -> s <> chosen) strategies @ [ for e in escalades -> situation.Escalades[e]] ) (score + n) (step :: steps) game
+        | Score (None, escalades) ->
+            playSituation' gameStrategies situation player interventionState [ for e in escalades -> situation.Escalades[e]] score (step :: steps) game
+        | s -> failwith $"Unknown score %A{s}"
+
+
+    let applyScore player score intervention game =
+        match intervention with 
+        | NoIntervention _ -> 
+            if score >= 0 then
+                { game with Table = game.Table |> Table.updatePlayer player.Id (fun p -> { player with Confidence = player.Confidence + score}) }
+            else
+                { game with System = game.System + (-score)}
+        | Intervened (ThankYou(witness,i)) ->
+            let discardPile = Green :: (match i with Support -> Green | BeCareful _ -> Red ) :: game.InterventionDiscardPile
+            let pi,wi, drawPile, discardPile =
+                match game.InterventionDrawPile with
+                | x :: y :: tail -> x, y, tail, discardPile
+                | tail -> 
+                    let newDiscardPile = tail @ discardPile |> List.sortBy (fun _ -> Random.Shared.Next())
+                    match newDiscardPile with
+                    | x :: y :: tail ->
+                        x,y, tail, []
+                    | _ -> failwith "Not enough cards"
+
+            if score >= 0 then
+                { game with
+                    Table =
+                        game.Table
+                        |> Table.updatePlayer player.Id (fun p -> { p with Confidence = p.Confidence + score + 2 
+                                                                           Player.Interventions = p.Interventions |> Interventions.discard Green |> Interventions.take pi })
+                        |> Table.updatePlayer witness.Id (fun p -> { p with Confidence = p.Confidence + 2
+                                                                            Player.Interventions = witness.Interventions |> Interventions.take wi }) 
+                    System = max 0 (game.System - 2)
+                    InterventionDrawPile = drawPile
+                    InterventionDiscardPile = discardPile
+                    }
+            else
+                { game with 
+                    System = game.System + (-score) + 1
+                    Table = 
+                        game.Table 
+                        |> Table.updatePlayer player.Id (fun p -> { p with Player.Interventions = p.Interventions |> Interventions.discard Green |> Interventions.take pi })
+                        |> Table.updatePlayer witness.Id (fun p -> { p with Player.Interventions = witness.Interventions |> Interventions.take wi })
+                    InterventionDrawPile = drawPile
+                    InterventionDiscardPile = discardPile
+                            }
+        | Intervened (MindYourOwnBusiness(witness,i)) ->
+            let discardPile = Red :: (match i with Support -> Green | BeCareful _ -> Red ) :: game.InterventionDiscardPile
+            let pi,wi, drawPile, discardPile =
+                match game.InterventionDrawPile with
+                | x :: y :: tail -> x, y, tail, discardPile
+                | tail -> 
+                    let newDiscardPile = tail @ discardPile |> List.sortBy (fun _ -> Random.Shared.Next())
+                    match newDiscardPile with
+                    | x :: y :: tail ->
+                        x,y, tail, []
+                    | _ -> failwith "Not enough cards"
+
+            { game with
+                Table =
+                    game.Table
+                    |> Table.updatePlayer player.Id (fun p -> { p with Confidence =  p.Confidence + if score >= 0 then  score else 0
+                                                                       Player.Interventions = p.Interventions |> Interventions.discard Red |> Interventions.take pi })
+                    |> Table.updatePlayer witness.Id (fun p -> { p with Confidence = p.Confidence + if score <= 0 then -score else 0
+                                                                        Player.Interventions = witness.Interventions |> Interventions.take wi})
+                System = game.System + 1
+                InterventionDrawPile = drawPile
+                InterventionDiscardPile = discardPile
+                }
+
+
+    let playSituation gameStrategies game =
+        let situation = game.Situations |> List.head
+        let player = Table.current game.Table
+        let witnesses = Table.witnesses game.Table
+        let score, intervention, steps = playSituation' gameStrategies situation player (NoIntervention witnesses) situation.Strategies 0 [] game
+        applyScore player score intervention game, steps
+
+    let next game =
+        { game with Table = Table.next game.Table
+                    Turn = game.Turn + 1
+                    Situations = 
+                        match game.Situations with
+                        | head :: tail -> tail @ [head]
+                        | _ -> failwith "Nope"}
+
+    let finished systemEnd playerEnd game =
+        game.System >= systemEnd || (game.Table.Players |> Array.exists (fun p -> p.Confidence >= playerEnd))
+
+    let finishedWithBlocking systemBlock systemEnd playerEnd game =
+        game.System >= systemEnd || (game.System < systemBlock && (game.Table.Players |> Array.exists (fun p -> p.Confidence >= playerEnd)))
+    let run gameStrategies situations players =
+        let rec loop game =
+            if gameStrategies.EndStrategy game then
+                game
+            else
+                let game, steps = playSituation gameStrategies game 
+                loop (next game)
+
+
+        loop (empty situations |> shuffle |> addPlayers players)
+
+
+    // let turn game =
+    //     match game.Situations with
+    //     | situation :: rest ->
+
+
+            
+    //         match consequence.Score with
+    //         |
+        
+    //     | _ -> failwith "No sitation left"
+
+let game =
+    Game.empty champigny
+    |> Game.shuffle
+    |> Game.addPlayers 4
+
+game.Table.Players
+fsi.PrintDepth <- 5
+
+let gameStrategies = 
+    { Game.WitnessStrategy = Game.witnessStrategy 50
+      Game.ResponseStrategy =  Game.responseStrategy3 50 90 10 //Game.responseStrategy
+      Game.EndStrategy = Game.finishedWithBlocking 10 15 15}
+
+let printGame (game: Game)= 
+    [
+        sprintf "Turn: %d" game.Turn
+        sprintf "System Score: %d" game.System
+        let current = Table.current game.Table
+        for p in game.Table.Players do
+            let pfx = 
+                if p.Id = current.Id then
+                    "> "
+                else
+                    "  "
+            let ints =
+                [ for _ in 1 .. p.Interventions.Green do
+                    "G" 
+                  for _ in 1 .. p.Interventions.Red do
+                    "R"
+                ] |> String.concat ""
+            sprintf "%s Player %d: %d %s" pfx p.Id p.Confidence ints
+    ] |> String.concat "\n"
+
+fsi.AddPrinter printGame
+    
+
+let game, steps = Game.playSituation gameStrategies game
+let game = Game.next game
+game.InterventionDrawPile
+game.InterventionDiscardPile
+
+let games =
+    [ for i in 0 .. 100000 do
+        Game.run gameStrategies champigny 4
     ]
 
-let html =
-    render cards
-    |> Render.htmlView
+#r "nuget: XPlot.Plotly"
 
-System.IO.File.WriteAllText("./cards/champigny.html", html)
+open XPlot.Plotly
 
-[ for situation in champigny do
-    Situation situation
-    for n,strategy in situation.Strategies |> Seq.indexed do
-        Strategy (n, situation, strategy)
-     ]
-|> renderA7 |> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/champigny-a7.html", html)
+[games  |> List.filter (fun g -> g.System >= 15) |> List.countBy  (fun g -> g.Turn) |> List.sortBy fst
+ games  |> List.filter (fun g -> g.System < 15) |> List.countBy  (fun g -> g.Turn) |> List.sortBy fst
+] |> Chart.Column |> Chart.WithLabels (["System"; "Players"]) |> Chart.WithLayout (Layout(barmode = "stack")) |> Chart.WithTitle "Turns historgram" |> Chart.Show
+games |> List.filter (fun g -> g.System >= 15) |> List.length 
+games |> List.filter (fun g -> g.System < 15) |> List.countBy (fun g -> g.Table.Players |> Array.maxBy (fun g -> g.Confidence) |> fun p -> p.Id) |> List.sortByDescending snd
 
-[ for situation in champigny do
-    if situation.Id <> 14 then
-        Situation situation ]
-|> renderA7recto |> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/champigny-a7-recto.html", html)
+games |> List.filter (fun g -> g.System < 15) |> List.countBy (fun g -> g.System) |> Chart.Column |> Chart.WithTitle "System score when player wins"  |> Chart.Show
+games |> List.filter (fun g -> g.System >= 15) |> List.countBy (fun g -> g.Table.Players |> Array.maxBy _.Confidence |> _.Confidence) |> Chart.Column |> Chart.WithTitle "Best player score when system wins" |> Chart.Show
 
-[ for situation in champigny do
-    if situation.Id <> 14 && situation.Id <> 18 then
-        Situation( situation)
-
-  for situation in champigny do
-        if situation.Id = 18 then
-            Situation( situation)
-            for n,strategy in situation.Strategies |> Seq.indexed do
-                Strategy (n, situation, strategy)
-            for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
-                Escalade (key, n, situation, escalade)
-    ]
-|> renderA7recto |> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/situation18-a7", html)
-
-let alea = [ for i in 1 .. 10 do Alea i ]
-
-let aleahtml =
-    render (alea  )
-    |> Render.htmlView
-System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
-
-alea
-|> renderA7 |> Render.htmlView
-|> fun html -> System.IO.File.WriteAllText("./cards/alea-a7.html", html)
