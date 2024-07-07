@@ -139,6 +139,16 @@ section {
     background-size: contain;
 }
 
+.verso.situation svg {
+    position: absolute;
+    width: 15mm;
+    border:  none;
+    background-color: white;
+    border-radius: 1.5mm;
+    left: 5mm;
+    bottom: 5mm;
+}
+
 .escalade {
     /* for escalades, the illustration has no underlay 
        the overlay is used to draw a solid border at the top

@@ -19,18 +19,6 @@
 # COLLÈGE ELSA TRIOLET - CLASSES DE 4E
 
 
-## Le camarade battu
-
-C'est la rentrée et tu es assis à côté d'un élève. Chaque jour, tu constates qu'il a de nouveaux bleus sur son corps. Un jour il se confie à moi pour me parler de ce qu’il vit à la maison.
-
-
-
-* **je l’écoute mais c‘est ses affaires**
-* **je lui propose d’en parler à des adultes**
-* **je vais en parler à à des adultes **
-* **j’en parle à d’autres élèves pour leur demander des conseils **
-
-
 ## 14. La vieille dame raciste [S : 1 / R : 5 / E : 6 = 12]
 
 Il est 17h30 en plein été, tu rentres des cours et tu prends le bus 208b. Tu aperçois une vieille dame chargée de courses. Arrivé·e à son arrêt, tu décides de l'aider à descendre en soulevant ses paquets. Elle te dit alors : _« Touche pas à mes courses avec tes mains sales de noir·e. » _
@@ -102,19 +90,6 @@ Il est 17h30 en plein été, tu rentres des cours et tu prends le bus 208b. Tu a
  
 
 
-## X. Le frère indifférent
-
-Dans la cour de l’école, au moment de la récré, tu vois une fille pousser, sans faire exprès, une autre fille. Celle-ci tombe sur une plaque d'égout et est salement amochée. En pleurs, elle te demande d’aller chercher son frère en train de jouer au foot. Ce dernier t’ignore et continue de jouer avec ses amis.
-
-
-
-* je le laisse et je retourne au côté de mon amie.
-* je l’engueule.
-* je tente de le convaincre de venir aider sa soeur.
-* j’interpelle ses copains sur son comportement.
-* je prends le ballon pour interrompre la partie et le forcer à me suivre.
-
-
 ## 25. L’ami qui se fait frapper
 
 Dans la rue, tu vois ton meilleur ami coincé par un groupe de jeunes qui l’encerclent, il semble mal à l’aise. Après un moment, les jeunes finissent par partir en ayant l’air de se moquer de lui. Tu le rejoins et il te confie se faire harceler par ces garçons depuis un moment.
@@ -122,27 +97,35 @@ Dans la rue, tu vois ton meilleur ami coincé par un groupe de jeunes qui l’en
 
 
 * **_« Ignore-les, c’est des lâches. Il s’en prennent à toi parce qu’ils sont plusieurs. Le mieux, c’est de ne pas réagir : ça va finir par passer. »_**
-    * **1 à 2 :** _« Tu crois que je n'ai pas essayé ?! Là, j’en peux plus, il faut que tu m’aides, en fait. »** (S1 ET choisis une autre Stratégie)**_
-    * **3 à 4 : _« Je vais essayer de faire comme t’as dit... » _**et ramène vite la conversation à des sujets plus agréables. Tu ne sais pas s’il a répondu ça pour te faire plaisir ou attendait plus d’aide de ta part. **(0)**
-    * **5 à 6 :** Il se met à pleurer : _« Ok donc tout le monde s’en fout ! Je croyais que toi, tu comprendrais. »_ Il s’en va l’air triste et en colère. Il te demandait de te mettre à sa place et tu n’as pas voulu l’entendre. **(S3)**
+    * **1 à 2 :** _« Tu crois que je n'ai pas essayé ?! J’en peux plus, il faut que tu m’aides. »** (S1 ET choisis une autre Stratégie + Escalade)**_
+        * **_« Bah, réagis aussi ! Ils vont pas te lâcher si tu te laisses faire. »_**
+            * **1 à 2 :_ « J’ai déjà essayé, qu’est ce que tu crois… »_** Lui proposer de se débrouiller seul n'était peut-être pas la meilleure réaction pour un·e ami·e… **(0 ET choisis une autre Stratégie)**
+            * **3 à 4 :_ « T’es pas à ma place, c’est pas en me culpabilisant que tu vas m’aider ! » _**En plus d’être agressive, ta réponse vous enferme dans un modèle où le seul recours pour un homme est la violence. **(S2)**
+            * **5 à 6 :_ « Et si je veux pas me battre ? Toi aussi tu vas me dire que je suis un PD ? T’es comme eux, en fait !_** » En lui demandant de se confronter à eux, tu n’as fait qu’entretenir les injonctions virilistes qui nourrissent les clichés homophobes. **(S3)**
+            * **7 à 8 :** Il s’en va sans rien dire, l’air triste. Alors qu’il était en difficulté, tu en as rajouté une couche. Comme ses agresseurs, finalement... **(S1)**
+            * **9 à 10 :_ « T’as raison, je vais leur régler leur compte ! » _**Tu lui as redonné confiance mais réalises que tu viens peut-être de le mettre en danger... **(J2)**
+        * **_« Tu as déjà pensé à t’inscrire à un cours de self-defense ? On peut y aller ensemble, si tu veux. »_**
+            * **1 à 4 :_ « C’est une bonne idée, j’y avais jamais pensé ! »_** Tu lui as redonné espoir dans le fait qu’il y ait une issue possible. **(J3)**
+            * **5 à 7 :_ « Mais, j’ai pas envie de me battre moi, je veux juste qu’ils me laissent tranquille… »_ **En lui proposant cela, tu actes le fait qu’il devra en passer par la violence pour s’en sortir. **(S2)**
+            * **8 à 10 :** «_ De toutes façons ça changera rien, ils sont plus nombreux… » _Malgré tes efforts, ton ami a perdu confiance en lui, comme de nombreuses victimes de harcèlement. **(0)**
+    * **3 à 4 : _« Je vais essayer de faire comme ça... » _**et change vite de sujet. Tu ne sais pas s’il a répondu ça pour te faire plaisir ou attendait plus d’aide de ta part. **(0)**
+    * **5 à 6 :** Il se met à pleurer : _« Ok donc tout le monde s’en fout ! Je croyais que toi, tu comprendrais. »_ Il te demandait de te mettre à sa place et tu n’as pas voulu l’entendre. **(S3)**
     * **7 :** Il te regarde et s’en va sans rien dire. Tu as sûrement mal perçu sa détresse et ta réponse n’était pas appropriée. **(S2)**
-    * **8 à 9 :_ « T’as raison, je sais qu’ils n’oseraient pas s’en prendre à moi s’ils étaient tous seuls… » _**Tu sens qu’il a un peu repris confiance en lui grâce à tes mots. **(J1)**
-    * **10 :_ « T’as raison, faut vraiment que je les ignore et que je les laisse pas me pourrir la vie ! » _**Le fait de t’en avoir parlé et ton conseil l‘ont reboosté. **(J2)**
+    * **8 à 9 :_ « T’as raison, ils n’oseraient pas s’en prendre à moi s’ils étaient seuls… » _**Tu sens qu’il a un peu repris confiance en lui grâce à tes mots. **(J1)**
+    * **10 :_ « T’as raison, faut pas que je les laisse pas me pourrir la vie ! » _**Ton conseil lui a redonné confiance dans sa capacité à faire face. **(J2)**
 * **_« Pourquoi tu ne m’en as pas parlé plus tôt ? Est ce que je peux t’aider ? »_**
-    * **1 à 2 :_ « J’espérais que ça s’arrangerait. Mais ça me fait vraiment du bien de pouvoir compter sur toi. » _**Lui proposer ton aide l’a sorti de son isolement. Il faudra te montrer à la hauteur de sa confiance.** (J3)**
-    * **3 à 4 :_ « Ça fait des mois que ça dure et tu vas me faire croire que t’as rien vu ?! » _**Sans forcément t’en rendre compte, tu l’as culpabilisé et il te le renvoie. Peut-être qu’il y avait des signes que tu n’as pas su voir. **(S1)**
+    * **1 à 2 :_ « J’espérais que ça s’arrangerait. Mais ça me fait du bien de pouvoir compter sur toi. » _**Lui proposer ton aide l’a sorti de son isolement. Il faudra te montrer à la hauteur de sa confiance.** (J3)**
+    * **3 à 4 :_ « Ça fait des mois que ça dure et tu vas me faire croire que t’as rien vu ?! »_** Tu l’as culpabilisé et il te le renvoie. Peut-être qu’il y avait des signes que tu n’as pas su voir. **(S1)**
     * **5 à 6 :_ « J’avais honte, je voulais pas passer pour un mec faible… » _**Demander de l’aide quand on en a besoin ne devrait pas passer pour un signe de faiblesse, même quand on est un homme. **(J2)**
-    * **7 à 8 :_ « Et, m’aider comment ? Qu’est-ce-que tu comptes faire ? » _**Sans forcément t’en rendre compte, tu t’es posé·e en sauveur·se. Maintenant t’as intérêt à assurer ! **(0 ET choisis une autre Stratégie)**
+    * **7 à 8 :_ « Et, m’aider comment ? Qu’est-ce-que tu comptes faire ? » _**Tu as choisi de te poser en sauveur·se : il va falloir assurer maintenant. **(0 ET choisis une autre Stratégie + Escalade)**
+        * **_[« Bah, réagis aussi ! Ils vont pas te lâcher si tu te laisses faire. »]_**
+        * **_[« Tu as déjà pensé à t’inscrire à un cours de self-defense ? On peut y aller ensemble, si tu veux. »]_**
     * **9 à 10 : _« Ça va j’suis un mec je peux me débrouiller tout seul ! » _** Si il s’est confié à toi c’est pourtant bien pour une raison… Mais le besoin de paraître viril l’isole complètement. **(S3)**
-* **_« Bah, réagis aussi ! Ils vont pas te lâcher si tu te laisses faire. »_**
-    * _« Mais j’ai déjà essayé, qu’est ce que tu crois… »_ Lui proposer de se débrouiller tout seul n'était peut-être pas la meilleure réaction pour quelqu’un qui se dit son ami… **(0 ET choisis une autre Stratégie)**
-    * _« Facile à dire, t’es pas à ma place ! C’est pas en me culpabilisant que tu vas m’aider ! » _Il a raison, en plus d’être agressive, ta réponse vous enferme dans un modèle où le seul recours pour un homme est la violence. **(S2)**
-    * _« Et si j’ai pas envie de me battre ? Toi aussi tu vas finir par me dire que je suis un PD, c’est ça ? T’es comme eux, finalement._ » En lui demandant de se confronter à eux, tu n’as fait qu’entretenir les injonctions virilistes qui nourrissent les clichés homophobes. **(S3)**
-    * **7 :** Il te regarde et s’en va sans rien dire, l’air triste. Alors qu’il était en difficulté, tu en as rajouté une couche. Est-ce que c’est pas ce que font ses agresseurs, finalement ? **(S1)**
-    * **10 :_ « T’as raison, je vais leur régler leur compte ! » _**Tu lui as redonné confiance mais réalise au même moment que tu viens peut-être de le mettre en danger... **(J2)**
 * **_« Viens, on va porter plainte tout de suite. »_**
     * **1 à 3 :** Il te suit l’air déterminé et te dit : _« Tu as raison, il est temps de régler cette affaire une bonne fois pour toutes. »_ Tu ne sais pas si ça règlera le problème mais le soutenir dans cette démarche lui a redonné confiance dans le fait qu’il y ait une issue. **(J3)_  _**
-    * **4 à 6 :_ « Ça sert à rien de toute façon, c’est pas assez grave pour qu’ils fassent quelque chose… » _**Consciemment ou pas, il refuse de voir la gravité de ce qu’il traverse. **(0 ET choisis une autre Stratégie) **
+    * **4 à 6 :_ « Ça sert à rien de toute façon, c’est pas assez grave pour qu’ils fassent quelque chose… » _**Consciemment ou pas, il refuse à voir la gravité de ce qu’il traverse. **(0 ET choisis une autre Stratégie + Escalade)**
+        * **_[« Bah, réagis aussi ! Ils vont pas te lâcher si tu te laisses faire. »]_**
+        * **_[« Tu as déjà pensé à t’inscrire à un cours de self-defense ? On peut y aller ensemble, si tu veux. »]_**
     * **7 à 8 :_ « T’inquiète pas pour moi… ça va, je gère ! Mais merci, en tout cas.» _**Il dit sûrement ça pour te rassurer mais au moins il sait qu’il peut compter sur toi. **(J2)**
     * **9 à 10 :** Il s’en va en te lançant :_ « Tu veux m’attirer encore plus de problèmes ou quoi ? Je t’ai rien demandé ! » _Même si ça partait d’une bonne intention, choisir à sa place l’a mis en difficulté. **(S2)**
 * **Je me dirige vers eux, l’air déterminé·e : « _Bouge-pas, je vais leur dire de te foutre la paix_. »**
@@ -151,12 +134,22 @@ Dans la rue, tu vois ton meilleur ami coincé par un groupe de jeunes qui l’en
     * **_5 à 6 : « Merci mais il est hors de question que tu règles mes problèmes à ma place. » _**La prochaine fois demande-lui avant de prendre l’initiative à sa place. **(0)**
     * **7 à 8 :** Il te suit l’air déterminé et te dit : « _T’as raison, je viens avec toi. Il est temps de régler cette affaire une bonne fois pour toutes_. » Quoi qu’il se passe, ta détermination a été contagieuse. **(J3)**
     * **9 à 10 :** _« Super, merci beaucoup. Tu me sauves vraiment. » _Il t’as pris·e au mot et te regarde, tu n’as plus le choix désormais… **(J1)**
-* Le mieux c’est que tu en parles à quelqu’un.
-    * Mais, je t’en parle à toi là, justement…
-    * Oui, tu as raison faut que j’en parle à quelqu’un
-    * J’en ai déjà parlé, ça n’a rien changé
-    * Quelqu’un qui pourrait m’aider. Pas toi, tu veux dire ?!
-    * 
+* **_« Tu devrais en parler à quelqu’un, il ne faut pas rester seul dans ces cas-là. »_**
+    * **1 à 3 :_ « Bah justement, je t’en parle là… » _**Il te fait remarquer que tu esquives tes responsabilités. **(S1 ET choisis une autre Stratégie + Escalade)**
+        * **_[« Tu as déjà pensé à t’inscrire à un cours de self-defense ? On peut y aller ensemble, si tu veux. »]_**
+    * **4 à 5 :_ « Tu as raison, je ne m’en sortirai pas seul. »_** Il y a des personnes qui sont plus à même d’intervenir dans ce type de situations. Et le fait de t’en avoir parlé, lui permet de s’adresser à elles maintenant. **(J1)**
+    * **6 à 8 :_ « J’en ai déjà parlé mais personne ne prend ça au sérieux… »  _(Escalade)**
+        * **_« Moi, je te prends au sérieux et je peux témoigner. »_**
+            * **1 à 2 :** Il te suit l’air déterminé et te dit : « _T’as raison, viens avec moi, je sais qui pourra m’aider. _» Quoi qu’il se passe, ta détermination a été contagieuse. **(J3)**
+            * **3 à 7 :_ « Merci, ça fait du bien de pouvoir compter sur toi. »_** Ta bienveillance a déjà eu un effet positif sur ton ami. **(J1)**
+            * **8 à 10 :_ « Merci mais, de toute façon, ça changera rien… » _**Ton ami a perdu toute confiance en sa capacité d’agir, comme beaucoup de victimes de harcèlement. Il va falloir être très présent·e pour lui permettre de s’en sortir. **(S1)**  
+        * **_[« Bah, réagis aussi ! Ils vont pas te lâcher si tu te laisses faire. »] _**
+        * **_[« Tu as déjà pensé à t’inscrire à un cours de self-defense ? On peut y aller ensemble, si tu veux. »]_**
+        * **_«  Mais, tu en as parlé à qui ? »_**
+            * **1 à 4 :_ « Peut-être pas aux bonnes personnes, je veux bien tes conseils. »_** Il semble prêt à trouver une solution en comptant sur ton aide.** (J2)**
+            * **5 à 8 :_ « Bah, à plein de gens et ça change rien… »_ **Ton ami a perdu toute confiance en sa capacité d’agir, comme beaucoup de victimes de harcèlement. Il va falloir être très présent·e pour lui permettre de s’en sortir. **(S1)**
+            * **9 à 10 :_ « Bah, à des gens qui auraient pu m’aider et qui n’ont rien fait. Tu crois que je suis bête ou quoi ? »_** Il est agacé que tu remettes en cause son envie de s’en sortir. **(S2)**
+    * **9 à 10 :_ « Ah, donc toi non plus tu vas rien faire pour m’aider, en fait ?! »_** Il s’en va l’air furieux, et te fait remarquer ta lâcheté car tu ne lui as pas proposé de l’aider directement. **(S3)**
 
 
 ## 15. La boulangerie [S : 1 / R : 5 / E : 10 = 16]
@@ -238,19 +231,6 @@ Il est midi, tu sors acheter du pain à la boulangerie la plus proche de chez to
     * **5 à 6 :** La personne répond et te dit : _« C’est pas bien grave, tu dramatises tout. »_ Bientôt ça va être de ta faute ! **(S2)**
     * **7 à 8 :** La personne arrive pour te soutenir et l’homme file en la voyant arriver. **(J2)**
     * **9 à 10 :** La personne arrive pour te soutenir et l’homme finit par s'excuser, honteux. **(J3)**
-
-
-## X. L’ex violent réflechir au vice-versa
-
-C'est ton anniversaire et ta copine est sortie pour te faire une surprise. Deux heures plus tard, elle revient en pleurant avec un bleu sur la joue. Elle te dit qu’elle vient de croiser son ex dans la rue qui vient de lui faire ça. “”
-
-
-
-* **Je lui propose d’appeler la police.**
-* **_“ Mais dans quelles circonstances ça s’est passé ? “_**
-* **_“ Il doit être vraiment malheureux pour faire ça. “_**
-* **_“ Est ce que tu veux que j’aille le voir ? “_**
-* **_“ Je t’interdis de le revoir ! “_**
 
 
 ## 16. Ca vient d’où ? [S : 1 / R : 5 / E : 12 = 18][A REECRIRE AVEC UN GROUPE DE FILLES ]
@@ -342,61 +322,6 @@ Tu prends le RER pour aller rendre visite à un ami. A peine sorti de la gare, 
 
  
 
- 
-
-
-## T’es bonne
-
-Dans les couloirs du collège avec un groupe de garçons se trouvant derrière-toi. Soudain, ils crient : _« T’es bonne ! »_, se mettent à courir et te claquent les fesses en te dépassant.
-
-
-
-* ** Je les suis et arrivée à leur niveau, je leur dis : _« Comment réagiriez-vous si j’en faisais autant ? »_**
-    * Ils éclatent de rire et repartent tous ensemble. Frustrée de ne pas avoir pu faire évoluer les choses…
-    * Ils me tendent leurs fesses et me répondent : _« Bah, vas-y ! »** **_
-    * Je les laisse en plan mais, mais décide de ne pas en rester là.
-* Ils s’excusent et me disent qu’ils ne sont pas fiers de ce qu’ils ont fait.
-* **Je crie pour alerter les adultes, en espérant qu’ils vont être attrapés et punis.**
-    * La CPE sort de son bureau et leur demande de venir s’expliquer. **(J2)**
-    * Personne ne se trouve dans les couloirs. Ils partent en courant. **(S2)**
-* **Je pars en courant, en espérant ne plus les croiser. (S1)**
-* **Ils habitent mon quartier, je connais leurs parents. Demain je vais aller les voir, je ne vais pas me laisser faire ! (J2)**
-
-
-## L’inconnu qui menace
-
-Sur le chemin du collège, un inconnu te suit depuis 20 min. Arrivé à ta hauteur, il commence à te menacer en te disant que si tu ne viens pas avec lui, il va te faire du mal. 
-
-<span style="text-decoration:underline;">Escalade</span>
-
-Heureusement, tes amis te voient et tu arrives à rentrer dans l'école. Mais à la moitié du cours, tu es appelé à aller dans le bureau de la CPE, Tu t'y rends et la CPE te dit qu'un homme se présentant comme ton père veut que tu rentres avec lui. 
-
-
-## Témoin d’une agression
-
-Tu marches dans la rue avec une amie lorsque tu vois un homme mettre à terre une femme et lui voler son sac et son téléphone.
-
-
-
-* **Je cours vers eux avec ton amie en criant.**
-    * Il prend la fuite. 
-
- 
-
-
-## Le groupe de jeunes
-
-En vacances avec tes parents, tu te balades dans la rue. Depuis quelque temps, tu aperçois un groupe de jeunes qui vous suivent. Au début, tu te dis qu'ils vont dans la même direction que vous. Mais lorsque vous changez de rue, ils vous suivent à nouveau. Vous changez alors de rue plusieurs fois. Et vous vous retournez pour voir s'ils vous suivent toujours. Ils sont toujours derrière vous !
-
-
-
-* **Je leur propose de changer de trottoir. **
-* **Vous prenez la première rue qui croise votre route et au coin, vous vous mettez tous à courir. **
-
- 
-
- 
-
 
 ## 22. Les voitures garées [S : 1 / R : 5 / E : 8 = 14]
 
@@ -477,6 +402,37 @@ Soudain, tu entends un bruit de moteur derrière toi : c’est une camionnette q
     * **5 à 6 :** Un enfant sort de la camionnette et tu entends de loin son père lui dire : _« Fais bien attention en rentrant ! »_ Ca te rappelle les paroles de tes parents et tu commences à comprendre d’où te vient cette peur. **(J1)**
     * **7 :** La camionnette redémarre aussitôt et te croise au ralenti. Plus de peur que de mal mais tu n’arrives pas à t’empêcher de t’en faire tout un film… **(S2)**
     * **8 à 10 :** Les bruits de pas s’éloignent sur le trottoir d’en face. Tu continues ton chemin sans encombre. Tu sais bien que c’est ridicule mais tu ne peux pas t’empêcher de rester vigilant·e. **(0)**
+
+
+## L’inconnu qui menace
+
+Sur le chemin du collège, un inconnu te suit depuis 20 min. Arrivé à ta hauteur, il commence à te menacer en te disant que si tu ne viens pas avec lui, il va te faire du mal. 
+
+<span style="text-decoration:underline;">Escalade</span>
+
+Heureusement, tes amis te voient et tu arrives à rentrer dans l'école. Mais à la moitié du cours, tu es appelé à aller dans le bureau de la CPE, Tu t'y rends et la CPE te dit qu'un homme se présentant comme ton père veut que tu rentres avec lui. 
+
+
+## Témoin d’une agression
+
+Tu marches dans la rue avec une amie lorsque tu vois un homme mettre à terre une femme et lui voler son sac et son téléphone.
+
+
+
+* **Je cours vers eux avec ton amie en criant.**
+    * Il prend la fuite. 
+
+ 
+
+
+## Le groupe de jeunes
+
+En vacances avec tes parents, tu te balades dans la rue. Depuis quelque temps, tu aperçois un groupe de jeunes qui vous suivent. Au début, tu te dis qu'ils vont dans la même direction que vous. Mais lorsque vous changez de rue, ils vous suivent à nouveau. Vous changez alors de rue plusieurs fois. Et vous vous retournez pour voir s'ils vous suivent toujours. Ils sont toujours derrière vous !
+
+
+
+* **Je leur propose de changer de trottoir. **
+* **Vous prenez la première rue qui croise votre route et au coin, vous vous mettez tous à courir.**
 
  
 
@@ -586,6 +542,62 @@ Tu croises dans la rue un de tes voisins, la quarantaine, qui a l’habitude de 
     * Il court 	après moi
     * Il crie : 	« eh, je ne te veux pas de mal, reviens » \
 
+
+
+## Le camarade battu
+
+C'est la rentrée et tu es assis à côté d'un élève. Chaque jour, tu constates qu'il a de nouveaux bleus sur son corps. Un jour il se confie à moi pour me parler de ce qu’il vit à la maison.
+
+
+
+* **je l’écoute mais c‘est ses affaires**
+* **je lui propose d’en parler à des adultes**
+* **je vais en parler à à des adultes **
+* **j’en parle à d’autres élèves pour leur demander des conseils **
+
+
+## X. Le frère indifférent
+
+Dans la cour de l’école, au moment de la récré, tu vois une fille pousser, sans faire exprès, une autre fille. Celle-ci tombe sur une plaque d'égout et est salement amochée. En pleurs, elle te demande d’aller chercher son frère en train de jouer au foot. Ce dernier t’ignore et continue de jouer avec ses amis.
+
+
+
+* je le laisse et je retourne au côté de mon amie.
+* je l’engueule.
+* je tente de le convaincre de venir aider sa soeur.
+* j’interpelle ses copains sur son comportement.
+* je prends le ballon pour interrompre la partie et le forcer à me suivre.
+
+
+## X. L’ex violent réflechir au vice-versa
+
+C'est ton anniversaire et ta copine est sortie pour te faire une surprise. Deux heures plus tard, elle revient en pleurant avec un bleu sur la joue. Elle te dit qu’elle vient de croiser son ex dans la rue qui vient de lui faire ça. “”
+
+
+
+* **Je lui propose d’appeler la police.**
+* **_“ Mais dans quelles circonstances ça s’est passé ? “_**
+* **_“ Il doit être vraiment malheureux pour faire ça. “_**
+* **_“ Est ce que tu veux que j’aille le voir ? “_**
+* **_“ Je t’interdis de le revoir ! « _**
+
+
+## T’es bonne
+
+Dans les couloirs du collège avec un groupe de garçons se trouvant derrière-toi. Soudain, ils crient : _« T’es bonne ! »_, se mettent à courir et te claquent les fesses en te dépassant.
+
+
+
+* ** Je les suis et arrivée à leur niveau, je leur dis : _« Comment réagiriez-vous si j’en faisais autant ? »_**
+    * Ils éclatent de rire et repartent tous ensemble. Frustrée de ne pas avoir pu faire évoluer les choses…
+    * Ils me tendent leurs fesses et me répondent : _« Bah, vas-y ! »** **_
+    * Je les laisse en plan mais, mais décide de ne pas en rester là.
+* Ils s’excusent et me disent qu’ils ne sont pas fiers de ce qu’ils ont fait.
+* **Je crie pour alerter les adultes, en espérant qu’ils vont être attrapés et punis.**
+    * La CPE sort de son bureau et leur demande de venir s’expliquer. **(J2)**
+    * Personne ne se trouve dans les couloirs. Ils partent en courant. **(S2)**
+* **Je pars en courant, en espérant ne plus les croiser. (S1)**
+* **Ils habitent mon quartier, je connais leurs parents. Demain je vais aller les voir, je ne vais pas me laisser faire ! (J2)**
 
 
 # THÉÂTRE GÉRARD PHILIPPE
@@ -772,7 +784,7 @@ RER. Vers 15h. Les voyageurs sont rares. Vous vous installez à l’étage infé
 
 ## 24. Un inconnu dans la rue [S : 1 / R : 7 / E : 9 = 17]
 
-C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un peu plus loin, tu vois un amas d’encombrants qu’un homme bien plus âgé que toi observe. Arrivé à sa hauteur, il t’accoste : _« Bonjour ! »_ Tu ne crois pas le connaître mais tu lui réponds poliment. Il n’a rien d’agressif mais continue de te parler et insiste pour t’accompagner.
+C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un peu plus loin, tu vois un amas d’encombrants qu’un homme bien plus âgé que toi observe. Arrivé à sa hauteur, il t’accoste : _« Bonjour ! »_ Tu ne crois pas le connaître et pourtant il continue de te parler et insiste pour t’accompagner.
 
 
 
@@ -800,13 +812,13 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
             * **7 à 8 :** Il te demande de supprimer la vidéo en s’excusant. Avec cette preuve, c’est toi qui est désormais en position de force. **(J2) **
             * **9 à 10 :** Il continue à te suivre en changeant subitement de comportement : _« Pourquoi est- ce que vous me filmez ? Je vous demande d’arrêter immédiatement ! ». _Il nie mais tant que tu le filmes il ne fera rien ! **(J1)**
     * **7 à 8 : _« Vous pourriez être poli·e quand même, je ne vous ai rien dit de désagréable ! » _**C’est fou car tu ne lui dois rien et pourtant il voudrait te culpabiliser. **(0)**
-    * **9 à 10 :** Il te suit et continue à te parler comme si de rien n’était. Tu as l’impression que ton consentement n’a aucune valeur à ses yeux. **(S1 ET choisis une autre Stratégie)**
-* **Je rentre dans son jeu en lui faisant des réponses courtes et très vagues pour qu’il se lasse.**
-    * **1 à 2 :** Il comprend que tu n’es pas du tout intéressé·e et lâche l’affaire soudainement. Tout ce temps perdu juste pour être tranquille… **(J2)**
-    * **3 à 5 :** Il n’a pas l’air de comprendre ton désintérêt ou fait comme si… **(S1 ET choisis une autre Stratégie)**
-    * **6 à 7 :** «_ C’est pas très poli de me répondre comme ça. Je pourrais être votre père ! _» et s’en va. Il a bien compris ta stratégie et a voulu renverser la culpabilité. Mais il a quand même réussi à être paternaliste ! **(0)**
-    * **8 à 9 :** Après avoir insisté un moment, il part subitement en te lançant un dernier mot blessant. Il se permet de te rabaisser en plus de t’avoir fait perdre ton temps, quel forceur ! **(S2)**
-    * **10 :** La conversation s’éternise et il te pose des questions qui te mettent très mal à l’aise. Malgré ta vigilance, tu te sens piégé·e et pourtant refuser une conversation dont on n’a pas envie, c’est légitime. **(S3)**
+    * **9 à 10 :** Il te suit et continue à te parler comme si de rien n’était. Tu as l’impression que ton consentement n’a aucune valeur à ses yeux. **(S1 ET choisis une autre Stratégie + Escalade)**
+        * **Je rentre dans son jeu en lui faisant des réponses courtes et très vagues pour qu’il se lasse.**
+            * **1 à 2 :** Il comprend que tu n’es pas du tout intéressé·e et lâche l’affaire soudainement. Tout ce temps perdu juste pour être tranquille… **(J2)**
+            * **3 à 5 :** Il n’a pas l’air de comprendre ton désintérêt ou fait comme si… **(S1 ET choisis une autre Stratégie)**
+            * **6 à 7 :** «_ C’est pas très poli de me répondre comme ça. Je pourrais être votre père ! _» et s’en va. Il a bien compris ta stratégie et a voulu renverser la culpabilité. Mais il a quand même réussi à être paternaliste ! **(0)**
+            * **8 à 9 :** Après avoir insisté un moment, il part subitement en te lançant un dernier mot blessant. Il se permet de te rabaisser en plus de t’avoir fait perdre ton temps, quel forceur ! **(S2)**
+            * **10 :** La conversation s’éternise et il te pose des questions qui te mettent très mal à l’aise. Malgré ta vigilance, tu te sens piégé·e et pourtant refuser une conversation dont on n’a pas envie, c’est légitime. **(S3)**
 * **Je lui dis calmement et fermement que je n’ai pas envie qu’il m’accompagne.**
     * **1 à 3 :_ « Oh pardon, je voulais pas vous importuner »_** et s’en va. Avoir été clair·e et déterminé·e t’as évité de perdre du temps. **(J3)**
     * **4 à 5 :** Il commence à te suivre et à t'invectiver de façon véhémente. **(Escalade)**
@@ -814,16 +826,18 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
         * [Je me retourne et lui dis : _« Laissez-moi tranquille ou j’appelle la police, Monsieur. »]_
         * [Je pars en courant pour le semer.]
         * [Je continue mon chemin en le filmant ostensiblement avec mon téléphone.]
-    * **6 :** Il fait semblant de ne pas comprendre et continue à te suivre. **(S1 ET choisis une autre Stratégie)**
+    * **6 :** Il fait semblant de ne pas comprendre et continue à te suivre. **(S1 ET choisis une autre Stratégie + Escalade)**
+        * [Je rentre dans son jeu en lui faisant des réponses courtes et très vagues pour qu’il se lasse.]
     * **7 à 8 :** Après avoir insisté un moment, il part subitement en te lançant un dernier mot blessant. Il se permet de te rabaisser après t’avoir fait perdre ton temps, quel forceur ! **(S2)**
     * **9 à 10 :** «_ Vous n’êtes vraiment pas sympa, moi je voulais juste être poli. _» et s’en va. Il essaye de renverser la culpabilité alors que c’est lui qui t’importune. Quel manque d’originalité ! **(0)**
 * **Je lui dis que j’ai rendez-vous et que je suis un peu pressé·e.**
-    * **1 à 2 :** « _Ah mais j’allais par là moi aussi, je vous accompagne !_ » Quelle plaie ce type…  **(S1 ET choisis une autre Stratégie)**
+    * **1 à 2 :** « _Ah mais j’allais par là moi aussi, je vous accompagne !_ » Quelle plaie ce type…  **(S1 ET choisis une autre Stratégie + Escalade)**
+        * [Je rentre dans son jeu en lui faisant des réponses courtes et très vagues pour qu’il se lasse.]
     * **3 à 4 :** «_ Ah, mais dites tout de suite que je vous embête ! _» et s’en va. Oui, il t’embête et en plus il a l’air de te le reprocher ! **(0)**
     * **5 à 6 :** « _Oh pardon, je voulais pas vous mettre en retard, mon petit ! _» et retourne à ses occupations. Créer de l’urgence t’as donné une bonne raison de le tenir à distance mais il est quand même parvenu à se montrer paternaliste.** (J1)**
     * **7 à 10 :_ « Dans ce cas, je peux peut-être prendre votre numéro pour qu’on se revoie plus tard ? »_** **(Escalade)**
         * Je lui propose de prendre son numéro pour qu’il me laisse tranquille.
-            * **1 à 3 :** Il te le donne : « _Je sais bien que vous m’appellerez jamais de toutes façons, mais…_ »  Bien vu ! Tu t’en es débarrassé mais il t’en aura fallu des compromis… **(J2)**
+            * **1 à 3 :** Il te le donne : « _Je sais bien que vous m’appellerez jamais de toute façon, mais…_ »  Bien vu ! Tu t’en es débarrassé mais il t’en aura fallu des compromis… **(J2)**
             * **4 à 7 :** « _D’accord, mais appelez moi maintenant pour que j’ai aussi le vôtre !_ » Il est dans l’intimidation et profite de tout ce que tu lui concèdes. Refuse et esquive le plus vite possible. **(S2)**
             * **8 à 10 :** Il te donne son numéro et te laisse enfin tranquille. Que de ressources il t’aura fallu mobiliser pour traverser une simple rue ! **(0)**
         * Je lui dis que je n’ai pas envie de lui donner quoi que ce soit. Merci beaucoup, au revoir !
@@ -856,6 +870,7 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
         * [Je lui propose de prendre son numéro pour qu’il me laisse tranquille.]
         * [Je lui dis que je n’ai pas envie de lui donner quoi que ce soit. Merci beaucoup, au revoir !]
         * [J’invente un numéro ou lui donne le numéro “anti-relous” : 07 80 99 37 34.]
+        * [Je rentre dans son jeu en lui faisant des réponses courtes et très vagues pour qu’il se lasse.]
     * **5 à 6 :** _« Oh pardon, je voulais pas vous importuner ! »_ Ta diversion a fonctionné. **(J3)**
     * **7 à 8 :** _« Mais dites-donc c’est pas poli ! J’étais en train de vous parler, moi. » _Il essaye de renverser la culpabilité, ça n’a rien de très original mais il te laisse tranquille. **(J1)**
     * **9 à 10 :** Il continue à te parler comme si tu n’en avais rien à faire que tu sois au téléphone. **(S1 ET choisis une autre Stratégie)**
@@ -1012,7 +1027,7 @@ Pourquoi cet homme vient-il se justifier ? Persuadé(e.s) que vous êtes en face
 
 ® Dans l'ascenseur, l'homme vous demande de lui remettre clefs et papiers. Ca vous évitera de passer à l'agence (cascade)
 
-2. Vous décidez avant que l'ascenseur n'arrive de prendre les escaliers. De toutes façons, il faut descendre et au moins vous ne serez pas coincé (e.s) dans la cabine
+2. Vous décidez avant que l'ascenseur n'arrive de prendre les escaliers. De toute façon, il faut descendre et au moins vous ne serez pas coincé (e.s) dans la cabine
 
 ® Après un nombre incalculable de marches, vous arrivez éreinté(e.s. Le hall est vide. Vous sortez rapidement du bâtiment. Personne non plus dans la rue. Ouf !
 
@@ -1458,16 +1473,3 @@ Réaction.
 ## Pickpocket
 
 J’étais dans un bus le matin. Une dame fait une remarque raciste à une autre dame. Je suis la seule autre blanche du bus et j’ai peur d’être mise dans le même panier que cette dame raciste.
-
-
-
-* ** Je lui demande s’il veut qu’on en parle à quelqu'un.**
-    * à des proches
-    * à la police
-    * un numéro pour l’aider à se sentir mieux
-* **Je lui propose d’appeler la police.**
-* **Je le console en dédramatisant : _« C’est des cons, n’y fais pas attention, ça va s’arrêter, c’est pas grave.  »_ **
-* **Je lui conseille de faire profil bas.**
-* **Je lui propose une expédition punitive furtive.**
-* **_« Mais pourquoi tu te défends pas aussi ? Tu attends quoi ? »_**
-* «**_ Viens on va faire du self défense ensemble, comme ça la prochaine fois, on pourra se défendre. »_**

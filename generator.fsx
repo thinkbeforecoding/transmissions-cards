@@ -1,8 +1,11 @@
 #r "nuget: Feliz.ViewEngine"
 #r "nuget: FSharp.Formatting"
+#r "nuget: QRCoder"
 open System
 open System.IO
 open FSharp.Formatting.Markdown
+open QRCoder
+
 
 type Colors =
     | Blue
@@ -476,8 +479,15 @@ let score (situation: Situation) =
 let checkStrategyScores (situation: Situation) =
     for strategy in situation.Strategies do
         let score = strategyScore situation.Escalades situation.Strategies strategy
-        if abs score > 1.5m then
-            printfn $"\x1b[33  ⚡Score déséquilibré { strategy.Title |> cut 40}\x1b[0m"
+        if abs score > 1.21m then
+            printfn $"\x1b[33  ⚡Score déséquilibré %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
+        if (strategy.Consequences |> List.forall (fun c -> match c.Score with Score(_,[]) -> true | _ -> false ) ) then
+            if (strategy.Consequences |> List.filter (fun c -> match c.Score with Score(Some(n,_),_) when n > 0 -> true | _ -> false ) |> List.length) = 1 then
+                printfn $"\x1b[33  ⚡1 seul positif %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
+            if (strategy.Consequences |> List.filter (fun c -> match c.Score with Score(Some(n,_),_) when n < 0 -> true | _ -> false ) |> List.length) = 1 then
+                printfn $"\x1b[33  ⚡1 seul negatif %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
+
+
 
 
 let check (situations: Situation list) =
@@ -590,6 +600,7 @@ let check (situations: Situation list) =
         match result with
         | Ok score ->
             printfn "✅ S%d %s \x1b[38;2;128;128;128m(%d stratégies / %d escalades / %d cards) \x1b[32m(score %.2f)\x1b[0m" situation.Id title situation.Strategies.Length situation.Escalades.Count cards score
+            checkStrategyScores situation
         | Error errors ->
             printfn "❌ S%d %s \x1b[38;2;128;128;128m(%d stratégies / %d escalades / %d cards)\x1b[0m" situation.Id title situation.Strategies.Length situation.Escalades.Count cards
             for error in errors do
@@ -602,6 +613,21 @@ let check (situations: Situation list) =
     ]
 
 open Feliz.ViewEngine
+
+
+open QRCoder
+let logo = System.IO.File.ReadAllText @"C:\Users\jchassaing\Downloads\Transmission(s)_Logo_Féminin-Masculin.svg" 
+let gen = new QRCodeGenerator()
+
+let qrCode n =
+    let data = gen.CreateQrCode(PayloadGenerator.Url($"https://qr.transmission-s.com/situation-%d{n}"), QRCodeGenerator.ECCLevel.Q)
+    let code = new SvgQRCode()
+    code.SetQRCodeData(data)
+    code.GetGraphic( System.Drawing.Size( 200, 200) , logo = SvgQRCode.SvgLogo(logo, fillLogoBackground = true, iconSizePercent = 18, iconEmbedded = true), drawQuietZones = true, sizingMode = SvgQRCode.SizingMode.ViewBoxAttribute)
+    |> Html.rawText
+
+
+
 
 let colorProp = function
     | Blue -> "blue"
@@ -713,9 +739,12 @@ let renderSituationRecto n (situation: Situation) =
         ]
     ]
 
-let renderSituationVerso n  =
+let renderSituationVerso n id  =
     Html.div [
         prop.className $"card verso situation {pos n}"
+        prop.children [
+            qrCode id
+        ]
     ]
 
 let renderStrategyRecto (n: int) (r: int) key (situation: Situation) (strategy: Strategy) =
@@ -891,8 +920,8 @@ let render (cards: Card list) =
                                 match card with
                                 | Alea _ ->
                                     renderAleaVerso n
-                                | Situation _ ->
-                                    renderSituationVerso n
+                                | Situation s ->
+                                    renderSituationVerso n s.Id
                                 | Strategy(_,situation, strategy) ->
                                     renderStrategyVerso n None situation strategy
                                 | Escalade(c,_, situation, strategy) ->
@@ -935,8 +964,8 @@ let renderA7 (cards: Card list) =
                                 match card with
                                 | Alea _ ->
                                     renderAleaVerso 0
-                                | Situation _ ->
-                                    renderSituationVerso 0
+                                | Situation s ->
+                                    renderSituationVerso 0 s.Id
                                 | Strategy(_,situation, strategy) ->
                                     renderStrategyVerso 0 None situation strategy
                                 | Escalade(c,_, situation, strategy) ->
@@ -981,8 +1010,8 @@ let renderA7recto (cards: Card list) =
                                     match card with
                                     | Alea _ ->
                                         renderAleaVerso 0
-                                    | Situation _ ->
-                                        renderSituationVerso 0
+                                    | Situation s ->
+                                        renderSituationVerso 0 s.Id
                                     | Strategy(_,situation, strategy) ->
                                         renderStrategyVerso 0 None situation strategy
                                     | Escalade(c,_, situation, strategy) ->
@@ -997,9 +1026,9 @@ let champigny =
     parse @"champigny.md"
     |> check
 
-let situations =
-    parse @"situations.md"
-    |> check
+// let situations =
+//     parse @"situations.md"
+//     |> check
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let cards =
