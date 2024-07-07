@@ -141,11 +141,10 @@ section {
 
 .verso.situation svg {
     position: absolute;
-    width: 15mm;
-    border:  none;
-    background-color: white;
+    width: 13mm;
+    /* border:  0.4mm solid white; */
     border-radius: 1.5mm;
-    left: 5mm;
+    left:  5mm;
     bottom: 5mm;
 }
 

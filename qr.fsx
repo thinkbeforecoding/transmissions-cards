@@ -2,7 +2,7 @@
 open QRCoder
 
 let gen = new QRCodeGenerator()
-let data = gen.CreateQrCode(PayloadGenerator.Url("https://transmission-s.com"), QRCodeGenerator.ECCLevel.Q)
+let data = gen.CreateQrCode(PayloadGenerator.Url("https://qr.transmission-s.com/situation-1"), QRCodeGenerator.ECCLevel.Q)
 let logo = System.IO.File.ReadAllText @"C:\Users\jchassaing\Downloads\Transmission(s)_Logo_Féminin-Masculin.svg" 
 
 let code = new SvgQRCode()

@@ -601,10 +601,12 @@ let check (situations: Situation list) =
         | Ok score ->
             printfn "✅ S%d %s \x1b[38;2;128;128;128m(%d stratégies / %d escalades / %d cards) \x1b[32m(score %.2f)\x1b[0m" situation.Id title situation.Strategies.Length situation.Escalades.Count cards score
             checkStrategyScores situation
-        | Error errors ->
+        | Error errors when situation.Id <> 0 ->
             printfn "❌ S%d %s \x1b[38;2;128;128;128m(%d stratégies / %d escalades / %d cards)\x1b[0m" situation.Id title situation.Strategies.Length situation.Escalades.Count cards
             for error in errors do
                 printfn $"%s{error}"
+        | _ -> ()
+
 
     [ for situation,result in checks do
         match result with
@@ -616,14 +618,14 @@ open Feliz.ViewEngine
 
 
 open QRCoder
-let logo = System.IO.File.ReadAllText @"C:\Users\jchassaing\Downloads\Transmission(s)_Logo_Féminin-Masculin.svg" 
+let logo = System.IO.File.ReadAllText @".\cars\img\logo.svg" 
 let gen = new QRCodeGenerator()
 
 let qrCode n =
     let data = gen.CreateQrCode(PayloadGenerator.Url($"https://qr.transmission-s.com/situation-%d{n}"), QRCodeGenerator.ECCLevel.Q)
     let code = new SvgQRCode()
     code.SetQRCodeData(data)
-    code.GetGraphic( System.Drawing.Size( 200, 200) , logo = SvgQRCode.SvgLogo(logo, fillLogoBackground = true, iconSizePercent = 18, iconEmbedded = true), drawQuietZones = true, sizingMode = SvgQRCode.SizingMode.ViewBoxAttribute)
+    code.GetGraphic( System.Drawing.Size( 200, 200), "#ffffffff", "#00000000" , logo = SvgQRCode.SvgLogo(logo, fillLogoBackground = true, iconSizePercent = 18, iconEmbedded = true), drawQuietZones = true, sizingMode = SvgQRCode.SizingMode.ViewBoxAttribute)
     |> Html.rawText
 
 
