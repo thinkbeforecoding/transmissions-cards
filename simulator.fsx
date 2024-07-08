@@ -678,7 +678,7 @@ module Table =
         table.Players[table.Current]
 
     let observer (table: Table) =
-        table.Players[(table.Current+1) % table.Players.Length]
+        table.Players[(table.Current+ table.Players.Length - 1 ) % table.Players.Length]
 
     let witnesses (table: Table) =
         let current = current table
@@ -877,49 +877,47 @@ module Game =
         | s -> failwith $"Unknown score %A{s}"
 
 
+
     let applyScore player score intervention game =
         match intervention with 
         | NoIntervention _ -> 
             if score >= 0 then
-                { game with Table = game.Table |> Table.updatePlayer player.Id (fun p -> { player with Confidence = player.Confidence + score}) }
+                { game with Table = game.Table |> Table.updatePlayer player.Id (fun p -> { p with Confidence = player.Confidence + score}) }
             else
-                { game with System = game.System + (-score)}
+                { game with System = game.System + abs score}
         | Intervened (ThankYou(witness,i)) ->
-            let discardPile = Green :: (match i with Support -> Green | BeCareful _ -> Red ) :: game.InterventionDiscardPile
-            let pi,wi, drawPile, discardPile =
-                match game.InterventionDrawPile with
-                | x :: y :: tail -> x, y, tail, discardPile
-                | tail -> 
-                    let newDiscardPile = tail @ discardPile |> List.sortBy (fun _ -> Random.Shared.Next())
-                    match newDiscardPile with
-                    | x :: y :: tail ->
-                        x,y, tail, []
-                    | _ -> failwith "Not enough cards"
-
             if score >= 0 then
                 { game with
                     Table =
                         game.Table
-                        |> Table.updatePlayer player.Id (fun p -> { p with Confidence = p.Confidence + score + 2 
-                                                                           Player.Interventions = p.Interventions |> Interventions.discard Green |> Interventions.take pi })
-                        |> Table.updatePlayer witness.Id (fun p -> { p with Confidence = p.Confidence + 2
-                                                                            Player.Interventions = witness.Interventions |> Interventions.take wi }) 
-                    System = max 0 (game.System - 2)
-                    InterventionDrawPile = drawPile
-                    InterventionDiscardPile = discardPile
-                    }
+                        |> Table.updatePlayer player.Id (fun p -> { p with Confidence = p.Confidence + score + 2 })
+                        |> Table.updatePlayer witness.Id (fun p -> { p with Confidence = p.Confidence + 2 }) 
+                    System = max 0 (game.System - score) }
             else
                 { game with 
-                    System = game.System + (-score) + 1
-                    Table = 
-                        game.Table 
-                        |> Table.updatePlayer player.Id (fun p -> { p with Player.Interventions = p.Interventions |> Interventions.discard Green |> Interventions.take pi })
-                        |> Table.updatePlayer witness.Id (fun p -> { p with Player.Interventions = witness.Interventions |> Interventions.take wi })
-                    InterventionDrawPile = drawPile
-                    InterventionDiscardPile = discardPile
-                            }
+                    System = game.System + abs score + 1 }
         | Intervened (MindYourOwnBusiness(witness,i)) ->
-            let discardPile = Red :: (match i with Support -> Green | BeCareful _ -> Red ) :: game.InterventionDiscardPile
+            { game with
+                Table =
+                    game.Table
+                    |> Table.updatePlayer player.Id (fun p -> { p with Confidence =  p.Confidence + if score >= 0 then  score else 0 })
+                    |> Table.updatePlayer witness.Id (fun p -> { p with Confidence = p.Confidence + if score <= 0 then abs score else 0 })
+                System = game.System + 1 }
+
+    let drawInterventions player intervention game =
+        match intervention with 
+        | NoIntervention _ -> game
+        | Intervened response ->
+            let playerCard, witnessIntervention, witness =
+                match response with
+                | ThankYou (w, wi) -> Green, wi, w
+                | MindYourOwnBusiness(w,wi) -> Red, wi, w
+            let witnessCard =
+                match witnessIntervention with
+                | Support -> Green
+                | BeCareful _ -> Red
+
+            let discardPile = playerCard :: witnessCard :: game.InterventionDiscardPile
             let pi,wi, drawPile, discardPile =
                 match game.InterventionDrawPile with
                 | x :: y :: tail -> x, y, tail, discardPile
@@ -933,22 +931,18 @@ module Game =
             { game with
                 Table =
                     game.Table
-                    |> Table.updatePlayer player.Id (fun p -> { p with Confidence =  p.Confidence + if score >= 0 then  score else 0
-                                                                       Player.Interventions = p.Interventions |> Interventions.discard Red |> Interventions.take pi })
-                    |> Table.updatePlayer witness.Id (fun p -> { p with Confidence = p.Confidence + if score <= 0 then -score else 0
-                                                                        Player.Interventions = witness.Interventions |> Interventions.take wi})
-                System = game.System + 1
+                    |> Table.updatePlayer player.Id (fun p -> { p with Player.Interventions = p.Interventions |> Interventions.discard playerCard |> Interventions.take pi })
+                    |> Table.updatePlayer witness.Id (fun p -> { p with Player.Interventions = witness.Interventions |> Interventions.take wi }) 
                 InterventionDrawPile = drawPile
-                InterventionDiscardPile = discardPile
-                }
-
+                InterventionDiscardPile = discardPile }
 
     let playSituation gameStrategies game =
         let situation = game.Situations |> List.head
         let player = Table.current game.Table
         let witnesses = Table.witnesses game.Table
         let score, intervention, steps = playSituation' gameStrategies situation player (NoIntervention witnesses) situation.Strategies 0 [] game
-        applyScore player score intervention game, steps
+        applyScore player score intervention game  
+        |> drawInterventions player intervention, steps
 
     let next game =
         { game with Table = Table.next game.Table
@@ -996,8 +990,8 @@ fsi.PrintDepth <- 5
 
 let gameStrategies = 
     { Game.WitnessStrategy = Game.witnessStrategy 50
-      Game.ResponseStrategy =  Game.responseStrategy3 50 90 10 //Game.responseStrategy
-      Game.EndStrategy = Game.finishedWithBlocking 10 15 15}
+      Game.ResponseStrategy =  Game.responseStrategy3 50 90 7 //Game.responseStrategy
+      Game.EndStrategy = Game.finishedWithBlocking 7 10 10}
 
 let printGame (game: Game)= 
     [
@@ -1035,13 +1029,25 @@ let games =
 #r "nuget: XPlot.Plotly"
 
 open XPlot.Plotly
+let systemMax = 10
+let systemWin = games |> List.filter (fun g -> g.System >= systemMax) |> List.length 
+let playersWin = games |> List.filter (fun g -> g.System < systemMax) |> List.countBy (fun g -> g.Table.Players |> Array.maxBy (fun g -> g.Confidence) |> _.Id) |> Map.ofList
+[games  |> List.filter (fun g -> g.System >= systemMax) |> List.countBy  (fun g -> g.Turn) |> List.sortBy fst
+ for pId in 0 .. Map.count playersWin - 1 do
+    games  |> List.filter (fun g -> g.System < systemMax) |> List.filter (fun g -> g.Table.Players |> Array.maxBy (fun p -> p.Confidence) |> fun p -> p.Id = pId ) |>  List.countBy  (fun g -> g.Turn) |> List.sortBy fst
+] |> Chart.Column |> Chart.WithLabels ([$"System ({systemWin})"; for pId,_ in Map.toSeq playersWin do $"Players {pId} ({playersWin[pId]})"]) |> Chart.WithLayout (Layout(barmode = "stack")) |> Chart.WithTitle "Turns historgram" |> Chart.Show
 
-[games  |> List.filter (fun g -> g.System >= 15) |> List.countBy  (fun g -> g.Turn) |> List.sortBy fst
- games  |> List.filter (fun g -> g.System < 15) |> List.countBy  (fun g -> g.Turn) |> List.sortBy fst
-] |> Chart.Column |> Chart.WithLabels (["System"; "Players"]) |> Chart.WithLayout (Layout(barmode = "stack")) |> Chart.WithTitle "Turns historgram" |> Chart.Show
-games |> List.filter (fun g -> g.System >= 15) |> List.length 
-games |> List.filter (fun g -> g.System < 15) |> List.countBy (fun g -> g.Table.Players |> Array.maxBy (fun g -> g.Confidence) |> fun p -> p.Id) |> List.sortByDescending snd
 
 games |> List.filter (fun g -> g.System < 15) |> List.countBy (fun g -> g.System) |> Chart.Column |> Chart.WithTitle "System score when player wins"  |> Chart.Show
 games |> List.filter (fun g -> g.System >= 15) |> List.countBy (fun g -> g.Table.Players |> Array.maxBy _.Confidence |> _.Confidence) |> Chart.Column |> Chart.WithTitle "Best player score when system wins" |> Chart.Show
 
+
+let g= 
+    Game.empty champigny
+    |> Game.addPlayers 4
+
+let t = g.Table
+t |> Table.current |> _.Id
+t |> Table.observer |> _.Id
+t |> Table.witnesses |> List.map _.Id
+let t = t |> Table.next

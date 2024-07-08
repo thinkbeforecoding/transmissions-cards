@@ -46,6 +46,7 @@ and Consequence =
       Score: Score }
 and Range = { Min: int; Max: int}
     with
+        member this.Count = this.Max + 1 - this.Min
         member this.Percents = (this.Max + 1 - this.Min) * 10
         member this.Probability = decimal this.Percents / 100m
 and Score =
@@ -143,6 +144,22 @@ let rangeRx = System.Text.RegularExpressions.Regex(@"^\s*(\d+)(\s+à\s+(\d+))?\s
 let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]\d|J\d|S\d|0)\s*([^)+]*)(\+ Escalade)?\s*\)\s*")
 let escaladeRx = System.Text.RegularExpressions.Regex(@"\(\s*voir\s+Escalade(\s+\$)?\s*\)")
 
+let rand = Random(12345)
+
+let shuffleConsequences (conseqs: Consequence list) =
+    let newList = conseqs |> List.sortBy (fun _ -> rand.Next() )
+    
+    let rec reattribute i (conseqs: Consequence list) result =
+        match conseqs with
+        | [] -> result |> List.rev
+        | conseq :: rest ->
+            let count = conseq.Range.Count
+            let newRange = { Min = i; Max = i + count - 1}
+            reattribute (i+count) rest ({conseq with Range = newRange} :: result )
+    reattribute 1 newList []
+
+
+
 let rec parseEscalade (description, items) : Strategy option =
     match tryParseLink description with
     | Some _ -> None
@@ -156,7 +173,7 @@ let rec parseEscalade (description, items) : Strategy option =
         Some
             { Title = title
               Text = text
-              Consequences = conseqs }
+              Consequences = shuffleConsequences conseqs }
 
 and extractEscalade ps =
     match ps with
@@ -290,7 +307,7 @@ let parseStrategy (escalades: Map<char, Strategy>) (description, items) =
         |> List.map toText
     { Title = textToString (List.concat text)
       Text = text
-      Consequences = conseqs
+      Consequences = shuffleConsequences conseqs
     }
 
 let parseTitle (spans: MarkdownSpans) =

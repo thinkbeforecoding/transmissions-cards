@@ -908,25 +908,29 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
     * **10 :** « _Non, je ne vous voulais rien de particulier… Bon, ben euh… _» Et il part  l’air penaud. Tu sais que tu n’as pas à t’imposer une présence dont tu n'as pas envie, mais tu ressens un peu d’empathie pour lui. **(0)**
 
 
-## A FAIRE. La voiture qui ralentit [A MELANGER AVEC CELLE DE LA MERE]
+## 27. La voiture qui ralentit 
 
-Tu es sur une route passante, pas loin de chez toi. Les voitures roulent à bonne vitesse. C’est pourquoi le rythme anormalement lent d’une voiture t’interpelle. Tu tournes la tête en direction du véhicule et tu vois le chauffeur à ta hauteur t’adresser des gestes obscènes. 
+Tu es une femme et tu marches avenue Max Dormoy, un endroit où il y a beaucoup de circulation avec des voitures qui roulent à bonne vitesse. Soudain, tu te rends compte qu’une voiture roule à un rythme anormalement lent à côté de toi. En tournant la tête, tu t’aperçois que le chauffeur t’adresse des gestes obscènes.
 
 
 
-* **Je le regarde d’un air méprisant et me dirige vers la boulangerie pour m’y réfugier en attendant qu’il passe son chemin.  **
-    * Le type passe son chemin.
-    * Le type se gare et vous attend.
-* **Je m’approche de la voiture et lui dis : _« Passe ton chemin, sale porc.»_ **
+* **Je le regarde d’un air méprisant et je cherche un magasin pour m’y réfugier.**
+    * **1 à 3 :** Tu trouves assez rapidement un magasin ouvert dont tu ressors quelques minutes plus tard. Tu as perdu un peu de temps mais tu t’es mise en sécurité. **(J2)** 
+    * **4 à 6 :** Tu ne trouves aucun magasin ouvert et l’homme continue. Il cherche à te rabaisser en toute impunité : typique de la culture du viol. **(0 ET choisis une autre Stratégie)**
+    * **7 :** Lorsque tu sors de la boutique tu t’aperçois qu’il est toujours là. Sa volonté est clairement de te priver de ton droit à circuler librement et en sécurité. **(S1 ET choisis une autre Stratégie)**
+    * **8 à 10 : **Il t’insulte avant de démarrer en trombe. Ton mépris l’a déstabilisé, il comptait t’empêcher de réagir en te mettant mal à l’aise. **(J1)**
+* **Je lui crie : _« Casse-toi, sale porc ! »_**
 * **Je crie et gesticule pour alerter les passants et les automobilistes.**
     * L’homme démarre et s’en va.
 * **Je poursuis mon chemin jusqu’à chez moi comme si de rien n’était.  **
     * L’homme s’en va mais vous avez peur qu’il ai remarqué où vous habitiez.
     * Le type se lasse, remet les gaz et poursuit son chemin.
     * La voiture continue son chemin. Le conducteur cherchait juste une place de parking.
-* **Je change de chemin à la recherche d’une rue en sens interdit. **
-    * Le conducteur est bloqué et tu le sèmes.
+* **Je fais demi-tour pour qu’il ne me suive pas.**
+    * Le conducteur est bloqué et tu le sèmes
+    * T’as abdiqué une partie de ta liberté pour te débarrasser d’un problème.
     * La voiture fait le tour du pâté de maison et s'approche lentement vers toi.
+* **« Tu voudrais qu’on fasse ça à ta mère ? »  **
 * **Je sors mon téléphone portable pour le filmer.**
     * La voiture s'éloigne rapidement.
     * Le conducteur s'arrête et sort du véhicule en me menaçant si je ne supprime pas la vidéo.
@@ -966,10 +970,6 @@ RER. Vers 15h. Les voyageurs sont rares. Vous vous installez à l’étage infé
  
 
 
-
-    * 
-
-
 ##  **[A FUSIONNER] Ma petite dame **
 
 Tu es en voiture à un carrefour embouteillé et tu gênes un camion qui veut tourner. Le chauffeur se penche à la fenêtre et te dit : « _Vous pouvez avancer ma petite dame ? » \
@@ -999,7 +999,6 @@ Tu es sur ton trajet domicile-lycée, les escaliers sont déserts et tu croises 
 * **Je le bouscule.**
     * Il se relève, renchérit et me pousse par terre.
     * Je quitte le métro en courant et suis débarrassée de mon agresseur.
-* 
 
 
 ## Les parkings sont sinistres
@@ -1322,7 +1321,6 @@ Retour au domicile, après la journée de travail. Problème technique sur la li
 * Qu'est-ce qu'elle à ? Elle est dingue !
 *  Tu prends tes désirs pour des réalités?
 *  Elle se prend pour qui?
-    * 
 
 
 ## L’homme dans l’immeuble 
