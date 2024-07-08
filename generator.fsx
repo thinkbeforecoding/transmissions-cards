@@ -480,12 +480,12 @@ let checkStrategyScores (situation: Situation) =
     for strategy in situation.Strategies do
         let score = strategyScore situation.Escalades situation.Strategies strategy
         if abs score > 1.21m then
-            printfn $"\x1b[33  ⚡Score déséquilibré %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
+            printfn $"\x1b[38;2;128;128;128m  ⚡ Score déséquilibré %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
         if (strategy.Consequences |> List.forall (fun c -> match c.Score with Score(_,[]) -> true | _ -> false ) ) then
             if (strategy.Consequences |> List.filter (fun c -> match c.Score with Score(Some(n,_),_) when n > 0 -> true | _ -> false ) |> List.length) = 1 then
-                printfn $"\x1b[33  ⚡1 seul positif %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
+                printfn $"\x1b[38;2;128;128;128m  ⚡ 1 seul positif %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
             if (strategy.Consequences |> List.filter (fun c -> match c.Score with Score(Some(n,_),_) when n < 0 -> true | _ -> false ) |> List.length) = 1 then
-                printfn $"\x1b[33  ⚡1 seul negatif %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
+                printfn $"\x1b[38;2;128;128;128m  ⚡ 1 seul negatif %.2f{score} { strategy.Title |> cut 40}\x1b[0m"
 
 
 
@@ -618,7 +618,7 @@ open Feliz.ViewEngine
 
 
 open QRCoder
-let logo = System.IO.File.ReadAllText @".\cars\img\logo.svg" 
+let logo = System.IO.File.ReadAllText @".\cards\img\logo.svg" 
 let gen = new QRCodeGenerator()
 
 let qrCode n =
