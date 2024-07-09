@@ -1,11 +1,10 @@
-<!-- Copy and paste the converted output. -->
-
 <!-- You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
 * ERRORs: 0
 * WARNINGs: 0
 * ALERTS: 1 -->
 
 
+# 
 ![alt_text](images/image1.png "image_tooltip")
 
 
@@ -908,7 +907,7 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
     * **10 :** « _Non, je ne vous voulais rien de particulier… Bon, ben euh… _» Et il part  l’air penaud. Tu sais que tu n’as pas à t’imposer une présence dont tu n'as pas envie, mais tu ressens un peu d’empathie pour lui. **(0)**
 
 
-## 27. La voiture qui ralentit 
+## 27. La voiture qui ralentit [S : 1 / R : 6 / E : 4 = 11]
 
 Tu es une femme et tu marches avenue Max Dormoy, un endroit où il y a beaucoup de circulation avec des voitures qui roulent à bonne vitesse. Soudain, tu te rends compte qu’une voiture roule à un rythme anormalement lent à côté de toi. En tournant la tête, tu t’aperçois que le chauffeur t’adresse des gestes obscènes.
 
@@ -916,32 +915,69 @@ Tu es une femme et tu marches avenue Max Dormoy, un endroit où il y a beaucoup 
 
 * **Je le regarde d’un air méprisant et je cherche un magasin pour m’y réfugier.**
     * **1 à 3 :** Tu trouves assez rapidement un magasin ouvert dont tu ressors quelques minutes plus tard. Tu as perdu un peu de temps mais tu t’es mise en sécurité. **(J2)** 
-    * **4 à 6 :** Tu ne trouves aucun magasin ouvert et l’homme continue. Il cherche à te rabaisser en toute impunité : typique de la culture du viol. **(0 ET choisis une autre Stratégie)**
-    * **7 :** Lorsque tu sors de la boutique tu t’aperçois qu’il est toujours là. Sa volonté est clairement de te priver de ton droit à circuler librement et en sécurité. **(S1 ET choisis une autre Stratégie)**
-    * **8 à 10 : **Il t’insulte avant de démarrer en trombe. Ton mépris l’a déstabilisé, il comptait t’empêcher de réagir en te mettant mal à l’aise. **(J1)**
-* **Je lui crie : _« Casse-toi, sale porc ! »_**
-* **Je crie et gesticule pour alerter les passants et les automobilistes.**
-    * L’homme démarre et s’en va.
-* **Je poursuis mon chemin jusqu’à chez moi comme si de rien n’était.  **
-    * L’homme s’en va mais vous avez peur qu’il ai remarqué où vous habitiez.
-    * Le type se lasse, remet les gaz et poursuit son chemin.
-    * La voiture continue son chemin. Le conducteur cherchait juste une place de parking.
+    * **4 à 6 :** Tu ne trouves aucun magasin ouvert et l’homme continue. Il cherche à te rabaisser en toute impunité : typique de la culture du viol. **(S1 ET choisis une autre Stratégie)**
+    * **7 :** Lorsque tu sors de la boutique tu t’aperçois qu’il est toujours là. Sa volonté est clairement de te priver de ton droit à circuler librement et en sécurité. **(S2 ET choisis une autre Stratégie)**
+    * **8 à 10 : **Il t’insulte avant de démarrer en trombe. Ton mépris l’a déstabilisé, il comptait t’empêcher de réagir en te mettant mal à l’aise. **(0)**
+* **Je hurle l’air menaçante : _« Casse-toi, sale porc ! »_**
+    * **1 à 2 :** Il prend peur, accélère et disparaît. Résister de façon déterminée l’a mis en déroute. **(J3)**
+    * **3 à 6 :** Il t’insulte à son tour avant de démarrer en trombe. Sa réaction violente est le signe que tu as inversé le rapport de forces. **(0)**
+    * **7 :** Il continue sans avoir l’air perturbé. N’accorder aucune attention à ce que tu réponds est une tactique pour te chosifier. **(S1 ET choisis une autre Stratégie)**
+    * **8 :** Interpellés par ton cri, des passants se rapprochent, ce qui le fait fuir. Il voulait t’isoler, ta réaction l’en a empêché. **(J1)**
+    * **9 à 10 :** Il se gare brusquement sur le bas-côté et sort de son véhicule : _« Attends, tu viens de m’insulter, là ? » **(Escalade)**_
+        * J’appelle à l’aide les passants autour de moi.
+            * **1 à 3 :** La crainte qu’il y ai des témoins le fait fuir. En criant, tu as brisé l’isolement dans lequel il t’enfermait. **(J1)**
+            * **4 à 6 :** Personne ne réagit. Cette inaction collective est malheureusement ce qui autorise ce genre de comportements. **(S3)**
+            * **7 à 8 :** Un groupe de personnes viennent t’aider et l’entourent. Il tentait de renverser la culpabilité et tu l’as ramené à son statut d’agresseur. **(J3)**
+            * **9 à 10 :_ « Elle est complètement folle, elle ! »_** En prétextant l’hystérie, il tente de renverser la culpabilité pour créer du doute chez les témoins. **(S2)**
+        * Je sors mon téléphone et lui dis que je vais appeler la Police.
+            * **1 à 3 :_ « Tu crois qu’ils vont se déplacer pour ça ? »_**  Tu sens qu’il essaie de te faire douter. Pourtant c’est bien une agression. **(S1)**
+            * **4 à 6 :** Il fait volte-face fissa. En invoquant l’autorité, tu l’as forcé à reconnaître sa culpabilité.** (J3)**
+            * **7 :** « Vas-y, je vais me faire un plaisir de leur dire que tu m’as insulté. » Il veut t’intimider pour te faire renoncer bien qu’il soit en tort. **(S2)**
+            * **8 à 9 :_ « Faut pas le prendre comme ça… » _**Sa volonté de minimiser son acte montre que tu as repris l’ascendant. **(J1)**
+            * **10 :** Il jette ton téléphone par terre avant de s’en aller : un grand malade. Le mieux reste de noter sa plaque et de trouver des témoins pour porter plainte. **(S3)**
+        * Je cours.
+            * **1 à 2 :** Il te court après et t’invective. Il était clairement violent et tu as bien fait de t’enfuir même si tu as eu peur. **(S2)**
+            * **3 à 7 :** Il ne te suit pas. Plus de peur que de mal mais tu t’es retrouvée contrainte de fuir alors que c’est lui le coupable. **(0)**
+            * **8 à 10 :** Un passant regardait la scène sans intervenir jusqu’ici et réagit : _« Laissez-la maintenant, ça suffit ! » _Il était en vigilance pour éviter que la situation ne s’envenime. Tu aurais peut-être souhaité·e qu’il intervienne plus tôt mais ce type de soutien reste précieux. **(J1)**
+        * _« Et toi, t’as vu les gestes que tu me faisais ? »_
+            * **1 à 2 :** Il redouble d’insultes : mieux vaut partir. Te dénigrer pour nier est un classique chez les harceleurs quand tu leur résistes. **(S3)**
+            * **3 à 6 :** « _Ça va, c’était pour rire…_ » Vous n’avez clairement pas le même humour mais il cherche surtout à renverser la culpabilité car tu l’as acculé. **(0)**
+            * **7 à 9 :** Il remonte dans sa voiture sans rien vous répondre. Lui tenir tête l’a désarmé en inversant le rapport de forces. **(J3)**
+            * **10 :** Un piéton qui suivait la scène de loin, se rapproche : _« Ola, mais qu’est-ce qui se passe ? »_ et il remonte dans sa voiture. Tenir tête a offert l’opportunité à un tiers d’intervenir. **(J2)**
+* **Je poursuis mon chemin comme si de rien n’était.  **
+    * **1 à 4 :** Il accélère et disparaît. Refuser de lui accorder ton attention et ne pas te laisser envahir par sa présence a fonctionné. **(J2)**
+    * **5 à 7 :** La voiture continue de te suivre, l’ignorer ne suffira pas. **(S1 ET choisis une autre Stratégie + Escalade)**
+        * [Je sors mon téléphone et lui dis que je vais appeler la Police.]
+        * [J’appelle à l’aide les passants autour de moi.]
+    * **8 à 9 :** Il te suit en étant de plus en plus agressif avant de s’en aller. Saturer ton espace était clairement son intention. Tu es parvenue à t’en débarrasser au prix d’un certain malaise. **(S2)**
+    * **10 :** Une voiture derrière lui klaxonne pour qu’il accélère. Tu as joué la montre et ça t’a permis de t’en débarrasser ! **(J1)**
 * **Je fais demi-tour pour qu’il ne me suive pas.**
-    * Le conducteur est bloqué et tu le sèmes
-    * T’as abdiqué une partie de ta liberté pour te débarrasser d’un problème.
-    * La voiture fait le tour du pâté de maison et s'approche lentement vers toi.
-* **« Tu voudrais qu’on fasse ça à ta mère ? »  **
+    * **1 à 6 :** La voiture poursuit son chemin et tu t’en débarrasses immédiatement. Néanmoins, tu as dû abdiquer une partie de ta liberté pour t’en défaire… **(J1)**
+    * **7 à 8 :** La voiture fait demi-tour et se remet à ta hauteur. Le mettre à distance n’a pas suffit, il cherche à imposer sa présence. (**S1 ET choisis une autre Stratégie**)
+    * **9 à 10 :** La voiture s’arrête et il descend : _« Tu vas où, comme ça ? »_  
+        * [Je sors mon téléphone et lui dis que je vais appeler la Police.]
+        * [J’appelle à l’aide les passants autour de moi.]
+        * [Je cours.]
+* **_« Tu voudrais qu’on fasse ça à ta mère ? »_  **
+    * **1 à 4 :** « _Je t’interdis de parler ma mère, toi ! _» Il devient très agressif et finit par partir. Sa colère est néanmoins le signe que tu as visé juste en le renvoyant à sa propre intimité. **(S1)**
+    * **5 à 6 :** Il te regarde interdit et s’en va sans un mot. Ta remarque l’a mis face à l’immoralité de son acte. **(J3)**
+    * **7 à 8 :** « _Faut pas le prendre comme ça…_ » Il cherche à minimiser et renverser la culpabilité pour éviter de reconnaître son acte. **(0)**
+    * **9 à 10 :** Il s’arrête brusquement et descend de la voiture : _« Qu’est-ce que tu viens de dire, là ? » **(Escalade)**_
+        * [Je sors mon téléphone et lui dis que je vais appeler la Police.]
+        * [J’appelle à l’aide les passants autour de moi.]
+        * [Je cours.]
+        * [« Et toi, t’as vu les gestes que tu me faisais ? »]
 * **Je sors mon téléphone portable pour le filmer.**
-    * La voiture s'éloigne rapidement.
-    * Le conducteur s'arrête et sort du véhicule en me menaçant si je ne supprime pas la vidéo.
-    * Le conducteur ouvre sa fenêtre et demande : _« Tu me prends en photo ? Je te plais ? »  _
-    * Le conducteur stoppe net et fait une marche arrière. 
+    * **1 à 3 :** Il arrête net et poursuit sa route. Te doter de preuves potentielles et la peur d’être identifié l’a dissuadé et fait fuir. **(J3)**
+    * **4 à 5 :** La voiture s’arrête et le conducteur sort : _« Tu fais quoi là ?! » **(Escalade)**_ 
+        * [Je sors mon téléphone et lui dis que je vais appeler la Police.]
+        * [J’appelle à l’aide les passants autour de moi.]
+        * [Je cours.]
+        * [« Et toi, t’as vu les gestes que tu me faisais ? »] 
+    * **6 à 8 :** Il change brusquement de comportement : _« Tu me prends en photo ? Je te plais ? » _Il cherche à t’intimider en travestissant la réalité. **(S2)**
+    * **9 à 10 :** Ca ne suffit pas à l’arrêter et il continue un moment avant de s’en aller mais désormais tu as des preuves si tu souhaites dénoncer ses agissements. **(0)**
 
  
-
-
-
-* **J'appelle quelqu'un en vidéo. **
 
 
 ## X. **Le type sort son engin.** 
