@@ -1105,7 +1105,6 @@ let champigny =
 //     strategyScore s.Escalades s.Strategies str  ]
 // |> printfn "%A"
 
-
 // let situations =
 //     parse @"situations.md"
 //     |> check
@@ -1119,6 +1118,7 @@ let cards =
         for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
             Escalade (key, n, situation, escalade)
     ]
+
 
 let html =
     render cards

@@ -221,7 +221,7 @@ Tu prends le RER pour aller rendre visite à un ami. A peine sorti de la gare, 
             * **10 :_ « Nous on plaisante pas, donne ton téléphone ! »_** Tu es encerclé·e et n’as pas le choix. **(S3)**
         * [Je me mets à courir.]
         * [J’appelle à l’aide.]
-    * **10 : **«  En vrai, il a raison… » un débat s’engage entre eux et ils ne vous remarquent même plus. **(J2)**
+    * **10 : **«  En vrai, il a raison… » un débat s’engage entre eux et ils ne te remarquent même plus. **(J2)**
 * **Je réponds étonné : _« Pardon mais je comprends pas, c’est à moi que vous vous adressez ? »_**
     * **1 à 7 :_ «  Oui c’est à toi qu’on parle. Tu viens d’où ? »_ **
         * _« Ah, je viens d’où ! J’avais pas compris. »_ puis je leur donne le nom d’une ville au hasard.
@@ -240,12 +240,12 @@ Tu prends le RER pour aller rendre visite à un ami. A peine sorti de la gare, 
             * **7 à 10 **: Ils restent plantés là et t'insultent de loin **(J1)**
         * _« Bah, je viens de la gare. »_
             * **1 à 3 :** Ta remarque les fait rire et ils te foutent la paix.** (J3)**
-            * **4 à 6 :** _« Ouais, vas-y casse-toi tu m’as saoulé. »_ ils ont l’air un peu énervés mais vous poursuivez votre route. **(J1)** 
+            * **4 à 6 :** _« Ouais, vas-y casse-toi tu m’as saoulé. »_ ils ont l’air un peu énervés mais tu poursuis ta route. **(J1)** 
             * **7 à 10 : **Ils se rapprochent et te disent : « _Tu te fous de notre gueule !? _» Tu sens que tu vas passer un sale quart d’heure… **(S3)**
-    * **8 à 10 :** _« Ouais, vas-y casse-toi tu m’as saoulé. »_ Ils ont l’air un peu énervés mais vous poursuivez votre route. **(J1)	** 		
+    * **8 à 10 :** _« Ouais, vas-y casse-toi tu m’as saoulé. »_ Ils ont l’air un peu énervés mais tu poursuis ta route. **(J1)	** 		
 * **_«  Bah… je viens de chez moi. »_**
     * **1 à 3 :** Ta remarque les fait rire et ils te foutent la paix.** (J3)**
-    * **4 à 6 :** _« Ouais, vas-y casse-toi tu m’as saoulé. »_ ils ont l’air un peu énervés mais vous poursuivez votre route. **(J1)** 
+    * **4 à 6 :** _« Ouais, vas-y casse-toi tu m’as saoulé. »_ ils ont l’air un peu énervés mais tu poursuis ta route. **(J1)** 
     * **7 à 8 :** Ils commencent à s’énerver et à se rapprocher.
         * [Je me mets à courir.]
         * Je fonce dans le tas.
@@ -454,25 +454,76 @@ Il est 18 h. C'est l'hiver, il fait sombre. Tu arrives devant chez toi. L'entré
  
 
 
-## A FAIRE. Le magasin de chaussures
+## 28. Le magasin de chaussures
 
-Tu flânes dans un magasin de chaussures. Tu fais ta vie tranquille, tu regardes les modèles et te balade. Le rayon est étroit donc tu frôles un homme tatoué. Tu t’excuses, mais il profère des propos racistes envers toi et s’essuie le corps avec dégoût. Une seule autre personne, présente dans le rayon, a été témoin de la scène.
+Tu flânes dans un magasin de chaussures. Les rayons sont plutôt étroits et tu vois une jeune fille noire frôler un homme tatoué en tentant de passer. Elle s’excuse immédiatement, mais il lui adresse des propos racistes en s’essuyant le corps avec dégoût.
 
 
 
-* **Sur le ton de l’humour : _« Sérieusement, vous avez peur que ma couleur de peau soit contagieuse ? »_**
-    * La personne te regarde, dédaigneuse, et s’en va sans rien dire
-    * La personne s’énerve, profère davantage de propos racistes/ou devient violente (escalade?)
-* **Je ne dis rien et continue mes achats comme si je n’avais rien entendu.**
-* **Je cherche des yeux du soutien auprès de la personne témoin de la scène.**
-    * Le témoin ignore la situation
-    * Le témoin intervient…
-* **Outré(e), je lui réponds que son comportement est honteux et que je porterai plainte.**
-    * La personne s’énerve.
-    * Une vendeuse qui passait non loin intervient et fait sortir la personne du magasin.
-    * Avec un regard noir, la personne s’en va.
-    * La personne évoque une méprise : _«Non… mais.. Vous avez mal compris... »_ \
-
+* **Je me rapproche et lance un regard noir à l’homme pour lui faire comprendre que j’ai tout entendu.**
+    * **1 à 2 :** Il te retourne ton regard et sort du magasin. Tu as la sensation que la jeune fille est soulagée : avoir montré ta désapprobation l’a sortie d’une situation de face à face. **(J2)**
+    * **3 à 4 :** _« Quoi ? Y’a un souci »_ Savoir que tu l’as entendu n’a pas l’air de le complexer et cherche à t’intimider pour te tenir à distance. **(S1 ET choisis une autre Stratégie)**
+    * **5 à 6 :** Il en remet une couche et redouble d’insultes racistes à haute-voix pour bien te faire comprendre que tu ne l’impressionnes pas. En voulant intervenir, tu as augmenté le niveau de violence malgré toi. **(S3)**
+    * **7 à 8 :_ « Vous avez vu comment ils se comportent ces gens-là ? »_**Il utilise ton silence pour te rendre complice de ses préjugés racistes. **(S2)**
+    * **9 à 10 :_ « Ça va, je lui faisais une blague ! »_** puis s’adressant à elle : _« Tu l’as pas mal pris, hein ? »_ En prétextant l’humour, il reconnaît à demi-mot que c’est pas ok mais ça ne vaut pas des excuses... **(J1)**
+* **Je lui lance : _« Mais ça va pas de dire ça ? Vous devriez avoir honte, Monsieur. »_**
+    * **1 à 2 : **La jeune fille saisit l’occasion pour le confronter et l’homme sort du magasin la tête basse. Ton intervention lui a donné les ressources pour agir. **(J3)**
+    * **3 :** Un·e vendeur·se et d’autres client·es vous appuient et il est sommé de quitter le magasin. Votre réaction a permis un sursaut collectif. **(J2)**
+    * **4 à 5 :** La jeune fille vous coupe : _« Ça va, je suis assez grande pour me défendre toute seule ! »_ En présumant son incapacité à se défendre, tu l’as enfermée dans un statut de victime. **(S2)**
+    * **6 à 8 : _« Je dis tout haut ce que tout le monde pense tout bas ! »_** Un argument entendu 1 000 fois. **(Escalade)**
+        * J**e dis bien fort : _« Bah allez-y, demandez-leur aux gens ici s’ils sont d’accord avec vous ?! »_**
+            * **1 à 4 :** Tous les regards se braquent sur lui et il s’éclipse. En mobilisant le collectif, tu as retourné son argument. **(J3)**
+            * **5 à 7 :** Les gens regardent ailleurs, c’est malheureusement ce qui permet à ce genre d’arguments de prospérer. **(S2)**
+            * **8 à 9 :** La personne responsable du magasin vous demande de ne pas faire d’esclandre et de sortir. Sous couvert de neutralité, elle renforce son sentiment d’impunité.** (S3)**
+            * **10 :** La jeune fille saisit l’occasion pour le confronter et l’homme sort du magasin la tête basse. Ton intervention lui a donné les ressources pour agir. **(J2)**
+        * **_« C'est pas une opinion ça Monsieur, c’est du racisme et c’est puni par la loi. »_**
+            * **1 à 5 :_ « Bah voyons… » _**Nommer son acte et ses conséquences l’a privé de répartie. **(J1)**
+            * **6 :** _« Cette personne a raison, je vais vous demander de partir. » _Rappeler la loi a poussé les responsables du magasin à réagir. **(J2)**
+            * **7 à 10 :** _« Comme si on allait m’arrêter pour ça ! »_ Il se sent intouchable pourtant c’est un délit passible d’un an d’emprisonnement et 45 000 € d’amende. **(S2)**
+        * **_« Moi, je dis tout haut que vous êtes un gros raciste et je suis convaincu·e que tout le monde le pense tout bas. »_**
+            * **1 à 4 :** Les gens autour éclatent de rire et il s’en va sans un mot. Par l’absurde, tu as démontré que son argument ne reposait sur rien. **(J3)**
+            * **5 à 8 :** Il s’en prend violemment à toi. Lui dire ses quatre vérités, c’était quitte ou double. **(S3)**
+            * **9 :** La personne responsable du magasin vous demande de ne pas faire d’esclandre et de sortir. Sous couvert de neutralité, elle renforce son sentiment d’impunité.** (S2)**
+            * **10 :** « On est au moins deux à le penser ! » lui lance la jeune fille. Dénoncer sans détours son racisme, l’a encouragée à se rebiffer. **(J2)**
+        * **Je m’adresse à la jeune fille : _« S’il n’a que ce genre d’argument, vous avez bien fait de ne pas lui répondre. »_**
+            * **1 à 2 :_ « Mais, je vous ai demandé quelque chose moi ? » _**En prenant la parole pour elle, tu l’as encore plus mise en difficulté.  **(S3)**
+            * **3 à 5 : _« Merci. » _**Tu n’auras jamais nommé le racisme dont elle était l’objet mais ton soutien lui a permis de se sentir moins seule. **(J2)**
+            * **6 :** Une autre personne intervient : « O_ui, c’est vraiment pas la peine d’accorder de l’attention à ce genre de personnes._ » En faisant le premier pas, tu as permis aux langues de se délier. **(J3)**
+            * **7 à 8 :_ « Vous savez bien que j’ai raison »_**  Il a absolument besoin d’occuper l’espace ce type ! **(S2)**
+            * **9 à 10 : _« Ça fait longtemps que ça m’atteint plus ce genre de remarque… » _**Tu comprends que ce n’est pas la première fois et intervenir aura au moins eu le mérite de ne pas banaliser ce qui lui arrive. **(J1)**
+    * **9 à 10 :_ « Mais vous avez bien vu qu’elle m’avait bousculé...» _**: il s’embourbe dans des excuses bidons et tu sens que ta réaction l’oblige à se justifier. **(J1)**
+* **Je fais signe à la jeune fille de ne pas insister et que ça n’en vaut pas la peine.**
+    * **1 :_ « J’en ai vraiment ras-le-bol qu’on me demande de m’écraser en permanence ! » _**En l’invitant à ne pas réagir, tu sous-entends que c’est elle le problème. **(S3)**
+    * **2 à 3 :_ « Donc tout le monde a vu ce qu’il s’est passé et personne ne va réagir ?! » _**Elle cherchait un soutien actif et tu l’as rendue responsable de ton inaction en l’invitant à esquiver. **(S2)**
+    * **4 à 7 :** Elle approuve d’un geste. Ce n’est certainement pas la première fois que ça lui arrive mais elle sent un peu de compassion de ta part. **(J1)**
+    * **8 à 9 : **L’homme profite de l’absence de réaction collective pour continuer son cinéma, tu lui as laissé le champ libre. **(S1 ET choisis une autre Stratégie)**
+    * **10 :** Un autre client s’indigne à ta place et l’homme s’en va : heureusement que certaines personnes prennent leurs responsabilités. **(0)**
+* **Je lance bien fort pour que tout le monde m’entende : _« Ça alors, y’a des gens ici qui ont l’air de croire que la couleur de peau ça déteint sur eux ! »_**
+    * **1 à 3 :** Les sourires des autres clients du magasin le mettent mal-à-l’aise : tu l’as mouché en mettant en lumière l’absurdité de son comportement. **(J2)**
+    * **4 :** Mal à l’aise, la jeune fille s’en va. Tu as braqué les projecteurs sur elle alors qu’elle ne t'avait rien demandé. **(S3)**
+    * **5 :_ « Heureusement que c’est pas le cas, j’aurais pu me retrouver avec ses affreux tatouages ! »_** La jeune fille profite de ton intervention pour lui rendre la pareille ! **(J3)**
+    * **6 à 7 :** La personne responsable du magasin te demande de sortir pour ne pas déranger les autres clients. C’était un risque, mais ça en valait la peine ! **(S2)** 
+    * **8 à 10 :_ « Je suis loin d’être le seul que ces gens-là dérangent ! » _**Ta remarque lui donne l’opportunité d’en remettre une couche. **(Escalade)**
+        * **_« Donc les noirs vous dérangent c’est bien ça ? Vous confirmez que vous êtes raciste ? »_ **
+            * **1 à 3 :_ « Bah voyons… » _**Mettre des mots sur ses sous-entendus l’a privé de tout argument, il s’esquive. **(J1) **
+            * **4 à 5 :** Ta remarque le fait sortir de ses gonds et la personne responsable du magasin lui demande de partir illico. Le forcer à assumer a contraint les autres à réagir. **(J2)**
+            * **6 à 7 :_ « Oui vous êtes un gros raciste » _**reprend la jeune fille. Nommer le racisme lui a offert l’opportunité d’en faire de même. **(J3)**
+            * **8 à 9 : **Mal à l’aise, la jeune fille s’en va. Tu l’as obligée à vivre une confrontation qu’elle n’avait pas envie d’avoir aujourd’hui. **(S3)**
+            * **10 : _« Bon ça suffit maintenant, on voudrait faire nos achats en paix ! » _**Pour ne pas avoir à s’en mêler, les gens préfèrent vous mettre dans le même sac… **(S2)**
+        * **[_« C'est pas une opinion ça Monsieur, c’est du racisme et c’est puni par la loi. »_]**
+        * **[Je m’adresse à la jeune fille : _« S’il n’a que ce genre d’argument, vous avez bien fait de ne pas lui répondre. »_]**
+* **Je m’adresse à la jeune fille : « J’ai tout vu, si vous avez besoin, je peux témoigner ou vous accompagner. »**
+    * _« Oui, je vous remercie »_ et elle prend tes coordonnées. Non seulement tu lui as offert une issue concrète mais en plus tu n’as pas pris la parole à sa place... **(J3)**
+    * _« Si j’avais dû porter plainte à chaque fois… » _C’est d’autant plus dommage : c’est une injure publique à caractère raciste punie par la loi. **(S1)**
+    * _« Porter plainte pourquoi ? Personne ne va m'empêcher de dire ce que je pense ! »_ Et pourtant même la liberté d’expression a ses limites… **(Escalade)**
+        * **[_« Donc les noirs vous dérangent c’est bien ça ? Vous confirmez que vous êtes raciste ? »_] **
+        * **[_« C'est pas une opinion ça Monsieur, c’est du racisme et c’est puni par la loi. »_]**
+        * **[_« Moi, je dis tout haut que vous êtes un gros raciste et je suis convaincu·e que tout le monde le pense tout bas. »_]**
+        * **[Je dis bien fort : _« Bah allez-y, demandez-leur aux gens ici s’ils sont d’accord avec vous ?! »_]**
+    * Deux personnes à proximité viennent également proposer leur aide. Ton initiative a créé de la solidarité à l’égard de la jeune fille et a brisé son isolement. **(J2)**
+    * 
+* **Je reste à proximité, prêt·e à réagir.**
+* 
 
 **Situation [A FUSIONNER]**
 
@@ -708,7 +759,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
         * _« Il n’y a aucune loi qui m’interdit d’allaiter en public. »_
             * **1 à 2 :** Après vérification, le serveur vient te donner raison et s’excuse platement en t’offrant le dessert. **(J3)**
             * **3 à 6 :_ « Vous êtes dans mon établissement et c’est moi qui décide. » _**Apparemment cet établissement est au-dessus des lois... **(S3)**
-            * **7 à 9 :** Un·e ami·e vous dit : _« C’est peut-être pas la peine d’en arriver là ? Viens je t’accompagne aux toilettes. » _Les toilettes, quel bel endroit pour allaiter un enfant… **(S2)**
+            * **7 à 9 :** Un·e ami·e te dit : _« C’est peut-être pas la peine d’en arriver là ? Viens je t’accompagne aux toilettes. » _Les toilettes, quel bel endroit pour allaiter un enfant… **(S2)**
             * **10 :** Tes ami·e·s te soutiennent et menacent de quitter le restaurant si on ne te laisse pas tranquille. **(J2)**
         * _« Décidemment dans ce pays, nous les femmes, on est jamais couvertes comme il faut ! »_
             * **1 à 2 :** Mouché par votre remarque, il repart avec son torchon sans un mot. **(J2)**
@@ -736,7 +787,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
 * **Je cherche des yeux le soutien des personnes de ma tablée et des autres personnes témoins de la scène.**
     * **1 à 2 :** L’un·e de tes ami·e·s te dit : _« Tu sais nous on prend un biberon quand on sort, c’est plus discret. » _Si même tes ami·e·s se permettent de te dire ce que tu dois faire de ton corps… **(S1)**
     * **3 à 4 :** Comprenant ton désarroi, tes ami·e·s la remettent fermement à sa place et vous poursuivez la soirée normalement même si tu sens son regard désapprobateur fixé sur toi. **(J1)**
-    * **5 :_ « Il_**·_Elle_ _a raison, c’est vraiment pas un endroit pour faire ça ! » _vous assène un·e cliente d’une table voisine. C’est quoi le bon endroit ?... **(S3)**
+    * **5 :_ « Il_**·_Elle_ _a raison, c’est vraiment pas un endroit pour faire ça ! » _vous assène un·e client·e d’une table voisine. C’est quoi le bon endroit ?... **(S3)**
     * **6 : **Tes ami·e·s prennent ta défense et ceux de la table d’à côté s’en mêlent, les verres volent et une grande foire d’empoigne commence. Tout ça pour un bout de nichon ! **(S2)**
     * **7 :** Des personnes aux tables voisines prennent ta défense : _« C’est vous qui êtes indécent·e avec vos remarques idiotes ! »_ **(J3)**
     * **8 à 10 :** Tout le monde détourne les yeux et regarde son assiette. Tu te sens bien seule… **(S1 ET choisis une autre Stratégie)**
@@ -925,7 +976,7 @@ Tu es une femme et tu marches avenue Max Dormoy, un endroit où il y a beaucoup 
     * **8 :** Interpellés par ton cri, des passants se rapprochent, ce qui le fait fuir. Il voulait t’isoler, ta réaction l’en a empêché. **(J1)**
     * **9 à 10 :** Il se gare brusquement sur le bas-côté et sort de son véhicule : _« Attends, tu viens de m’insulter, là ? » **(Escalade)**_
         * J’appelle à l’aide les passants autour de moi.
-            * **1 à 3 :** La crainte qu’il y ai des témoins le fait fuir. En criant, tu as brisé l’isolement dans lequel il t’enfermait. **(J1)**
+            * **1 à 3 :** La crainte qu’il y ait des témoins le fait fuir. En criant, tu as brisé l’isolement dans lequel il t’enfermait. **(J1)**
             * **4 à 6 :** Personne ne réagit. Cette inaction collective est malheureusement ce qui autorise ce genre de comportements. **(S3)**
             * **7 à 8 :** Un groupe de personnes viennent t’aider et l’entourent. Il tentait de renverser la culpabilité et tu l’as ramené à son statut d’agresseur. **(J3)**
             * **9 à 10 :_ « Elle est complètement folle, elle ! »_** En prétextant l’hystérie, il tente de renverser la culpabilité pour créer du doute chez les témoins. **(S2)**
@@ -942,7 +993,7 @@ Tu es une femme et tu marches avenue Max Dormoy, un endroit où il y a beaucoup 
         * _« Et toi, t’as vu les gestes que tu me faisais ? »_
             * **1 à 2 :** Il redouble d’insultes : mieux vaut partir. Te dénigrer pour nier est un classique chez les harceleurs quand tu leur résistes. **(S3)**
             * **3 à 6 :** « _Ça va, c’était pour rire…_ » Vous n’avez clairement pas le même humour mais il cherche surtout à renverser la culpabilité car tu l’as acculé. **(0)**
-            * **7 à 9 :** Il remonte dans sa voiture sans rien vous répondre. Lui tenir tête l’a désarmé en inversant le rapport de forces. **(J3)**
+            * **7 à 9 :** Il remonte dans sa voiture sans rien te répondre. Lui tenir tête l’a désarmé en inversant le rapport de forces. **(J3)**
             * **10 :** Un piéton qui suivait la scène de loin, se rapproche : _« Ola, mais qu’est-ce qui se passe ? »_ et il remonte dans sa voiture. Tenir tête a offert l’opportunité à un tiers d’intervenir. **(J2)**
 * **Je poursuis mon chemin comme si de rien n’était.  **
     * **1 à 4 :** Il accélère et disparaît. Refuser de lui accorder ton attention et ne pas te laisser envahir par sa présence a fonctionné. **(J2)**
@@ -1253,7 +1304,7 @@ Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe ent
             * **1 à 4 :** Il déguerpit en se rendant compte qu’il n’a pas réussi à t’impressionner. **(J2)**
             * **5 à 6 :** Il te pousse à terre et jette ton téléphone dans la Marne avant de s’enfuir : _« Maintenant tu n’as plus de preuves ! » _ **(S3)**
             * **7 à 8 :_ « Non, c’est bon. Je m’excuse… »_** Il part l’air penaud et tu as la ferme impression qu’il ne recommencera pas de si tôt. **(J3)**
-            * **9 à 10 :_ « Ah, parce que tu m’as cru·e en plus ? Vas-y si ça te chante, ils feront rien pour juste ça. »_ **Il essaye clairement de minimiser son geste et de vous dissuader mais il a l’air si sûr de lui… **(S2)**
+            * **9 à 10 :_ « Ah, parce que tu m’as cru·e en plus ? Vas-y si ça te chante, ils feront rien pour juste ça. »_ **Il essaye clairement de minimiser son geste et de te dissuader mais il a l’air si sûr de lui… **(S2)**
     * **10 :** Il ne semble pas perturbé et continue à se masturber en te regardant. Tu as clairement affaire à quelqu’un de dangereux, fuis. **(S3)**
 * **J'éclate de rire en le regardant.**
     * **1 à 3 :** Il se rhabille rapidement et prend ses jambes à son cou. **(J2)**
