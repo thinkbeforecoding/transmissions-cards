@@ -748,7 +748,8 @@ let rec inclusive' (text: string) pos (matches: System.Text.RegularExpressions.M
             match m.Value with
             | EndsWith "·e" prefix ->  
                 yield! inclspan prefix "e" ""
-            | EndsWith "·e·s" prefix ->  
+            | EndsWith "·e·s" prefix 
+            | EndsWith "·es" prefix ->
                 yield! inclspan prefix "es" "s"
             | EndsWith "x·se" prefix ->
                 yield! inclspan prefix "se" "x"
@@ -1100,7 +1101,7 @@ let champigny =
     parse @"champigny.md"
     |> check
 
-// let s = champigny |> Seq.find (fun s -> s.Id = 27) 
+// let s = champigny |> Seq.find (fun s -> s.Id = 29) 
 // [for str in s.Strategies do
 //     strategyScore s.Escalades s.Strategies str  ]
 // |> printfn "%A"
