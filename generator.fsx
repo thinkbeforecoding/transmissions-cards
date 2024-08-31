@@ -626,11 +626,19 @@ let check (situations: Situation list) =
                         checkRanges $"escalade {k}" escalade
                         for c in escalade.Consequences do
                             match c.Score with
-                            | Score(Some(n,_),_) ->
+                            | Score(Some(n,txt),_) ->
                                 if n > 3 then
                                     warn $"  [escalade {k}] score trop grand ({n}) \x1b[38;2;128;128;128m/ {textToString  c.Text |> cut 40 }"
                                 elif n < -3 then
                                     warn $"  [escalade {k}] score trop petit ({n}) \x1b[38;2;128;128;128m/ {textToString  c.Text |> cut 40 }"
+
+                                match txt with
+                                | ""
+                                | "ET choisis une autre Escalade"
+                                | "OU choisis une autre Escalade" -> ()
+                                | "ET choisis une autre Stratégie"
+                                | "OU choisis une autre Stratégie" -> ()
+                                | _ -> warn $"  [escalade {k}] text score inconnu ({txt}) \x1b[38;2;128;128;128m/ {textToString  c.Text |> cut 40 }"
                             | Score(None,[]) ->
                                     warn $"  [escalade {k}] score manquant \x1b[38;2;128;128;128m/ {textToString  c.Text |> cut 40 }"
 
@@ -759,6 +767,9 @@ let rec inclusive' (text: string) pos (matches: System.Text.RegularExpressions.M
                 yield! inclspan prefix "rices" "eurs"
             | EndsWith "r·se" prefix->
                 yield! inclspan prefix "se" "r"
+            | EndsWith "r·se·s" prefix
+            | EndsWith "r·ses" prefix->
+                yield! inclspan prefix "ses" "rs"
             | EndsWith "le·a" _
             | EndsWith "le·la" _ ->
                 yield! inclspan "l" "a" "e"
@@ -1120,6 +1131,12 @@ let cards =
             Escalade (key, n, situation, escalade)
     ]
 
+cards
+|> Seq.filter (function Situation _ -> true | _ -> false) |> Seq.length
+cards
+|> Seq.filter (function Strategy _ -> true | _ -> false) |> Seq.length
+cards
+|> Seq.filter (function Escalade _ -> true | _ -> false) |> Seq.length
 
 let html =
     render cards
