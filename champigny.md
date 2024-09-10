@@ -828,7 +828,7 @@ Tu es à la retraite et une fracture récente t’handicape dans tes déplacemen
     * **3 à 4 :** Personne ne te répond et tu n’as plus de réseau. Arrivé à l’arrêt suivant, personne ne monte… **(0 ET choisis une autre Stratégie)**
     * **5 à 6 :** Ton ami·e te répond mais l’appel coupe : plus de réseau... En levant la tête, tu es surpris·e en voyant qu’une personne s’est installée à côté de toi. Te concentrer sur une tâche a suffit à éloigner la peur. **(J1)**
     * **7 à 8 :** Pas de réseau… Au bout de quelques minutes, une personne descend de l’étage supérieur et sursaute en te voyant. La peur est contagieuse... **(S1)**
-    * **9 à 10 :** En pleine conversation, tu es surprise de voir une personne descendre de l’étage. Elle te rappelle que tu n’es pas tout·e seul·e ici et que tu parles fort. Être seul·e aurait finalement été agréable... **(S2)**
+    * **9 à 10 :** En pleine conversation, tu es surprise de voir une personne descendre de l’étage. Elle te rappelle que tu n’es pas tout·e seul·e ici et que tu parles fort. Être seul·e aurait finalement été plus agréable... **(S2)**
 
 
 ## 24. Un inconnu dans la rue [S : 1 / R : 7 / E : 9 = 17]
