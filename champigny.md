@@ -1224,13 +1224,13 @@ Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe ent
 
 
 * **Je cours le plus vite possible sans me retourner.**
-    * **1 à 3 :** Essoufflé·e tu t'arrêtes au bout d’un moment qui t’a semblé interminable. Tu as bien fait de t'éloigner. Ne change pas ton trajet quotidien, porte plutôt plainte.  **(S1)**
+    * **1 à 3 :** Essoufflé·e tu t'arrêtes au bout d’un moment qui t’a semblé interminable. Tu as bien fait de t'éloigner mais ne change pas ton trajet quotidien, porte plutôt plainte.  **(S1)**
     * **4 à 7 :** Tu te rends rapidement compte qu’il ne te suit pas. Tu te sens rassuré·e d’avoir eu un bon réflexe. C’est de l’exhibition sexuelle et c’est punissable par la loi. **(J1)**
     * **8 à 9 :** De loin il te lance : _« À demain, même heure, même endroit ! »_ Il a décidé de s’approprier cet espace pour un moment. Ne le laisse pas t’impressionner, tu as la loi pour toi. **(S2)**  
     * **10 :** Tu entends un cri derrière toi : lancé dans un mouvement pour te poursuivre, il a oublié que son pantalon était baissé et s’est ramassé... **(J2)**
 * **Je poursuis mon chemin en l’ignorant.**
     * **1 à 4 :** Il ne fait rien de plus. Le priver d’attention a suffi à t’en débarrasser. Porter plainte le neutralisera durablement. **(J1)**
-    * **5 :** Tu entends ses pas s’éloigner : le priver d’attention a payé. Le signaler t’évitera de le croiser à nouveau. **(J2)**
+    * **5 :** Tu entends ses pas s’éloigner : le priver d’attention a payé et le signaler t’évitera de le croiser à nouveau. **(J2)**
     * **6 à 7 :** Il te suit à distance. Il t’oblige à agir pour t’en débarrasser. **(S1 ET choisis une autre Stratégie)**
     * **8 à 9 :** Il t’envoie : _« C'est ça, casse-toi, avec ta sale gueule ! »_ Tu l’as déstabilisé alors il tente de te rabaisser en t’insultant. Une stratégie tellement classique… N’oublie pas que son acte est punissable.  **(S1)**
     * **10 :** Quand tu t'éloignes, il te lance : _« À demain ! »_ Il tente de coloniser ton espace physique et mental. Le dénoncer à la police devient nécessaire. **(S2)**
@@ -1241,20 +1241,20 @@ Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe ent
             * **1 à 3 : **Il se débat et s’échappe. Le prendre à partie physiquement a fonctionné, il ne risque pas de recommencer de sitôt. Tu peux porter plainte pour exhibition sexuelle et agression physique. **(J2)**
             * **4 à 5 :** Il glisse et tombe dans la Marne. Il remonte un peu plus loin sur le quai et part trempé. Sans commentaire… **(J3)**
             * **6 à 7 :** Il se défend, te rend ton coup et s’en va en lançant _« Espèce de cinglé·e_._ »_ Tu es arrivé·e à le faire partir mais à quel prix… Pour ne plus vivre ça, avertis la police. **(S2)**
-            * **8 à 10 :** Du haut des berges, tu entends quelqu’un : _« Arrêtez de vous en prendre à lui, je vais appeler la police. »_ Tu passes pour l’agresseur. Il va falloir t’expliquer mais tu as un témoin. **(S3)**
-    * **6 à 8 :** Personne ne répond sauf lui : _« Dégage espèce de taré·e ! »_ Il veut te faire taire en te faisant croire que c’est toi le problème. Continue de faire du bruit. **(S1)**
+            * **8 à 10 :** Du haut des berges, tu entends quelqu’un : _« Arrêtez de vous en prendre à lui, je vais appeler la police. »_ C’est toi qui passe pour l’agresseur!! Il va falloir t’expliquer mais tu as un témoin. **(S3)**
+    * **6 à 8 :** Personne ne répond sauf lui : _« Dégage espèce de taré·e ! »_ Il veut te faire taire en te faisant croire que c’est toi le problème : continue de faire du bruit. **(S1)**
     * **9 : **Silence… _« Je crois bien qu’on n’est que tous les deux. »_ Pour ne pas céder à sa menace, fais du bruit et appelle la police. **(S2) **
     * **10 :** Du dessus des berges, une voix répond : _« Qu’est-ce qu’il se passe ici ? J’appelle immédiatement la police ! »_ L’homme déguerpit fissa. Ta réaction a  provoqué une vigilance citoyenne. En plus de t’en être débarrassé, tu as maintenant un témoin. **(J3)**
 * **Je lui signifie calmement que ce n’est pas un endroit pour se masturber et que je vais porter plainte.**
     * **1 à 2 :** Il s’en va sans un mot. Tu n’as pas perdu ton sang-froid. Ramener de la normalité dans cette situation l’a désarçonné. **(J2)**
     * **3 à 5 :** _« J’y peux rien, c’est pas de ma faute ! »_ et il s’en va. Encore le coup de la maladie pour minimiser son agression et c’est lui la victime évidemment ! **(J1)**
-    * **6 à 7 :** _« Mais c’est pas non plus un endroit pour se balader tout·e seule. »_ Il veut t’isoler en te menaçant. Sors-en en appelant la police et en t’éloignant. **(S2)**
+    * **6 à 7 :** _« Mais c’est pas non plus un endroit pour se balader tout·e seule. »_ Il veut t’isoler en te menaçant. Sors-t’en en appelant la police et en t’éloignant. **(S2)**
     * **8 à 9 :** Il ne répond pas et continue ostensiblement. Calme et raison ne semblent pas en venir à bout. **(S1 ET choisis une autre Stratégie + Escalade)**
         * **[ Je le repousse loin de moi ]**
-    * **10 :** Il bégaie : _« Euh, pardon. »_ En réagissant de manière rationnelle, tu as retourné la situation. N’oublie pas que son comportement est illégal. **(J3)**
+    * **10 :** Il bégaie : _« Euh, pardon. »_ En réagissant de manière rationnelle, tu as retourné la situation mais n’oublie pas que son comportement est hors la loi. **(J3)**
 * **Je sors mon portable.**
     * **1 à 3 :** Il se rhabille rapidement et part sans rien dire. Il a sûrement eu peur que tu le filmes pour avoir une preuve de son délit. (1 an de prison et 15 000 € d’amende) **(J2)**
-    * **4 à 5 : **Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. Agir a permis de le faire partir. Maintenant tu as une preuve de l’exhibition sexuelle et de l’agression physique. **(S2)**
+    * **4 à 5 : **Il se montre agressif et fait tomber ton portable par terre avant de s’en aller. Agir a permis de le faire partir et maintenant tu as une preuve de l’exhibition sexuelle et de l’agression physique. **(S2)**
     * **_6 à 7 : « S’il te plaît ne me filme pas, je te promets que je recommencerai plus ! » _(Escalade)**
         * Je continue de le filmer : _« Je garde la vidéo au chaud et si jamais je te revoi_s_ faire ça, je la montrerai à la police ! »_
             * **1 à 5 :** Il s’en va en te disant : _« C’est la dernière fois, je te promets ! » _La perspective d’une preuve l’a stoppé net. A toi de voir quoi en faire. **(J2)**
@@ -1269,7 +1269,7 @@ Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe ent
             * **1 à 3 :** Tu l’entends vaguement te dire _« Merci »_ mais la seule solution pour t’assurer qu’il ne recommencera pas c’est de le dénoncer. ** (J2)**
             * **4 à 6 :** _« J’y peux rien, c’est pas de ma faute ! »_ Aucune excuse ne justifie une agression ! Il ne faut pas t’arrêter là. **(0)**
             * **7 à 8 :** _« Juste un conseil :  c‘est pas un endroit pour se balader tout·e seule… »_ Il veut renverser le rapport de force par la menace mais toi tu as une preuve. Sers t’en ! **(S2)**
-            * **_9 à 10 : « Bah voilà, c’est bien ! »_** En inversant la culpabilité il t’a complètement manipulé·e. Pour qu’il ne recommence pas, utilise la preuve que tu as. **(S3)** 
+            * **_9 à 10 : « Bah voilà, c’est bien ! »_** En inversant la culpabilité il t’a complètement manipulé·e. Pour qu’il ne recommence pas, tu peux utiliser la preuve que tu as. **(S3)** 
     * **_8 à 9 : « Arrête de me filmer sinon je porte plainte ! » _(Escalade)**
         * [Je continue de le filmer : _« Trop tard, tu t’expliqueras avec la police : je les appelle. »_]_ _
         * Je pars pour ne pas envenimer la situation.
@@ -1280,7 +1280,7 @@ Lorsque tu arrives à sa hauteur, il se retourne vers toi en tenant son sexe ent
             * **1 à 4 :** Il déguerpit en se rendant compte qu’il n’a pas réussi à t’impressionner. Ton audace a permis de rétablir les faits car la loi est de ton côté. **(J2)**
             * **5 à 6 :** Il te pousse à terre et balance ton téléphone avant de s’enfuir : _« Maintenant tu n’as plus de preuves ! » _Peut être mais ça ne t’empêchera pas de porter plainte pour exhibition sexuelle doublée d’une agression physique. **(S3)**
             * **7 à 8 :_ « Non, c’est bon. Je m’excuse… »_** Il part l’air penaud. Le rappel à la loi a fonctionné. N'hésite pas à le signaler pour t’assurer qu’il ne recommencera pas. **(J3)**
-            * **9 à 10 :_ « Ah, parce que tu m’as cru·e en plus ? Vas-y si ça te chante, ils ne se déplaceront pas pour ça. »_ **Il essaye de te dissuader en minimisant son geste. Ça c’est de l’exhibition sexuelle et il risque un an de prison… **(S2)**
+            * **9 à 10 :_ « Ah, parce que tu m’as cru·e en plus ? Vas-y si ça te chante, ils ne se déplaceront pas pour ça. »_ **Il essaye de te dissuader en minimisant son geste. « Ça »** **c’est de l’exhibition sexuelle et il risque un an de prison… **(S2)**
     * **10 :** Il ne semble pas perturbé et continue en te regardant. Tu as une preuve solide à présenter à la police. Peu de chance pour qu’il en réchappe… **(S3)**
 * **J'éclate de rire en le regardant.**
     * **1 à 3 :** Il se rhabille rapidement et prend ses jambes à son cou. Ta réaction l’a déstabilisé. Tu peux toujours porter plainte pour l’empêcher de nuire. **(J2)**
