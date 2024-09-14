@@ -121,7 +121,6 @@ section {
 
     border: 0.1mm solid black;
     border-radius: var(--card-corner);
-
 }
 
 
@@ -183,7 +182,7 @@ section {
     background-image: var(--overlay), var(--illustration), var(--underlay)  ;
     background-repeat: no-repeat;
     background-size: calc( var(--width) + 2 * var(--bleed)) calc( var(--height) / 2 + var(--bleed));
-    background-position-x: calc(0m - var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
     background-position-y: calc( var(--height) / 2);
 }
 
