@@ -34,16 +34,12 @@
 
 /* print page definition */
 @page {
-    size: A3;
+    /* size: A6 landscape; */
+    size: 148mm 105mm;
     margin-top: 0mm;
     margin-right: 0mm;
     margin-bottom: 0mm;
     margin-left: 0mm;
-
-    @top-center {
-        content: "Page " counter(page);
-        padding-top: 10mm;
-    }
 }
 
 /* Fonts and their variations */
@@ -110,8 +106,8 @@ section {
    
 /* Cards use specified width/height + bleeds */
 .card {
-    width: calc(var(--width) + 2*var(--bleed));
-    height: calc(var(--height) + 2*var(--bleed));
+    width: calc(var(--width));
+    height: calc(var(--height));
     position: absolute;
 
     /* defines an solid color for image color underlay */
@@ -122,6 +118,9 @@ section {
     --overlay: linear-gradient(transparent, transparent);
 
     --illustration: url(../img/situation.svg);
+
+    border: 0.1mm solid black;
+    border-radius: var(--card-corner);
 
 }
 
@@ -136,7 +135,9 @@ section {
     /* verso of situations have the map and logo as background */
     background-image: url(../img/verso.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: calc(var(--width) + 2 * var(--bleed)) calc(var(--height) + 2 * var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
+    background-position-y: calc(0mm - var(--bleed));
 }
 
 .verso.situation svg {
@@ -144,8 +145,8 @@ section {
     width: 13mm;
     /* border:  0.4mm solid white; */
     border-radius: 1.5mm;
-    left:  5mm;
-    bottom: 5mm;
+    left:  calc( 5mm - var(--bleed));
+    bottom: calc( 5mm - var(--bleed));
 }
 
 .verso.situation .logo-champigny,
@@ -155,8 +156,8 @@ section {
     position: absolute;
     width: 10mm;
     height: 10mm;
-    left: 6mm;
-    top: 6mm;
+    left: calc( 6mm - var(--bleed));
+    top: calc(6mm - var(--bleed));
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -181,8 +182,9 @@ section {
 
     background-image: var(--overlay), var(--illustration), var(--underlay)  ;
     background-repeat: no-repeat;
-    background-size: auto 50%;
-    background-position: bottom;
+    background-size: calc( var(--width) + 2 * var(--bleed)) calc( var(--height) / 2 + var(--bleed));
+    background-position-x: calc(0m - var(--bleed));
+    background-position-y: calc( var(--height) / 2);
 }
 
 .recto.situation .description,
@@ -192,10 +194,11 @@ section {
 }
 
 
+
 .verso.strategy,
 .verso.escalade {
     /* verso of strategies have a 20mm image at the bottom */
-    --bg-size: calc(var(--bleed) + 20mm);
+    --bg-size: calc(20mm + var(--bleed));
     --illustration: url(../img/strategy.svg);
 
     font-size: 9pt;
@@ -203,8 +206,9 @@ section {
     background-image: var(--overlay), var(--illustration) , var(--underlay);
 
     background-repeat: no-repeat;
-    background-size: auto var(--bg-size);
-    background-position: bottom;
+    background-size: calc(var(--width) + 2 * var(--bleed)) calc(var(--bg-size) + var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
+    background-position-y: calc(var(--height) - 20mm);
 }
 
 .recto.alea {
@@ -240,60 +244,17 @@ section {
     background-size: cover;
 }
 
-/* display bleeds on screen 
-   it creates a box of width/height size
-   offset by bleed.
-   Bleeds limit is not printed
-   */
-@media screen,
-pagedjs-ignore {
-
-    .card::after {
-        content: '';
-
-        position: absolute;
-    
-        /* is precisely of card size */
-        width: var(--width);
-        height: var(--height);
-        
-        /* is offset of bleed size */
-        left: var(--bleed);
-        top: var(--bleed);
-
-        /* the actual border */
-        border: 0.1mm solid black;
-        border-radius: var(--card-corner);
-
-        /* the element is in front to be visible 
-           but doesn't intercept mouse events
-           to make inspection of the other parts of the 
-           card easier */
-        z-index: 0; 
-        pointer-events: none;
-    }
-}
 
 /* these properties define the grid for the cards 
 on an A3 page */
 
-.recto .c1 { left: calc(23.9mm - var(--bleed)); }
-.recto .c2 { left: calc(107.6mm - var(--bleed)); }
-.recto .c3 { left: calc(190.1mm - var(--bleed)); }
-
+.recto .c1 { left: 0; }
 /* for verso, columns are from right to left */
-.verso .c1 { left: calc(199.1mm - var(--bleed)); }
-.verso .c2 { left: calc(115.4mm - var(--bleed)); }
-.verso .c3 { left: calc(32.9mm - var(--bleed)); }
-
+.verso .c1 { right: 0; }
 /* rows are the same on both sides */
-.recto.r1 { top: calc(24mm - var(--bleed)); }
-.recto.r2 { top: calc(140.2mm - var(--bleed)); }
-.recto.r3 { top: calc(255mm - var(--bleed)); }
+.recto.r1 { top: 0; }
 
-.verso.r1 { top: calc(24mm + var(--verso-offset) - var(--bleed)); }
-.verso.r2 { top: calc(140.2mm + var(--verso-offset) - var(--bleed)); }
-.verso.r3 { top: calc(255mm + var(--verso-offset) - var(--bleed)); }
+.verso.r1 { top: 0; }
 
 /* used to style titles */
 h1 {
@@ -304,14 +265,14 @@ h1 {
 
     /* stick to the top center */
     border-radius: 0 0 2mm 2mm;
-    width: 60%;
+    width: calc(60% + 2* var(--bleed));
 
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1mm;
 
-    padding-top: calc(3.5mm + var(--bleed)); /* larger to continue over bleeds */
+    padding-top: calc(3.5mm); /* larger to continue over bleeds */
     padding-bottom: 2mm;
     
     /* by default text is white on color background */
@@ -334,7 +295,7 @@ h1 {
 }
 
 .verso h1 {
-    width: 70%;
+    width: calc(70% + 2 * var(--bleed));
 }
 
 
@@ -344,8 +305,8 @@ h1 {
     /* setup margins to limit inner text width,
        since the card has bleads, they have to be
        added to actual margins */
-    margin-left: calc(var(--text-margin) + var(--bleed));
-    margin-right: calc(var(--text-margin) + var(--bleed));
+    margin-left: calc(var(--text-margin));
+    margin-right: calc(var(--text-margin));
 
     height: 40.5mm;
 
@@ -378,8 +339,8 @@ h1 {
     height: 75mm;
 
     /* horizontal margins to limit text width */
-    margin-left: calc(var(--text-margin) + var(--bleed));
-    margin-right: calc(var(--text-margin) + var(--bleed));
+    margin-left: calc(var(--text-margin));
+    margin-right: calc(var(--text-margin));
 
     /* use flex for children */
     display: flex;
@@ -437,8 +398,8 @@ h1 {
     position: absolute;
     height: var(--height);
     width: var(--width);
-    right: calc(var(--right-dist) + var(--bleed));
-    bottom: calc(var(--bottom-dist) + var(--bleed));
+    right: calc(var(--right-dist) );
+    bottom: calc(var(--bottom-dist) );
 
     /* rounded box */
     background-color: white;

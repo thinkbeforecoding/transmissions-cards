@@ -81,8 +81,10 @@ type Style =
 
 type Situation =
     { Id: int
+      Number: int
       Title: string
       Color: Colors
+      Illustration: int
       Text: (Style * string) list list
       Strategies: Strategy list
       Escalades: Map<char, Strategy> }
@@ -193,7 +195,7 @@ let tryParseLink (description: MarkdownSpans) =
 
 let rangeRx = System.Text.RegularExpressions.Regex(@"^\s*(\d+)(\s+à\s+(\d+))?\s*:\s*")
 let scoreRx = System.Text.RegularExpressions.Regex(@"\s*\(([+\-]\d|J\d|S\d|0)\s*([^)+]*)(\+ Escalade)?\s*\)\s*")
-let escaladeRx = System.Text.RegularExpressions.Regex(@"\(\s*voir\s+Escalade(\s+\$)?\s*\)")
+let escaladeRx = System.Text.RegularExpressions.Regex(@"\(\s*(voir\s+)?Escalade(\s+\$)?\s*\)")
 
 let rand = Random(12345)
 
@@ -415,6 +417,7 @@ let parseSituations (md : MarkdownDocument) =
 
 
                     { Id = id
+                      Number = id
                       Title = titleTxt
                       Color =
                         let id = id%25
@@ -428,7 +431,7 @@ let parseSituations (md : MarkdownDocument) =
                             Purple
                         else
                             Green
-
+                      Illustration = id
                       Text =
                         txtSituation
                         |> splitLines
@@ -801,10 +804,10 @@ let renderSituationRecto n (situation: Situation) =
 
     Html.div [
         prop.className $"card recto situation { colorProp situation.Color } {pos n}"
-        if System.IO.File.Exists($"./cards/img/illustrations/situation-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/situation-{situation.Id}.webp)") ]
+        if System.IO.File.Exists($"./cards/img/illustrations/situation-{situation.Illustration}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/situation-{situation.Illustration}.webp)") ]
         prop.children [
-            Html.h1 $"Situation {situation.Id}"
+            Html.h1 $"Situation {situation.Number}"
             Html.div [
                 prop.className "description"
                 prop.children [
@@ -825,6 +828,7 @@ let renderSituationVerso n id  =
     Html.div [
         prop.className $"card verso situation {pos n}"
         prop.children [
+            Html.div [ prop.className "logo-champigny"]
             qrCode id
         ]
     ]
@@ -835,18 +839,18 @@ let renderStrategyRecto (n: int) (r: int) key (situation: Situation) (strategy: 
         prop.className $"card recto {cls} {colorProp situation.Color } {pos n}"
         // match key with
         // | None ->
-        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/strategie-e-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-e-{situation.Id}.webp)") ]
+        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/strategie-e-{situation.Illustration}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-e-{situation.Illustration}.webp)") ]
         // | Some _ -> ()
-        elif System.IO.File.Exists($"./cards/img/illustrations/strategie-{situation.Id}.webp") then
-                prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-{situation.Id}.webp)") ]
+        elif System.IO.File.Exists($"./cards/img/illustrations/strategie-{situation.Illustration}.webp") then
+                prop.style [style.custom("--illustration", $"url(img/illustrations/strategie-{situation.Illustration}.webp)") ]
         // | Some _ -> ()
 
         prop.children [
             Html.h1 (
                 match key with
-                | None -> $"Stratégie {situation.Id}"
-                | Some c -> $"Escalade {situation.Id} {c}")
+                | None -> $"Stratégie {situation.Number}"
+                | Some c -> $"Escalade {situation.Number} {c}")
             Html.div [
                 prop.className "description"
                 prop.children [
@@ -893,17 +897,17 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
         prop.className $"card verso {cls} {colorProp situation.Color } {pos n}"
         // match key with
         // | None ->
-        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/consequences-e-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-e-{situation.Id}.webp)") ]
-        elif System.IO.File.Exists($"./cards/img/illustrations/consequences-{situation.Id}.webp") then
-            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-{situation.Id}.webp)") ]
+        if key.IsSome && System.IO.File.Exists($"./cards/img/illustrations/consequences-e-{situation.Illustration}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-e-{situation.Illustration}.webp)") ]
+        elif System.IO.File.Exists($"./cards/img/illustrations/consequences-{situation.Illustration}.webp") then
+            prop.style [style.custom("--illustration", $"url(img/illustrations/consequences-{situation.Illustration}.webp)") ]
         // | Some _ -> ()
 
         prop.children [
             Html.h1 (
                 match key with
-                | None -> $"Conséquences {situation.Id}"
-                | Some c -> $"Conséquences {situation.Id} {c}")
+                | None -> $"Conséquences {situation.Number}"
+                | Some c -> $"Conséquences {situation.Number} {c}")
             Html.div [
                 prop.className "consequences"
                 prop.children [
@@ -1103,6 +1107,52 @@ let renderA7recto (cards: Card list) =
         ]
     ]
 
+let renderA6 (cards: Card list) =
+    Html.html [
+        Html.head [
+            Html.meta [ prop.charset "utf-8" ]
+            Html.title [ prop.text "Transmission(s)" ]
+            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
+            Html.link [ prop.href "./stylesheets/cards-a6.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
+            Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
+        ]
+        Html.body [
+                for card in cards  do
+                    Html.section [
+                        Html.div [
+                            prop.className "recto"
+                            prop.children [
+                                // Divs for the cricut cut marks
+
+                                match card with
+                                | Alea x ->
+                                    renderAleaRecto 0 x
+                                | Situation sit ->
+                                    renderSituationRecto 0 sit
+                                | Strategy(r,situation, strategy) ->
+                                    renderStrategyRecto 0 r None situation strategy
+                                | Escalade(c, r, situation, strategy) ->
+                                    renderStrategyRecto 0 r (Some c) situation strategy
+                            ]
+                        ]
+                        Html.div [
+                            prop.className "verso"
+                            prop.children [
+                                    match card with
+                                    | Alea _ ->
+                                        renderAleaVerso 0
+                                    | Situation s ->
+                                        renderSituationVerso 0 s.Id
+                                    | Strategy(_,situation, strategy) ->
+                                        renderStrategyVerso 0 None situation strategy
+                                    | Escalade(c,_, situation, strategy) ->
+                                        renderStrategyVerso 0 (Some c) situation strategy
+                            ]
+                        ]
+                    ]
+        ]
+    ]
+
 fsi.PrintDepth <- 1
 let champignyUrl = Environment.GetEnvironmentVariable "TRANSMISSION_CHAMPIGNY_URL"
 
@@ -1123,7 +1173,7 @@ let champigny =
 
 System.Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let cards =
-    [ for situation in champigny do
+    [ for situation in champigny |> List.mapi (fun i s -> {s with Number = i+1}) do
         Situation( situation)
         for n,strategy in situation.Strategies |> Seq.indexed do
             Strategy (n, situation, strategy)
@@ -1143,6 +1193,25 @@ let html =
     |> Render.htmlView
 
 System.IO.File.WriteAllText("./cards/champigny.html", html)
+
+let situationsA6 =
+    champigny
+                            //  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29
+    |> List.permute (fun i -> [ 12; 10;  1;  6;  8; 13; 11; 14;  0;  2;  4;  3;  5;  9;  7; 15][i]) 
+    |> List.mapi (fun i s -> {s with Number = i+1})
+
+let cardsA6 =
+    [ for situation in situationsA6 do
+        Situation( situation)
+        for n,strategy in situation.Strategies |> Seq.indexed do
+            Strategy (n, situation, strategy)
+        for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+            Escalade (key, n, situation, escalade)
+    ]
+renderA6 cardsA6
+|> Render.htmlView
+|> fun html -> System.IO.File.WriteAllText("./cards/champigny-a6.html", html)
+
 
 [ for situation in champigny do
     Situation situation
