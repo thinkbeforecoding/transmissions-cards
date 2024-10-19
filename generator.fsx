@@ -1,4 +1,3 @@
-
 #r "nuget: Feliz.ViewEngine"
 #r "nuget: FSharp.Formatting"
 #r "nuget: QRCoder"
@@ -44,7 +43,7 @@ let updateMarkdown docUrl file =
         click "Extensions"
         hover "Docs™ to Markdown"
         click "Convert"
-        check "#suppress_info"
+        check "#italic_bold_underscores"
         check "#reckless_mode"
 
     click "Markdown"
@@ -1207,12 +1206,12 @@ let champigny =
     |> check
 
 scoreSystemAll -3 champigny
- + scoreSystemAll -2 champigny
- + scoreSystemAll -1 champigny
- + scoreSystemAll 0 champigny
- + scoreSystemAll 1 champigny
- + scoreSystemAll 2 champigny
- + scoreSystemAll 3 champigny
++ scoreSystemAll -2 champigny
++ scoreSystemAll -1 champigny
++ scoreSystemAll 0 champigny
++ scoreSystemAll 1 champigny
++ scoreSystemAll 2 champigny
++ scoreSystemAll 3 champigny
 
 
 champigny[1].Strategies[0].Consequences[0].Score |> printfn "%A"
