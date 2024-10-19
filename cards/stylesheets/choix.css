@@ -1,0 +1,18 @@
+
+.recto.choix {
+    background-image: url(../img/illustrations/choix.webp);
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+
+.verso.soutien {
+    background-image: url(../img/intervention.svg);
+    background-size: cover;
+}
+
+#page-1 .copy {
+    background-image: -moz-element(#choix);
+}
+
+
+

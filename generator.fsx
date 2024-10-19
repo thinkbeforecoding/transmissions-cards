@@ -547,6 +547,50 @@ let score (situation: Situation) =
         printfn $"❌ Erreur calcul score situation S{situation.Id} {situation.Title}"
         0m
 
+let rec strategyScoreSystem  s (escalades: Map<char,Strategy>) (strategies: Strategy list) (strategy: Strategy) = 
+    [ for cons in strategy.Consequences do
+            match cons.Score with
+            | Score(Some(n,""),[]) ->
+                if n = s then
+                    cons.Range.Probability 
+                else
+                    0m
+            | Score(None,[]) ->
+                if s = 0 then
+                    cons.Range.Probability 
+                else
+                    0m
+            | Score(Some(n,l),es) -> 
+                let newSituations =  (List.filter (fun s -> s <> strategy) strategies) @ [ for e in es -> escalades[e] ]
+                cons.Range.Probability * (situationScoreSystem s escalades newSituations )
+            | Score(None, es) ->
+                cons.Range.Probability * situationScoreSystem s escalades [ for e in es -> escalades[e] ]
+            | _ -> failwith "No score"
+    ]
+    |> List.sum
+
+and situationScoreSystem s (escalades: Map<char,Strategy>) (strategies: Strategy list) : decimal =
+    if List.isEmpty strategies then
+        failwith "❌ Plus de stratégies"
+    
+    [ for strategy in strategies do
+            strategyScoreSystem s escalades strategies strategy
+    ]
+    |> List.average 
+
+let scoreSystem s (situation: Situation) =
+    try
+        situationScoreSystem s situation.Escalades situation.Strategies
+    with
+    | ex ->
+        printfn $"❌ Erreur calcul score situation S{situation.Id} {situation.Title}"
+        0m
+let scoreSystemAll s (situations: Situation list) =
+    [ for situation in situations do
+        scoreSystem s situation
+    ] |> List.average
+
+
 let checkStrategyScores (situation: Situation) =
     for strategy in situation.Strategies do
         let score = strategyScore situation.Escalades situation.Strategies strategy
@@ -1162,6 +1206,16 @@ let champigny =
     parse @"champigny.md"
     |> check
 
+scoreSystemAll -3 champigny
+ + scoreSystemAll -2 champigny
+ + scoreSystemAll -1 champigny
+ + scoreSystemAll 0 champigny
+ + scoreSystemAll 1 champigny
+ + scoreSystemAll 2 champigny
+ + scoreSystemAll 3 champigny
+
+
+champigny[1].Strategies[0].Consequences[0].Score |> printfn "%A"
 // let s = champigny |> Seq.find (fun s -> s.Id = 29) 
 // [for str in s.Strategies do
 //     strategyScore s.Escalades s.Strategies str  ]

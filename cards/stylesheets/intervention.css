@@ -1,8 +1,7 @@
 
 .recto.soutien {
     background-image: url(../img/illustrations/soutien.webp);
-    background-size:  contain,cover;
-    background-position: top, bottom;
+    background-size:  cover;
     background-repeat: no-repeat;
 }
 
@@ -13,8 +12,7 @@
 
 .recto.attention {
     background-image: url(../img/illustrations/attention.webp);
-    background-size: contain, cover;
-    background-position: top, bottom;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

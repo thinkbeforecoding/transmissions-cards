@@ -1,6 +1,7 @@
 .help.recto {
     background-image: url(../img/help-recto.svg);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .help.verso {
