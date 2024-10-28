@@ -33,3 +33,15 @@
 .verso .copy {
     background-image: -moz-element(#verso);
 }
+
+.verso .logo-champigny
+{
+    background-image: url(../img/champigny.svg);
+    position: absolute;
+    width: 10mm;
+    height: 10mm;
+    left: 6mm;
+    bottom: 6mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -476,7 +476,7 @@ let cleanMd (md: string) =
             | "." -> ". "
             | "," -> ", "
             | ";" -> "; "
-            | ":" -> " : "
+            | ":" -> "\xA0: "
             | "'" -> "’"
             | "..." -> "… "
             | "…" -> "… "
@@ -494,7 +494,7 @@ let cleanMd (md: string) =
         )
     let md5 =
         normSpaceRx.Replace(md4, (fun m -> m.Groups[1].Value + " "))
-    md5.Replace(" \xA0","\xA0")
+    md5.Replace(" \xA0","\xA0").Replace("  "," ")
 
 let parse path =
     let mdText =
@@ -832,6 +832,8 @@ let rec inclusive' (text: string) pos (matches: System.Text.RegularExpressions.M
             | EndsWith "Il·Elle" _ 
             | EndsWith "Il·elle" _ ->
                 yield! inclspan "" "Elle" "Il"
+            | EndsWith "·ne" prefix ->
+                yield! inclspan prefix "ne" ""
             | _ ->
                 printfn $"❌ {m.Value}"
                 Html.text m.Value
@@ -963,7 +965,8 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
                                 else
                                     prop.text $"{consequence.Range.Min} à {consequence.Range.Max}\xA0:"
                             ]
-                            Html.text " "
+                            if ((snd consequence.Text[0])[0] <> '\xA0') then
+                                Html.text " "
                             for style, text in consequence.Text do
                                 match style.FontStyle with
                                 | Regular -> Html.span (inclusive text)
@@ -1010,53 +1013,56 @@ let renderAleaVerso i  =
 
 let render (cards: Card list) =
     Html.html [
-        Html.head [
-            Html.meta [ prop.charset "utf-8" ]
-            Html.title [ prop.text "Transmission(s)" ]
-            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
-            Html.link [ prop.href "./stylesheets/cards.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
-            Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
-            Html.script [ prop.src "./js/anchor.js" ]
-        ]
-        Html.body [
+        prop.lang "fr"
+        prop.children [
+            Html.head [
+                Html.meta [ prop.charset "utf-8" ]
+                Html.title [ prop.text "Transmission(s)" ]
+                Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
+                Html.link [ prop.href "./stylesheets/cards.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
+                Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
+                Html.script [ prop.src "./js/anchor.js" ]
+            ]
+            Html.body [
 
-                for page in cards |> List.chunkBySize 9 do
-                    Html.section [
-                        prop.className "recto"
-                        prop.children [
-                            // Divs for the cricut cut marks
-                            Html.div [ prop.className "mark m-left m-top"]
-                            Html.div [ prop.className "mark m-right m-top"]
-                            Html.div [ prop.className "mark m-left m-bottom"]
-                            Html.div [ prop.className "mark m-right m-bottom"]
+                    for page in cards |> List.chunkBySize 9 do
+                        Html.section [
+                            prop.className "recto"
+                            prop.children [
+                                // Divs for the cricut cut marks
+                                Html.div [ prop.className "mark m-left m-top"]
+                                Html.div [ prop.className "mark m-right m-top"]
+                                Html.div [ prop.className "mark m-left m-bottom"]
+                                Html.div [ prop.className "mark m-right m-bottom"]
 
-                            for n,card in List.indexed page do
-                                match card with
-                                | Alea x ->
-                                    renderAleaRecto n x
-                                | Situation sit ->
-                                    renderSituationRecto n sit
-                                | Strategy(r,situation, strategy) ->
-                                    renderStrategyRecto n r None situation strategy
-                                | Escalade(c, r, situation, strategy) ->
-                                    renderStrategyRecto n r (Some c) situation strategy
+                                for n,card in List.indexed page do
+                                    match card with
+                                    | Alea x ->
+                                        renderAleaRecto n x
+                                    | Situation sit ->
+                                        renderSituationRecto n sit
+                                    | Strategy(r,situation, strategy) ->
+                                        renderStrategyRecto n r None situation strategy
+                                    | Escalade(c, r, situation, strategy) ->
+                                        renderStrategyRecto n r (Some c) situation strategy
+                            ]
                         ]
-                    ]
-                    Html.section [
-                        prop.className "verso"
-                        prop.children [
-                            for n,card in List.indexed page do
-                                match card with
-                                | Alea _ ->
-                                    renderAleaVerso n
-                                | Situation s ->
-                                    renderSituationVerso n s.Id
-                                | Strategy(_,situation, strategy) ->
-                                    renderStrategyVerso n None situation strategy
-                                | Escalade(c,_, situation, strategy) ->
-                                    renderStrategyVerso n (Some c) situation strategy
+                        Html.section [
+                            prop.className "verso"
+                            prop.children [
+                                for n,card in List.indexed page do
+                                    match card with
+                                    | Alea _ ->
+                                        renderAleaVerso n
+                                    | Situation s ->
+                                        renderSituationVerso n s.Id
+                                    | Strategy(_,situation, strategy) ->
+                                        renderStrategyVerso n None situation strategy
+                                    | Escalade(c,_, situation, strategy) ->
+                                        renderStrategyVerso n (Some c) situation strategy
+                            ]
                         ]
-                    ]
+            ]
         ]
     ]
 
@@ -1105,64 +1111,18 @@ let renderA7 (cards: Card list) =
     ]
 let renderA7recto (cards: Card list) =
     Html.html [
-        Html.head [
-            Html.meta [ prop.charset "utf-8" ]
-            Html.title [ prop.text "Transmission(s)" ]
-            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
-            Html.link [ prop.href "./stylesheets/cards-a7.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
-            Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
-        ]
-        Html.body [
-                for card in cards  do
-                    Html.section [
-                        prop.className "recto"
-                        prop.children [
-                            // Divs for the cricut cut marks
-
-                            match card with
-                            | Alea x ->
-                                renderAleaRecto 0 x
-                            | Situation sit ->
-                                renderSituationRecto 0 sit
-                            | Strategy(r,situation, strategy) ->
-                                renderStrategyRecto 0 r None situation strategy
-                            | Escalade(c, r, situation, strategy) ->
-                                renderStrategyRecto 0 r (Some c) situation strategy
-                        ]
-                    ]
-                    match card with 
-                    | Situation _ -> ()
-                    | _ -> 
+        prop.lang "fr"
+        prop.children [
+            Html.head [
+                Html.meta [ prop.charset "utf-8" ]
+                Html.title [ prop.text "Transmission(s)" ]
+                Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
+                Html.link [ prop.href "./stylesheets/cards-a7.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
+                Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
+            ]
+            Html.body [
+                    for card in cards  do
                         Html.section [
-                            prop.className "verso"
-                            prop.children [
-                                    match card with
-                                    | Alea _ ->
-                                        renderAleaVerso 0
-                                    | Situation s ->
-                                        renderSituationVerso 0 s.Id
-                                    | Strategy(_,situation, strategy) ->
-                                        renderStrategyVerso 0 None situation strategy
-                                    | Escalade(c,_, situation, strategy) ->
-                                        renderStrategyVerso 0 (Some c) situation strategy
-                            ]
-                        ]
-        ]
-    ]
-
-let renderA6 (cards: Card list) =
-    Html.html [
-        Html.head [
-            Html.meta [ prop.charset "utf-8" ]
-            Html.title [ prop.text "Transmission(s)" ]
-            Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
-            Html.link [ prop.href "./stylesheets/cards-a6.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
-            Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
-        ]
-        Html.body [
-                for card in cards  do
-                    Html.section [
-                        Html.div [
                             prop.className "recto"
                             prop.children [
                                 // Divs for the cricut cut marks
@@ -1178,21 +1138,73 @@ let renderA6 (cards: Card list) =
                                     renderStrategyRecto 0 r (Some c) situation strategy
                             ]
                         ]
-                        Html.div [
-                            prop.className "verso"
-                            prop.children [
+                        match card with 
+                        | Situation _ -> ()
+                        | _ -> 
+                            Html.section [
+                                prop.className "verso"
+                                prop.children [
+                                        match card with
+                                        | Alea _ ->
+                                            renderAleaVerso 0
+                                        | Situation s ->
+                                            renderSituationVerso 0 s.Id
+                                        | Strategy(_,situation, strategy) ->
+                                            renderStrategyVerso 0 None situation strategy
+                                        | Escalade(c,_, situation, strategy) ->
+                                            renderStrategyVerso 0 (Some c) situation strategy
+                                ]
+                            ]
+            ]
+        ]
+    ]
+
+let renderA6 (cards: Card list) =
+    Html.html [
+        prop.lang "fr"
+        prop.children [
+            Html.head [
+                Html.meta [ prop.charset "utf-8" ]
+                Html.title [ prop.text "Transmission(s)" ]
+                Html.link [prop.href "./stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
+                Html.link [ prop.href "./stylesheets/cards-a6.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
+                Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
+            ]
+            Html.body [
+                    for card in cards  do
+                        Html.section [
+                            Html.div [
+                                prop.className "recto"
+                                prop.children [
+                                    // Divs for the cricut cut marks
+
                                     match card with
-                                    | Alea _ ->
-                                        renderAleaVerso 0
-                                    | Situation s ->
-                                        renderSituationVerso 0 s.Id
-                                    | Strategy(_,situation, strategy) ->
-                                        renderStrategyVerso 0 None situation strategy
-                                    | Escalade(c,_, situation, strategy) ->
-                                        renderStrategyVerso 0 (Some c) situation strategy
+                                    | Alea x ->
+                                        renderAleaRecto 0 x
+                                    | Situation sit ->
+                                        renderSituationRecto 0 sit
+                                    | Strategy(r,situation, strategy) ->
+                                        renderStrategyRecto 0 r None situation strategy
+                                    | Escalade(c, r, situation, strategy) ->
+                                        renderStrategyRecto 0 r (Some c) situation strategy
+                                ]
+                            ]
+                            Html.div [
+                                prop.className "verso"
+                                prop.children [
+                                        match card with
+                                        | Alea _ ->
+                                            renderAleaVerso 0
+                                        | Situation s ->
+                                            renderSituationVerso 0 s.Id
+                                        | Strategy(_,situation, strategy) ->
+                                            renderStrategyVerso 0 None situation strategy
+                                        | Escalade(c,_, situation, strategy) ->
+                                            renderStrategyVerso 0 (Some c) situation strategy
+                                ]
                             ]
                         ]
-                    ]
+            ]
         ]
     ]
 
@@ -1250,7 +1262,7 @@ System.IO.File.WriteAllText("./cards/champigny.html", html)
 let situationsA6 =
     champigny
                             //  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29
-    |> List.permute (fun i -> [ 12; 10;  1;  6;  8; 13; 11; 14;  0;  2;  4;  3;  5;  9;  7; 15][i]) 
+    // |> List.permute (fun i -> [ 12; 10;  1;  6;  8; 13; 11; 14;  0;  2;  4;  3;  5;  9;  7; 15][i]) 
     |> List.mapi (fun i s -> {s with Number = i+1})
 
 let cardsA6 =
