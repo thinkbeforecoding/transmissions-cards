@@ -965,7 +965,7 @@ let renderAleaVerso i  =
         prop.className $"card verso alea {pos i}"
     ]
 
-let render (cards: Card list) =
+let render safe (cards: Card list) =
     Html.html [
         Html.head [
             Html.meta [ prop.charset "utf-8" ]
@@ -976,44 +976,48 @@ let render (cards: Card list) =
             Html.script [ prop.src "./js/anchor.js" ]
         ]
         Html.body [
+                if safe then
+                    prop.className "safe"
+                
+                prop.children [
+                    for page in cards |> List.chunkBySize 9 do
+                        Html.section [
+                            prop.className "recto"
+                            prop.children [
+                                // Divs for the cricut cut marks
+                                Html.div [ prop.className "mark m-left m-top"]
+                                Html.div [ prop.className "mark m-right m-top"]
+                                Html.div [ prop.className "mark m-left m-bottom"]
+                                Html.div [ prop.className "mark m-right m-bottom"]
 
-                for page in cards |> List.chunkBySize 9 do
-                    Html.section [
-                        prop.className "recto"
-                        prop.children [
-                            // Divs for the cricut cut marks
-                            Html.div [ prop.className "mark m-left m-top"]
-                            Html.div [ prop.className "mark m-right m-top"]
-                            Html.div [ prop.className "mark m-left m-bottom"]
-                            Html.div [ prop.className "mark m-right m-bottom"]
-
-                            for n,card in List.indexed page do
-                                match card with
-                                | Alea x ->
-                                    renderAleaRecto n x
-                                | Situation sit ->
-                                    renderSituationRecto n sit
-                                | Strategy(r,situation, strategy) ->
-                                    renderStrategyRecto n r None situation strategy
-                                | Escalade(c, r, situation, strategy) ->
-                                    renderStrategyRecto n r (Some c) situation strategy
+                                for n,card in List.indexed page do
+                                    match card with
+                                    | Alea x ->
+                                        renderAleaRecto n x
+                                    | Situation sit ->
+                                        renderSituationRecto n sit
+                                    | Strategy(r,situation, strategy) ->
+                                        renderStrategyRecto n r None situation strategy
+                                    | Escalade(c, r, situation, strategy) ->
+                                        renderStrategyRecto n r (Some c) situation strategy
+                            ]
                         ]
-                    ]
-                    Html.section [
-                        prop.className "verso"
-                        prop.children [
-                            for n,card in List.indexed page do
-                                match card with
-                                | Alea _ ->
-                                    renderAleaVerso n
-                                | Situation s ->
-                                    renderSituationVerso n s.Id
-                                | Strategy(_,situation, strategy) ->
-                                    renderStrategyVerso n None situation strategy
-                                | Escalade(c,_, situation, strategy) ->
-                                    renderStrategyVerso n (Some c) situation strategy
+                        Html.section [
+                            prop.className "verso"
+                            prop.children [
+                                for n,card in List.indexed page do
+                                    match card with
+                                    | Alea _ ->
+                                        renderAleaVerso n
+                                    | Situation s ->
+                                        renderSituationVerso n s.Id
+                                    | Strategy(_,situation, strategy) ->
+                                        renderStrategyVerso n None situation strategy
+                                    | Escalade(c,_, situation, strategy) ->
+                                        renderStrategyVerso n (Some c) situation strategy
+                            ]
                         ]
-                    ]
+                ]
         ]
     ]
 
@@ -1189,7 +1193,7 @@ cards
 |> Seq.filter (function Escalade _ -> true | _ -> false) |> Seq.length
 
 let html =
-    render cards
+    render true cards
     |> Render.htmlView
 
 System.IO.File.WriteAllText("./cards/champigny.html", html)
@@ -1245,7 +1249,7 @@ renderA6 cardsA6
 let alea = [ for i in 1 .. 10 do Alea i ]
 
 let aleahtml =
-    render (alea  )
+    render true alea 
     |> Render.htmlView
 System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 

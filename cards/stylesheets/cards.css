@@ -295,6 +295,12 @@ on an A3 page */
 .verso.r2 { top: calc(140.2mm + var(--verso-offset) - var(--bleed)); }
 .verso.r3 { top: calc(255mm + var(--verso-offset) - var(--bleed)); }
 
+/* bottom middle card is shifted to avoid confusion between marks and cards illustrations */
+.safe .recto.c2.r3
+{ top: calc(281.2mm - var(--bleed));}
+.safe .verso.c2.r3
+{ top: calc(281.2mm + var(--verso-offset) - var(--bleed));}
+
 /* used to style titles */
 h1 {
     /* use title font */
@@ -533,6 +539,10 @@ h1 {
 
 .m-bottom {
     bottom: 50.8mm;
+    border-bottom: 1.5mm solid black;
+}
+.safe .m-bottom {
+    bottom: 33.7mm;
     border-bottom: 1.5mm solid black;
 }
 
