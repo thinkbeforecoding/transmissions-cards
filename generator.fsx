@@ -4,6 +4,7 @@
 
 #r "nuget: Selenium.WebDriver"
 #r "nuget: canopy"
+#nowarn "57"
 
 open canopy
 open canopy.classic
@@ -167,7 +168,9 @@ let rec toText' style (spans: MarkdownSpans) =
     | [] -> []
     | span :: tail ->
         [   match span with
-            | MarkdownSpan.Literal(txt,_) -> style, txt
+            | MarkdownSpan.Literal(txt,_) ->
+                if not (String.IsNullOrWhiteSpace txt) then
+                    style, txt
             | MarkdownSpan.Emphasis(body, _) ->
                 yield! toText' { style with FontStyle = Italic } body
             | MarkdownSpan.Strong(body, _) ->
@@ -936,6 +939,21 @@ let scoreText txt =
          " " + txt
 
 
+let startWithSpace (consequence: Consequence) = 
+    if consequence.Text.Length = 0 then
+        false
+    else
+        let _,txt = consequence.Text[0]
+        txt.Length > 0 && match txt[0] with '\xA0' | ' ' -> true | _ -> false
+
+let endsWithSpace (consequence: Consequence) =
+    if consequence.Text.Length = 0 then
+        false
+    else
+        let _,txt = consequence.Text[0]
+        txt.Length > 0 && match txt[txt.Length-1] with '\xA0' | ' ' -> true | _ -> false
+
+
 let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
     Html.div [
         let cls = match key with None -> "strategy" | Some _ -> "escalade"
@@ -965,7 +983,7 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
                                 else
                                     prop.text $"{consequence.Range.Min} à {consequence.Range.Max}\xA0:"
                             ]
-                            if ((snd consequence.Text[0])[0] <> '\xA0') then
+                            if (not (startWithSpace consequence)) then
                                 Html.text " "
                             for style, text in consequence.Text do
                                 match style.FontStyle with
@@ -974,21 +992,23 @@ let renderStrategyVerso n key (situation: Situation) (strategy: Strategy) =
                                 | Bold -> Html.strong (inclusive text)
 
                             Html.span [
+                                let space = 
+                                    if endsWithSpace consequence then "" else " "
                                 match consequence.Score with
                                 | Score (Some(score,txt),ids) when score > 0 ->
                                     prop.className "score player"
-                                    prop.text $" (J%d{score}%s{scoreText txt}%s{plusEscalade ids})\n"
+                                    prop.text $"%s{space}(J%d{score}%s{scoreText txt}%s{plusEscalade ids})\n"
                                 | Score(Some(score,txt), ids) when score < 0 ->
                                     prop.className "score system"
-                                    prop.text $" (S%d{-score}%s{scoreText txt}%s{plusEscalade ids})\n"
+                                    prop.text $"%s{space}(S%d{-score}%s{scoreText txt}%s{plusEscalade ids})\n"
                                 | Score (Some(_,txt), ids) ->
                                     prop.className "score zero"
-                                    prop.text $" (0%s{scoreText txt}%s{plusEscalade ids})\n"
+                                    prop.text $"%s{space}(0%s{scoreText txt}%s{plusEscalade ids})\n"
                                 | Score(None, ids) ->
                                     prop.className "score escalade"
                                     let list = ids |> List.map string |> String.concat ""
 
-                                    prop.text $" (Escalade %s{list})\n"
+                                    prop.text $"%s{space}(Escalade %s{list})\n"
                                 ]
                             ]
 
@@ -1011,7 +1031,7 @@ let renderAleaVerso i  =
         prop.className $"card verso alea {pos i}"
     ]
 
-let render (cards: Card list) =
+let render safe (cards: Card list) =
     Html.html [
         prop.lang "fr"
         prop.children [
@@ -1024,7 +1044,9 @@ let render (cards: Card list) =
                 Html.script [ prop.src "./js/anchor.js" ]
             ]
             Html.body [
-
+                if safe then
+                    prop.className "safe"
+                prop.children [
                     for page in cards |> List.chunkBySize 9 do
                         Html.section [
                             prop.className "recto"
@@ -1062,6 +1084,7 @@ let render (cards: Card list) =
                                         renderStrategyVerso n (Some c) situation strategy
                             ]
                         ]
+                    ]
             ]
         ]
     ]
@@ -1254,7 +1277,7 @@ cards
 |> Seq.filter (function Escalade _ -> true | _ -> false) |> Seq.length
 
 let html =
-    render cards
+    render true cards
     |> Render.htmlView
 
 System.IO.File.WriteAllText("./cards/champigny.html", html)
@@ -1310,7 +1333,7 @@ renderA6 cardsA6
 let alea = [ for i in 1 .. 10 do Alea i ]
 
 let aleahtml =
-    render (alea  )
+    render true alea 
     |> Render.htmlView
 System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 

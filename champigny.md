@@ -694,7 +694,7 @@ Tu es confortablement assise au cinéma Studio 66, pour voir les Bisounours avec
     * __1 à 4 :___ « Ah pardon, je vous ai touchée ? Excusez-moi, je n’ai pas fait exprès ! »_ Difficile de savoir s’il est sincère, en tout cas il cherche à te faire douter mais ne t’importune plus. Avoir mis des mots sur son comportement l’a neutralisé. __(J1)__
     * __5 à 6 :___ « Mais j’ai rien fait, je m’étirais ! Dites donc, vous êtes sensible vous ! » _L’hypersensibilité des femmes comme excuse, c’est si peu original… __(0)__
     * __7 à 8 :__ Il te lance un regard méprisant et ne répond rien. Néanmoins, il ne t’importune plus de la séance. Tu as bien fait de lui répondre fermement. __(J2)__
-    * __9 à 10 :__ Il s’adresse à son fils et lui dit :_ « Arrête d’embêter la dame ! » _Quelle mauvaise foi!
+    * __9 à 10 :__ Il s’adresse à son fils et lui dit :_ « Arrête d’embêter la dame ! » _Quelle mauvaise foi !
         * Je m’adresse à son fils : _« C’est vrai ce qu’il dit ton papa ? »_
             * __1 à 5 : __Son fils dit très fort : _« Non, c’est pas moi ! Pourquoi tu dis ça, papa ? » _L’homme se décompose et se lève en s’adressant à son fils : _« Bon, ça suffit ! On y va. »_ En jouant son jeu, tu l’as confondu._ ___(J3)__
             * __6 à 7 :__ Des spectateur·ice·s vous interpellent : _« Chhhht ! C’est pas bientôt fini ?! »_ Tu n’auras pas le dernier mot et en plus tu te retrouves associée à lui. Néanmoins il ne t’importunera plus. __(0)__ 
@@ -753,7 +753,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
         * Je lui rends et lui dit : _« Merci mais j’en ai déjà une. »_
             * __1 à 2_ : « Non, mais en fait c’est pour… »___ Il se rend compte que tu te moques de lui et s’en va sans rien ajouter. Son départ est un aveu ! __(J3)__   
             * __3 à 4 :___ « Dans ce cas, utilisez-la pour vous cacher un peu mieux que ça. »_ Toi qui faisais déjà en sorte d’être discrète, on te demande carrément de disparaître… __(S2)__  
-            * __5 à 7 :___ « Moi je la prends, je mange comme une cochone ! »_ lui assène une de tes amies en te faisant un clin d'œil. Elle te vient en aide mais sans affronter le vrai problème. __(J1)__
+            * __5 à 7 :___ « Moi je la prends, je mange comme une cochonne ! »_ lui assène une de tes amies en te faisant un clin d'œil. Elle te vient en aide mais sans affronter le vrai problème. __(J1)__
             * __8 à 10 :__ La première personne renchérit : _« Eh bah, bravo ! Avec une mère comme ça, ça promet cet enfant. »___ __Être coupable à la fois en tant que femme et mère, c’est trop là ! __(S3)__
     * __4 à 5 :__ S’adressant à la personne, le serveur dit : _« Ne vous en faites pas, Madame va faire vite. »_ Pourquoi tout le monde ici prend des décisions à ta place ? __(0)__ 
     * __6 à 8 :___ _S’adressant à la personne, le serveur lui dit : _« Je suis désolé, rien ne lui interdit d’allaiter ici. Mais si ça ne vous convient pas, je peux vous proposer une autre table. » _Un rappel à la loi ne fait jamais de mal ! __(J3)__
@@ -786,7 +786,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
         * [_« Il n’y a aucune loi qui m’interdit d’allaiter en public. »_]
     * __4 à 5 :__ La personne continue de te faire des remarques à voix haute tout le long du repas. Difficile de garder l’appétit dans ces conditions… Confondre à ce point sexualité et maternité, tu n’imaginais pas que nourrir ton enfant puisse faire tant de bruit… __(S2)__
     * __6 :__  Les personnes à sa table lui disent de se calmer et que ça ne dérange personne d’autre. Tu as bien fait de ne pas réagir : son attitude paraît excessive. __(J2)__
-    * __7 à 8 :__ La personne n’en rajoute pas mais tu sens son regard désapprobateur fixé sur toi. C’est fou qu’elle veuille te faire sentir coupable pour un acte aussi anodin… encore plus dans un restaurant. __(J1)__
+    * __7 à 8 :__ La personne n’en rajoute pas mais tu sens son regard désapprobateur fixé sur toi. C’est fou : elle voudrait que tu te sentes coupable d’un acte aussi anodin… qui plus est dans un restaurant ! __(J1)__
     * __9 à 10 :__ Un serveur embarrassé, te tend une grande serviette : _« Tenez Madame, vous serez plus à l’aise avec ça. »   _
         * [_« Vous vous rendez compte que je serai encore moins discrète avec ça ? »_]
         * [_« Il n’y a aucune loi qui m’interdit d’allaiter en public. »_]
