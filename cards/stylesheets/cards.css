@@ -149,7 +149,8 @@ section {
 }
 
 .verso.situation .logo-champigny,
-.verso.norm .logo-champigny
+.verso.norm .logo-champigny,
+.verso.alea .logo-champigny
 {
     background-image: url(../img/champigny.svg);
     position: absolute;
@@ -161,6 +162,11 @@ section {
     background-size: contain;
 }
 
+.verso.alea .logo-champigny
+{
+    top: auto;
+    bottom: 6mm;
+}
 .escalade {
     /* for escalades, the illustration has no underlay 
        the overlay is used to draw a solid border at the top
@@ -191,6 +197,11 @@ section {
     line-height: 12pt;
 }
 
+.recto.situation .description,
+.recto.strategy .description,
+.recto.escalade .description{
+    line-height: 12pt;
+}
 
 .verso.strategy,
 .verso.escalade {
@@ -221,7 +232,7 @@ section {
     &.a9 { --bg: url(img/a9.svg)  } 
     &.a10 { --bg: url(img/a10.svg)  } 
 
-    background-image: var(--bg), url(img/map.svg);
+    background-image: var(--bg);
     background-repeat: no-repeat;
     background-size: cover;
 

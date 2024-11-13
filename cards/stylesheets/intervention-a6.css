@@ -1,0 +1,81 @@
+root {
+
+    /* Cards size is A7 plus bleeds */
+    --width: 74mm;
+    --height: 105mm;
+    --bleed: 2mm;
+
+    /* the card corner radius to display cut
+       the bleed cut is not printed */
+    --card-corner: 3mm;
+
+    /* The horizontal margin for cards text */
+    --text-margin: 4.5mm;
+
+    /* Font definitions */
+    --default-font: "FuturaPT";
+    --title-font: "Mundial";
+
+    /* Color definitions for cards */
+    --blue: #3A88A1;
+    --red-rgb: 233, 45, 60;
+    --red: rgb(var(--red-rgb));
+    --green-rgb: 71, 156, 106;
+    --green: rgb(var(--green-rgb));
+    --yellow-rgb: 247, 179, 22; /* #F7B316 */
+    --yellow: rgb(var(--yellow-rgb));
+    --purple: #2C2852;
+
+    /* medium font weight for futura */
+    --medium: 500;
+
+    --verso-offset: 0mm /*0.5mm*/;
+}
+
+.recto.soutien {
+    background-image: url(../img/illustrations/soutien.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: calc(var(--width) + 2 * var(--bleed)) calc(var(--height) + 2 * var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
+    background-position-y: calc(0mm - var(--bleed));
+}
+
+.verso.soutien {
+    background-image: url(../img/intervention.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: calc(var(--width) + 2 * var(--bleed)) calc(var(--height) + 2 * var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
+    background-position-y: calc(0mm - var(--bleed));
+}
+
+.recto.attention {
+    background-image: url(../img/illustrations/attention.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: calc(var(--width) + 2 * var(--bleed)) calc(var(--height) + 2 * var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
+    background-position-y: calc(0mm - var(--bleed));
+}
+
+.verso.attention {
+    background-image: url(../img/intervention.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: calc(var(--width) + 2 * var(--bleed)) calc(var(--height) + 2 * var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
+    background-position-y: calc(0mm - var(--bleed));
+}
+
+.verso .logo-champigny
+{
+    background-image: url(../img/champigny.svg);
+    position: absolute;
+    width: 10mm;
+    height: 10mm;
+    left: 6mm;
+    bottom: 6mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

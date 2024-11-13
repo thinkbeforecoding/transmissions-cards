@@ -152,7 +152,8 @@ section {
 }
 
 .verso.situation .logo-champigny,
-.verso.norm .logo-champigny
+.verso.norm .logo-champigny,
+.verso.alea .logo-champigny
 {
     background-image: url(../img/champigny.svg);
     position: absolute;
@@ -162,6 +163,12 @@ section {
     top: calc(6mm - var(--bleed));
     background-repeat: no-repeat;
     background-size: contain;
+}
+.verso.alea .logo-champigny
+{
+    top: auto;
+    bottom: calc(6mm - var(--bleed));
+
 }
 
 .escalade {
@@ -194,7 +201,7 @@ section {
 .recto.strategy .description,
 .recto.escalade .description{
     line-height: 12pt;
-    hyphens: auto;
+    /* hyphens: auto; */
 }
 
 
@@ -246,6 +253,10 @@ section {
 .verso.alea {
     background-image: url(../img/alea.svg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: calc(var(--width) + 2 * var(--bleed)) calc(var(--height) + 2 * var(--bleed));
+    background-position-x: calc(0mm - var(--bleed));
+    background-position-y: calc(0mm - var(--bleed));
 }
 
 
@@ -325,7 +336,7 @@ h1 {
 .description p {
     display: block; /* to be part of the flex */
     flex-basis: content; /* size based on content */
-    hyphens: auto;
+    /* hyphens: auto; */
 
     text-align: center;
 
@@ -356,7 +367,7 @@ h1 {
 .consequences p {
     display: block;
     flex-basis: content;
-    hyphens: auto;
+    /* hyphens: auto; */
     hyphenate-limit-chars: 8 4 4;
     /* put just 1/2 line between p */
     margin-top: 0;

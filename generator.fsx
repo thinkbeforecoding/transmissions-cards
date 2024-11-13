@@ -169,8 +169,8 @@ let rec toText' style (spans: MarkdownSpans) =
     | span :: tail ->
         [   match span with
             | MarkdownSpan.Literal(txt,_) ->
-                if not (String.IsNullOrWhiteSpace txt) then
-                    style, txt
+                // if not (String.IsNullOrWhiteSpace txt) then
+                style, txt
             | MarkdownSpan.Emphasis(body, _) ->
                 yield! toText' { style with FontStyle = Italic } body
             | MarkdownSpan.Strong(body, _) ->
@@ -624,6 +624,11 @@ let check (situations: Situation list) =
                     if List.contains 0 ranges then
                         warn $"  [{name}] pourcentage non spécifée \x1b[38;2;128;128;128m/ { strategy.Title |> cut 40}"
 
+                    let toHigh = ranges |> List.filter (fun x -> x > 10)
+
+                    for n in toHigh do
+                        warn $"  [{name}] pourcentage non trop haut ({n}) \x1b[38;2;128;128;128m/ { strategy.Title |> cut 40}"
+
                     let missing = (set [1..10] - set ranges)
                     if not missing.IsEmpty then
                         if missing = set [1..10] then
@@ -636,6 +641,21 @@ let check (situations: Situation list) =
                         for n in multi do
                             warn $"  [{name}] valeur {n} multiple \x1b[38;2;128;128;128m/ { strategy.Title |> cut 40}"
 
+                let checkScores name (strategy: Strategy)  =
+                    let duplicates =
+                        strategy.Consequences
+                        |> List.choose (fun c -> 
+                            match c.Score with
+                            | Score(Some(n), []) -> Some n
+                            | _ -> None)
+                        |> List.countBy id
+                        |> List.filter (fun (_,c) -> c > 1)
+                    for (score, txt), _ in duplicates do
+                            warn $"  [{name}] Score {score} {txt} multiple \x1b[38;2;128;128;128m/ { strategy.Title |> cut 40}"
+
+
+
+
                 if situation.Text = [] then
                     warn "  texte situation manquant"
                 if situation.Strategies = [] then
@@ -645,6 +665,7 @@ let check (situations: Situation list) =
                         if strategy.Text = [] then
                             warn $"  [stratégies {i+1}] texte manquant"
                         checkRanges $"stratégie {i+1}" strategy
+                        checkScores $"stratégie {i+1}" strategy
 
                         for cons in strategy.Consequences do
                             match cons.Score with
@@ -673,6 +694,8 @@ let check (situations: Situation list) =
                         if escalade.Text = [] then
                             warn $"  [escalade {k}] texte manquant"
                         checkRanges $"escalade {k}" escalade
+                        checkScores $"escalade {k}" escalade
+                        
                         for c in escalade.Consequences do
                             match c.Score with
                             | Score(Some(n,txt),_) ->
@@ -1029,6 +1052,11 @@ let renderAleaRecto i (n: int) =
 let renderAleaVerso i  =
     Html.div [
         prop.className $"card verso alea {pos i}"
+        prop.children [ 
+            Html.div [
+                prop.className "logo-champigny"
+            ]
+        ]
     ]
 
 let render safe (cards: Card list) =
@@ -1231,6 +1259,25 @@ let renderA6 (cards: Card list) =
         ]
     ]
 
+
+let rec path (situation: Situation) (strategies: Strategy list)  =
+
+    [ 
+        for strategy in strategies do
+            for c in strategy.Consequences do
+                match c.Score with
+                | Score(Some(n,""),[]) -> n
+                | Score(Some(_,"ET choisis une autre Stratégie"), escalades)
+                | Score(Some(_,"ET choisis une autre Escalade"), escalades) ->
+                    let other = strategies |> List.filter (fun s -> s <> strategy)
+                    yield! path situation (other @ [ for e in escalades -> situation.Escalades[e] ])
+                | Score(None, escalades) ->
+                        yield! path situation [ for e in escalades -> situation.Escalades[e] ]
+                | s -> failwith $"Unknown score {s}"
+    ]
+
+
+
 fsi.PrintDepth <- 1
 let champignyUrl = Environment.GetEnvironmentVariable "TRANSMISSION_CHAMPIGNY_URL"
 
@@ -1248,6 +1295,16 @@ scoreSystemAll -3 champigny
 + scoreSystemAll 2 champigny
 + scoreSystemAll 3 champigny
 
+[ for situation in champigny do
+    yield! path situation situation.Strategies 
+] |> List.length
+
+[ for situation in  champigny do
+    for strategy in situation.Strategies do
+        strategy.Consequences.Length
+    for _,escalade in situation.Escalades |> Map.toSeq do
+        escalade.Consequences.Length
+] |> List.sum
 
 champigny[1].Strategies[0].Consequences[0].Score |> printfn "%A"
 // let s = champigny |> Seq.find (fun s -> s.Id = 29) 
@@ -1282,6 +1339,8 @@ let html =
 
 System.IO.File.WriteAllText("./cards/champigny.html", html)
 
+
+
 let situationsA6 =
     champigny
                             //  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29
@@ -1291,15 +1350,35 @@ let situationsA6 =
 let cardsA6 =
     [ for situation in situationsA6 do
         Situation( situation)
-        for n,strategy in situation.Strategies |> Seq.indexed do
-            Strategy (n, situation, strategy)
-        for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
-            Escalade (key, n, situation, escalade)
+        // for n,strategy in situation.Strategies |> Seq.indexed do
+        //     Strategy (n, situation, strategy)
+        // for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+        //     Escalade (key, n, situation, escalade)
     ]
 renderA6 cardsA6
 |> Render.htmlView
 |> fun html -> System.IO.File.WriteAllText("./cards/champigny-a6.html", html)
 
+let cardsRetry =
+    [ for situation in champigny |> List.mapi (fun i s -> {s with Number = i+1}) do
+        if situation.Number = 11 then
+            Situation( situation)
+        for n,strategy in situation.Strategies |> Seq.indexed do
+            if (situation.Number = 10 && (n+1) = 4) ||
+                (situation.Number = 11 && match (n+1) with 1 | 2 | 3 | 4 -> true | _ -> false ) then
+                Strategy (n, situation, strategy)
+        for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+            if situation.Number = 11 && key = 'D' then 
+                Escalade (key, n, situation, escalade)
+                Escalade (key, n, situation, escalade)
+                Escalade (key, n, situation, escalade)
+    ]
+
+let htmlRetry =
+    render true cardsRetry
+    |> Render.htmlView
+
+System.IO.File.WriteAllText("./cards/champigny-retry.html", htmlRetry)
 
 [ for situation in champigny do
     Situation situation
