@@ -8,6 +8,16 @@
     background-image: url(../img/help-verso.svg);
     background-repeat: no-repeat;
 }
+.system.recto {
+    background-image: url(../img/system-recto.svg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.system.verso {
+    background-image: url(../img/system-verso.svg);
+    background-repeat: no-repeat;
+}
 
 .recto .copy {
     background-image: -moz-element(#recto);

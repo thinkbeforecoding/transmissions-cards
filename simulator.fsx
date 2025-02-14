@@ -1014,7 +1014,7 @@ let printGame (game: Game)=
     ] |> String.concat "\n"
 
 fsi.AddPrinter printGame
-    
+
 
 let game, steps = Game.playSituation gameStrategies game
 let game = Game.next game
@@ -1051,3 +1051,5 @@ t |> Table.current |> _.Id
 t |> Table.observer |> _.Id
 t |> Table.witnesses |> List.map _.Id
 let t = t |> Table.next
+
+

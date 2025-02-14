@@ -791,6 +791,7 @@ type Card =
 | Situation of  Situation
 | Strategy of situationNumber:int * Situation * Strategy
 | Escalade of char * situationNumber:int * Situation * Strategy
+| Empty 
 
 let pos n =
     let c = 1+n%3;
@@ -1059,7 +1060,7 @@ let renderAleaVerso i  =
         ]
     ]
 
-let render safe (cards: Card list) =
+let render classes (cards: Card list) =
     Html.html [
         prop.lang "fr"
         prop.children [
@@ -1072,8 +1073,7 @@ let render safe (cards: Card list) =
                 Html.script [ prop.src "./js/anchor.js" ]
             ]
             Html.body [
-                if safe then
-                    prop.className "safe"
+                prop.classes classes
                 prop.children [
                     for page in cards |> List.chunkBySize 9 do
                         Html.section [
@@ -1095,6 +1095,7 @@ let render safe (cards: Card list) =
                                         renderStrategyRecto n r None situation strategy
                                     | Escalade(c, r, situation, strategy) ->
                                         renderStrategyRecto n r (Some c) situation strategy
+                                    | Empty -> ()
                             ]
                         ]
                         Html.section [
@@ -1110,6 +1111,7 @@ let render safe (cards: Card list) =
                                         renderStrategyVerso n None situation strategy
                                     | Escalade(c,_, situation, strategy) ->
                                         renderStrategyVerso n (Some c) situation strategy
+                                    | Empty -> ()
                             ]
                         ]
                     ]
@@ -1142,6 +1144,7 @@ let renderA7 (cards: Card list) =
                                 renderStrategyRecto 0 r None situation strategy
                             | Escalade(c, r, situation, strategy) ->
                                 renderStrategyRecto 0 r (Some c) situation strategy
+                            | Empty -> ()
                         ]
                     ]
                     Html.section [
@@ -1156,6 +1159,7 @@ let renderA7 (cards: Card list) =
                                     renderStrategyVerso 0 None situation strategy
                                 | Escalade(c,_, situation, strategy) ->
                                     renderStrategyVerso 0 (Some c) situation strategy
+                                | Empty -> ()
                         ]
                     ]
         ]
@@ -1187,6 +1191,7 @@ let renderA7recto (cards: Card list) =
                                     renderStrategyRecto 0 r None situation strategy
                                 | Escalade(c, r, situation, strategy) ->
                                     renderStrategyRecto 0 r (Some c) situation strategy
+                                | Empty -> ()
                             ]
                         ]
                         match card with 
@@ -1204,6 +1209,7 @@ let renderA7recto (cards: Card list) =
                                             renderStrategyVerso 0 None situation strategy
                                         | Escalade(c,_, situation, strategy) ->
                                             renderStrategyVerso 0 (Some c) situation strategy
+                                        | Empty -> ()
                                 ]
                             ]
             ]
@@ -1238,6 +1244,7 @@ let renderA6 (cards: Card list) =
                                         renderStrategyRecto 0 r None situation strategy
                                     | Escalade(c, r, situation, strategy) ->
                                         renderStrategyRecto 0 r (Some c) situation strategy
+                                    | Empty -> ()
                                 ]
                             ]
                             Html.div [
@@ -1252,6 +1259,7 @@ let renderA6 (cards: Card list) =
                                             renderStrategyVerso 0 None situation strategy
                                         | Escalade(c,_, situation, strategy) ->
                                             renderStrategyVerso 0 (Some c) situation strategy
+                                        | Empty -> ()
                                 ]
                             ]
                         ]
@@ -1306,6 +1314,82 @@ scoreSystemAll -3 champigny
         escalade.Consequences.Length
 ] |> List.sum
 
+champigny |> List.sumBy (fun s -> s.Strategies.Length)
+champigny |> List.sumBy (fun s -> s.Escalades.Count)
+
+
+
+
+
+let champigny2 = champigny |> List.mapi (fun i s -> {s with Number = i+1})
+
+let strategies = [
+    for situation in champigny2 do
+        if situation.Number <> 1 then
+            Situation situation
+            for n,strategy in situation.Strategies |> Seq.indexed do
+                Strategy(n, situation, strategy)
+]
+
+let escalades =
+    [ for situation in champigny2 do
+        for  n, (key, escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+            Escalade(key, n, situation, escalade)
+    ]
+
+let escaladeBy2 = 
+    [ for es in List.chunkBySize 2 escalades do
+        yield es.Head
+        yield Empty
+        yield! es.Tail
+    ]
+
+let safe = ["safe"]
+
+let htmlEscaladesBy2 =
+    render safe escaladeBy2
+    |> Render.htmlView
+
+
+System.IO.File.WriteAllText("./cards/escalades-by-2.html", htmlEscaladesBy2)
+
+let html =
+    render safe strategies
+    |> Render.htmlView
+
+
+System.IO.File.WriteAllText("./cards/strategies-all.html", html)
+let html =
+    render safe escalades
+    |> Render.htmlView
+
+
+System.IO.File.WriteAllText("./cards/escalade.html", html)
+
+
+let strategiesBy2 = ( List.chunkBySize 2 strategies)
+let escaladesFor2 = escalades |> List.take strategiesBy2.Length
+let otherEscalades = escalades |> List.skip strategiesBy2.Length
+
+
+let cards =
+    [ for ss, e in List.zip strategiesBy2 escaladesFor2 do
+        ss.Head
+        e
+        yield! ss.Tail
+      yield! otherEscalades 
+
+
+    ]
+
+
+
+
+
+
+
+
+
 champigny[1].Strategies[0].Consequences[0].Score |> printfn "%A"
 // let s = champigny |> Seq.find (fun s -> s.Id = 29) 
 // [for str in s.Strategies do
@@ -1334,10 +1418,10 @@ cards
 |> Seq.filter (function Escalade _ -> true | _ -> false) |> Seq.length
 
 let html =
-    render true cards
+    render safe cards
     |> Render.htmlView
 
-System.IO.File.WriteAllText("./cards/champigny.html", html)
+System.IO.File.WriteAllText("./cards/champigny-cameo.html", html)
 
 
 
@@ -1374,11 +1458,33 @@ let cardsRetry =
                 Escalade (key, n, situation, escalade)
     ]
 
+let cardsRetry =
+    [ for situation in champigny  do
+            Situation( situation)
+    ]
+
 let htmlRetry =
-    render true cardsRetry
+    render safe cardsRetry
     |> Render.htmlView
 
 System.IO.File.WriteAllText("./cards/champigny-retry.html", htmlRetry)
+
+
+// SITUATION 1
+let situation1 =
+    [ for situation in champigny2 do
+        if situation.Number = 1 then
+            Situation situation
+            for n,strategy in situation.Strategies |> Seq.indexed do     
+                Strategy (n, situation, strategy)
+    ]
+    |> List.replicate 6
+    |> List.concat
+let htmlSituation1 =
+    render safe situation1
+    |> Render.htmlView
+
+System.IO.File.WriteAllText("./cards/situation1.html", htmlSituation1)
 
 [ for situation in champigny do
     Situation situation
@@ -1412,7 +1518,7 @@ System.IO.File.WriteAllText("./cards/champigny-retry.html", htmlRetry)
 let alea = [ for i in 1 .. 10 do Alea i ]
 
 let aleahtml =
-    render true alea 
+    render safe alea 
     |> Render.htmlView
 System.IO.File.WriteAllText("./cards/alea.html", aleahtml)
 
