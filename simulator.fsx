@@ -740,10 +740,6 @@ module Game =
     let witnessStrategy playPercent otherStrategies (witness: Player) =
         if Random.Shared.Next(0,100) < playPercent then
             let choice =
-                match witness.Interventions with
-                | { Red = 0} -> Green
-                | { Green = 0} -> Red
-                | _ -> 
                     if Random.Shared.Next(2) = 0 then
                         Green
                     else
@@ -769,17 +765,6 @@ module Game =
         ]
         |> List.sortBy (fun _ -> Random.Shared.Next())
         |> List.head
-
-    let responseStrategy2 proba (witness: Player) (player: Player) (game: Game) =
-        if player.Interventions.Green = 0 then
-            Red
-        elif player.Interventions.Red = 0 then
-            Green
-        else
-            if Random.Shared.Next(0,100) <= proba then
-                Green
-            else
-                Red
 
     let responseStrategy3 probaAccept probaAccept2 systemBlock (witness: Player) (player: Player) (game: Game) =
         if player.Interventions.Green = 0 then
