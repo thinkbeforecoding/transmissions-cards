@@ -1,0 +1,6 @@
+
+/* this compensate the offset of MAP printer */
+body.map-printer {
+    --verso-offset-y: 2mm /*0.5mm*/;
+    --verso-offset-x: 1mm /*0.5mm*/;
+}

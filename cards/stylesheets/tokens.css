@@ -1,0 +1,50 @@
+@import url("a3.css");
+@import url("fonts.css");
+@import url("printers.css");
+
+@import url("crop-marks.css");
+
+:root {
+
+
+    /* Font definitions */
+    --default-font: "FuturaPT";
+    --title-font: "Mundial";
+
+    /* Color definitions for cards */
+    --blue: #3A88A1;
+    --red-rgb: 233, 45, 60;
+    --red: rgb(var(--red-rgb));
+    --green-rgb: 71, 156, 106;
+    --green: rgb(var(--green-rgb));
+    --yellow-rgb: 247, 179, 22; /* #F7B316 */
+    --yellow: rgb(var(--yellow-rgb));
+    --purple: #2C2852;
+
+    /* medium font weight for futura */
+    --medium: 500;
+
+    --verso-offset-y: 0mm /*0.5mm*/;
+    --verso-offset-x: 0mm /*0.5mm*/;
+}
+
+
+
+.token {
+    position: absolute;
+    width: 26.3mm;
+    height: 26.3mm;
+}
+.c1 { left: 30mm }
+.c2 { left: 60mm }
+.c3 { left: 90mm }
+
+.r1 { top: 30mm}
+.r2 { top: 60mm}
+.r3 { top: 90mm}
+
+.onepoint {
+    background-image: url("../img/tokens/1p.webp");
+    background-size: contain;
+}
+

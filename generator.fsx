@@ -13,6 +13,7 @@ open Printf
 fsi.PrintDepth <- 1
 let (</>) x y = System.IO.Path.Combine(x,y)
 Update.updateMarkdown Update.champignyUrl "champigny.md"
+Update.updateMarkdown Update.genericUrl "generic.md"
 
 // this is the champigny cards starting at 14
 let champigny =
@@ -21,22 +22,20 @@ let champigny =
     |> Shuffle.shuffleAll
 
 
+
 // this is the champigny cards, starting at 1
 let champigny2 = champigny |> List.mapi (fun i s -> {s with Number = i+1})
 
+let generic =
+    Parsing.parse "generic.md"
+    |> check
+    |> Shuffle.shuffleAll
+    |> List.mapi (fun i s -> {s with Number = i+1})
 
 
-let safe = ["safe"]
-let cameo = ["cameo" ;"map-printer"]
+let safe = ["safe"; "champigny"]
+let cameo = ["champigny"; "cameo" ;"map-printer"]
 
-let cards =
-    [ for situation in champigny2 do
-        Situation situation
-        for n,strategy in situation.Strategies |> Seq.indexed do
-            Strategy (n, situation, strategy)
-        for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
-            Escalade (key, n, situation, escalade)
-    ]
 
 let helps =
     [ for i in 1 .. 8 do
@@ -50,29 +49,63 @@ let interventions =
         Warning ]
 
 let discriminations =
-    [  Discrimination Handicap
+    [  Discrimination SkinColor
        Discrimination SocialClass
-       Discrimination SkinColor
-       Discrimination Gender
        Discrimination SexualOrientation
+       Discrimination SkinColor
+       Discrimination SocialClass
+       Discrimination SexualOrientation
+       Discrimination SkinColor
+       Discrimination SocialClass
+       Discrimination SexualOrientation
+
+       Discrimination Handicap
+       Help
+       Warning
+       Discrimination Handicap
+       Help
+       Warning
+       Discrimination Handicap
+       Help
+       Warning
+
+       Discrimination Gender
+       Help
+       Warning
+       Discrimination Gender
+       Help
+       Warning
+       Discrimination Gender
+       Help
+       Warning
      ]
-     |> List.replicate 6
-     |> List.concat
+
 
 let alea = [ for i in 1 .. 10 do Alea i ]
 
 
-let renderCards path classes =
+let renderCards cards path classes =
+    let cards =
+        [ for situation in cards do
+            Situation situation
+            for n,strategy in situation.Strategies |> Seq.indexed do
+                Strategy (n, situation, strategy)
+            for n,(key,escalade) in Map.toSeq situation.Escalades |> Seq.indexed do
+                Escalade (key, n, situation, escalade)
+        ]
+
+
     render classes cards |> save ( path </> "situations.html")
     render classes helps |> save (path </> "aides-de-jeu.html")
     render classes interventions |> save (path </> "interventions.html")
     render classes discriminations |> save ( path </> "discriminations.html" )
     render classes alea |> save ( path </> "alea.html")
 
-renderCards "./cards/cameo" cameo
+renderCards champigny2 "./cards/cameo" cameo
 
-renderCards "./cards/champigny" safe
+renderCards champigny2 "./cards/champigny" safe
 
+renderCards generic "./cards/cannes" ["safe"]
 
 let situationsA6 =
     champigny
@@ -104,11 +137,6 @@ let cardsRetry =
                 Escalade (key, n, situation, escalade)
                 Escalade (key, n, situation, escalade)
                 Escalade (key, n, situation, escalade)
-    ]
-
-let cardsRetry =
-    [ for situation in champigny  do
-            Situation( situation)
     ]
 
 let htmlRetry =
@@ -161,7 +189,6 @@ System.IO.File.WriteAllText("./cards/situation1.html", htmlSituation1)
 |> renderA7recto 
 |> fun html -> System.IO.File.WriteAllText("./cards/situation18-a7", html)
 
-let alea = [ for i in 1 .. 10 do Alea i ]
 
 let aleahtml =
     render safe alea 
@@ -215,9 +242,7 @@ module By2 =
             ss.Head
             e
             yield! ss.Tail
-        yield! otherEscalades 
-
-
+            yield! otherEscalades 
         ]
 
 
@@ -227,3 +252,67 @@ module By2 =
 Stats.printStats champigny
 
 
+open Feliz.ViewEngine
+
+type Token =
+| OnePoint
+
+let tokenPos i =
+    let r = i % 14
+    let c = i / 14
+    $"r{r+1} c{c+1}"
+
+let renderOnePointRecto i =
+    Html.div [
+        prop.classes ["token"; "onepoint"; tokenPos i]
+    ]
+
+let renderOnePointVerso i =
+    Html.div [
+        prop.classes ["token"; "onepoint"; tokenPos i]
+    ]
+
+
+let render tokens classes  =
+    Html.html [
+        prop.lang "fr"
+        prop.children [
+            Html.head [
+                Html.meta [ prop.charset "utf-8" ]
+                Html.title [ prop.text "Transmission(s)" ]
+                Html.link [prop.href "/stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
+                Html.link [ prop.href "/stylesheets/tokens.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
+
+
+                Html.script [ prop.src "https://unpkg.com/pagedjs/dist/paged.polyfill.js" ]
+                Html.script [ prop.src "/js/anchor.js" ]
+            ]
+            Html.body [
+                prop.classes classes
+                prop.children [
+                    Html.section [
+                        prop.className "recto"
+                        prop.children [
+                            // Divs for the cricut cut marks
+                            yield! cropmarks
+                            for i,token in Seq.indexed tokens do
+                                match token with
+                                | OnePoint -> renderOnePointRecto i
+                        ]
+                    ]
+                    Html.section [
+                        prop.className "verso"
+                        prop.children [
+                            for i,token in Seq.indexed tokens do
+                                match token with
+                                | OnePoint -> renderOnePointVerso i
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    |> Render.htmlDocument
+
+render cameo |> save "./cards/cameo/jetons.html"
+render [OnePoint; OnePoint; OnePoint] [] |> save "./cards/cannes/jetons.html"

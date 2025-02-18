@@ -1,3 +1,12 @@
+@import url("a3.css");
+@import url("fonts.css");
+@import url("printers.css");
+
+@import url("crop-marks.css");
+
+
+
+
 :root {
 
     /* Cards size is A7 plus bleeds */
@@ -33,67 +42,6 @@
     --verso-offset-x: 0mm /*0.5mm*/;
 }
 
-/* this compensate the offset of MAP printer */
-body.map-printer {
-    --verso-offset-y: 2mm /*0.5mm*/;
-    --verso-offset-x: 1mm /*0.5mm*/;
-}
-
-/* print page definition */
-@page {
-    size: A3;
-    margin-top: 0mm;
-    margin-right: 0mm;
-    margin-bottom: 0mm;
-    margin-left: 0mm;
-
-    @top-center {
-        content: "Page " counter(page);
-        padding-top: 10mm;
-    }
-}
-
-/* Fonts and their variations */
-@font-face {
-    font-family: "Mundial";
-    src: url("../fonts/MundialBold.ttf");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Mundial";
-    src: url("../fonts/MundialLight.ttf");
-}
-
-@font-face {
-    font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTBook.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTMedium.ttf");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTBold.ttf");
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTBookOblique.ttf");
-    font-weight: normal;
-    font-style: italic;
-}
-
-
 /* Default font and text size */
 body {
     font-family: var(--default-font);
@@ -102,9 +50,10 @@ body {
     font-weight: normal;
 }
 
-/* Pages are defined by sections */
-section {
-    break-before: page;
+/* For other than champigny */
+.verso .logo-champigny
+{
+    display: none;
 }
 
 /* Cards color is defined once at the card level 
@@ -154,10 +103,11 @@ section {
     bottom: 5mm;
 }
 
-.verso.situation .logo-champigny,
-.verso.norm .logo-champigny,
-.verso.alea .logo-champigny
+.champigny .verso.situation .logo-champigny,
+.champigny .verso.norm .logo-champigny,
+.champigny .verso.alea .logo-champigny
 {
+    display: block;
     background-image: url(../img/champigny.svg);
     position: absolute;
     width: 10mm;
@@ -168,11 +118,12 @@ section {
     background-size: contain;
 }
 
-.verso.alea .logo-champigny
+.champigny .verso.alea .logo-champigny
 {
     top: auto;
     bottom: 6mm;
 }
+
 .escalade {
     /* for escalades, the illustration has no underlay 
        the overlay is used to draw a solid border at the top
@@ -542,76 +493,6 @@ h1 {
 
 .norm.non-discriminee.recto {
     background-image: url(../img/non-discriminee.svg);
-}
-/* Cricut calibration marks 
-   the html doc contains 4 divs which have each
-   2 borders sets using the attributes*/
-.mark {
-    position: absolute;
-    width: 25.4mm;
-    height: 25.4mm;
-}
-
-.m-top {
-    top: 14.8mm;
-    border-top: 1.5mm solid black;
-}
-
-.m-left {
-    left: 14.8mm;
-    border-left: 1.5mm solid black;
-}
-
-.m-right {
-    right: 23.8mm;
-    border-right: 1.5mm solid black;
-}
-
-.m-bottom {
-    bottom: 50.8mm;
-    border-bottom: 1.5mm solid black;
-}
-
-.safe .m-bottom {
-    bottom: 33.7mm;
-    border-bottom: 1.5mm solid black;
-}
-
-
-.cameo .mark {
-    position: absolute;
-    width: 20.3mm;
-    height: 20.3mm;
-}
-
-.cameo .m-top {
-    top: 15.6mm;
-    border-top: 0.5mm solid black;
-}
-
-.cameo .m-left {
-    left: 15.6mm;
-    border-left: 0.5mm solid black;
-}
-
-.cameo .m-right {
-    right: 15.6mm;
-    border-right: 0.5mm solid black;
-}
-
-.cameo .m-bottom {
-    bottom: 15.6mm;
-    border-bottom: 0.5mm solid black;
-}
-
-.cameo .m-top.m-left {
-    background-color: black;
-    width: 5.5mm;
-    height: 5.5mm;
-}
-
-.cameo .m-bottom.m-right {
-    display: none;
 }
 
 .inclusive {

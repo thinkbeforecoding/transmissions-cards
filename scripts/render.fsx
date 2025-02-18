@@ -377,6 +377,16 @@ let stylesheets cards =
     )
     |> Seq.distinct
 
+let cropmarks =
+    [ Html.div [ prop.className "mark m-left m-top"]
+      Html.div [ prop.className "mark m-right m-top"]
+      Html.div [ prop.className "mark m-left m-bottom"]
+      Html.div [ prop.className "mark m-right m-bottom"] 
+      ]
+let alignmarks =
+    [ Html.div [ prop.className "align-mark am-top"]
+      Html.div [ prop.className "align-mark am-bottom"] ]
+
 let render classes (cards: Card list) =
     Html.html [
         prop.lang "fr"
@@ -401,10 +411,8 @@ let render classes (cards: Card list) =
                             prop.className "recto"
                             prop.children [
                                 // Divs for the cricut cut marks
-                                Html.div [ prop.className "mark m-left m-top"]
-                                Html.div [ prop.className "mark m-right m-top"]
-                                Html.div [ prop.className "mark m-left m-bottom"]
-                                Html.div [ prop.className "mark m-right m-bottom"]
+                                yield! cropmarks
+                                yield! alignmarks
 
                                 for n,card in List.indexed page do
                                     match card with
@@ -427,6 +435,7 @@ let render classes (cards: Card list) =
                         Html.section [
                             prop.className "verso"
                             prop.children [
+                                yield! alignmarks
                                 for n,card in List.indexed page do
                                     match card with
                                     | Alea _ ->
@@ -449,8 +458,7 @@ let render classes (cards: Card list) =
             ]
         ]
     ]
-    |> fun html ->
-     "<!DOCTYPE html>" + Render.htmlDocument html
+    |> Render.htmlDocument
 
 let renderA7 (cards: Card list) =
     Html.html [
@@ -550,8 +558,7 @@ let renderA7recto (cards: Card list) =
             ]
         ]
     ]
-    |> fun html ->
-     "<!DOCTYPE html>" + Render.htmlDocument html
+    |> Render.htmlDocument 
 
 let renderA6 (cards: Card list) =
     Html.html [
@@ -603,7 +610,7 @@ let renderA6 (cards: Card list) =
             ]
         ]
     ]
-    |> Render.htmlView
+    |> Render.htmlDocument
 
 open System.IO
 let save (path: string) (html: string) =

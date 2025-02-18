@@ -1,0 +1,18 @@
+/* print page definition */
+@page {
+    size: A3;
+    margin-top: 0mm;
+    margin-right: 0mm;
+    margin-bottom: 0mm;
+    margin-left: 0mm;
+
+    @top-center {
+        content: "Page " counter(page);
+        padding-top: 10mm;
+    }
+}
+
+/* Pages are defined by sections */
+section {
+    break-before: page;
+}

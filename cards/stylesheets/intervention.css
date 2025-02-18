@@ -21,7 +21,7 @@
     background-size: cover;
 }
 
-#page-1 .copy {
+/* #page-1 .copy {
     background-image: -moz-element(#soutien);
 }
 
@@ -32,10 +32,13 @@
 
 .verso .copy {
     background-image: -moz-element(#verso);
-}
+} */
 
-.verso .logo-champigny
+
+
+.champigny .verso .logo-champigny
 {
+    display: block;
     background-image: url(../img/champigny.svg);
     position: absolute;
     width: 10mm;

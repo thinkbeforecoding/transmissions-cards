@@ -8,6 +8,7 @@ open OpenQA.Selenium
 
 configuration.chromeDir <- @"d:\dev\tools"
 let champignyUrl = Environment.GetEnvironmentVariable "TRANSMISSION_CHAMPIGNY_URL"
+let genericUrl = Environment.GetEnvironmentVariable "TRANSMISSION_GENERIC_URL"
 
 let startMode = 
             let localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
