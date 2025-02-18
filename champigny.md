@@ -750,7 +750,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
             * __3 à 4 :___ « Moi je la prends, je mange comme un cochon ! »_ lui assène un de tes amis en te faisant un clin d'œil. Il te vient en aide mais sans affronter le vrai problème.  __(J1)__
             * __5 à 7 :___ « Votre remarque est tout à fait inappropriée, Madame. Vous pouvez partir si cela ne vous convient pas » _te répond le serveur d’un ton sec. Il renverse la culpabilité et se montre violent mais tu sais que tu as raison… __(S3)__
             * __8 à 10 :___ « Ça n’a rien à voir, c’est simplement une question d’hygiène. Je peux vous proposer un endroit plus approprié si vous voulez. »_ Quand il est question de manger, un restaurant c’est pas mal non ? Que d’énergie dépensée pour quelques gouttes de lait ! __(S1)__
-        * Je lui rends et lui dit : _« Merci mais j’en ai déjà une. »_
+        * Je lui rends et lui dis : _« Merci mais j’en ai déjà une. »_
             * __1 à 2_ : « Non, mais en fait c’est pour… »___ Il se rend compte que tu te moques de lui et s’en va sans rien ajouter. Son départ est un aveu ! __(J3)__   
             * __3 à 4 :___ « Dans ce cas, utilisez-la pour vous cacher un peu mieux que ça. »_ Toi qui faisais déjà en sorte d’être discrète, on te demande carrément de disparaître… __(S2)__  
             * __5 à 7 :___ « Moi je la prends, je mange comme une cochonne ! »_ lui assène une de tes amies en te faisant un clin d'œil. Elle te vient en aide mais sans affronter le vrai problème. __(J1)__
@@ -790,7 +790,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
     * __9 à 10 :__ Un serveur embarrassé, te tend une grande serviette : _« Tenez Madame, vous serez plus à l’aise avec ça. »   _
         * [_« Vous vous rendez compte que je serai encore moins discrète avec ça ? »_]
         * [_« Il n’y a aucune loi qui m’interdit d’allaiter en public. »_]
-        * [Je lui rends et lui dit : _« Merci mais j’en ai déjà une. »_]
+        * [Je lui rends et lui dis : _« Merci mais j’en ai déjà une. »_]
 
 <span style="text-decoration:underline;">Idée supplémentaire</span> :
 
@@ -927,7 +927,7 @@ C’est le weekend et tu te rends à pied à un rendez-vous. Sur ton chemin, un 
     * __4 :__ Il tourne brusquement les talons et s’en va sans dire un mot. Ça montre bien que son envie n’était pas de discuter… __(J1)__
     * __5 à 6 :___ « Oh pardon, je ne voulais pas vous importuner, passez une bonne journée »_ et s’en va… Tu ne sais toujours pas ce qu’il te voulait, mais probablement juste un peu papoter. Lui demander t’a permis de te rassurer. __(J3)__
     * __7 à 9 :___ « J’aimerais vraiment vous connaître un peu plus. Je vous offre un café ? » _Et voilà…_ ___(Escalade)__
-        * « _Non. _» et tu t’en vas.
+        * « _Non. _» et je m’en vais.
             * __1 à 2 :__ Il te suit et continue à te parler comme si de rien n’était. Tu as l’impression que ton consentement n’a aucune valeur à ses yeux. __(S1)__
             * __3 à 5 :__ Ta franchise le laisse sans voix et il s’en va. Être clair·e et déterminé·e t’a permis de t’en défaire. __(J3)__
             * __6 à 8 :___ « Tu te prends pour qui ?! »_ il t’invective jusqu’à ce que tu sois loin. En fait, tu n’as rien le droit de lui refuser… Tu as bien fait de partir malgré tout. __(S2)__
@@ -1060,7 +1060,7 @@ Tu es sur ton trajet domicile-lycée, les escaliers sont déserts et tu croises 
 
 
 * __Je n’ai aucune réaction tant je suis surprise par son geste.  __
-* __Je lui attrape la main et lui dit : « Surtout ne te gêne pas ! » __
+* __Je lui attrape la main et lui dis : « Surtout ne te gêne pas ! » __
     * Il me bouscule et je me retrouve à terre. __(S3)__
     * Il me suit. __(S2)__
     * Gêné et déstabilisé, il part en courant.
@@ -1350,17 +1350,17 @@ __Ta meilleure amie tombe amoureuse d'un de tes harceleurs. Elle lui parle toujo
 
 
 
-* __Je lui dit : "Écoute, je... je t'ai déjà dit... heu... non rien oublie."__
+* __Je lui dis : "Écoute, je... je t'ai déjà dit... heu... non rien oublie."__
     * Ton amie continue l'air de rien. Elle a probablement compris ce que tu voulais dire mais a préféré ne pas aborder le sujet.
     * Ne t'inquiète pas, je sais ce que tu voulais me dire. J'en ai parlé avec lui et il a dit qu'il allait faire des efforts.
-* __Je lui dit : "Écoute, je suis heureuse pour toi mais est-ce que tu pourrais essayer de lui parler ?"__
+* __Je lui dis : "Écoute, je suis heureuse pour toi mais est-ce que tu pourrais essayer de lui parler ?"__
     * Ce n'est pas à moi de régler le problème. Il faut que tu ailles lui parler pour lui faire comprendre la situation \
  			
     * Je pense que je peux le faire évoluer. Mais tu sais, ce n'est pas entièrement de sa faute, il a eu une enfance difficile.__			__
-* __Je lui dit : "Je t'ai déjà expliqué ce qu'il m'a fait et tu continues de rester avec lui. Je ne pense pas pouvoir continuer à être ton amie."__
+* __Je lui dis : "Je t'ai déjà expliqué ce qu'il m'a fait et tu continues de rester avec lui. Je ne pense pas pouvoir continuer à être ton amie."__
     * Tu as raison, et il commence également à me manquer de respect parfois. Cela fait plusieurs jours que je pense à le quitter.
     * Je ne te crois pas ! Je vois bien comment il se comporte avec moi et je ne le pense pas capable de faire ce que tu dis. Je pense que tu es juste jalouse.
-* __Je lui dit sèchement : "Arrête de le fréquenter ou je coupe entièrement les ponts avec toi !"__
+* __Je lui dis  sèchement : "Arrête de le fréquenter ou je coupe entièrement les ponts avec toi !"__
     * Je suis encore libre de faire ce que je veux ! Tu devrais apprendre à ne pas te laisser faire, sinon tu te feras toujours marcher dessus !
     * Je ne pensais pas que la situation te faisait autant souffrir. Je vais le mettre en garde et je le quitterai s'il recommence.
 * __Je sors immédiatement et vais prévenir mes ami·e·s.__

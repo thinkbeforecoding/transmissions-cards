@@ -29,7 +29,14 @@
     /* medium font weight for futura */
     --medium: 500;
 
-    --verso-offset: 0mm /*0.5mm*/;
+    --verso-offset-y: 0mm /*0.5mm*/;
+    --verso-offset-x: 0mm /*0.5mm*/;
+}
+
+/* this compensate the offset of MAP printer */
+body.map-printer {
+    --verso-offset-y: 2mm /*0.5mm*/;
+    --verso-offset-x: 1mm /*0.5mm*/;
 }
 
 /* print page definition */
@@ -122,7 +129,6 @@ section {
     --overlay: linear-gradient(transparent, transparent);
 
     --illustration: url(../img/situation.svg);
-
 }
 
 
@@ -293,24 +299,37 @@ on an A3 page */
 .recto .c3 { left: calc(190.1mm - var(--bleed)); }
 
 /* for verso, columns are from right to left */
-.verso .c1 { left: calc(199.1mm - var(--bleed)); }
-.verso .c2 { left: calc(115.4mm - var(--bleed)); }
-.verso .c3 { left: calc(32.9mm - var(--bleed)); }
+.verso .c1 { left: calc(199.1mm - var(--bleed) + var(--verso-offset-x)); }
+.verso .c2 { left: calc(115.4mm - var(--bleed) + var(--verso-offset-x)); }
+.verso .c3 { left: calc(32.9mm - var(--bleed) + var(--verso-offset-x)); }
 
 /* rows are the same on both sides */
 .recto.r1 { top: calc(24mm - var(--bleed)); }
 .recto.r2 { top: calc(140.2mm - var(--bleed)); }
 .recto.r3 { top: calc(255mm - var(--bleed)); }
 
-.verso.r1 { top: calc(24mm + var(--verso-offset) - var(--bleed)); }
-.verso.r2 { top: calc(140.2mm + var(--verso-offset) - var(--bleed)); }
-.verso.r3 { top: calc(255mm + var(--verso-offset) - var(--bleed)); }
+.verso.r1 { top: calc(24mm + var(--verso-offset-y) - var(--bleed)); }
+.verso.r2 { top: calc(140.2mm + var(--verso-offset-y) - var(--bleed)); }
+.verso.r3 { top: calc(255mm + var(--verso-offset-y) - var(--bleed)); }
 
 /* bottom middle card is shifted to avoid confusion between marks and cards illustrations */
 .safe .recto.c2.r3
 { top: calc(281.2mm - var(--bleed));}
 .safe .verso.c2.r3
-{ top: calc(281.2mm + var(--verso-offset) - var(--bleed));}
+{ top: calc(281.2mm + var(--verso-offset-y) - var(--bleed));}
+
+.cameo .recto.r1 { top: calc(39mm - var(--bleed)); }
+.cameo .recto.r2 { top: calc(155mm - var(--bleed)); }
+.cameo .recto.r3 { top: calc(270mm - var(--bleed)); }
+
+.cameo .verso.r1 { top: calc(39mm + var(--verso-offset-y) - var(--bleed)); }
+.cameo .verso.r2 { top: calc(155mm + var(--verso-offset-y) - var(--bleed)); }
+.cameo .verso.r3 { top: calc(270mm + var(--verso-offset-y) - var(--bleed)); }
+
+.safe.cameo .recto.c2.r3
+{ top: calc(270mm - var(--bleed));}
+.safe.cameo .verso.c2.r3
+{ top: calc(270mm + var(--verso-offset-y) - var(--bleed));}
 
 /* used to style titles */
 h1 {
@@ -552,9 +571,47 @@ h1 {
     bottom: 50.8mm;
     border-bottom: 1.5mm solid black;
 }
+
 .safe .m-bottom {
     bottom: 33.7mm;
     border-bottom: 1.5mm solid black;
+}
+
+
+.cameo .mark {
+    position: absolute;
+    width: 20.3mm;
+    height: 20.3mm;
+}
+
+.cameo .m-top {
+    top: 15.6mm;
+    border-top: 0.5mm solid black;
+}
+
+.cameo .m-left {
+    left: 15.6mm;
+    border-left: 0.5mm solid black;
+}
+
+.cameo .m-right {
+    right: 15.6mm;
+    border-right: 0.5mm solid black;
+}
+
+.cameo .m-bottom {
+    bottom: 15.6mm;
+    border-bottom: 0.5mm solid black;
+}
+
+.cameo .m-top.m-left {
+    background-color: black;
+    width: 5.5mm;
+    height: 5.5mm;
+}
+
+.cameo .m-bottom.m-right {
+    display: none;
 }
 
 .inclusive {
