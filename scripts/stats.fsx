@@ -103,6 +103,6 @@ let printStats situations =
     printfn "💥 score system"
     
     for systemScore in -3 .. 3 do
-        printfn $"Score {systemScore}: %.2f{scoreSystemAll systemScore situations}"
+        printfn $"Score {systemScore}: %.2f{scoreSystemAll systemScore situations * 100m}%%"
 
     

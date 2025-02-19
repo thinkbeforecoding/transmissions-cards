@@ -354,4 +354,4 @@ let tokens =
      yield! discriminationTokens |> List.collect (List.replicate 2)
      ]
 render tokens cameo |> save "./cards/cameo/jetons.html"
-render tokens [] |> save "./cards/cannes/jetons.html"
+render (tokens @ tokens @ tokens) [] |> save "./cards/cannes/jetons.html"

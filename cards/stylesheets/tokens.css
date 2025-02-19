@@ -78,46 +78,75 @@ pagedjs-ignore {
 .recto .c10 { left: 227.2mm }
 .recto .c11 { left: 250.1mm }
 
-.verso .c1 { right: 21.1mm }
-.verso .c2 { right: 44mm }
-.verso .c3 { right: 66.9mm }
-.verso .c4 { right: 89.8mm }
-.verso .c5 { right: 112.7mm }
-.verso .c6 { right: 135.6mm }
-.verso .c7 { right: 158.5mm }
-.verso .c8 { right: 181.4mm }
-.verso .c9 { right: 204.3mm }
-.verso .c10 { right: 227.2mm }
-.verso .c11 { right: 250.1mm }
+.verso .c1 { right: calc(21.1mm - var(--verso-offset-x)); }
+.verso .c2 { right: calc(44mm - var(--verso-offset-x)); }
+.verso .c3 { right: calc(66.9mm - var(--verso-offset-x)); }
+.verso .c4 { right: calc(89.8mm - var(--verso-offset-x)); }
+.verso .c5 { right: calc(112.7mm - var(--verso-offset-x)); }
+.verso .c6 { right: calc(135.6mm - var(--verso-offset-x)); }
+.verso .c7 { right: calc(158.5mm - var(--verso-offset-x)); }
+.verso .c8 { right: calc(181.4mm - var(--verso-offset-x)); }
+.verso .c9 { right: calc(204.3mm - var(--verso-offset-x)); }
+.verso .c10 { right: calc(227.2mm - var(--verso-offset-x)); }
+.verso .c11 { right: calc(250.1mm - var(--verso-offset-x)); }
 
-.r1 { top: 38.9mm}
-.r2 { top: 65.2mm}
-.r3 { top: 91.4mm}
-.r4 { top: 117.7mm}
-.r5 { top: 144.0mm}
-.r6 { top: 170.2mm}
-.r7 { top: 196.5mm}
-.r8 { top: 222.8mm}
-.r9 { top: 249.0mm}
-.r10 { top: 275.3mm}
-.r11 { top: 301.5mm}
-.r12 { top: 327.8mm}
-.r13 { top: 354.1mm}
+.recto .r1 { top: 38.9mm; }
+.recto .r2 { top: 65.2mm; }
+.recto .r3 { top: 91.4mm; }
+.recto .r4 { top: 117.7mm; }
+.recto .r5 { top: 144.0mm; }
+.recto .r6 { top: 170.2mm; }
+.recto .r7 { top: 196.5mm; }
+.recto .r8 { top: 222.8mm; }
+.recto .r9 { top: 249.0mm; }
+.recto .r10 { top: 275.3mm; }
+.recto .r11 { top: 301.5mm; }
+.recto .r12 { top: 327.8mm; }
+.recto .r13 { top: 354.1mm; }
 
-.r1.a { top: 25.7mm}
-.r2.a { top: 52.0mm}
-.r3.a { top: 78.2mm}
-.r4.a { top: 104.5mm}
-.r5.a { top: 130.8mm}
-.r6.a { top: 157.0mm}
-.r7.a { top: 183.3mm}
-.r8.a { top: 209.6mm}
-.r9.a { top: 235.8mm}
-.r10.a { top: 262.1mm}
-.r11.a { top: 288.3mm}
-.r12.a { top: 314.6mm}
-.r13.a { top: 340.9mm}
-.r14.a { top: 367.2mm}
+.verso .r1 { top: calc(38.9mm + var(--verso-offset-y)); }
+.verso .r2 { top: calc(65.2mm + var(--verso-offset-y)); }
+.verso .r3 { top: calc(91.4mm + var(--verso-offset-y)); }
+.verso .r4 { top: calc(117.7mm + var(--verso-offset-y)); }
+.verso .r5 { top: calc(144.0mm + var(--verso-offset-y)); }
+.verso .r6 { top: calc(170.2mm + var(--verso-offset-y)); }
+.verso .r7 { top: calc(196.5mm + var(--verso-offset-y)); }
+.verso .r8 { top: calc(222.8mm + var(--verso-offset-y)); }
+.verso .r9 { top: calc(249.0mm + var(--verso-offset-y)); }
+.verso .r10 { top: calc(275.3mm + var(--verso-offset-y)); }
+.verso .r11 { top: calc(301.5mm + var(--verso-offset-y)); }
+.verso .r12 { top: calc(327.8mm + var(--verso-offset-y)); }
+.verso .r13 { top: calc(354.1mm + var(--verso-offset-y)); }
+
+.recto .r1.a { top: 25.7mm}
+.recto .r2.a { top: 52.0mm}
+.recto .r3.a { top: 78.2mm}
+.recto .r4.a { top: 104.5mm}
+.recto .r5.a { top: 130.8mm}
+.recto .r6.a { top: 157.0mm}
+.recto .r7.a { top: 183.3mm}
+.recto .r8.a { top: 209.6mm}
+.recto .r9.a { top: 235.8mm}
+.recto .r10.a { top: 262.1mm}
+.recto .r11.a { top: 288.3mm}
+.recto .r12.a { top: 314.6mm}
+.recto .r13.a { top: 340.9mm}
+.recto .r14.a { top: 367.2mm}
+
+.verso .r1.a { top: calc(25.7mm + var(--verso-offset-x)); }
+.verso .r2.a { top: calc(52.0mm + var(--verso-offset-x)); }
+.verso .r3.a { top: calc(78.2mm + var(--verso-offset-x)); }
+.verso .r4.a { top: calc(104.5mm + var(--verso-offset-x)); }
+.verso .r5.a { top: calc(130.8mm + var(--verso-offset-x)); }
+.verso .r6.a { top: calc(157.0mm + var(--verso-offset-x)); }
+.verso .r7.a { top: calc(183.3mm + var(--verso-offset-x)); }
+.verso .r8.a { top: calc(209.6mm + var(--verso-offset-x)); }
+.verso .r9.a { top: calc(235.8mm + var(--verso-offset-x)); }
+.verso .r10.a { top: calc(262.1mm + var(--verso-offset-x)); }
+.verso .r11.a { top: calc(288.3mm + var(--verso-offset-x)); }
+.verso .r12.a { top: calc(314.6mm + var(--verso-offset-x)); }
+.verso .r13.a { top: calc(340.9mm + var(--verso-offset-x)); }
+.verso .r14.a { top: calc(367.2mm + var(--verso-offset-x)); }
 
 .recto .onepoint {
     background-image: url("../img/tokens/1p.webp");
