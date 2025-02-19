@@ -34,17 +34,139 @@
     position: absolute;
     width: 26.3mm;
     height: 26.3mm;
-}
-.c1 { left: 30mm }
-.c2 { left: 60mm }
-.c3 { left: 90mm }
-
-.r1 { top: 30mm}
-.r2 { top: 60mm}
-.r3 { top: 90mm}
-
-.onepoint {
-    background-image: url("../img/tokens/1p.webp");
     background-size: contain;
 }
 
+@media screen,
+pagedjs-ignore {
+
+    .token::after {
+        content: '';
+
+        position: absolute;
+    
+        /* is precisely of card size */
+        width: 24.3mm;
+        height: 24.3mm;
+        
+        /* is offset of bleed size */
+        left: 1mm;
+        top: 1mm;
+
+        /* the actual border */
+        border: 0.1mm solid gray;
+        border-radius: 100%;
+
+        /* the element is in front to be visible 
+           but doesn't intercept mouse events
+           to make inspection of the other parts of the 
+           card easier */
+        z-index: 0; 
+        pointer-events: none;
+    }
+}
+
+.recto .c1 { left: 21.1mm }
+.recto .c2 { left: 44mm }
+.recto .c3 { left: 66.9mm }
+.recto .c4 { left: 89.8mm }
+.recto .c5 { left: 112.7mm }
+.recto .c6 { left: 135.6mm }
+.recto .c7 { left: 158.5mm }
+.recto .c8 { left: 181.4mm }
+.recto .c9 { left: 204.3mm }
+.recto .c10 { left: 227.2mm }
+.recto .c11 { left: 250.1mm }
+
+.verso .c1 { right: 21.1mm }
+.verso .c2 { right: 44mm }
+.verso .c3 { right: 66.9mm }
+.verso .c4 { right: 89.8mm }
+.verso .c5 { right: 112.7mm }
+.verso .c6 { right: 135.6mm }
+.verso .c7 { right: 158.5mm }
+.verso .c8 { right: 181.4mm }
+.verso .c9 { right: 204.3mm }
+.verso .c10 { right: 227.2mm }
+.verso .c11 { right: 250.1mm }
+
+.r1 { top: 38.9mm}
+.r2 { top: 65.2mm}
+.r3 { top: 91.4mm}
+.r4 { top: 117.7mm}
+.r5 { top: 144.0mm}
+.r6 { top: 170.2mm}
+.r7 { top: 196.5mm}
+.r8 { top: 222.8mm}
+.r9 { top: 249.0mm}
+.r10 { top: 275.3mm}
+.r11 { top: 301.5mm}
+.r12 { top: 327.8mm}
+.r13 { top: 354.1mm}
+
+.r1.a { top: 25.7mm}
+.r2.a { top: 52.0mm}
+.r3.a { top: 78.2mm}
+.r4.a { top: 104.5mm}
+.r5.a { top: 130.8mm}
+.r6.a { top: 157.0mm}
+.r7.a { top: 183.3mm}
+.r8.a { top: 209.6mm}
+.r9.a { top: 235.8mm}
+.r10.a { top: 262.1mm}
+.r11.a { top: 288.3mm}
+.r12.a { top: 314.6mm}
+.r13.a { top: 340.9mm}
+.r14.a { top: 367.2mm}
+
+.recto .onepoint {
+    background-image: url("../img/tokens/1p.webp");
+}
+.verso .onepoint {
+    background-image: url("../img/tokens/1p-verso.svg");
+}
+
+
+
+.recto .fivepoints {
+    background-image: url("../img/tokens/5p.webp");
+}
+.verso .fivepoints {
+    background-image: url("../img/tokens/5p-verso.svg");
+}
+
+
+.recto .skills,
+.verso .skills
+{
+    background-image: url("../img/tokens/skills.webp");
+}
+
+
+.recto .gender {
+    background-image: url("../img/tokens/gender.webp");
+}
+.recto .social-class {
+    background-image: url("../img/tokens/social-class.webp");
+}
+.recto .handicap {
+    background-image: url("../img/tokens/handicap.webp");
+}
+.recto .color {
+    background-image: url("../img/tokens/color.webp");
+}
+.recto .orientation {
+    background-image: url("../img/tokens/orientation.webp");
+}
+
+.verso .gender,
+.verso .social-class,
+.verso .handicap,
+.verso .color,
+.verso .orientation {
+    background-image: url("../img/tokens/discrimination.svg");
+}
+
+.sympathizer {
+    background-image: url("../img/tokens/sympathizer.webp");
+}

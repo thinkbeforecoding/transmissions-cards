@@ -107,3 +107,11 @@
 .verso .align-mark {
     left: calc(50% - 4mm + var(--verso-offset-x));
 }
+
+.tokens .m-right {
+    right: 12.9mm;
+}
+
+.tokens .m-bottom {
+    bottom: 21.7mm;
+}

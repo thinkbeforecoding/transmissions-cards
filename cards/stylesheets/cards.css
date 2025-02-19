@@ -402,7 +402,7 @@ h1 {
 }
 
 .consequences .escalade { color: var(--color); }
-.player { color: var(--green); }
+.player { color: var(--blue); }
 .system { color: var(--red); }
 .zero { color: var(--yellow); }
 

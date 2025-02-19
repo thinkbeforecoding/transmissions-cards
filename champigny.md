@@ -49,16 +49,16 @@ Il est 17h30 en plein été, tu rentres des cours et tu prends le bus 208b. Tu a
             * __10 :__ Des passagers t'interpellent : _« Ça va pas de jeter ses courses comme ça ?! » _Tu te fais agresser, tu te tais et c’est toi le coupable... __(S3)__
         * _« Mais Madame ?... Moi, je voulais juste vous aider. Vous vous rendez compte de ce que vous me dites ? »  _
             * __1 à 3 :__ Tout le monde la regarde et elle part l’air honteuse. Rappeler froidement les faits t’a redonné de la légitimité aux yeux des autres. __(J1)__
-            * __4 à 5 :__ _« Je m’en rends parfaitement compte et j’assume ! »_ puis elle sort du bus sans que personne ne réagisse. Rappeler les faits n’a pas suffit à susciter l’empathie. __(0)__
+            * __4 à 5 :__ _« Je m’en rends parfaitement compte et j’assume ! »_ puis elle sort du bus sans que personne ne réagisse. Rappeler les faits n’a pas suffi à susciter l’empathie. __(0)__
             * __6 à 8 :__ Une première personne puis d’autres t’appuient. Elle sort du bus sans rien avoir à redire. Rappeler les faits a été le moteur de l’indignation collective.__ (J2)__
             * __9 à 10 :__ Elle s'esclaffe : _« Je dis juste tout haut ce que tout le monde pense tout bas ! »_ Les gens détournent le regard, par conviction ou lâcheté, en tout cas personne ne t’aide. __(S3)__
         * Je prends à partie les autres passagers autour de moi : _« Ça ne choque personne ce que dit cette dame ? »_
-            * __1 à 3 :  ___« Je dis juste tout haut ce que tout le monde pense tout bas ! »_ Personne ne réagit : dénoncer ses actes n’a pas suffit à t'attirer de l’empathie. __(S3)__
+            * __1 à 3 :  ___« Je dis juste tout haut ce que tout le monde pense tout bas ! »_ Personne ne réagit : dénoncer ses actes n’a pas suffi à t'attirer de l’empathie. __(S3)__
             * __4 à 6 :__ Tout le monde la regarde et elle part l’air honteuse. Dénoncer ses actes a créé une vigilance collective. __(J1)__
             * __7 :__ Elle renchérit et quelqu’un intervient : _« Allez plutôt donner votre avis sur CNEWS, ça les intéressera sûrement. » _Ta stratégie a permis de sortir du face-à-face._ ___(J3)__
             * __8 à 9 :__ Une personne finit par intervenir : _« Allez, ça suffit maintenant tous·tes les deux. Descendez du bus, qu’on puisse repartir ! » _Tu voulais sortir du face à face, on t’y enferme. __(S2)__
             * __10 :__ Et ça y est c’est le bordel, tout le monde veut donner son avis !Tu as créé un débat qui te dépasse. __(0)__
-    * __5 à 6 : __Une personne intervient : _« Pourquoi vous lui parlez comme ça ? C’était pour vous aider et vous l'insultez ! » _Elle sort l’air renfrognée et tu apprécies que quelqu'un ait pris ta défense. __(J1)__
+    * __5 à 6 : __Une personne intervient : _« Pourquoi vous lui parlez comme ça ? C’était pour vous aider et vous l'insultez ! » _Elle sort l’air renfrogné et tu apprécies que quelqu'un ait pris ta défense. __(J1)__
     * __7 à 9 :__ Une personne qui monte s’adresse à toi : « _Ça va pas ?! Pourquoi tu fais ça_ ?! » et des regards accusateurs se tournent vers toi. 
         * [Je ne réponds pas pour ne pas envenimer la situation.]
         * J’essaie d’expliquer la situation et ce qu’il s’est passé avant.
@@ -82,7 +82,7 @@ Il est 17h30 en plein été, tu rentres des cours et tu prends le bus 208b. Tu a
     * __1 à 2 :__ Une personne intervient en s’adressant à vous deux : _« Allez, ça suffit maintenant. Descendez du bus, qu’on puisse repartir ! » _Tu comptais sur de la compassion et tu fais face à du déni._ ___(S1)__
     * __3 à 4 : __Une première personne puis d’autres t’appuient. Elle sort du bus sans rien dire.__ __Sortir du face à face en sollicitant les témoins l’a mise au pied du mur.__ (J3)__
     * __5 à 7 __: Tout le monde la regarde et elle part l’air honteuse sans répliquer. En verbalisant l’agression, tu l’as mise au centre de l’attention. __(J2)__
-    * __8 à 10 : __Tout le monde regarde ses chaussures et elle s'esclaffe : _« Je dis juste tout haut ce que tout le monde pense tout bas ! » _Interpeller les témoins n’a pas suffit à leur donner le courage d’intervenir... __(S2)__
+    * __8 à 10 : __Tout le monde regarde ses chaussures et elle s'esclaffe : _« Je dis juste tout haut ce que tout le monde pense tout bas ! » _Interpeller les témoins n’a pas suffi à leur donner le courage d’intervenir... __(S2)__
 * ___« Mais Madame, vous êtes pas bien ? Moi, je voulais juste vous aider. Vous vous rendez compte de ce que vous me dites ? »  ___
     * __1 à 3 :__ Tout le monde la regarde et elle part l’air honteuse, sans répliquer. Mettre des mots sur sa violence a rendu visible l’agression. __(J1)__
     * __4 à 5 :__ _« Je m’en rends parfaitement compte et j’assume ! »_ Tu as essayé de faire appel à sa raison mais elle n’entend rien. Pourtant, tu peux porter plainte pour injures racistes. __(S2)__
@@ -204,7 +204,7 @@ Tu es un adolescent et tu prends le RER pour aller rendre visite à un ami. À 
             * __8 à 10 :__ _« Eh mais il est ouf lui, on lui met un coup de pression et il flippe. Vas-y casse toi, bouffon. » _Tu ne sais pas ce qu’ils cherchaient vraiment mais tu as désamorcé leur tentative._ ___(0)__
 * __Je pars dans un monologue philosophique : _« Doit-on toujours venir de quelque part ? Est-ce que l’essentiel n’est pas de savoir où l’on va et qui l’on est ? »___
     * __1 : __Ils se marrent et t’invitent à t’asseoir avec eux sans franchement te donner le choix. Tu n’es plus en danger mais tu ne te sens pas de refuser…__ (J2)__
-    * __2 à 4 :__ « _Vas-y casse-toi bouffon, tu donnes mal à la tête_. » Une dernière insulte pour la route ne fait jamais plaisir mais l’humour t’as permis de t’en sortir par le haut. __(J1)__
+    * __2 à 4 :__ « _Vas-y casse-toi bouffon, tu donnes mal à la tête_. » Une dernière insulte pour la route ne fait jamais plaisir mais l’humour t’a permis de t’en sortir par le haut. __(J1)__
     * __5 à 9 : __« _Tu te fous de notre gueule ?! _» __(Escalade)__
         * _«  Ça sert à rien de s’embrouiller, je plaisantais. »_
             * __1 à 3 :__ La pression retombe et ils finissent par te laisser poursuivre ton chemin. Mais que d’énergie pour sortir d’une gare... __(J1)__
@@ -240,7 +240,7 @@ Tu es un adolescent et tu prends le RER pour aller rendre visite à un ami. À 
         * [Je me mets à courir.]
         * [J’appelle à l’aide.]
         * Je tente de m’excuser pour faire retomber la pression.
-            * __1 à 4 :__ « Ouais, c’est ça. Tire-toi. » Tu as accepté le rapport de force qu’ils voulaient t’imposer mais ça t’as permis d’être enfin tranquille. __(J1) __
+            * __1 à 4 :__ « Ouais, c’est ça. Tire-toi. » Tu as accepté le rapport de force qu’ils voulaient t’imposer mais ça t’a permis d’être enfin tranquille. __(J1) __
             * __5 à 8 __: Il se mettent à rire bruyamment et remettent ta virilité en cause. Néanmoins, t’excuser aura permis d’éviter que ça ne tourne à la confrontation physique. __(S1)__
             * __9 à 10 :__ Ça tourne mal. Ils cherchaient la confrontation depuis le début, quel que soit le prétexte. Quand la tension arrive à un tel niveau, mieux vaut s’éloigner et appeler à l’aide. __(S3)__
     * __9 à 10 :___ « Et, c’est où chez toi ? »_
@@ -275,7 +275,7 @@ Tu rentres chez toi un soir d’hiver et les endroits par lesquels tu passes son
         * Je crie de surprise.
             * __1 à 3 :__ Elles se retournent affolées en disant _« Qu’est-ce-qu’il se passe ?! »_ Ta peur les a contaminées. __(S1)__
             * __4 à 5 :__ Elles sursautent et te prennent à partie : _« Ça va pas de crier comme ça ? T’as un problème ?! »_ En te laissant submerger par la peur, tu peux provoquer des réactions hostiles. __(S3)__
-            * __6 à 7 :__ Elles te dépassent en commentant ce qu’il vient de se passer _« Y’a vraiment des gens perturbés… » _À leur place tu aurais sûrement pensé la même chose…_ ___(0)__
+            * __6 à 7 :__ Elles te dépassent en commentant ce qu’il vient de se passer _« Y’a vraiment des gens perturbés… » _À leur place, tu aurais sûrement pensé la même chose…_ ___(0)__
             * __8 à 10 : ___« Pardon, on voulait pas vous effrayer ! » _Heureusement, les gens ont rarement de mauvaises intentions. __(J1)__
     * __10 :__ La camionnette redémarre après un temps qui te paraît très long. Personne n’en est sorti, ni entré. La prudence c’est bien, mais ne laisse pas l’appréhension te paralyser. __(S2)__
 * __Je presse le pas.__
@@ -734,7 +734,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
     * __8 à 9 :__ Tes ami·e·s te soutiennent et la personne se tait. La soirée se poursuit normalement mais tu sens son regard désapprobateur fixé sur toi. Rappeler les faits l’a mise face à ses contradictions. __(J1)__
     * __10 :__ Les tables voisines prennent ta défense : _« Vous nous coupez l’appétit avec vos insinuations ! »_ Enfin des gens qui comprennent que l’allaitement n’a rien à voir avec la pudeur. __(J3)__
 * __J’informe un serveur de son attitude.__
-    * __1 à 3 :__ Il se rue vers moi avec une grande serviette : _« C’est la politique de la maison de se couvrir ! »_
+    * __1 à 3 :__ Il se rue vers toi avec une grande serviette : _« C’est la politique de la maison de se couvrir ! »_
         * _« Vous vous rendez compte que je serai encore moins discrète avec ça ? »_
             * __1 à 4 :__ Il se sent bête et part penaud, emportant la serviette. Avoir pointé le paradoxe de la situation sans t’énerver a eu raison de ses résistances. __(J2)__
             * __5 :__ Des client·e·s le prennent à partie : _« Si c’est ça votre politique, on ne mettra plus les pieds ici et on le fera savoir ! » _Il se confond en excuses. Il aura fallu que tu soulignes l’absurdité de son attitude pour créer de la solidarité. __(J3)__  
@@ -746,9 +746,9 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
             * __5 à 7 :__ Un·e ami·e te dit : _« C’est peut-être pas la peine d’en arriver là ? Viens je t’accompagne aux toilettes. » _Les toilettes, quel bel endroit pour allaiter un enfant… __(S2)__
             * __8 à 10 :__ Tes ami·e·s te soutiennent et menacent de quitter le restaurant si on ne te laisse pas tranquille. Rappeler que tu es dans ton bon droit aura suscité l’entraide. __(J2)__
         * _« Décidément dans ce pays, nous les femmes, on n’est jamais couvertes comme il faut ! »_
-            * __1 à 2 :__ Mouché par votre remarque, il repart avec son torchon sans un mot. __(J2)__
-            * __3 à 4 :___ « Moi je la prends, je mange comme un cochon ! »_ lui assène un de tes amis en te faisant un clin d'œil. Il te vient en aide mais sans affronter le vrai problème.  __(J1)__
-            * __5 à 7 :___ « Votre remarque est tout à fait inappropriée, Madame. Vous pouvez partir si cela ne vous convient pas » _te répond le serveur d’un ton sec. Il renverse la culpabilité et se montre violent mais tu sais que tu as raison… __(S3)__
+            * __1 à 2 :__ Mouché par ta remarque, il repart avec son torchon sans un mot. __(J2)__
+            * __3 à 4 :___ « Moi je la prends, je mange comme un cochon ! »_ lui assène un de tes amis en te faisant un clin d'œil. Il te vient en aide mais sans affronter le vrai problème. __(J1)__
+            * __5 à 7 :___ « Votre remarque est tout à fait inappropriée, Madame. Vous pouvez partir si cela ne vous convient pas. » _te répond le serveur d’un ton sec. Il renverse la culpabilité et se montre violent mais tu sais que tu as raison… __(S3)__
             * __8 à 10 :___ « Ça n’a rien à voir, c’est simplement une question d’hygiène. Je peux vous proposer un endroit plus approprié si vous voulez. »_ Quand il est question de manger, un restaurant c’est pas mal non ? Que d’énergie dépensée pour quelques gouttes de lait ! __(S1)__
         * Je lui rends et lui dis : _« Merci mais j’en ai déjà une. »_
             * __1 à 2_ : « Non, mais en fait c’est pour… »___ Il se rend compte que tu te moques de lui et s’en va sans rien ajouter. Son départ est un aveu ! __(J3)__   
@@ -773,7 +773,7 @@ Jeune maman depuis peu, tu allaites discrètement ton nourrisson au restaurant. 
     * __3 à 4 :__ Comprenant ton désarroi, tes ami·e·s la remettent fermement à sa place. Toute la soirée, tu sens son regard désapprobateur mais leur intervention l’a soufflée ! __(J1)__
     * __5 :___ « Je suis d’accord, c’est vraiment pas un endroit pour faire ça ! » _vous assène un·e client·e d’une table voisine. Ah parce qu’il y a un bon endroit ?... __(S3)__
     * __6 : __Tes ami·e·s prennent ta défense. Ceux de la table d’à côté s’en mêlent et les verres volent. Une telle pagaille pour un simple bout de poitrine... __(S2)__
-    * __7 :__ Les tables voisines prennent ta défense : _« C’est vous qui êtes indécent·e avec vos insinuations ! »_ La violence de ses propos a créé un élan de sympathie. __(J3)__
+    * __7 :__ Les tables voisines te viennent en aide : _« Ce sont vos insinuations qui sont indécentes ! »_ La violence de ses propos a créé un élan de sympathie. __(J3)__
     * __8 à 10 :__ Tout le monde regarde son assiette. Tu te sens bien seule… __(S1 ET choisis une autre Stratégie)__
 * __Faisant la sourde oreille, je l’ignore complètement.__
     * __1 à 3 :___ « Je parle français ?! Vous dérangez tout le monde avec votre sein à l’air ! »_ Elle semble décidément très intolérante… __(Escalade)__
@@ -965,7 +965,7 @@ Tu es une femme et tu marches avenue Marx Dormoy, un endroit où il y a beaucoup
             * __7 à 8 :__ Un groupe de personnes vient t’aider et l’entoure. Il tentait de renverser la culpabilité et tu l’as ramené à son statut d’agresseur. __(J3)__
             * __9 à 10 :___ « Elle est complètement folle, elle ! »_ En prétextant l’hystérie, il veut créer du doute chez les témoins. Explique-leur ce qu’il vient de faire. __(S2)__
         * Je sors mon téléphone et lui dis que je vais appeler la Police.
-            * __1 à 3 :___ « Tu crois qu’ils vont se déplacer pour ça ? »_  Tu sens qu’il essaie de te faire douter. Pourtant c’est bien une agression. __(S1)__
+            * __1 à 3 :___ « Tu crois qu’ils vont se déplacer pour ça ? »_ Tu sens qu’il essaie de te faire douter. Pourtant c’est bien une agression. __(S1)__
             * __4 à 6 :__ Il fait volte-face fissa. En invoquant l’autorité, tu l’as forcé à reconnaître sa culpabilité.__ (J3)__
             * __7 :__ «_ Vas-y, je vais me faire un plaisir de leur dire que tu m’as insulté. _» Il veut t’intimider pour te faire renoncer bien qu’il soit en tort. Mémorise sa plaque ou trouve un témoin autour de toi. __(S2)__
             * __8 à 9 :___ « Faut pas le prendre comme ça… » _Sa volonté de minimiser son acte montre que tu as repris l’ascendant. __(J1)__

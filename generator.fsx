@@ -255,22 +255,49 @@ Stats.printStats champigny
 open Feliz.ViewEngine
 
 type Token =
+| Empty
 | OnePoint
+| FivePoints
+| Skills
+| Discrimination of Discrimination
+| Sympathizer
 
 let tokenPos i =
-    let r = i % 14
-    let c = i / 14
-    $"r{r+1} c{c+1}"
+    let r0 = i % 27
+    let c0 = i / 27
+    let r,c,alt =
+        if r0 < 13 then
+            r0, c0*2,false
+        else
+            r0-13,c0*2+1,true
 
-let renderOnePointRecto i =
+    if alt then
+        $"r{r+1} c{c+1} a"
+    else
+        $"r{r+1} c{c+1}"
+
+let tokenClass = function
+    | Empty -> ""
+    | OnePoint -> "onepoint"
+    | FivePoints -> "fivepoints"
+    | Skills -> "skills"
+    | Discrimination Gender -> "gender"
+    | Discrimination SocialClass -> "social-class"
+    | Discrimination Handicap  -> "handicap"
+    | Discrimination SkinColor  -> "color"
+    | Discrimination SexualOrientation  -> "orientation"
+    | Sympathizer -> "sympathizer"
+
+let renderTokenRecto i token =
     Html.div [
-        prop.classes ["token"; "onepoint"; tokenPos i]
+        prop.classes ["token"; tokenClass token; tokenPos i]
     ]
 
-let renderOnePointVerso i =
+let renderTokenVerso i token =
     Html.div [
-        prop.classes ["token"; "onepoint"; tokenPos i]
+        prop.classes ["token"; tokenClass token; tokenPos i]
     ]
+
 
 
 let render tokens classes  =
@@ -288,31 +315,43 @@ let render tokens classes  =
                 Html.script [ prop.src "/js/anchor.js" ]
             ]
             Html.body [
-                prop.classes classes
+                prop.classes ("tokens" :: classes)
                 prop.children [
-                    Html.section [
-                        prop.className "recto"
-                        prop.children [
-                            // Divs for the cricut cut marks
-                            yield! cropmarks
-                            for i,token in Seq.indexed tokens do
-                                match token with
-                                | OnePoint -> renderOnePointRecto i
+                    for group in tokens |> Seq.chunkBySize 148 do
+                        Html.section [
+                            prop.className "recto"
+                            prop.children [
+                                // Divs for the cricut cut marks
+                                yield! cropmarks
+                                yield! alignmarks
+                                for i,token in Seq.indexed group do
+                                    renderTokenRecto i token
+                            ]
                         ]
-                    ]
-                    Html.section [
-                        prop.className "verso"
-                        prop.children [
-                            for i,token in Seq.indexed tokens do
-                                match token with
-                                | OnePoint -> renderOnePointVerso i
+                        Html.section [
+                            prop.className "verso"
+                            prop.children [
+                                yield! alignmarks
+                                for i,token in Seq.indexed group do
+                                    renderTokenVerso i token
+                            ]
                         ]
-                    ]
                 ]
             ]
         ]
     ]
     |> Render.htmlDocument
 
-render cameo |> save "./cards/cameo/jetons.html"
-render [OnePoint; OnePoint; OnePoint] [] |> save "./cards/cannes/jetons.html"
+let discriminationTokens = 
+    [  Handicap; SkinColor; SexualOrientation; Gender; SocialClass]
+    |> List.map Discrimination
+let tokens = 
+    [
+     for i in 1 .. 60 do OnePoint
+     for i in 1 .. 3 do FivePoints
+     for i in 1 .. 20 do Sympathizer
+     Skills 
+     yield! discriminationTokens |> List.collect (List.replicate 2)
+     ]
+render tokens cameo |> save "./cards/cameo/jetons.html"
+render tokens [] |> save "./cards/cannes/jetons.html"
