@@ -387,13 +387,13 @@ let alignmarks =
     [ Html.div [ prop.className "align-mark am-top"]
       Html.div [ prop.className "align-mark am-bottom"] ]
 
-let render classes (cards: Card list) =
+let render (title: string) classes (cards: Card list) =
     Html.html [
         prop.lang "fr"
         prop.children [
             Html.head [
                 Html.meta [ prop.charset "utf-8" ]
-                Html.title [ prop.text "Transmission(s)" ]
+                Html.title [ prop.text title ]
                 Html.link [prop.href "/stylesheets/interface.css"; prop.rel "stylesheet"; prop.type' "text/css"]
                 Html.link [ prop.href "/stylesheets/cards.css"; prop.rel "stylesheet"; prop.type' "text/css" ]
                 for stylesheet in stylesheets cards do

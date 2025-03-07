@@ -178,16 +178,16 @@ body {
 .recto.alea {
     --alpha: 0.8;
     --white: rgba(255,255,255,var(--alpha));
-    &.a1 { --bg: url(img/a1.svg)  } 
-    &.a2 { --bg: url(img/a2.svg)  } 
-    &.a3 { --bg: url(img/a3.svg)  } 
-    &.a4 { --bg: url(img/a4.svg)  } 
-    &.a5 { --bg: url(img/a5.svg)  } 
-    &.a6 { --bg: url(img/a6.svg)  } 
-    &.a7 { --bg: url(img/a7.svg)  } 
-    &.a8 { --bg: url(img/a8.svg)  } 
-    &.a9 { --bg: url(img/a9.svg)  } 
-    &.a10 { --bg: url(img/a10.svg)  } 
+    &.a1 { --bg: url(/img/a1.svg)  } 
+    &.a2 { --bg: url(/img/a2.svg)  } 
+    &.a3 { --bg: url(/img/a3.svg)  } 
+    &.a4 { --bg: url(/img/a4.svg)  } 
+    &.a5 { --bg: url(/img/a5.svg)  } 
+    &.a6 { --bg: url(/img/a6.svg)  } 
+    &.a7 { --bg: url(/img/a7.svg)  } 
+    &.a8 { --bg: url(/img/a8.svg)  } 
+    &.a9 { --bg: url(/img/a9.svg)  } 
+    &.a10 { --bg: url(/img/a10.svg)  } 
 
     background-image: var(--bg);
     background-repeat: no-repeat;

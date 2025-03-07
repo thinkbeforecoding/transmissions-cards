@@ -95,11 +95,11 @@ let renderCards cards path classes =
         ]
 
 
-    render classes cards |> save ( path </> "situations.html")
-    render classes helps |> save (path </> "aides-de-jeu.html")
-    render classes interventions |> save (path </> "interventions.html")
-    render classes discriminations |> save ( path </> "discriminations.html" )
-    render classes alea |> save ( path </> "alea.html")
+    render "situations" classes cards |> save ( path </> "situations.html")
+    render "aides-de-jeu" classes helps |> save (path </> "aides-de-jeu.html")
+    render "interventions" classes interventions |> save (path </> "interventions.html")
+    render "discriminations" classes discriminations |> save ( path </> "discriminations.html" )
+    render "alea" classes alea |> save ( path </> "alea.html")
 
 renderCards champigny2 "./cards/cameo" cameo
 
@@ -353,5 +353,18 @@ let tokens =
      Skills 
      yield! discriminationTokens |> List.collect (List.replicate 2)
      ]
-render tokens cameo |> save "./cards/cameo/jetons.html"
+
+let cardTokens = 
+    [ for i in 1..130 do OnePoint
+      for i in 1.. 15 do FivePoints
+      Skills
+      Skills
+      Skills
+    ]
+
+cardTokens |> List.length
+
+render cardTokens cameo |> save "./cards/cameo/jetons.html"
+
+
 render (tokens @ tokens @ tokens) [] |> save "./cards/cannes/jetons.html"

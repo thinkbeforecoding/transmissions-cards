@@ -2,39 +2,39 @@
 /* Fonts and their variations */
 @font-face {
     font-family: "Mundial";
-    src: url("../fonts/MundialBold.ttf");
+    src: url("/fonts/MundialBold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Mundial";
-    src: url("../fonts/MundialLight.ttf");
+    src: url("/fonts/MundialLight.ttf");
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTBook.ttf");
+    src: url("/fonts/FuturaPTBook.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTMedium.ttf");
+    src: url("/fonts/FuturaPTMedium.ttf");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTBold.ttf");
+    src: url("/fonts/FuturaPTBold.ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
-    src: url("../fonts/FuturaPTBookOblique.ttf");
+    src: url("/fonts/FuturaPTBookOblique.ttf");
     font-weight: normal;
     font-style: italic;
 }
